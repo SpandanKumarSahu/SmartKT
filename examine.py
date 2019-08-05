@@ -61,12 +61,7 @@ def add_dynamic_information(path):
 
 def start_website():
     # Start the user inerface to query
-    s = "mv ekdumfinal.xml website/final.xml" + "\n"
-    s += "cd website" +"\n"
-    s += "chmod +x setup.sh" + "\n"
-    s += "./setup.sh" + "\n"
-    with open("start_website.sh", "w") as f:
-        f.write(s)
+    os.chdir("website")
     os.system("chmod +x start_website.sh")
     os.system("./start_website.sh")
 
