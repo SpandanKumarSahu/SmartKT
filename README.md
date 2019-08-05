@@ -38,7 +38,12 @@ In order to run SmartKT:
 	`sudo docker pull spandankumarsahu/smartkt:latest`
 * Run the container:
 	`sudo docker run --name <anyName> --security-opt="apparmor=unconfined" --cap-add=SYS_PTRACE -p 5000:5000 smartkt`
-
+* Get the IP of the docker:
+	`sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <containerName>`
+* On the browser, point to `http://<IP>:5000/`
+* Stopping the docker:
+	`sudo docker stop <containerName>`
+	`sudo docker rm <containerName>`
 
 ## BUILDING ON DOCKER
 
