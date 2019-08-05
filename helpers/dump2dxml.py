@@ -57,5 +57,5 @@ root.append(tree)
 
 # output to a file
 xmlstr = minidom.parseString(ET.tostring(root)).toprettyxml(indent="   ")
-with open('../ekdumfinal.xml', 'w') as f:
+with open('ekdumfinal.xml', 'w') as f:
 	f.write(xmlstr)

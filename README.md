@@ -37,7 +37,7 @@ In order to run SmartKT:
 * Get the latest image (you can specify any other label that `latest`)
 	`sudo docker pull spandankumarsahu/smartkt:latest`
 * Run the container:
-	`sudo docker run --name <anyName> smartkt -p 5000:5000`
+	`sudo docker run --name <anyName> --security-opt="apparmor=unconfined" --cap-add=SYS_PTRACE -p 5000:5000 smartkt`
 
 
 ## BUILDING ON DOCKER
@@ -52,7 +52,7 @@ You should make appropriate changes in the Dockerfiles and let the integrated sy
 * You can view the images created by running:
 	`sudo docker images`
 * In order to run an image, you just need to run:
-	`sudo docker run --name <anyName> smartkt`
+	`sudo docker run --name <anyName> --security-opt="apparmor=unconfined" --cap-add=SYS_PTRACE smartkt`
 * Once started, you can view the current images running:
 	`sudo docker ps`
 * In order to get inside one of these containers, just run:	

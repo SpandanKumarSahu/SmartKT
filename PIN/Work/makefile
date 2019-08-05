@@ -37,7 +37,7 @@ memtracker.cpp: memtracker.h
 # %_combined.offset %_combined.func: %_combined.xml
 # 	python linkerHelper.py $<
 %.dump: %.out ./obj-intel64/memtracker.so
-	../../../pin -t obj-intel64/memtracker.so -- ./$< > /dev/null
+	../PIN/pin -t obj-intel64/memtracker.so -- ./$< > /dev/null
 %.dxml: %.dump dump2dxml.py
 	python dump2dxml.py $<
 %_final.xml: %_combined.xml %.dxml combine_static_dynamic.py
