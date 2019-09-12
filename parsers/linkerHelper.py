@@ -1,31 +1,9 @@
 # python linkerHelper.py <DWARF+CLANG XML>
 
-import sys, os
+import sys
 from xml.etree.ElementTree import Element, SubElement
 from xml.etree import ElementTree as ET
 from xml.dom import minidom
-
-def generate_function(node, filename):
-    # Search for all functions and prints it name, linkage_name and id
-    outfile = filename.split('.')[0]+".func"
-    with open(outfile, "w") as f:
-        for func in node.findall(".//FUNCTION_DECL"):
-            if "linkage_name" in func.attrib:
-                func_name = func.attrib['linkage_name']
-            else:
-                func_name = func.attrib['spelling']
-            s = func_name + "\t" + func.attrib['id'] + "\n"
-            f.write(s)
-        for func in node.findall(".//CXX_METHOD"):
-            if "linkage_name" in func.attrib:
-                func_name = func.attrib['linkage_name']
-            else:
-                func_name = func.attrib['spelling']
-            s = func_name + "\t" + func.attrib['id'] + "\n"
-            f.write(s)
-    print("Function ID File written to: ", outfile)
-        # for func in node.findall(".//FUNCTION_DECL"):
-        #     f.write(func.attrib['spelling'], "\t", func.attrib['id'])
 
 def helper(var, var_class, var_container=None):
     if "mangled_name" in var.attrib:
@@ -158,39 +136,9 @@ def generate_var(croot, filename):
                 f.write(s)
     print("Variable Offset File written to: ", outfile)
 
-def fix_global_address(droot, croot):
-    for dvar in droot.findall("variable"):
-        # Can't set global address for external global headers
-        if 'external' in dvar.attrib:
-            continue
-
-        # For everything else, find the appropriate file and set address
-        linenum = int(dvar.attrib['decl_line'], 16)
-        fname = str(dvar.attrib['decl_file'].split()[-1])
-
-        cfile = croot.find('file[@name="'+fname+'"]').find("STATICROOT")
-        for cvar in cfile.findall("TRANSLATION_UNIT/VAR_DECL[@linenum='"+str(linenum)+"']"):
-            if cvar.attrib['spelling'] == dvar.attrib['name']:
-                cvar.set('offset', str(int(dvar.attrib['location'].split()[-1], 0)))
-
 
 filename = sys.argv[1]
-project = sys.argv[2]
-exefile = sys.argv[3]
-
-dest = '/'.join(exefile.split('/')[exefile.split('/').index(project):])
-
 croot = ET.parse(filename).getroot()
-
-# Generate dwarfdump for the executable
-os.system("dwarfdump "+exefile+" > "+dest+".dwarfdump")
-
-# Generate XML from the dwarfdump parse
-os.system("python parsers/dwarfdump_parser.py "+dest+".dwarfdump")
-
-# Update global vars offset
-droot = ET.parse(dest+"_dwarfdump.xml").getroot()
-fix_global_address(droot, croot)
 
 # generate_function(root, filename)
 generate_var(croot, filename)

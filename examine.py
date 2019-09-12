@@ -1,6 +1,6 @@
 # Before you can use, specify the details in config.txt file
 # To use:
-# python examine.py <clean/retain> <project_name> <path_to_executable> <vocab_file> <problem_domain_file> {path_to_input_file}
+# python examine.py <clean/retain> <project_name> <vocab_file> <problem_domain_file> <path_to_executable> {path_to_input_file}
 
 
 '''
@@ -18,9 +18,9 @@ isClean = False
 if sys.argv[1] == "clean":
     isClean = True
 project_name = sys.argv[2]
-executable = sys.argv[3]
-vocab_file = sys.argv[4]
-problem_domain_file = sys.argv[5]
+vocab_file = sys.argv[3]
+problem_domain_file = sys.argv[4]
+executable = sys.argv[5]
 test_input = None
 if len(sys.argv) > 6:
     test_input = sys.argv[6]
@@ -48,8 +48,8 @@ def combine(ls, execpath):
     with open(filename, "w") as f:
         f.write(xmlstr)
 
-def get_linkage_helper(filename, project, exefile):
-    os.system("python parsers/linkerHelper.py "+ filename+ " "+project+ " "+ exefile)
+def get_linkage_helper(filename):
+    os.system("python parsers/linkerHelper.py "+ filename)
 
 def generate_static_info(execpath):
     # This function extract the dependencies of the binary under study, and
@@ -66,7 +66,7 @@ def generate_static_info(execpath):
             ls.remove(x)
     src_files = [sourcefile[x] for x in ls]
     combine(src_files, execpath)
-    get_linkage_helper("static.xml", project_name, abspath)
+    get_linkage_helper("static.xml")
     print("Static Done!")
     return "static.xml"
 
@@ -75,10 +75,10 @@ def generate_dynamic_info(path, test=None):
     print("Starting Dynamic!")
     if test is None:
         os.system("./pin.sh {}".format(path))
-   else:
+    else:
         os.system("./pin.sh {} {}".format(path, test))
-   print("Dynamic Done!")
-   return "dynamic.xml"
+    print("Dynamic Done!")
+    return "dynamic.xml"
 
 def generate_comments_info(project_name, vocab_file, problem_domain_file):
     # Return relative path (wrt to this file) to the comments' XML output
@@ -117,6 +117,6 @@ static_file = generate_static_info(executable)
 abspath = os.path.abspath(executable)
 dynamic_file = generate_dynamic_info(executable, test_input)
 if isClean:
-    comments_file = generate_comment_info(project_name, vocab_file, problem_domain_file)
+    comments_file = generate_comments_info(project_name, vocab_file, problem_domain_file)
     vcs_file = generate_vcs_info(project_name)
 start_website()

@@ -2,11 +2,12 @@ from xml.etree.ElementTree import Element, SubElement
 from xml.etree import ElementTree as ET
 from xml.dom import minidom
 from collections import defaultdict
+import sys
 
 DEBUG = False
 
-dwarfxml_filename = "tester_dwarfdump.xml"
-clangxml_filename = "tester_clang.xml"
+dwarfxml_filename = sys.argv[1]
+clangxml_filename = sys.argv[2]
 dtree = ET.parse(dwarfxml_filename)
 droot = dtree.getroot()
 
@@ -71,7 +72,7 @@ def set_offsets_by_hash(cnode, dnode):
     #print(dtree_subtree_hash)
     # Variable declarations
     for v in cnode.findall(".//VAR_DECL"):
-        print(('variable',v.attrib['linenum'],v.attrib['spelling']))
+        
         for var in dtree_subtree_hash[('variable',v.attrib['linenum'],v.attrib['spelling'])]:
             if(DEBUG):
                 print(var,v)

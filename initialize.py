@@ -28,13 +28,16 @@ def combine(clangf, pygccf, cppfile):
     with open(clangf, "w") as f:
         f.write(xmlstr)
 
-def init(path):
+def init(path, isDebug=False):
     # This function builds the project and in that process gets the make log file
     s = "cd " + path + "\n"
     s += "rm -rf build" + "\n"
     s += "mkdir build"+ "\n"
     s += "cd build"+ "\n"
-    s += "cmake -DCMAKE_BUILD_TYPE=Debug .."+ "\n"
+    if isDebug:
+        s += "cmake -DCMAKE_BUILD_TYPE=Debug .."+ "\n"
+    else:
+        s += "cmake .." + "\n"
     s += "make VERBOSE=1 > make_log.txt"+ "\n"
     s += "cp make_log.txt " + os.getcwd()+ "\n"
     with open("init.sh", "w") as f:
@@ -43,16 +46,22 @@ def init(path):
     os.system("./init.sh")
     os.system("rm init.sh")
 
-def dependency_parser():
+def dependency_parser(isDebug=False):
     # Parses the make log and presents the output in a format which can be accessed later
+    if isDebug:
+        dep, src, obj = pickle.load(open("dependencies.p", "rb"))
     os.system("python parsers/project_parser.py make_log.txt")
-    # os.system("mv dependencies.p .")
+    if isDebug:
+        dep1, src1, obj1 = pickle.load(open("dependencies.p", "rb"))
+        dep.update(dep1)
+        src.update(src1)
+        obj.update(obj1)
+        pickle.dump((dep, src, obj), open("dependencies.p", "wb"))
 
-def generate_clang_info(path):
+def generate_clang_info(path, isDebug=False):
     # This function is responsible for generating static outputs for CPP files, whose
     # build instruction is available. The final XML contains, static analysis from pygccxml
     # and from Clang
-
     proj_name = path.split("/")[-1] if len(path.split("/")[-1]) > 0 else path.split("/")[-2]
 
     # Copy the directory structure of the project
@@ -87,7 +96,12 @@ def generate_clang_info(path):
         except Exception as e:
             print(e)
             continue
-
+        
+        if not isDebug:
+            os.system("mv " + dest_file + " " + dest_file.split('.')[0][:-6] +"_combined.xml")
+            # No need of generating pygcc also, only comments part would need it (comments don't need pygcc)
+            continue
+            
         # Generate and copy the dwarf file
         try:
             dwarfdump = dest_file.split('.')[0][:-6]+".dwarfdump"
@@ -108,6 +122,7 @@ def generate_clang_info(path):
         except:
             continue
 
+        # [TODO]: Remove PYGCCXML
         # Get PYGCCXML output
         try:
             s = "cd parsers/pygccxml" + "\n"
@@ -136,3 +151,8 @@ def generate_clang_info(path):
 init(sys.argv[1])
 dependency_parser()
 generate_clang_info(sys.argv[1])
+
+init(sys.argv[1], True)
+dependency_parser(True)
+generate_clang_info(sys.argv[1], True)
+

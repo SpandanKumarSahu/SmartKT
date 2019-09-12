@@ -4,8 +4,8 @@ set -x # echo on
 P=$(pwd)								# save current location
 exe=${1##*/}							# extract executable and input filename
 cp $1 PIN/Work/$exe.out					# copy executable to pin folder
-cp final.offset PIN/Work/final.offset
-cp final_global.offset PIN/Work/final_global.offset
+cp static.offset PIN/Work/final.offset
+cp static_global.offset PIN/Work/final_global.offset
 cp dependencies.p PIN/Work/
 if [ $# -eq 2 ]
 then

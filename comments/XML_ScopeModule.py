@@ -74,7 +74,7 @@ def getScopeForAFile(file, results):
 		if len(content) > 0 and content[-1] != '{':      # There by excluding the open brace case. 
 			scope[i] = (start_line + 1, end_line + 1)
 			i += 1
-			print i, "rule 1"
+			#print i, "rule 1"
 			continue
 
 		# Find the next line in the code.
@@ -118,7 +118,7 @@ def getScopeForAFile(file, results):
 		code.replace('\t', ' ')
 		content = code.strip(" ")
 		if content.startswith("#include"):
-			print i, "rule 2"
+			#print i, "rule 2"
 			for ind in range(i, j):
 				scope[ind] = (start_line + 1, len(lines))
 			i = j
@@ -127,7 +127,7 @@ def getScopeForAFile(file, results):
 		# Rule 3: (Block following it) Comment having start brace before or after it.
 		# The very next line is ending with a closed brace
 		if len(content) > 0 and content[-1] == '{':
-			print i, "rule 3, case 1"
+			#print i, "rule 3, case 1"
 			for ind in range(i, j):
 				scope[ind] = (start_line + 1, findClosingBrace(lines, nxline + 1) + 1)
 			i = j
@@ -147,14 +147,14 @@ def getScopeForAFile(file, results):
 			content = code.strip(" ")
 
 			if len(content) > 0 and content[0] == '{':
-				print i, "rule 3 part2"
+				#print i, "rule 3 part2"
 				for ind in range(i, j):
 					scope[ind] = (start_line + 1, findClosingBrace(lines, nxnxline + 1) + 1)
 				i = j
 				continue
 
 		# Rule 4: Find next comment
-		print i, "rule 4"
+		#print i, "rule 4"
 		block_end = findClosingBrace(lines, nxline) + 1
 		if j < len(comments):
 			for ind in range(i, j):
@@ -174,4 +174,4 @@ scopes = getScopeForAFile(sys.argv[1], results)
 with open("scope.p", 'wb') as fp:
 	pickle.dump(scopes, fp, protocol=2)
 
-print scopes
+#print scopes

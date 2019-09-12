@@ -49,5 +49,9 @@ EXPOSE 7000
 EXPOSE 7777
 
 RUN git clone https://github.com/glennrp/libpng.git projects/libpng 
+
+# Specify the dependencies of the project
+RUN apt-get install zlib1g-dev
+
 RUN python initialize.py projects/libpng
 CMD python examine.py clean libpng comments/Identifier/program_domain.csv comments/ProblemDomains/libpng/problem_domain.txt projects/libpng/build/pngtest projects/libpng/pngtest.png
