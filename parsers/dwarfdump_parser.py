@@ -22,7 +22,12 @@ def count_spaces(line):
             return count
 
 def get_clear_tag_name(tag_name):
-    s = tag_name[[i for i, c in enumerate(tag_name) if c.isupper()][-1]+2:]
+    idx = -1
+    for i, c in enumerate(tag_name):
+        if c.islower():
+            idx = i
+            break
+    s = tag_name[idx:]
     return s
 
 def add_attrs(node, attrs):
@@ -61,13 +66,47 @@ def recfunc(parent, i, level):
             i += 1
             if i < len(data):
                 l, d = data[i]
+                while get_clear_tag_name(d).split()[0] == "ranges":
+                    r = SubElement(s, "ranges")
+                    i += 1
+                    l, d = data[i]
+                    n = int(d.split()[1])
+                    r.set("num_ranges", str(n))
+                    r.set(d.split()[4], d.split()[5])
+                    r.set(d.split()[8][:-1], d.split()[7][1:])
+                    text = ""
+                    for j in range(i+1, i+n+1):
+                        text += data[j][1] + "\n"
+                    r.text = text
+                    i += n+1
+                    if i < len(data):
+                        l, d = data[i]
+                    else:
+                        return parent, i
             else:
                 return parent, i
-            while d[0] != "<":
+            while d[0] != "<" or (d[0] =="<" and d[1:3] == "Un"):
                 attrs.append(d)
                 i += 1
                 if i < len(data):
                     l, d = data[i]
+                    while get_clear_tag_name(d).split()[0] == "ranges":
+                        r = SubElement(s, "ranges")
+                        i += 1
+                        l, d = data[i]
+                        n = int(d.split()[1])
+                        r.set("num_ranges", str(n))
+                        r.set(d.split()[4], d.split()[5])
+                        r.set(d.split()[8][:-1], d.split()[7][1:])
+                        text = ""
+                        for j in range(i+1, i+n+1):
+                            text += d[j] + "\n"
+                        r.text = text
+                        i += n+1
+                        if i < len(data):
+                            l, d = data[i]
+                        else:
+                            return parent, i
                 else:
                     s = add_attrs(s, attrs)
                     return parent, i
@@ -140,6 +179,7 @@ for idx, sentence in enumerate(data):
 
 data = [(count_spaces(x), x.strip()) for x in data]
 root = Element('root')
+
 # Get the dwarfdump information in XML format
 root, _ = recfunc(root, 0, 0)
 

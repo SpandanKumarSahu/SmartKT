@@ -26,10 +26,16 @@ Currently supported queries:
 	* Design Patterns (Sample query: "what design patterns")
 	* Type (Sample query: "what is the type of x")
 	* Parent (Sample query: "What is the parent of x")
+	* Return type
+	* Function details
+	* List all global variables
+	* Dependencies
 * Dynamic:
 	* Thread activity (Sample query: "Display activity of thread 0")
 	* Call graph (Sample query: "Show call graph")
-
+* VCS:
+	* Github Issues
+	* Github commits (minimal)
 # DOCKER
 
 ## RUNNING ON DOCKER

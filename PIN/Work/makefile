@@ -17,36 +17,29 @@ CXX := g++
 CFLAGS := -g -pthread
 CXXFLAGS := -g -pthread
 
-.SECONDARY:
+.SECONDARY: 
+
+.PRECIOUS: %.dump %.symtab %_global.offset
+
+# tartest:
+# 	echo $(ARGS)
+
 memtracker.cpp: memtracker.h
 	@touch memtracker.cpp
-%.out: %.c
-	$(CC) $(CFLAGS) $< -o $@
-# %.out: %.cpp
-# 	$(CXX) $(CXXFLAGS) $< -o $@
-# %_clang.xml: %.cpp parser.py
-# 	python parser.py $<
-# %_clang.xml: %.c parser.py
-# 	python parser.py $<
-# %.dwarfdump: %.out
+%.out: %.cpp
+	$(CXX) $(CXXFLAGS) $< -o $@
+# %.dd: %.out
 # 	dwarfdump $< > $@
-# %_dwarfdump.xml: %.dwarfdump dwarfdump_parser.py
-# 	python dwarfdump_parser.py $<
-# %_combined.xml:  %_dwarfdump.xml %_clang.xml combine.py
-# 	python combine.py $< $(word 2, $^)
-# %_combined.offset %_combined.func: %_combined.xml
-# 	python linkerHelper.py $<
-%.dump: %.out ./obj-intel64/memtracker.so
-	../PIN/pin -t obj-intel64/memtracker.so -- ./$< > /dev/null
-%.dxml: %.dump dump2dxml.py
-	python dump2dxml.py $<
-%_final.xml: %_combined.xml %.dxml combine_static_dynamic.py
-	python combine_static_dynamic.py $< $(word 2, $^)
-%.ttl: %_final.xml ttl_from_xml.py
-	python ttl_from_xml.py $<
-testing: spandan_sample1_final.xml
+# %.dump: %.out %.dd ./obj-intel64/memtracker.so
+# 	../PIN/pin -t obj-intel64/memtracker.so -- ./$< > op.txt
+%.symtab: %.out
+	readelf -sW $< | grep "OBJECT" > $@
+%_static.offset: %.symtab final_global.offset merge
+	awk -f merge $< FS="\t" final_global.offset > $@
+%.dump: %.out ./obj-intel64/memtracker.so final.offset %_static.offset
+	../PIN/pin -t obj-intel64/memtracker.so -- ./$< $(inp) > op.txt
 cleaner:
-	-rm *.dwarfdump *.xml *.dxml *.ttl *.offset *.func *.dump *.o
+	-rm *.dump *.dd
 	make clean
 
 ##############################################################

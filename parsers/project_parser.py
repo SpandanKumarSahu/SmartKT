@@ -5,7 +5,7 @@ import pickle
 
 # The compiler used by the project. In this example, it would `/usr/bin/cc `
 # because it is a C-based project. Assuming default is C++. Can be changed by user
-CXX_COMPILER = "/usr/bin/c++ "
+CXX_COMPILER = "/usr/bin/cc "
 
 #[TODO]: Implement support for other archivers (NOT A PRIORITY)
 STATIC_ARCHIVER = "/usr/bin/ar "
@@ -78,9 +78,16 @@ for line_num, path, data in cxx_cmds:
         # must be a linking instruction
         executable = cwd + "/" + d[d.index("-o") + 1]
         dependencies[executable] = []
-        for x in d:
+        for idx, x in enumerate(d):
             if x[-2:] == ".o" or x[-2:] == ".a":
                 dependencies[executable].append(cwd + "/" + x)
+            elif x == "-rdynamic":
+                for y in d:
+                   if y.find("-rpath") != -1:
+                       p = y[y.find("-rpath")+len("-rpath")+1:]
+                       while not p[-1].isalnum():
+                           p = p[:-1]
+                       dependencies[executable].append(p+"/"+d[idx+1]) 
 
 # This is for libraries. Libraries are created by combining object files
 for line_num, path, data in static_link_cmds:

@@ -9,10 +9,16 @@ from xml.dom import minidom
 
 def combine(clangf, pygccf, cppfile):
     # This function combines the Clang output and PYGCCXML output into one XML
-    ctree = ET.parse(clangf)
-    croot = ctree.getroot()
-    ptree = ET.parse(pygccf)
-    proot = ptree.getroot()
+    try:
+        ctree = ET.parse(clangf)
+        croot = ctree.getroot()
+    except:
+        croot = Element('CLANG')
+    try:
+        ptree = ET.parse(pygccf)
+        proot = ptree.getroot()
+    except:
+        proot = Element('PYGCCXML')
 
     root = Element('file')
     root.set("name", cppfile)
@@ -73,39 +79,59 @@ def generate_clang_info(path):
             s += d + " "
 
         # Generate and copy the clang file
-        os.system(s)
-        src_file = f.split('.')[0] + "_clang.xml"
-        dest_file = '/'.join(f.split('/')[f.split('/').index(proj_name):]).split('.')[0] + "_clang.xml"
-        os.system("mv " + src_file + " " + dest_file)
+        try:
+            os.system(s)
+            src_file = f.split('.')[0] + "_clang.xml"
+            dest_file = '/'.join(f.split('/')[f.split('/').index(proj_name):]).split('.')[0] + "_clang.xml"
+            os.system("mv " + src_file + " " + dest_file)
+        except Exception as e:
+            print(e)
+            continue
 
         # Generate and copy the dwarf file
-        dwarfdump = dest_file.split('.')[0][:-6]+".dwarfdump"
-        os.system("dwarfdump " + objectfile[f] + "> " + dwarfdump)
+        try:
+            dwarfdump = dest_file.split('.')[0][:-6]+".dwarfdump"
+            os.system("dwarfdump " + objectfile[f] + "> " + dwarfdump)
+        except Exception as e:
+            print(e)
+            continue
 
         # Parse dwarfdump to XML
-        os.system("python parsers/dwarfdump_parser.py "+dwarfdump)
+        try:
+            os.system("python parsers/dwarfdump_parser.py "+dwarfdump)
+        except:
+            continue
 
         # Combine DWARF and CLANG
-        os.system("python parsers/combine.py "+dwarfdump.split('.')[0]+ "_dwarfdump.xml "+ dest_file)
+        try:
+            os.system("python parsers/combine.py "+dwarfdump.split('.')[0]+ "_dwarfdump.xml "+ dest_file)
+        except:
+            continue
 
         # Get PYGCCXML output
-        s = "cd parsers/pygccxml" + "\n"
-        s += "python main.py " + f + " "
-        for d in dependencies[f]:
-            s += d + " "
-        s += "\n"
-        src_file = f.split('.')[0] + "_pygccxml.xml"
-        dest_file = '/'.join(f.split('/')[f.split('/').index(proj_name):]).split('.')[0] + "_pygccxml.xml"
-        s += "cd "+ os.getcwd() + "\n"
-        s += "mv " + src_file + " " + dest_file
-        with open("pygcc.sh", "w") as fl:
-            fl.write(s)
-        os.system("chmod +x pygcc.sh")
-        os.system("./pygcc.sh")
-        os.system("rm pygcc.sh")
+        try:
+            s = "cd parsers/pygccxml" + "\n"
+            s += "python main.py " + f + " "
+            for d in dependencies[f]:
+                s += d + " "
+            s += "\n"
+            src_file = f.split('.')[0] + "_pygccxml.xml"
+            dest_file = '/'.join(f.split('/')[f.split('/').index(proj_name):]).split('.')[0] + "_pygccxml.xml"
+            s += "cd "+ os.getcwd() + "\n"
+            s += "mv " + src_file + " " + dest_file
+            with open("pygcc.sh", "w") as fl:
+                fl.write(s)
+            os.system("chmod +x pygcc.sh")
+            os.system("./pygcc.sh")
+            os.system("rm pygcc.sh")
+        except:
+            continue
 
         # Combine files
-        combine(dest_file.split('.')[0][:-8]+"combined.xml", dest_file, f)
+        try:
+            combine(dest_file.split('.')[0][:-8]+"combined.xml", dest_file, f)
+        except:
+            continue
 
 init(sys.argv[1])
 dependency_parser()

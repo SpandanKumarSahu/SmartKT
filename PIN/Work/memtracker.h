@@ -50,12 +50,12 @@ struct INSINFO
 	std::vector <std::string> regR, regW;	// registers read from and written to
 	ADDRINT memOp;							// actual memory reference in case of flag != 'n'
 	std::string target;						// if direct branch or call
-	int rbploc;								// if it writes to rbp
+	int rbploc;								// if it writes to rbp, to track stack boundary
 
 	INSINFO() {}
 	INSINFO(INS&, std::string = "", int = 0, int = 0);
 	void print(std::ostream& = std::cout);	// printing to given stream - for debugging
-	void shortPrint();						// short description - for debugging
+	void shortPrint(std::ostream& = std::cout);						// short description - for debugging
 };
 
 // Constructor
@@ -64,7 +64,7 @@ INSINFO::INSINFO(INS& ins, std::string fn, int col, int lno): fname(fn), column(
 	rtnName = RTN_FindNameByAddress(INS_Address(ins));			// get routine name
 	ina = INS_Address(ins);										// get instruction address
 	target = "";
-	if (INS_IsProcedureCall(ins))
+	if (INS_IsDirectBranchOrCall(ins) && INS_IsProcedureCall(ins))
 	{
 		int taddr = INS_DirectBranchOrCallTargetAddress(ins);	// if procedure call
 		target = RTN_FindNameByAddress(taddr);					// set target
@@ -92,7 +92,7 @@ INSINFO::INSINFO(INS& ins, std::string fn, int col, int lno): fname(fn), column(
 	{
 		std::string regname = REG_StringShort(INS_RegW(ins, i));
 		regW.push_back(regname);
-		if (regname == "rbp")									// if rbp is accessed
+		if (regname == "rbp" &&  INS_IsMov(ins))				// if rbp is accessed
 			rbploc = i;
 		if (REG_is_seg(INS_RegW(ins, i)))
 			memR = memW = false;
@@ -107,9 +107,12 @@ INSINFO::INSINFO(INS& ins, std::string fn, int col, int lno): fname(fn), column(
 	memOp = -1;
 }
 
-void INSINFO::shortPrint()
+void INSINFO::shortPrint(std::ostream& outf)
 {
-	std::cout << fname.substr(fname.length()-12) << ": " << diss << "\n";
+	outf << fname.substr(fname.length()-12) << ": INS: 0x" << hex << ina << ": " << diss << " - " << flag << "\n";
+	// outf << "LOCATION: " << fname << ": " << dec << line << " ";
+	// outf << "FUNCTION: " << rtnName << " ";
+	// outf << "INS: 0x" << hex << ina << ": " << diss << " - " << flag << "\n";
 }
 
 /* 		Cant print on cout as it conflicts with the target executables output
@@ -143,7 +146,9 @@ void INSINFO::print(std::ostream& outf)
 	outf << "\nWR: " << regW.size() << " ";
 	for (auto l: regW)
 		outf << l << " ";
-	outf << "\n";
+	if (rbploc != -1)
+		outf << "RBP Updated.";
+	outf << "\n\n";
 }
 
 #endif

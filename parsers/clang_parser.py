@@ -15,15 +15,24 @@ cl.Config.set_library_file("/usr/local/lib/libclang.so.6.0")
 
 # Recursively visit each node and its children and store its information in a XML tree
 def get_info(node, parent):
-  global func_node
+  global func_node, s
   try:
     sub = SubElement(parent, str(node.kind.name))
   except:
     sub = SubElement(parent, "Unknown")
 # These are the list of attributes we are keeping track of. This becomes better
-# with the intuitive parser
-  sub.set('id', str(node.hash))
-  sub.set('parent_id', str(0) if node.semantic_parent is None else str(node.semantic_parent.hash))
+# with the intuitive parser  
+  if node.referenced is not None:
+    if node.hash != node.referenced.hash:
+      sub.set('id', str(node.referenced.hash))
+    else:
+      sub.set('id', str(node.hash))
+  else:
+    sub.set('id', str(node.hash))
+  if node.semantic_parent is not None:
+    sub.set('parent_id', str(node.semantic_parent.hash))
+  if node.lexical_parent is not None:
+    sub.set('lex_parent_id', str(node.lexical_parent.hash))
   sub.set('usr', "None" if node.get_usr() is None else str(node.get_usr()))
   sub.set('spelling', "None" if node.spelling is None else str(node.spelling))
   sub.set('location', "None" if (node.location is None or node.location.file is None) else str(node.location.file)+"["+str(node.location.line)+"]")
@@ -31,7 +40,17 @@ def get_info(node, parent):
   sub.set('extent.start', "None" if (node.extent.start is None or node.extent.start.file is None) else str(node.extent.start.file)+"["+ str(node.extent.start.line) + "]")
   sub.set('extent.end', "None" if (node.extent.end is None or node.extent.end.file is None) else str(node.extent.end.file)+"["+ str(node.extent.end.line) + "]")
   sub.set('is_definition', str(node.is_definition()))
-  sub.set('type', str(node.type.spelling))
+  if node.access_specifier.name not in ["NONE", "INVALID"]:
+    sub.set("access_specifier", node.access_specifier.name)  
+  if node.storage_class.name not in ["NONE", "INVALID"]:
+    sub.set("storage_class", str(node.storage_class.name))
+  if node.linkage.name not in ["NO_LINKAGE", "INVALID"]:
+    sub.set('linkage', str(node.linkage.name))
+  if node.mangled_name is not None and len(node.mangled_name) > 0:
+    sub.set('mangled_name', str(node.mangled_name))
+  if node.type.spelling is not None:
+    sub.set('type', str(node.type.spelling))
+    sub.set('size', str(node.type.get_size()))
   children = [get_info(c, sub) for c in node.get_children()]
   return parent
 
