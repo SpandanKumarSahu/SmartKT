@@ -1,17 +1,5 @@
 FROM ubuntu:16.04
 
-ENV HTTP_PROXY "http://172.16.2.30:8080"
-ENV HTTPS_PROXY "http://172.16.2.30:8080"
-ENV http_proxy "http://172.16.2.30:8080"
-ENV https_proxy "http://172.16.2.30:8080"
-ENV HTTP_PROXY=http://172.16.2.30:8080
-ENV HTTPS_PROXY=http://172.16.2.30:8080
-ENV http_proxy=http://172.16.2.30:8080
-ENV https_proxy=http://172.16.2.30:8080
-ENV NO_PROXY "127.0.0.1, localhost"
-
-COPY DockerHelpers/apt.conf /etc/apt/apt.conf.d/proxy.conf
-
 # Install dependencies
 RUN apt-get -qq update; \
     apt-get install -qqy --no-install-recommends \
