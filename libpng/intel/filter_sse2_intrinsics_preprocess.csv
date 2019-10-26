@@ -1,0 +1,12 @@
+14,include,"""../pngpriv.h""",
+16,ifdef,PNG_READ_SUPPORTED,
+18,if,PNG_INTEL_SSE_IMPLEMENTATION > 0,
+20,include,<immintrin.h>,
+203,if,PNG_INTEL_SSE_IMPLEMENTATION >= 2,
+205,else,,
+217,endif,,
+222,if,PNG_INTEL_SSE_IMPLEMENTATION >= 3,
+224,else,,
+226,endif,,
+390,endif,,/* PNG_INTEL_SSE_IMPLEMENTATION > 0 */
+391,endif,,/* READ */

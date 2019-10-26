@@ -7,6 +7,6 @@ void * BootPOS (void * arg) { //Start method for threads
     job_activate += r;
     printf("\n Job %d has started\n", job_activate);
     for (i = 0; i < 10; i++);
-	printf("\n Job %d has finished\n", job_activate);
+	printf("\n Job %d has	 finished\n", 			job_activate);
     return NULL;
 }

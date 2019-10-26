@@ -1,0 +1,2 @@
+/workspace/projects/testproj/src/StartPOS.c	8	printf	printf ( "\n Job %d has started\n" , job_activate )
+/workspace/projects/testproj/src/StartPOS.c	10	printf	printf ( "\n Job %d has  finished\n" , job_activate )

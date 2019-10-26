@@ -1,0 +1,169 @@
+
+.debug_info
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              GNU C 4.8.5 20150623 (Red Hat 4.8.5-28) -mtune=generic -march=x86-64 -gdwarf-4
+                    DW_AT_language              DW_LANG_C89
+                    DW_AT_name                  test.c
+                    DW_AT_comp_dir              /data/user-home/srijoni/PIN_Tests/smartKT/exp
+                    DW_AT_low_pc                0x0040051d
+                    DW_AT_high_pc               <offset-from-lowpc>71
+                    DW_AT_stmt_list             0x00000000
+
+LOCAL_SYMBOLS:
+< 1><0x0000002d>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  long unsigned int
+< 1><0x00000034>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_unsigned_char
+                      DW_AT_name                  unsigned char
+< 1><0x0000003b>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  short unsigned int
+< 1><0x00000042>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  unsigned int
+< 1><0x00000049>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  signed char
+< 1><0x00000050>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  short int
+< 1><0x00000057>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  int
+< 1><0x0000005e>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  long int
+< 1><0x00000065>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  sizetype
+< 1><0x0000006c>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  char
+< 1><0x00000073>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  main
+                      DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/test.c
+                      DW_AT_decl_line             0x00000007
+                      DW_AT_type                  <0x00000057>
+                      DW_AT_low_pc                0x0040051d
+                      DW_AT_high_pc               <offset-from-lowpc>71
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x000000b4>
+< 2><0x00000094>      DW_TAG_variable
+                        DW_AT_name                  p
+                        DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/test.c
+                        DW_AT_decl_line             0x00000009
+                        DW_AT_type                  <0x00000057>
+                        DW_AT_location              len 0x0009: 033010600000000000: DW_OP_addr 0x00601030
+< 2><0x000000a7>      DW_TAG_variable
+                        DW_AT_name                  r
+                        DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/test.c
+                        DW_AT_decl_line             0x0000000b
+                        DW_AT_type                  <0x00000057>
+                        DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
+< 1><0x000000b4>    DW_TAG_variable
+                      DW_AT_name                  p
+                      DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/test.c
+                      DW_AT_decl_line             0x00000003
+                      DW_AT_type                  <0x00000057>
+                      DW_AT_external              yes(1)
+                      DW_AT_location              len 0x0009: 032c10600000000000: DW_OP_addr 0x0060102c
+
+COMPILE_UNIT<header overall offset = 0x000000c8>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              GNU C 4.8.5 20150623 (Red Hat 4.8.5-28) -mtune=generic -march=x86-64 -gdwarf-4
+                    DW_AT_language              DW_LANG_C89
+                    DW_AT_name                  lib.c
+                    DW_AT_comp_dir              /data/user-home/srijoni/PIN_Tests/smartKT/exp
+                    DW_AT_low_pc                0x00400564
+                    DW_AT_high_pc               <offset-from-lowpc>69
+                    DW_AT_stmt_list             0x0000003f
+
+LOCAL_SYMBOLS:
+< 1><0x0000002d>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  long unsigned int
+< 1><0x00000034>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_unsigned_char
+                      DW_AT_name                  unsigned char
+< 1><0x0000003b>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  short unsigned int
+< 1><0x00000042>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  unsigned int
+< 1><0x00000049>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  signed char
+< 1><0x00000050>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  short int
+< 1><0x00000057>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  int
+< 1><0x0000005e>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  long int
+< 1><0x00000065>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  sizetype
+< 1><0x0000006c>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  char
+< 1><0x00000073>    DW_TAG_subprogram
+                      DW_AT_name                  addonemore
+                      DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/lib.c
+                      DW_AT_decl_line             0x00000004
+                      DW_AT_low_pc                0x00400564
+                      DW_AT_high_pc               <offset-from-lowpc>44
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+< 1><0x0000008c>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  addtwomore
+                      DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/lib.c
+                      DW_AT_decl_line             0x0000000a
+                      DW_AT_type                  <0x00000057>
+                      DW_AT_low_pc                0x00400590
+                      DW_AT_high_pc               <offset-from-lowpc>25
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x000000c1>
+< 2><0x000000ad>      DW_TAG_variable
+                        DW_AT_name                  p
+                        DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/lib.c
+                        DW_AT_decl_line             0x0000000c
+                        DW_AT_type                  <0x00000057>
+                        DW_AT_location              len 0x0009: 033410600000000000: DW_OP_addr 0x00601034
+< 1><0x000000c1>    DW_TAG_variable
+                      DW_AT_name                  p
+                      DW_AT_decl_file             0x00000001 /data/user-home/srijoni/PIN_Tests/smartKT/exp/lib.c
+                      DW_AT_decl_line             0x00000002
+                      DW_AT_type                  <0x00000057>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+

@@ -1,0 +1,144 @@
+13,include,<stdlib.h>,
+14,include,<stdio.h>,
+15,include,<string.h>,
+16,include,<ctype.h>,
+17,include,<limits.h>,
+18,include,<errno.h>,
+19,include,<assert.h>,
+21,define,"implies(x,y) assert(!(x) || (y))",
+23,ifdef,__GNUC__,
+31,,#  define FIX_GCC volatile,
+32,else,,
+33,,#  define FIX_GCC,
+34,endif,,
+36,define,"PROGRAM_NAME ""pngfix""",
+41,ifdef,PNG_FREESTANDING_TESTS,
+42,,#  include <png.h>,
+43,else,,
+44,,"#  include ""../../png.h""",
+45,endif,,
+47,if,PNG_LIBPNG_VER < 10603 ,/* 1.6.3 */
+48,,"#  error ""pngfix will not work with libpng prior to 1.6.3""",
+49,endif,,
+51,ifdef,PNG_SETJMP_SUPPORTED,
+52,include,<setjmp.h>,
+54,if,defined(PNG_READ_SUPPORTED) && defined(PNG_EASY_ACCESS_SUPPORTED) && (defined(PNG_READ_DEINTERLACE_SUPPORTED) || defined(PNG_READ_INTERLACING_SUPPORTED)),
+62,ifndef,ZLIB_CONST,
+64,,#  define ZLIB_CONST,
+65,endif,,
+66,include,<zlib.h>,
+67,ifdef,const,
+69,,#  undef const,
+70,endif,,
+75,if,ZLIB_VERNUM < 0x1260,
+76,,"#  define PNGZ_MSG_CAST(s) constcast(char*,s)",
+77,,"#  define PNGZ_INPUT_CAST(b) constcast(png_bytep,b)",
+78,else,,
+79,,#  define PNGZ_MSG_CAST(s) (s),
+80,,#  define PNGZ_INPUT_CAST(b) (b),
+81,endif,,
+83,ifndef,PNG_MAXIMUM_INFLATE_WINDOW,
+84,,"#  error ""pngfix not supported in this libpng version""",
+85,endif,,
+87,if,ZLIB_VERNUM >= 0x1240,
+90,ifdef,__cplusplus,
+91,,"#  define voidcast(type, value) static_cast<type>(value)",
+92,,"#  define constcast(type, value) const_cast<type>(value)",
+93,,"#  define aligncast(type, value) static_cast<type>(static_cast<void*>(value))",
+95,,"#  define aligncastconst(type, value) static_cast<type>(static_cast<const void*>(value))",
+97,else,,
+98,,"#  define voidcast(type, value) (value)",
+99,,"#  define constcast(type, value) ((type)(value))",
+100,,"#  define aligncast(type, value) ((void*)(value))",
+101,,"#  define aligncastconst(type, value) ((const void*)(value))",
+102,endif,,/* __cplusplus */
+104,if,PNG_LIBPNG_VER < 10700,
+106,define,"PNG_32b(b,s) ((png_uint_32)(b) << (s))",
+107,define,"PNG_U32(b1,b2,b3,b4) (PNG_32b(b1,24) | PNG_32b(b2,16) | PNG_32b(b3,8) | PNG_32b(b4,0))",
+111,define,"png_IDAT PNG_U32( 73,  68,  65,  84)",
+112,define,"png_IEND PNG_U32( 73,  69,  78,  68)",
+113,define,"png_IHDR PNG_U32( 73,  72,  68,  82)",
+114,define,"png_PLTE PNG_U32( 80,  76,  84,  69)",
+115,define,"png_bKGD PNG_U32( 98,  75,  71,  68)",
+116,define,"png_cHRM PNG_U32( 99,  72,  82,  77)",
+117,define,"png_fRAc PNG_U32(102,  82,  65,  99) ","/* registered, not defined */"
+118,define,"png_gAMA PNG_U32(103,  65,  77,  65)",
+119,define,"png_gIFg PNG_U32(103,  73,  70, 103)",
+120,define,"png_gIFt PNG_U32(103,  73,  70, 116) ",/* deprecated */
+121,define,"png_gIFx PNG_U32(103,  73,  70, 120)",
+122,define,"png_hIST PNG_U32(104,  73,  83,  84)",
+123,define,"png_iCCP PNG_U32(105,  67,  67,  80)",
+124,define,"png_iTXt PNG_U32(105,  84,  88, 116)",
+125,define,"png_oFFs PNG_U32(111,  70,  70, 115)",
+126,define,"png_pCAL PNG_U32(112,  67,  65,  76)",
+127,define,"png_pHYs PNG_U32(112,  72,  89, 115)",
+128,define,"png_sBIT PNG_U32(115,  66,  73,  84)",
+129,define,"png_sCAL PNG_U32(115,  67,  65,  76)",
+130,define,"png_sPLT PNG_U32(115,  80,  76,  84)",
+131,define,"png_sRGB PNG_U32(115,  82,  71,  66)",
+132,define,"png_sTER PNG_U32(115,  84,  69,  82)",
+133,define,"png_tEXt PNG_U32(116,  69,  88, 116)",
+134,define,"png_tIME PNG_U32(116,  73,  77,  69)",
+135,define,"png_tRNS PNG_U32(116,  82,  78,  83)",
+136,define,"png_zTXt PNG_U32(122,  84,  88, 116)",
+137,endif,,
+140,define,"sig1 PNG_U32(137,  80,  78,  71)",
+141,define,"sig2 PNG_U32( 13,  10,  26,  10)",
+144,define,"CRITICAL(chunk) (((chunk) & PNG_U32(32,0,0,0)) == 0)",
+147,define,"SAFE_TO_COPY(chunk) (((chunk) & PNG_U32(0,0,0,32)) != 0)",
+150,ifndef,PNG_ERROR_TEXT_SUPPORTED,
+151,,"#  define png_error(a,b) png_err(a)",
+152,endif,,
+159,define,UNREACHED 0,
+177,define,UDIGITS(unum) ((sizeof unum)/(sizeof (udigit)),
+381,if,0 ,/*UNUSED*/
+394,endif,,
+480,define,"CLEAR(object) clear(&(object), sizeof (object))",
+548,define,CRC_INIT 0xffffffff,
+616,,#     define IDAT_INIT_LENGTH 16,
+698,,#     define SKIP_NONE      0,
+699,,#     define SKIP_BAD_CRC   1    ,/* Chunks with a bad CRC */
+700,,#     define SKIP_UNSAFE    2    ,/* Chunks not safe to copy */
+701,,#     define SKIP_UNUSED    3    ,/* Chunks not used by libpng */
+702,,#     define SKIP_TRANSFORM 4    ,/* Chunks only used in transforms */
+703,,#     define SKIP_COLOR     5    ,"/* Everything but tRNS, sBIT, gAMA and sRGB */"
+704,,#     define SKIP_ALL       6    ,/* Everything but tRNS and sBIT */
+709,,#     define TOO_FAR_BACK   0x01 ,/* found a too-far-back error */
+710,,#     define CRC_ERROR      0x02 ,/* fixed an invalid CRC */
+711,,#     define STREAM_ERROR   0x04 ,/* damaged PNG stream (may be fixable) */
+712,,#     define TRUNCATED      0x08 ,/* truncated but still readable */
+713,,#     define FILE_ERROR     0x10 ,/* could not read the file */
+714,,#     define WRITE_ERROR    0x20 ,/* write error (this terminates the read) */
+715,,#     define INTERNAL_ERROR 0x40 ,/* internal limits/errors encountered */
+885,,#     define STATE_SIGNATURE  0  ,/* The signature is being written */
+886,,#     define STATE_CHUNKS     1  ,/* Non-IDAT chunks are being written */
+887,,#     define STATE_IDAT       2  ,/* An IDAT stream is being written */
+906,define,LIBPNG_WARNING_CODE   1 ,/* generic png_error */
+907,define,LIBPNG_ERROR_CODE     2 ,/* generic png_error */
+908,define,ZLIB_ERROR_CODE       3 ,/* generic zlib error */
+909,define,INVALID_ERROR_CODE    4 ,/* detected an invalid PNG */
+910,define,READ_ERROR_CODE       5 ,/* read failed */
+911,define,WRITE_ERROR_CODE      6 ,/* error in write */
+912,define,UNEXPECTED_ERROR_CODE 7 ,/* unexpected (internal?) error */
+1263,,#  ifdef EINTR,
+1269,,#  endif,
+2277,,#  define ZLIB_TOO_FAR_BACK (-1),
+2278,,#  define ZLIB_OK           0,
+2279,,#  define ZLIB_STREAM_END   1,
+2280,,#  define ZLIB_FATAL        2,
+3600,,#     ifdef PNG_SET_USER_LIMITS_SUPPORTED,
+3608,,#     endif,
+3742,if,0 ,/*NYI*/
+3743,ifdef,PNG_MAXIMUM_INFLATE_WINDOW,
+3747,endif,,
+3748,endif,,
+3949,if,0,
+3951,,#     ifdef PNG_MAXIMUM_INFLATE_WINDOW,
+3954,,#     endif,
+3955,endif,,
+4021,else,,/* ZLIB_VERNUM < 0x1240 */
+4030,endif,,/* ZLIB_VERNUM */
+4032,else,,/* No read support */
+4040,endif,,/* PNG_READ_SUPPORTED && PNG_EASY_ACCESS_SUPPORTED */
+4041,else,,/* No setjmp support */
+4048,endif,,/* PNG_SETJMP_SUPPORTED */

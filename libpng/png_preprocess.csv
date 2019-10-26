@@ -1,0 +1,260 @@
+14,include,"""pngpriv.h""",
+19,ifdef,__GNUC__,
+31,if,__GNUC__ == 7 && __GNUC_MINOR__ == 1,
+32,define,GCC_STRICT_OVERFLOW 1,
+33,endif,,/* GNU 7.1.x */
+34,endif,,/* GNU */
+35,ifndef,GCC_STRICT_OVERFLOW,
+36,define,GCC_STRICT_OVERFLOW 0,
+37,endif,,
+45,ifdef,PNG_READ_SUPPORTED,
+93,endif,,/* READ */
+95,if,defined(PNG_READ_SUPPORTED) || defined(PNG_WRITE_SUPPORTED),
+168,ifndef,__COVERITY__,
+171,endif,,
+221,ifdef,PNG_WARNINGS_SUPPORTED,
+233,endif,,
+235,ifdef,PNG_ERROR_NUMBERS_SUPPORTED,
+237,endif,,
+255,,#  ifdef PNG_SETJMP_SUPPORTED,
+257,,#  endif,
+266,,#  ifdef PNG_USER_LIMITS_SUPPORTED,
+270,,#     ifdef PNG_USER_CHUNK_CACHE_MAX,
+273,,#     endif,
+275,,#     ifdef PNG_USER_CHUNK_MALLOC_MAX,
+280,,#     endif,
+281,,#  endif,
+286,,#  ifdef PNG_USER_MEM_SUPPORTED,
+288,,#  else,
+292,,#  endif,
+301,,#  ifdef PNG_SETJMP_SUPPORTED,
+303,,#  endif,
+305,,#  ifdef PNG_SETJMP_SUPPORTED,
+314,,#  endif,
+331,,#              ifdef PNG_SETJMP_SUPPORTED,
+336,,#              endif,
+479,ifdef,PNG_TEXT_SUPPORTED,
+503,endif,,
+505,ifdef,PNG_tRNS_SUPPORTED,
+514,endif,,
+516,ifdef,PNG_sCAL_SUPPORTED,
+526,endif,,
+528,ifdef,PNG_pCAL_SUPPORTED,
+549,endif,,
+551,ifdef,PNG_iCCP_SUPPORTED,
+561,endif,,
+563,ifdef,PNG_sPLT_SUPPORTED,
+592,endif,,
+594,ifdef,PNG_STORE_UNKNOWN_CHUNKS_SUPPORTED,
+616,endif,,
+618,ifdef,PNG_eXIf_SUPPORTED,
+622,,# ifdef PNG_READ_eXIf_SUPPORTED,
+628,,# endif,
+636,endif,,
+638,ifdef,PNG_hIST_SUPPORTED,
+646,endif,,
+657,ifdef,PNG_INFO_IMAGE_SUPPORTED,
+672,endif,,
+679,endif,,/* READ || WRITE */
+694,if,defined(PNG_READ_SUPPORTED) || defined(PNG_WRITE_SUPPORTED),
+695,,#  ifdef PNG_STDIO_SUPPORTED,
+712,,#  endif,
+714,,#  ifdef PNG_SAVE_INT_32_SUPPORTED,
+730,,#  endif,
+732,,#  ifdef PNG_TIME_RFC1123_SUPPORTED,
+757,,"#     define APPEND_STRING(string) pos = png_safecat(out, 29, pos, (string))",
+758,,"#     define APPEND_NUMBER(format, value) APPEND_STRING(PNG_FORMAT_NUMBER(number_buf, format, (value)))",
+760,,#     define APPEND(ch) if (pos < 28) out[pos++] = (ch),
+776,,#     undef APPEND,
+777,,#     undef APPEND_NUMBER,
+778,,#     undef APPEND_STRING,
+784,,#    if PNG_LIBPNG_VER < 10700,
+805,,#    endif ,/* LIBPNG_VER < 10700 */
+806,,#  endif ,/* TIME_RFC1123 */
+808,endif,,/* READ || WRITE */
+814,ifdef,PNG_STRING_COPYRIGHT,
+816,else,,
+825,endif,,
+856,ifdef,__STDC__,
+858,,#  ifndef PNG_READ_SUPPORTED,
+860,,#  endif,
+862,else,,
+864,endif,,
+867,ifdef,PNG_BUILD_GRAYSCALE_PALETTE_SUPPORTED,
+922,endif,,
+924,ifdef,PNG_SET_UNKNOWN_CHUNKS_SUPPORTED,
+958,if,defined(PNG_READ_UNKNOWN_CHUNKS_SUPPORTED) || defined(PNG_HANDLE_AS_UNKNOWN_SUPPORTED),
+968,endif,,/* READ_UNKNOWN_CHUNKS || HANDLE_AS_UNKNOWN */
+969,endif,,/* SET_UNKNOWN_CHUNKS */
+971,ifdef,PNG_READ_SUPPORTED,
+982,endif,,/* READ */
+992,if,defined(PNG_READ_SUPPORTED) || defined(PNG_WRITE_SUPPORTED),
+1068,ifdef,PNG_GAMMA_SUPPORTED ,/* always set if COLORSPACE */
+1133,,#  ifdef PNG_READ_gAMA_SUPPORTED,
+1138,,#  endif,
+1177,,#     ifdef PNG_COLORSPACE_SUPPORTED,
+1180,,#     else,
+1182,,#     endif,
+1187,,#     ifdef PNG_COLORSPACE_SUPPORTED,
+1203,,#     endif,
+1213,ifdef,PNG_READ_SUPPORTED,
+1223,endif,,
+1224,endif,,/* GAMMA */
+1226,ifdef,PNG_COLORSPACE_SUPPORTED,
+1783,if,defined(PNG_sRGB_SUPPORTED) || defined(PNG_iCCP_SUPPORTED),
+1843,,#  ifdef PNG_WARNINGS_SUPPORTED,
+1853,,#  endif,
+1868,endif,,/* sRGB || iCCP */
+1870,ifdef,PNG_sRGB_SUPPORTED,
+1958,endif,,/* sRGB */
+1960,ifdef,PNG_iCCP_SUPPORTED,
+1979,ifdef,PNG_READ_iCCP_SUPPORTED,
+1993,,#  ifdef PNG_SET_USER_LIMITS_SUPPORTED,
+1998,,#  elif PNG_USER_CHUNK_MALLOC_MAX > 0,
+2002,,#  else ,/* !SET_USER_LIMITS */
+2007,,#  endif ,/* !SET_USER_LIMITS */
+2011,endif,,/* READ_iCCP */
+2242,ifdef,PNG_sRGB_SUPPORTED,
+2243,if,PNG_sRGB_PROFILE_CHECKS >= 0,
+2253,,"#  define PNG_MD5(a,b,c,d) { a, b, c, d }, (a!=0)||(b!=0)||(c!=0)||(d!=0)",
+2254,,"#  define PNG_ICC_CHECKSUM(adler, crc, md5, intent, broke, date, length, fname) { adler, crc, length, md5, broke, intent },",
+2320,if,PNG_sRGB_PROFILE_CHECKS > 1,
+2322,endif,,
+2325,ifdef,PNG_SET_OPTION_SUPPORTED,
+2330,endif,,
+2343,,#        if PNG_sRGB_PROFILE_CHECKS == 0,
+2346,,#        endif,
+2372,,#              if PNG_sRGB_PROFILE_CHECKS > 1,
+2382,,#              endif,
+2410,,# if PNG_sRGB_PROFILE_CHECKS > 0,
+2419,,# endif,
+2438,endif,,/* PNG_sRGB_PROFILE_CHECKS >= 0 */
+2439,endif,,/* sRGB */
+2455,,#     if defined(PNG_sRGB_SUPPORTED) && PNG_sRGB_PROFILE_CHECKS >= 0,
+2458,,#     endif,
+2465,endif,,/* iCCP */
+2467,ifdef,PNG_READ_RGB_TO_GRAY_SUPPORTED,
+2531,endif,,/* READ_RGB_TO_GRAY */
+2533,endif,,/* COLORSPACE */
+2535,ifdef,__GNUC__,
+2542,else,,
+2543,,"#   define png_gt(a,b) ((a) > (b))",
+2544,endif,,
+2589,ifdef,PNG_SET_USER_LIMITS_SUPPORTED,
+2591,else,,
+2593,endif,,
+2611,ifdef,PNG_SET_USER_LIMITS_SUPPORTED,
+2613,else,,
+2615,endif,,
+2657,ifdef,PNG_MNG_FEATURES_SUPPORTED,
+2690,else,,
+2696,endif,,
+2702,if,defined(PNG_sCAL_SUPPORTED) || defined(PNG_pCAL_SUPPORTED),
+2708,define,"png_fp_add(state, flags) ((state) |= (flags))",
+2709,define,"png_fp_set(state, value) ((state) = (value) | ((state) & PNG_FP_STICKY))",
+2850,endif,,/* pCAL || sCAL */
+2852,ifdef,PNG_sCAL_SUPPORTED,
+2853,,#  ifdef PNG_FLOATING_POINT_SUPPORTED,
+2894,if,GCC_STRICT_OVERFLOW,
+2895,pragma,GCC diagnostic push,
+2900,pragma,"GCC diagnostic warning ""-Wstrict-overflow=2""",
+2901,endif,,/* GCC_STRICT_OVERFLOW */
+3223,if,GCC_STRICT_OVERFLOW,
+3224,pragma,GCC diagnostic pop,
+3225,endif,,/* GCC_STRICT_OVERFLOW */
+3227,,#  endif ,/* FLOATING_POINT */
+3229,,#  ifdef PNG_FIXED_POINT_SUPPORTED,
+3305,,#   endif ,/* FIXED_POINT */
+3306,endif,,/* SCAL */
+3308,if,defined(PNG_FLOATING_POINT_SUPPORTED) && !defined(PNG_FIXED_POINT_MACRO_SUPPORTED) && (defined(PNG_gAMA_SUPPORTED) || defined(PNG_cHRM_SUPPORTED) || defined(PNG_sCAL_SUPPORTED) || defined(PNG_READ_BACKGROUND_SUPPORTED) || defined(PNG_READ_RGB_TO_GRAY_SUPPORTED)) || (defined(PNG_sCAL_SUPPORTED) && defined(PNG_FLOATING_ARITHMETIC_SUPPORTED)),
+3323,,#  ifndef PNG_ERROR_TEXT_SUPPORTED,
+3325,,#  endif,
+3329,endif,,
+3331,if,defined(PNG_GAMMA_SUPPORTED) || defined(PNG_COLORSPACE_SUPPORTED) || defined(PNG_INCH_CONVERSIONS_SUPPORTED) || defined(PNG_READ_pHYs_SUPPORTED),
+3339,if,GCC_STRICT_OVERFLOW ,/* from above */
+3345,pragma,GCC diagnostic push,
+3346,pragma,"GCC diagnostic warning ""-Wstrict-overflow=2""",
+3347,endif,,/* GCC_STRICT_OVERFLOW */
+3362,ifdef,PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3374,else,,
+3456,endif,,
+3462,if,GCC_STRICT_OVERFLOW,
+3463,pragma,GCC diagnostic pop,
+3464,endif,,/* GCC_STRICT_OVERFLOW */
+3465,endif,,/* READ_GAMMA || INCH_CONVERSIONS */
+3467,if,defined(PNG_READ_GAMMA_SUPPORTED) || defined(PNG_INCH_CONVERSIONS_SUPPORTED),
+3483,endif,,
+3485,ifdef,PNG_GAMMA_SUPPORTED ,/* more fixed point functions for gamma */
+3490,ifdef,PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3495,else,,
+3500,endif,,
+3514,endif,,
+3516,ifdef,PNG_READ_GAMMA_SUPPORTED,
+3517,ifdef,PNG_16BIT_SUPPORTED,
+3523,ifdef,PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3530,else,,
+3535,endif,,
+3539,endif,,/* 16BIT */
+3546,ifdef,PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3556,else,,
+3566,endif,,
+3570,endif,,/* READ_GAMMA */
+3572,ifdef,PNG_READ_GAMMA_SUPPORTED ,/* gamma table code */
+3573,ifndef,PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3617,if,0,
+3635,endif,,
+3694,ifdef,PNG_16BIT_SUPPORTED,
+3745,endif,,/* 16BIT */
+3771,if,0,
+3785,endif,,
+3849,ifdef,PNG_16BIT_SUPPORTED,
+3860,endif,,/* 16BIT */
+3861,endif,,/* FLOATING_ARITHMETIC */
+3868,,#     ifdef PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3895,,#     else,
+3904,,#     endif,
+3910,ifdef,PNG_16BIT_SUPPORTED,
+3916,,# ifdef PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3925,,# else,
+3934,,# endif,
+3939,endif,,/* 16BIT */
+3953,ifdef,PNG_16BIT_SUPPORTED,
+3956,else,,
+3959,endif,,/* 16BIT */
+3962,ifdef,PNG_16BIT_SUPPORTED,
+3977,ifdef,PNG_FLOATING_ARITHMETIC_SUPPORTED,
+3982,endif,,
+4012,,#           ifdef PNG_FLOATING_ARITHMETIC_SUPPORTED,
+4019,,#           else,
+4024,,#           endif,
+4110,endif,,/* 16BIT */
+4141,ifdef,PNG_16BIT_SUPPORTED,
+4153,endif,,/* 16BIT */
+4155,if,defined(PNG_READ_BACKGROUND_SUPPORTED) || defined(PNG_READ_ALPHA_MODE_SUPPORTED) || defined(PNG_READ_RGB_TO_GRAY_SUPPORTED),
+4163,ifdef,PNG_16BIT_SUPPORTED,
+4186,endif,,/* 16BIT */
+4187,endif,,/* READ_BACKGROUND || READ_ALPHA_MODE || RGB_TO_GRAY */
+4219,if,defined(PNG_READ_BACKGROUND_SUPPORTED) || defined(PNG_READ_ALPHA_MODE_SUPPORTED) || defined(PNG_READ_RGB_TO_GRAY_SUPPORTED),
+4232,endif,,/* READ_BACKGROUND || READ_ALPHA_MODE || RGB_TO_GRAY */
+4234,ifdef,PNG_16BIT_SUPPORTED,
+4307,if,defined(PNG_READ_BACKGROUND_SUPPORTED) || defined(PNG_READ_ALPHA_MODE_SUPPORTED) || defined(PNG_READ_RGB_TO_GRAY_SUPPORTED),
+4323,endif,,/* READ_BACKGROUND || READ_ALPHA_MODE || RGB_TO_GRAY */
+4325,endif,,/* 16BIT */
+4327,endif,,/* READ_GAMMA */
+4330,ifdef,PNG_SET_OPTION_SUPPORTED,
+4348,endif,,
+4351,if,defined(PNG_SIMPLIFIED_READ_SUPPORTED) || defined(PNG_SIMPLIFIED_WRITE_SUPPORTED),
+4371,ifdef,PNG_SIMPLIFIED_READ_SUPPORTED,
+4408,endif,,/* SIMPLIFIED_READ */
+4516,endif,,/* SIMPLIFIED READ/WRITE sRGB support */
+4519,if,defined(PNG_SIMPLIFIED_READ_SUPPORTED) || defined(PNG_SIMPLIFIED_WRITE_SUPPORTED),
+4535,,#  ifdef PNG_STDIO_SUPPORTED,
+4548,,#  endif,
+4562,,#     ifdef PNG_SIMPLIFIED_WRITE_SUPPORTED,
+4564,,#     else,
+4566,,#     endif,
+4570,,#     ifdef PNG_SIMPLIFIED_READ_SUPPORTED,
+4572,,#     else,
+4574,,#     endif,
+4606,endif,,/* SIMPLIFIED READ/WRITE */
+4607,endif,,/* READ || WRITE */

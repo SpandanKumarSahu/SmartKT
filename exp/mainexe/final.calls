@@ -1,0 +1,5 @@
+/workspace/projects/exp/test.c	12	printf	printf("Local p there inc to: %d\n",r)
+/workspace/projects/exp/test.c	10	printf	printf("Local p here: %d\n",p)
+/workspace/projects/exp/test.c	11	addtwomore	addtwomore()
+/workspace/projects/exp/lib.c	7	printf	printf("Global p inc to: %d\n",p)
+/workspace/projects/exp/lib.c	13	addonemore	addonemore()

@@ -1,0 +1,70 @@
+_IO_2_1_stdin_	369311909	struct _IO_FILE_plus	-2	1407387618	GLOBAL
+_IO_2_1_stdout_	1583120883	struct _IO_FILE_plus	-2	1407387618	GLOBAL
+_IO_2_1_stderr_	3214999281	struct _IO_FILE_plus	-2	1407387618	GLOBAL
+stdin	1575564408	struct _IO_FILE *	8	1407387618	GLOBAL
+stdout	3770550171	struct _IO_FILE *	8	1407387618	GLOBAL
+stderr	1994669658	struct _IO_FILE *	8	1407387618	GLOBAL
+__tzname	3477236246	char *[2]	16	1407387618	GLOBAL
+__daylight	3430648671	int	4	1407387618	GLOBAL
+__timezone	2060709073	long	8	1407387618	GLOBAL
+tzname	1631407177	char *[2]	16	1407387618	GLOBAL
+__environ	2614983134	char **	8	1407387618	GLOBAL
+tIME_chunk_present	3296681729	int	4	1407387618	STATIC
+tIME_string	738116436	char [29]	29	1407387618	STATIC
+verbose	3223720419	int	4	1407387618	STATIC
+strict	686921308	int	4	1407387618	STATIC
+relaxed	1483762884	int	4	1407387618	STATIC
+xfail	2355850114	int	4	1407387618	STATIC
+unsupported_chunks	2517183405	int	4	1407387618	STATIC
+error_count	1430623113	int	4	1407387618	STATIC
+warning_count	480949463	int	4	1407387618	STATIC
+status_pass	2424274816	int	4	1407387618	STATIC
+status_dots_requested	2394393695	int	4	1407387618	STATIC
+status_dots	3884588369	int	4	1407387618	STATIC
+zero_samples	2122859150	int	4	1407387618	STATIC
+user_chunk_data	1098484702	struct user_chunk_data	1	1407387618	STATIC
+inname	3748471219	const char *	8	1407387618	STATIC
+outname	4164537091	const char *	8	1407387618	STATIC
+png_sRGB_table	2380355195	const int [256]	1024	682968829	GLOBAL
+png_sRGB_base	149727956	const int [512]	2048	682968829	GLOBAL
+png_sRGB_delta	2899544152	const int [512]	2048	682968829	GLOBAL
+sRGB_xy	2506563965	const png_xy	32	682968829	STATIC
+D50_nCIEXYZ	3257735133	const int [12]	48	682968829	STATIC
+png_sRGB_checks	635198856	const struct (anonymous struct at /workspace/projects/libpng/png.c:2245:14) []	-2	682968829	STATIC
+png_digit	1137549171	const char [16]	16	905397777	STATIC
+onebppswaptable	4189790733	const int [256]	1024	2532989302	STATIC
+twobppswaptable	2919782841	const int [256]	1024	2532989302	STATIC
+fourbppswaptable	1403884947	const int [256]	1024	2532989302	STATIC
+fpin	3396850529	png_FILE_p	8	1108325623	FUNCSTATIC	test_one_file
+fpout	748127112	png_FILE_p	8	1108325623	FUNCSTATIC	test_one_file
+wrote_question	1166161838	int	4	1108325623	FUNCSTATIC	test_one_file
+short_months	4151669692	const char [12][4]	48	263210454	FUNCSTATIC	png_convert_to_rfc1123_buffer
+sRGB_XYZ	615829844	const png_XYZ	36	78261970	FUNCSTATIC	png_colorspace_set_sRGB
+digits	3442514433	const char [17]	17	1905213572	FUNCSTATIC	png_format_number
+png_pass_start	4250220322	const int []	-2	1246578160	FUNCSTATIC	png_read_push_finish_row
+png_pass_inc	3660183547	const int []	-2	1246578160	FUNCSTATIC	png_read_push_finish_row
+png_pass_ystart	581171315	const int []	-2	1246578160	FUNCSTATIC	png_read_push_finish_row
+png_pass_yinc	3996453072	const int []	-2	1246578160	FUNCSTATIC	png_read_push_finish_row
+chunks_to_process	2543142033	const int []	-2	1905702737	FUNCSTATIC	png_image_skip_unused_chunks
+row_mask	2450279423	const int [2][3][6]	144	2469117746	FUNCSTATIC	png_combine_row
+display_mask	603158979	const int [2][3][3]	72	2469117746	FUNCSTATIC	png_combine_row
+png_pass_inc	926664858	const unsigned int [7]	28	3022009155	FUNCSTATIC	png_do_read_interlace
+png_pass_start	2871919786	const int [7]	28	1898711757	FUNCSTATIC	png_read_finish_row
+png_pass_inc	3109456578	const int [7]	28	1898711757	FUNCSTATIC	png_read_finish_row
+png_pass_ystart	4062193683	const int [7]	28	1898711757	FUNCSTATIC	png_read_finish_row
+png_pass_yinc	220377090	const int [7]	28	1898711757	FUNCSTATIC	png_read_finish_row
+png_pass_start	2706415510	const int [7]	28	834451316	FUNCSTATIC	png_read_start_row
+png_pass_inc	1822454133	const int [7]	28	834451316	FUNCSTATIC	png_read_start_row
+png_pass_ystart	1528104369	const int [7]	28	834451316	FUNCSTATIC	png_read_start_row
+png_pass_yinc	2442542493	const int [7]	28	834451316	FUNCSTATIC	png_read_start_row
+chunks_to_ignore	1927059688	const int []	-2	4105055513	FUNCSTATIC	png_set_keep_unknown_chunks
+png_pass_start	2365710335	const int [7]	28	3437606922	FUNCSTATIC	png_write_start_row
+png_pass_inc	1775185247	const int [7]	28	3437606922	FUNCSTATIC	png_write_start_row
+png_pass_ystart	2850903991	const int [7]	28	3437606922	FUNCSTATIC	png_write_start_row
+png_pass_yinc	3243195260	const int [7]	28	3437606922	FUNCSTATIC	png_write_start_row
+png_pass_start	983825542	const int [7]	28	4283387849	FUNCSTATIC	png_write_finish_row
+png_pass_inc	1733074882	const int [7]	28	4283387849	FUNCSTATIC	png_write_finish_row
+png_pass_ystart	1068689064	const int [7]	28	4283387849	FUNCSTATIC	png_write_finish_row
+png_pass_yinc	4068350476	const int [7]	28	4283387849	FUNCSTATIC	png_write_finish_row
+png_pass_start	4082961704	const int [7]	28	1673800266	FUNCSTATIC	png_do_write_interlace
+png_pass_inc	3805097658	const int [7]	28	1673800266	FUNCSTATIC	png_do_write_interlace

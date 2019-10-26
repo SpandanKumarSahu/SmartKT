@@ -1,0 +1,2198 @@
+read_row_callback	8	2356952652	png_ptr	png_structp	8	669702913
+read_row_callback	12	2974867559	row_number	int	4	669702913
+read_row_callback	16	2906100957	pass	int	4	669702913
+write_row_callback	8	3456104619	png_ptr	png_structp	8	2315192524
+write_row_callback	12	2351672116	row_number	int	4	2315192524
+write_row_callback	16	3903404062	pass	int	4	2315192524
+read_user_callback	8	1027281922	png_ptr	png_structp	8	411816070
+read_user_callback	16	2102113315	row_info	png_row_infop	8	411816070
+read_user_callback	24	926175056	data	png_bytep	8	411816070
+count_zero_samples	8	799627671	dp	png_bytep	8	4080744813
+count_zero_samples	36	1851844055	pos	int	4	4080744813
+count_zero_samples	24	3098879599	channel	int	4	4080744813
+count_zero_samples	20	1261043546	color_channels	int	4	4080744813
+count_zero_samples	56	2223984558	png_ptr	png_structp	8	4080744813
+count_zero_samples	64	2161660833	row_info	png_row_infop	8	4080744813
+count_zero_samples	72	836200657	data	png_bytep	8	4080744813
+pngtest_warning	16	3153707827	name	const char *	8	3513905494
+pngtest_warning	8	3746503927	test	pngtest_error_parameters *	8	3513905494
+pngtest_warning	24	391789353	png_ptr	png_structp	8	3513905494
+pngtest_warning	32	1035992144	message	png_const_charp	8	3513905494
+pngtest_error	8	2992036271	png_ptr	png_structp	8	3860584749
+pngtest_error	16	3539224330	message	png_const_charp	8	3860584749
+init_callback_info	8	1291330220	info_ptr	png_const_infop	8	3464609977
+set_location	4	2633412982	location	int	4	758624900
+set_location	24	3406000870	png_ptr	png_structp	8	758624900
+set_location	32	600006288	data	struct user_chunk_data *	8	758624900
+set_location	36	2576395301	what	int	4	758624900
+read_user_chunk_callback	8	3456480863	my_user_chunk_data	struct user_chunk_data *	8	2037481444
+read_user_chunk_callback	24	3560194594	png_ptr	png_struct *	8	2037481444
+read_user_chunk_callback	32	2560559699	chunk	png_unknown_chunkp	8	2037481444
+write_sTER_chunk	24	1130416230	write_ptr	png_structp	8	3713095513
+write_vpAg_chunk	56	1500267769	write_ptr	png_structp	8	2447101717
+write_chunks	4	186386793	i	int	4	696010591
+write_chunks	24	3889918374	write_ptr	png_structp	8	696010591
+write_chunks	28	2599063083	location	int	4	696010591
+pngtest_check_text_support	8	3559758676	png_ptr	png_structp	8	3599293633
+pngtest_check_text_support	16	3252665320	text_ptr	png_textp	8	3599293633
+pngtest_check_text_support	20	3819071073	num_text	int	4	3599293633
+test_one_file	112	3396850529	fpin	png_FILE_p	8	1108325623
+test_one_file	120	748127112	fpout	png_FILE_p	8	1108325623
+test_one_file	800	3728118058	error_parameters	pngtest_error_parameters	8	1108325623
+test_one_file	792	3983511321	read_ptr	png_structp	8	1108325623
+test_one_file	784	497776283	read_info_ptr	png_infop	8	1108325623
+test_one_file	776	2236956447	end_info_ptr	png_infop	8	1108325623
+test_one_file	768	3411503742	write_ptr	png_structp	8	1108325623
+test_one_file	760	2254647532	write_info_ptr	png_infop	8	1108325623
+test_one_file	752	2617509697	write_end_info_ptr	png_infop	8	1108325623
+test_one_file	828	2984658262	interlace_preserved	int	4	1108325623
+test_one_file	744	2349705126	row_buf	png_bytep	8	1108325623
+test_one_file	984	3372664738	num_passes	volatile int	4	1108325623
+test_one_file	840	1145910275	pass	int	4	1108325623
+test_one_file	980	3957362118	bit_depth	int	4	1108325623
+test_one_file	976	1369113185	color_type	int	4	1108325623
+test_one_file	972	1604839715	interlace_type	int	4	1108325623
+test_one_file	968	2637304486	compression_type	int	4	1108325623
+test_one_file	964	3529996310	filter_type	int	4	1108325623
+test_one_file	960	2481319432	white_x	png_fixed_point	4	1108325623
+test_one_file	956	4279327970	white_y	png_fixed_point	4	1108325623
+test_one_file	952	3291954790	red_x	png_fixed_point	4	1108325623
+test_one_file	948	3754757676	red_y	png_fixed_point	4	1108325623
+test_one_file	944	264539426	green_x	png_fixed_point	4	1108325623
+test_one_file	940	1191022105	green_y	png_fixed_point	4	1108325623
+test_one_file	936	2782223127	blue_x	png_fixed_point	4	1108325623
+test_one_file	932	3721487304	blue_y	png_fixed_point	4	1108325623
+test_one_file	928	2395071832	gamma	png_fixed_point	4	1108325623
+test_one_file	736	3035575921	name	png_charp	8	1108325623
+test_one_file	728	3532895996	profile	png_bytep	8	1108325623
+test_one_file	920	1977320188	compression_type	int	4	1108325623
+test_one_file	916	4021185290	intent	int	4	1108325623
+test_one_file	720	902621217	palette	png_colorp	8	1108325623
+test_one_file	912	928966723	num_palette	int	4	1108325623
+test_one_file	712	226362461	background	png_color_16p	8	1108325623
+test_one_file	704	4119557888	exif	png_bytep	8	1108325623
+test_one_file	696	2567936496	hist	png_uint_16p	8	1108325623
+test_one_file	896	2528061280	unit_type	int	4	1108325623
+test_one_file	688	3906049155	purpose	png_charp	8	1108325623
+test_one_file	680	1916192877	units	png_charp	8	1108325623
+test_one_file	672	2528301694	params	png_charpp	8	1108325623
+test_one_file	884	2087472227	type	int	4	1108325623
+test_one_file	880	1690601899	nparams	int	4	1108325623
+test_one_file	868	1789747990	unit_type	int	4	1108325623
+test_one_file	664	4075584692	sig_bit	png_color_8p	8	1108325623
+test_one_file	864	2230981226	unit	int	4	1108325623
+test_one_file	656	227457629	scal_width	double	8	1108325623
+test_one_file	648	605195858	scal_height	double	8	1108325623
+test_one_file	640	2990213080	entries	png_sPLT_tp	8	1108325623
+test_one_file	824	446943807	num_entries	int	4	1108325623
+test_one_file	632	3827505188	text_ptr	png_textp	8	1108325623
+test_one_file	860	1767714096	num_text	int	4	1108325623
+test_one_file	836	2182232187	i	int	4	1108325623
+test_one_file	624	2967510406	mod_time	png_timep	8	1108325623
+test_one_file	616	393095422	trans_alpha	png_bytep	8	1108325623
+test_one_file	856	2964669219	num_trans	int	4	1108325623
+test_one_file	608	1399939059	trans_color	png_color_16p	8	1108325623
+test_one_file	820	1228295940	sample_max	int	4	1108325623
+test_one_file	600	3068704211	unknowns	png_unknown_chunkp	8	1108325623
+test_one_file	816	3142208642	num_unknowns	int	4	1108325623
+test_one_file	592	1022909634	text_ptr	png_textp	8	1108325623
+test_one_file	852	2075777275	num_text	int	4	1108325623
+test_one_file	832	575877338	i	int	4	1108325623
+test_one_file	584	3854491290	exif	png_bytep	8	1108325623
+test_one_file	576	3067378210	mod_time	png_timep	8	1108325623
+test_one_file	568	206962420	unknowns	png_unknown_chunkp	8	1108325623
+test_one_file	812	2598653474	num_unknowns	int	4	1108325623
+test_one_file	128	1166161838	wrote_question	int	4	1108325623
+test_one_file	544	4135570769	inbuf	char [256]	256	1108325623
+test_one_file	288	1240094800	outbuf	char [256]	256	1108325623
+test_one_file	1000	3017955690	inname	const char *	8	1108325623
+test_one_file	1008	2598674555	outname	const char *	8	1108325623
+main	56	3028869116	multiple	int	4	1874707902
+main	52	792169497	ierror	int	4	1874707902
+main	32	1249926480	dummy_ptr	png_structp	8	1874707902
+main	48	1332688258	i	int	4	1874707902
+main	40	2826884425	kerror	int	4	1874707902
+main	44	1328630943	i	int	4	1874707902
+main	36	3130680723	kerror	int	4	1874707902
+main	68	3042537577	argc	int	4	1874707902
+main	80	3382231042	argv	char *[]	-2	1874707902
+png_get_unknown_chunks	40	4241461593	png_ptr	png_const_structrp	8	2193889524
+png_zstream_error	8	4030442980	png_ptr	png_structrp	8	1141017922
+png_default_flush	24	2430158417	png_ptr	png_structp	8	63821645
+png_set_sig_bytes	4	2216497875	nb	unsigned int	4	1413950184
+png_set_sig_bytes	24	3566845591	png_ptr	png_structrp	8	1413950184
+png_set_sig_bytes	28	41823771	num_bytes	int	4	1413950184
+png_sig_cmp	24	2541119087	sig	png_const_bytep	8	1672872136
+png_sig_cmp	32	788657288	start	int	4	1672872136
+png_sig_cmp	40	1234880116	num_to_check	int	4	1672872136
+png_zalloc	8	2692285007	num_bytes	png_alloc_size_t	4	2597516231
+png_zalloc	24	2429219274	png_ptr	voidpf	8	2597516231
+png_zalloc	28	2673728499	items	uInt	4	2597516231
+png_zalloc	32	3832080702	size	uInt	4	2597516231
+png_zfree	8	2095192841	png_ptr	voidpf	8	1308425503
+png_zfree	16	4131368784	ptr	voidpf	8	1308425503
+png_reset_crc	8	876955455	png_ptr	png_structrp	8	1213748635
+png_calculate_crc	16	4130673047	need_crc	int	4	1076062934
+png_calculate_crc	8	1642651098	crc	uLong	8	1076062934
+png_calculate_crc	24	1162150002	png_ptr	png_structrp	8	1076062934
+png_calculate_crc	32	3120400331	ptr	png_const_bytep	8	1076062934
+png_calculate_crc	40	1791223068	length	int	4	1076062934
+png_user_version_check	160	3183138087	i	int	4	1323063532
+png_user_version_check	156	2522241281	found_dots	int	4	1323063532
+png_user_version_check	144	275145354	m	char [128]	128	1323063532
+png_user_version_check	168	442327491	png_ptr	png_structrp	8	1323063532
+png_user_version_check	176	1934120637	user_png_ver	png_const_charp	8	1323063532
+png_create_png_struct	1264	1108597421	create_struct	png_struct	1	186351549
+png_create_png_struct	1472	814340712	create_jmp_buf	jmp_buf	200	186351549
+png_create_png_struct	1480	1616083229	png_ptr	png_structrp	8	186351549
+png_create_png_struct	1496	2476967626	user_png_ver	png_const_charp	8	186351549
+png_create_png_struct	1504	3431774800	error_ptr	png_voidp	8	186351549
+png_create_png_struct	1512	502252573	error_fn	png_error_ptr	8	186351549
+png_create_png_struct	1520	3965214026	warn_fn	png_error_ptr	8	186351549
+png_create_png_struct	1528	3869374093	mem_ptr	png_voidp	8	186351549
+png_create_png_struct	1536	3870533950	malloc_fn	png_malloc_ptr	8	186351549
+png_create_png_struct	1544	377377069	free_fn	png_free_ptr	8	186351549
+png_create_info_struct	8	1748645213	info_ptr	png_inforp	8	381876035
+png_create_info_struct	24	2542404262	png_ptr	png_const_structrp	8	381876035
+png_destroy_info_struct	8	581690817	info_ptr	png_inforp	8	3341777353
+png_destroy_info_struct	24	1278933372	png_ptr	png_const_structrp	8	3341777353
+png_destroy_info_struct	32	4285691503	info_ptr_ptr	png_infopp	8	3341777353
+png_info_init_3	8	692286630	info_ptr	png_inforp	8	2936667039
+png_info_init_3	24	428746004	ptr_ptr	png_infopp	8	2936667039
+png_info_init_3	32	2961767123	png_info_struct_size	int	4	2936667039
+png_data_freer	8	1665634707	png_ptr	png_const_structrp	8	3644538720
+png_data_freer	16	333649897	info_ptr	png_inforp	8	3644538720
+png_data_freer	20	1269492945	freer	int	4	3644538720
+png_data_freer	24	2520530277	mask	int	4	3644538720
+png_free_data	20	164119082	i	int	4	2670515512
+png_free_data	16	487858142	i	int	4	2670515512
+png_free_data	12	408462355	i	int	4	2670515512
+png_free_data	8	1141593505	i	int	4	2670515512
+png_free_data	40	2704697415	png_ptr	png_const_structrp	8	2670515512
+png_free_data	48	210260449	info_ptr	png_inforp	8	2670515512
+png_free_data	52	1209894285	mask	int	4	2670515512
+png_free_data	56	3013970984	num	int	4	2670515512
+png_get_io_ptr	8	1346693653	png_ptr	png_const_structrp	8	4126921138
+png_init_io	8	155044414	png_ptr	png_structrp	8	3283562387
+png_init_io	16	2137541703	fp	png_FILE_p	8	3283562387
+png_save_int_32	8	542925724	buf	png_bytep	8	3534281658
+png_save_int_32	12	1202627660	i	int	4	3534281658
+png_convert_to_rfc1123_buffer	5712	4151669692	short_months	const char [12][4]	48	263210454
+png_convert_to_rfc1123_buffer	16	23531976	number_buf	char [5]	5	263210454
+png_convert_to_rfc1123_buffer	40	4266144543	out	char [29]	29	263210454
+png_convert_to_rfc1123_buffer	48	2132288511	ptime	png_const_timep	8	263210454
+png_convert_to_rfc1123	8	841394921	png_ptr	png_structrp	8	4054317137
+png_convert_to_rfc1123	16	2700891104	ptime	png_const_timep	8	4054317137
+png_get_copyright	8	3712617665	png_ptr	png_const_structrp	8	1155555363
+png_get_libpng_ver	8	3434037933	png_ptr	png_const_structrp	8	3759430825
+png_get_header_ver	8	3210360050	png_ptr	png_const_structrp	8	1999914230
+png_get_header_version	8	1691484915	png_ptr	png_const_structrp	8	2137497
+png_build_grayscale_palette	16	1272495371	num_palette	int	4	4036481305
+png_build_grayscale_palette	12	1818576332	color_inc	int	4	4036481305
+png_build_grayscale_palette	8	4175567370	i	int	4	4036481305
+png_build_grayscale_palette	4	910761252	v	int	4	4036481305
+png_build_grayscale_palette	20	1108481675	bit_depth	int	4	4036481305
+png_build_grayscale_palette	32	1094361024	palette	png_colorp	8	4036481305
+png_handle_as_unknown	16	2501140267	p	png_const_bytep	8	1358361166
+png_handle_as_unknown	8	415616314	p_end	png_const_bytep	8	1358361166
+png_handle_as_unknown	24	806562291	png_ptr	png_const_structrp	8	1358361166
+png_handle_as_unknown	32	4255314416	chunk_name	png_const_bytep	8	1358361166
+png_chunk_unknown_handling	24	752003936	png_ptr	png_const_structrp	8	2452333179
+png_chunk_unknown_handling	28	2001000468	chunk_name	int	4	2452333179
+png_reset_zstream	8	3451871851	png_ptr	png_structrp	8	1485053358
+png_zstream_error	8	3444680096	png_ptr	png_structrp	8	550942031
+png_zstream_error	12	915148275	ret	int	4	550942031
+png_colorspace_check_gamma	12	1040775528	gtest	png_fixed_point	4	4158392895
+png_colorspace_check_gamma	24	3158040908	png_ptr	png_const_structrp	8	4158392895
+png_colorspace_check_gamma	32	1183788881	colorspace	png_colorspacerp	8	4158392895
+png_colorspace_check_gamma	36	1687457515	gAMA	png_fixed_point	4	4158392895
+png_colorspace_check_gamma	40	3459368372	from	int	4	4158392895
+png_colorspace_set_gamma	8	2149635922	errmsg	png_const_charp	8	2831818773
+png_colorspace_set_gamma	24	2313418719	png_ptr	png_const_structrp	8	2831818773
+png_colorspace_set_gamma	32	1012407117	colorspace	png_colorspacerp	8	2831818773
+png_colorspace_set_gamma	36	1217252595	gAMA	png_fixed_point	4	2831818773
+png_colorspace_sync_info	8	2617605635	png_ptr	png_const_structrp	8	2829392006
+png_colorspace_sync_info	16	2451179988	info_ptr	png_inforp	8	2829392006
+png_colorspace_sync	8	3354683590	png_ptr	png_const_structrp	8	1177540183
+png_colorspace_sync	16	1070804742	info_ptr	png_inforp	8	1177540183
+png_xy_from_XYZ	24	2371940766	xy	png_xy *	8	2630730695
+png_xy_from_XYZ	32	3864031531	XYZ	const png_XYZ *	8	2630730695
+png_XYZ_from_xy	48	117948037	red_inverse	png_fixed_point	4	168534309
+png_XYZ_from_xy	44	1426015095	green_inverse	png_fixed_point	4	168534309
+png_XYZ_from_xy	28	853013061	blue_scale	png_fixed_point	4	168534309
+png_XYZ_from_xy	40	3021408870	left	png_fixed_point	4	168534309
+png_XYZ_from_xy	36	17861769	right	png_fixed_point	4	168534309
+png_XYZ_from_xy	32	812278432	denominator	png_fixed_point	4	168534309
+png_XYZ_from_xy	56	2936081518	XYZ	png_XYZ *	8	168534309
+png_XYZ_from_xy	64	81111699	xy	const png_xy *	8	168534309
+png_XYZ_normalize	24	705640989	XYZ	png_XYZ *	8	913645433
+png_colorspace_endpoints_match	8	332944669	xy1	const png_xy *	8	3353214820
+png_colorspace_endpoints_match	16	4038629143	xy2	const png_xy *	8	3353214820
+png_colorspace_endpoints_match	20	176603051	delta	int	4	3353214820
+png_colorspace_check_xy	52	2775092230	result	int	4	1842421035
+png_colorspace_check_xy	48	2181173642	xy_test	png_xy	32	1842421035
+png_colorspace_check_xy	72	1195857143	XYZ	png_XYZ *	8	1842421035
+png_colorspace_check_xy	80	391567199	xy	const png_xy *	8	1842421035
+png_colorspace_check_XYZ	52	440918405	result	int	4	4255752111
+png_colorspace_check_XYZ	48	3162143981	XYZtemp	png_XYZ	36	4255752111
+png_colorspace_check_XYZ	72	2306542811	xy	png_xy *	8	4255752111
+png_colorspace_check_XYZ	80	1966800115	XYZ	png_XYZ *	8	4255752111
+png_colorspace_set_xy_and_XYZ	8	3010120124	png_ptr	png_const_structrp	8	524587067
+png_colorspace_set_xy_and_XYZ	16	3364168274	colorspace	png_colorspacerp	8	524587067
+png_colorspace_set_xy_and_XYZ	24	677233651	xy	const png_xy *	8	524587067
+png_colorspace_set_xy_and_XYZ	32	3456554947	XYZ	const png_XYZ *	8	524587067
+png_colorspace_set_xy_and_XYZ	36	2404541716	preferred	int	4	524587067
+png_colorspace_set_chromaticities	48	730167505	XYZ	png_XYZ	36	2262614901
+png_colorspace_set_chromaticities	56	2877523988	png_ptr	png_const_structrp	8	2262614901
+png_colorspace_set_chromaticities	64	3135631272	colorspace	png_colorspacerp	8	2262614901
+png_colorspace_set_chromaticities	72	1547361232	xy	const png_xy *	8	2262614901
+png_colorspace_set_chromaticities	76	189169217	preferred	int	4	2262614901
+png_colorspace_set_endpoints	48	3218164941	XYZ	png_XYZ	36	2873449826
+png_colorspace_set_endpoints	80	1398533763	xy	png_xy	32	2873449826
+png_colorspace_set_endpoints	88	2077731051	png_ptr	png_const_structrp	8	2873449826
+png_colorspace_set_endpoints	96	1758012990	colorspace	png_colorspacerp	8	2873449826
+png_colorspace_set_endpoints	104	2947655421	XYZ_in	const png_XYZ *	8	2873449826
+png_colorspace_set_endpoints	108	3399349557	preferred	int	4	2873449826
+png_icc_tag_char	4	1095203961	byte	int	4	1561292233
+png_icc_tag_name	16	776104978	name	char *	8	357249489
+png_icc_tag_name	20	1165504601	tag	int	4	357249489
+is_ICC_signature_char	8	393852004	it	png_alloc_size_t	4	402055044
+is_ICC_signature	8	59883966	it	png_alloc_size_t	4	1457725924
+png_icc_profile_error	208	40918894	message	char [196]	196	2211201662
+png_icc_profile_error	240	3859318052	number	char [24]	24	2211201662
+png_icc_profile_error	264	1663446152	png_ptr	png_const_structrp	8	2211201662
+png_icc_profile_error	272	2281072190	colorspace	png_colorspacerp	8	2211201662
+png_icc_profile_error	280	866938353	name	png_const_charp	8	2211201662
+png_icc_profile_error	288	2079003793	value	png_alloc_size_t	4	2211201662
+png_icc_profile_error	296	868699900	reason	png_const_charp	8	2211201662
+png_colorspace_set_sRGB	5776	615829844	sRGB_XYZ	const png_XYZ	36	78261970
+png_colorspace_set_sRGB	8	2615021711	png_ptr	png_const_structrp	8	78261970
+png_colorspace_set_sRGB	16	804002387	colorspace	png_colorspacerp	8	78261970
+png_colorspace_set_sRGB	20	2516465276	intent	int	4	78261970
+icc_check_length	8	1414434055	png_ptr	png_const_structrp	8	3489310207
+icc_check_length	16	2768385351	colorspace	png_colorspacerp	8	3489310207
+icc_check_length	24	3255600320	name	png_const_charp	8	3489310207
+icc_check_length	28	3160356462	profile_length	int	4	3489310207
+png_icc_check_length	8	3071646788	png_ptr	png_const_structrp	8	3575954231
+png_icc_check_length	16	2367845349	colorspace	png_colorspacerp	8	3575954231
+png_icc_check_length	24	384392669	name	png_const_charp	8	3575954231
+png_icc_check_length	28	403418694	profile_length	int	4	3575954231
+png_icc_check_header	24	2797248943	png_ptr	png_const_structrp	8	790692645
+png_icc_check_header	32	1388336962	colorspace	png_colorspacerp	8	790692645
+png_icc_check_header	40	425479348	name	png_const_charp	8	790692645
+png_icc_check_header	44	2037509501	profile_length	int	4	790692645
+png_icc_check_header	56	3222960639	profile	png_const_bytep	8	790692645
+png_icc_check_header	48	2925362315	color_type	int	4	790692645
+png_icc_check_tag_table	8	1229165319	tag	png_const_bytep	8	1120962224
+png_icc_check_tag_table	40	2336402566	png_ptr	png_const_structrp	8	1120962224
+png_icc_check_tag_table	48	564129216	colorspace	png_colorspacerp	8	1120962224
+png_icc_check_tag_table	56	1004909384	name	png_const_charp	8	1120962224
+png_icc_check_tag_table	60	2430179184	profile_length	int	4	1120962224
+png_icc_check_tag_table	72	3407095414	profile	png_const_bytep	8	1120962224
+png_compare_ICC_profile_with_sRGB	8	799034465	crc	uLong	8	3400361308
+png_compare_ICC_profile_with_sRGB	12	1088814097	i	unsigned int	4	3400361308
+png_compare_ICC_profile_with_sRGB	40	1079240334	png_ptr	png_const_structrp	8	3400361308
+png_compare_ICC_profile_with_sRGB	48	3286890344	profile	png_const_bytep	8	3400361308
+png_compare_ICC_profile_with_sRGB	56	1757211476	adler	uLong	8	3400361308
+png_icc_set_sRGB	8	458198517	png_ptr	png_const_structrp	8	3276598797
+png_icc_set_sRGB	16	3847432468	colorspace	png_colorspacerp	8	3276598797
+png_icc_set_sRGB	24	392199641	profile	png_const_bytep	8	3276598797
+png_icc_set_sRGB	32	142748179	adler	uLong	8	3276598797
+png_colorspace_set_ICC	8	3287965309	png_ptr	png_const_structrp	8	997354566
+png_colorspace_set_ICC	16	3722562912	colorspace	png_colorspacerp	8	997354566
+png_colorspace_set_ICC	24	3715356366	name	png_const_charp	8	997354566
+png_colorspace_set_ICC	28	3376789357	profile_length	int	4	997354566
+png_colorspace_set_ICC	40	2743266540	profile	png_const_bytep	8	997354566
+png_colorspace_set_ICC	32	3609129316	color_type	int	4	997354566
+png_colorspace_set_rgb_coefficients	28	155095558	r	png_fixed_point	4	3553617204
+png_colorspace_set_rgb_coefficients	24	958875020	g	png_fixed_point	4	3553617204
+png_colorspace_set_rgb_coefficients	20	1266010363	b	png_fixed_point	4	3553617204
+png_colorspace_set_rgb_coefficients	12	287394323	total	png_fixed_point	4	3553617204
+png_colorspace_set_rgb_coefficients	16	3847239153	add	int	4	3553617204
+png_colorspace_set_rgb_coefficients	40	3925853599	png_ptr	png_structrp	8	3553617204
+png_gt	8	1755890125	a	int	4	2242313817
+png_gt	16	4056417239	b	int	4	2242313817
+png_check_IHDR	4	606660074	error	int	4	3575170600
+png_check_IHDR	24	1659467480	png_ptr	png_const_structrp	8	3575170600
+png_check_IHDR	28	1610276229	width	int	4	3575170600
+png_check_IHDR	32	3730789649	height	int	4	3575170600
+png_check_IHDR	36	3522155249	bit_depth	int	4	3575170600
+png_check_IHDR	40	3951705817	color_type	int	4	3575170600
+png_check_IHDR	44	63113155	interlace_type	int	4	3575170600
+png_check_IHDR	16	2605270345	compression_type	int	4	3575170600
+png_check_IHDR	24	514163722	filter_type	int	4	3575170600
+png_check_fp_number	16	795778002	state	int	4	2590237244
+png_check_fp_number	24	2120538555	string	png_const_charp	8	2590237244
+png_check_fp_number	32	2515965293	size	int	4	2590237244
+png_check_fp_number	40	2782325631	statep	int *	8	2590237244
+png_check_fp_number	48	2278106542	whereami	png_size_tp	8	2590237244
+png_check_fp_string	20	3652569712	state	int	4	1803163927
+png_check_fp_string	40	405187798	string	png_const_charp	8	1803163927
+png_check_fp_string	48	2034201937	size	int	4	1803163927
+png_pow10	20	3802012669	recip	int	4	2294262383
+png_pow10	16	2210677536	d	double	8	2294262383
+png_pow10	8	1930776014	mult	double	8	2294262383
+png_pow10	36	3984916711	power	int	4	2294262383
+png_ascii_from_fp	84	2117699960	exp_b10	int	4	920301937
+png_ascii_from_fp	48	2384568471	base	double	8	920301937
+png_ascii_from_fp	80	1072431727	czero	unsigned int	4	920301937
+png_ascii_from_fp	76	3069413509	clead	unsigned int	4	920301937
+png_ascii_from_fp	72	1889498393	cdigits	unsigned int	4	920301937
+png_ascii_from_fp	32	1226178060	exponent	char [10]	10	920301937
+png_ascii_from_fp	64	1385519611	uexp_b10	unsigned int	4	920301937
+png_ascii_from_fp	104	2333130665	png_ptr	png_const_structrp	8	920301937
+png_ascii_from_fp	112	2120544836	ascii	png_charp	8	920301937
+png_ascii_from_fp	120	618792877	size	int	4	920301937
+png_ascii_from_fp	128	1551513009	fp	double	8	920301937
+png_ascii_from_fp	132	3762865691	precision	unsigned int	4	920301937
+png_ascii_from_fixed	48	3322212021	ndigits	unsigned int	4	1946663906
+png_ascii_from_fixed	44	4201463683	first	unsigned int	4	1946663906
+png_ascii_from_fixed	32	2373869003	digits	char [10]	10	1946663906
+png_ascii_from_fixed	40	3063738109	i	unsigned int	4	1946663906
+png_ascii_from_fixed	72	1466929390	png_ptr	png_const_structrp	8	1946663906
+png_ascii_from_fixed	80	359585758	ascii	png_charp	8	1946663906
+png_ascii_from_fixed	88	720310564	size	int	4	1946663906
+png_ascii_from_fixed	92	1196681756	fp	png_fixed_point	4	1946663906
+png_fixed	8	2337424615	r	double	8	1449140304
+png_fixed	24	470559976	png_ptr	png_const_structrp	8	1449140304
+png_fixed	32	4215134410	fp	double	8	1449140304
+png_fixed	40	4015712690	text	png_const_charp	8	1449140304
+png_muldiv	8	1758301486	r	double	8	2417503234
+png_muldiv	24	3718131723	res	png_fixed_point_p	8	2417503234
+png_muldiv	28	2715361431	a	png_fixed_point	4	2417503234
+png_muldiv	32	1197111231	times	int	4	2417503234
+png_muldiv	36	131258497	divisor	int	4	2417503234
+png_muldiv_warn	12	1569306933	result	png_fixed_point	4	880466879
+png_muldiv_warn	24	434562127	png_ptr	png_const_structrp	8	880466879
+png_muldiv_warn	28	3516938190	a	png_fixed_point	4	880466879
+png_muldiv_warn	32	2613188536	times	int	4	880466879
+png_muldiv_warn	36	636616558	divisor	int	4	880466879
+png_reciprocal	8	1147556986	r	double	8	1251559996
+png_reciprocal	20	3698089744	a	png_fixed_point	4	1251559996
+png_gamma_significant	4	305274827	gamma_val	png_fixed_point	4	258834049
+png_product2	8	1564425627	r	double	8	1644783644
+png_product2	20	384522034	a	png_fixed_point	4	1644783644
+png_product2	24	715841055	b	png_fixed_point	4	1644783644
+png_reciprocal2	8	2454530298	r	double	8	3653429749
+png_reciprocal2	20	3469935824	a	png_fixed_point	4	3653429749
+png_reciprocal2	24	1606029031	b	png_fixed_point	4	3653429749
+png_gamma_8bit_correct	8	3829309824	r	double	8	3897841695
+png_gamma_16bit_correct	8	2397306733	r	double	8	1291220249
+png_build_16bit_table	64	2664788153	num	unsigned int	4	816376282
+png_build_16bit_table	48	3834939796	fmax	double	8	816376282
+png_build_16bit_table	60	2145487184	max	unsigned int	4	816376282
+png_build_16bit_table	56	1755559679	max_by_2	unsigned int	4	816376282
+png_build_16bit_table	80	3788462138	i	unsigned int	4	816376282
+png_build_16bit_table	40	987199271	table	png_uint_16pp	8	816376282
+png_build_16bit_table	32	542548017	sub_table	png_uint_16p	8	816376282
+png_build_16bit_table	76	1454844891	j	unsigned int	4	816376282
+png_build_16bit_table	24	4278031356	d	double	8	816376282
+png_build_16bit_table	72	3617253959	j	unsigned int	4	816376282
+png_build_16bit_table	88	2352251104	png_ptr	png_structrp	8	816376282
+png_build_16bit_table	96	2748623066	ptable	png_uint_16pp *	8	816376282
+png_build_16bit_table	100	32109543	shift	unsigned int	4	816376282
+png_build_16bit_table	104	867604708	gamma_val	png_fixed_point	4	816376282
+png_build_16to8_table	36	1129222657	num	unsigned int	4	2080536824
+png_build_16to8_table	32	612768923	max	unsigned int	4	2080536824
+png_build_16to8_table	44	1538532223	i	unsigned int	4	2080536824
+png_build_16to8_table	24	66194455	table	png_uint_16pp	8	2080536824
+png_build_16to8_table	56	3111970314	png_ptr	png_structrp	8	2080536824
+png_build_16to8_table	64	3984051149	ptable	png_uint_16pp *	8	2080536824
+png_build_16to8_table	68	2949347353	shift	unsigned int	4	2080536824
+png_build_16to8_table	72	1428202116	gamma_val	png_fixed_point	4	2080536824
+png_build_8bit_table	28	622974361	i	unsigned int	4	1678746126
+png_build_8bit_table	24	245562170	table	png_bytep	8	1678746126
+png_build_8bit_table	40	4088478516	png_ptr	png_structrp	8	1678746126
+png_build_8bit_table	48	1971722377	ptable	png_bytepp	8	1678746126
+png_build_8bit_table	52	108489147	gamma_val	png_fixed_point	4	1678746126
+png_destroy_gamma_table	24	2798096999	i	int	4	253517604
+png_destroy_gamma_table	12	3229984513	istop	int	4	253517604
+png_destroy_gamma_table	20	3686571730	i	int	4	253517604
+png_destroy_gamma_table	8	3729112877	istop	int	4	253517604
+png_destroy_gamma_table	16	3393296031	i	int	4	253517604
+png_destroy_gamma_table	4	544331856	istop	int	4	253517604
+png_destroy_gamma_table	40	2418493660	png_ptr	png_structrp	8	253517604
+png_build_gamma_table	24	3302833659	png_ptr	png_structrp	8	3804907900
+png_build_gamma_table	28	386634130	bit_depth	int	4	3804907900
+png_set_option	24	1689858735	png_ptr	png_structrp	8	2477079153
+png_set_option	28	2465832207	option	int	4	2477079153
+png_set_option	32	1490512875	onoff	int	4	2477079153
+png_image_free_function	88	3626674314	image	png_imagep	8	1989737119
+png_image_free_function	80	210142544	cp	png_controlp	8	1989737119
+png_image_free_function	64	3597489067	c	png_control	1	1989737119
+png_image_free_function	72	4106246182	fp	FILE *	8	1989737119
+png_image_free_function	104	918018845	argument	png_voidp	8	1989737119
+png_image_free	8	2302578490	image	png_imagep	8	2596090008
+png_image_error	8	351420448	image	png_imagep	8	1319360270
+png_image_error	16	3430981279	error_message	png_const_charp	8	1319360270
+png_error	8	4244275570	png_ptr	png_const_structrp	8	395012021
+png_error	16	1605449257	error_message	png_const_charp	8	395012021
+png_format_number	12	2761838551	count	int	4	1905213572
+png_format_number	8	1617662576	mincount	int	4	1905213572
+png_format_number	4	1201118605	output	int	4	1905213572
+png_format_number	240	3442514433	digits	const char [17]	17	1905213572
+png_format_number	24	2114399002	start	png_const_charp	8	1905213572
+png_format_number	32	622157195	end	png_charp	8	1905213572
+png_format_number	36	1137796982	format	int	4	1905213572
+png_format_number	48	1265899339	number	png_alloc_size_t	4	1905213572
+png_warning	4	2123393109	offset	int	4	2954863052
+png_warning	24	3037629236	png_ptr	png_const_structrp	8	2954863052
+png_warning	32	2198969300	warning_message	png_const_charp	8	2954863052
+png_warning_parameter	8	1170852910	p	png_warning_parameters	256	3669501256
+png_warning_parameter	12	1632685633	number	int	4	3669501256
+png_warning_parameter	24	717400550	string	png_const_charp	8	3669501256
+png_warning_parameter_unsigned	32	376360739	buffer	char [24]	24	1964368256
+png_warning_parameter_unsigned	40	2192540703	p	png_warning_parameters	256	1964368256
+png_warning_parameter_unsigned	44	715960862	number	int	4	1964368256
+png_warning_parameter_unsigned	48	4142821023	format	int	4	1964368256
+png_warning_parameter_unsigned	56	2198427412	value	png_alloc_size_t	4	1964368256
+png_warning_parameter_signed	48	3895881985	u	png_alloc_size_t	4	275016061
+png_warning_parameter_signed	40	881617544	str	png_charp	8	275016061
+png_warning_parameter_signed	32	2027437048	buffer	char [24]	24	275016061
+png_warning_parameter_signed	56	1688392814	p	png_warning_parameters	256	275016061
+png_warning_parameter_signed	60	521067782	number	int	4	275016061
+png_warning_parameter_signed	64	3403053918	format	int	4	275016061
+png_warning_parameter_signed	68	390487403	value	int	4	275016061
+png_formatted_warning	208	233036128	msg	char [192]	192	3938297444
+png_formatted_warning	248	3840845713	png_ptr	png_const_structrp	8	3938297444
+png_formatted_warning	256	2624961902	p	png_warning_parameters	256	3938297444
+png_formatted_warning	264	4286183851	message	png_const_charp	8	3938297444
+png_benign_error	8	3107500156	png_ptr	png_const_structrp	8	3872449559
+png_benign_error	16	4289390300	error_message	png_const_charp	8	3872449559
+png_app_warning	8	3600356049	png_ptr	png_const_structrp	8	2966891116
+png_app_warning	16	3139705552	error_message	png_const_charp	8	2966891116
+png_app_error	8	4232508653	png_ptr	png_const_structrp	8	2694692881
+png_app_error	16	3508606895	error_message	png_const_charp	8	2694692881
+png_format_buffer	20	4210868896	iout	int	4	1272397
+png_format_buffer	16	2892769778	ishift	int	4	1272397
+png_format_buffer	4	3891775376	c	int	4	1272397
+png_format_buffer	12	2025385811	iin	int	4	1272397
+png_format_buffer	40	2577072264	png_ptr	png_const_structrp	8	1272397
+png_format_buffer	48	192641814	buffer	png_charp	8	1272397
+png_format_buffer	56	3473625832	error_message	png_const_charp	8	1272397
+png_chunk_error	224	3832751891	msg	char [214]	214	2091304553
+png_chunk_error	232	2728011215	png_ptr	png_const_structrp	8	2091304553
+png_chunk_error	240	269735557	error_message	png_const_charp	8	2091304553
+png_chunk_warning	224	1324069425	msg	char [214]	214	3887662865
+png_chunk_warning	232	2298525906	png_ptr	png_const_structrp	8	3887662865
+png_chunk_warning	240	768620461	warning_message	png_const_charp	8	3887662865
+png_chunk_benign_error	8	4139024414	png_ptr	png_const_structrp	8	49137649
+png_chunk_benign_error	16	3414762608	error_message	png_const_charp	8	49137649
+png_chunk_report	8	2225893231	png_ptr	png_const_structrp	8	3361005994
+png_chunk_report	16	445530474	message	png_const_charp	8	3361005994
+png_chunk_report	20	3676627362	error	int	4	3361005994
+png_fixed_error	244	4088702074	iin	unsigned int	4	3962423541
+png_fixed_error	240	1265774867	msg	char [220]	220	3962423541
+png_fixed_error	264	2561921562	png_ptr	png_const_structrp	8	3962423541
+png_fixed_error	272	49665238	name	png_const_charp	8	3962423541
+png_set_longjmp_fn	24	874300691	png_ptr	png_structrp	8	1648166237
+png_set_longjmp_fn	32	635646651	longjmp_fn	png_longjmp_ptr	8	1648166237
+png_set_longjmp_fn	40	3777795854	jmp_buf_size	int	4	1648166237
+png_free_jmpbuf	216	1204787250	jb	jmp_buf *	8	2232526486
+png_free_jmpbuf	208	118396728	free_jmp_buf	jmp_buf	200	2232526486
+png_free_jmpbuf	232	3068204192	png_ptr	png_structrp	8	2232526486
+png_default_error	8	2354990095	png_ptr	png_const_structrp	8	770205102
+png_default_error	16	1927223244	error_message	png_const_charp	8	770205102
+png_longjmp	8	3975604533	png_ptr	png_const_structrp	8	3646471815
+png_longjmp	12	4251511164	val	int	4	3646471815
+png_default_warning	8	1495522502	png_ptr	png_const_structrp	8	2153188243
+png_default_warning	16	3516255524	warning_message	png_const_charp	8	2153188243
+png_set_error_fn	8	1675230773	png_ptr	png_structrp	8	3286420903
+png_set_error_fn	16	2878514176	error_ptr	png_voidp	8	3286420903
+png_set_error_fn	24	3803197788	error_fn	png_error_ptr	8	3286420903
+png_set_error_fn	32	275745047	warning_fn	png_error_ptr	8	3286420903
+png_get_error_ptr	8	3779077949	png_ptr	png_const_structrp	8	3094755015
+png_safe_error	24	1240632041	png_ptr	png_const_structrp	8	3623468099
+png_safe_error	16	1657958233	image	png_imagep	8	3623468099
+png_safe_error	40	3853684637	png_nonconst_ptr	png_structp	8	3623468099
+png_safe_error	48	3900071292	error_message	png_const_charp	8	3623468099
+png_safe_warning	16	4203395501	png_ptr	png_const_structrp	8	964803913
+png_safe_warning	8	431916966	image	png_imagep	8	964803913
+png_safe_warning	24	2796114595	png_nonconst_ptr	png_structp	8	964803913
+png_safe_warning	32	2229747988	warning_message	png_const_charp	8	964803913
+png_safe_execute	224	3597411407	image	volatile png_imagep	8	3466016293
+png_safe_execute	228	3525395453	result	volatile int	4	3466016293
+png_safe_execute	216	2630573710	saved_error_buf	volatile png_voidp	8	3466016293
+png_safe_execute	208	688193837	safe_jmpbuf	jmp_buf	200	3466016293
+png_safe_execute	248	2135696995	image_in	png_imagep	8	3466016293
+png_safe_execute	256	1952108897	function	int (*)(png_voidp)	8	3466016293
+png_safe_execute	264	1135095249	arg	png_voidp	8	3466016293
+png_set_alpha_mode_fixed	8	1936065285	png_ptr	png_structrp	8	1477461463
+png_set_strip_alpha	8	558492269	png_ptr	png_structrp	8	3006439589
+png_set_text_2	8	2648854276	png_ptr	png_const_structrp	8	4022165026
+png_write_pHYs	8	1588599151	png_ptr	png_structrp	8	3165151653
+png_write_tIME	8	1908539911	png_ptr	png_structrp	8	3983301236
+png_get_rows	8	747033839	png_ptr	png_const_structrp	8	3274386195
+png_get_rows	16	3246267706	info_ptr	png_const_inforp	8	3274386195
+png_get_pixel_aspect_ratio	8	3939887733	png_ptr	png_const_structrp	8	1727638108
+png_get_pixel_aspect_ratio	16	2260949592	info_ptr	png_const_inforp	8	1727638108
+png_get_pixel_aspect_ratio_fixed	12	1668763903	res	png_fixed_point	4	1311893890
+png_get_pixel_aspect_ratio_fixed	24	1597008465	png_ptr	png_const_structrp	8	1311893890
+png_get_pixel_aspect_ratio_fixed	32	3369547540	info_ptr	png_const_inforp	8	1311893890
+ppi_from_ppm	12	1072904415	result	png_fixed_point	4	1101059096
+png_fixed_inches_from_microns	8	1422130846	png_ptr	png_const_structrp	8	1312034642
+png_fixed_inches_from_microns	12	1795772511	microns	int	4	1312034642
+png_get_x_offset_inches_fixed	8	1316665881	png_ptr	png_const_structrp	8	1378408260
+png_get_x_offset_inches_fixed	16	3399566177	info_ptr	png_const_inforp	8	1378408260
+png_get_y_offset_inches_fixed	8	1449334138	png_ptr	png_const_structrp	8	199369068
+png_get_y_offset_inches_fixed	16	94694523	info_ptr	png_const_inforp	8	199369068
+png_get_x_offset_inches	8	3393574792	png_ptr	png_const_structrp	8	192230546
+png_get_x_offset_inches	16	2738000636	info_ptr	png_const_inforp	8	192230546
+png_get_y_offset_inches	8	1692043333	png_ptr	png_const_structrp	8	3664192160
+png_get_y_offset_inches	16	3764110455	info_ptr	png_const_inforp	8	3664192160
+png_get_signature	8	3834761399	png_ptr	png_const_structrp	8	3921515365
+png_get_signature	16	2767068355	info_ptr	png_const_inforp	8	3921515365
+png_get_sPLT	8	2385282267	png_ptr	png_const_structrp	8	2315972960
+png_get_sPLT	16	3149700935	info_ptr	png_inforp	8	2315972960
+png_get_sPLT	24	2316809724	spalettes	png_sPLT_tpp	8	2315972960
+png_get_text	8	3474400371	png_ptr	png_const_structrp	8	2852631863
+png_get_text	16	142851099	info_ptr	png_inforp	8	2852631863
+png_get_text	24	3918122576	text_ptr	png_textp *	8	2852631863
+png_get_text	32	3625974010	num_text	int *	8	2852631863
+png_get_unknown_chunks	8	2095062846	png_ptr	png_const_structrp	8	4058353244
+png_get_unknown_chunks	16	2150295751	info_ptr	png_inforp	8	4058353244
+png_get_unknown_chunks	24	2875618326	unknowns	png_unknown_chunkpp	8	4058353244
+png_get_user_chunk_ptr	8	3814379456	png_ptr	png_const_structrp	8	2453007512
+png_get_chunk_malloc_max	8	66390154	png_ptr	png_const_structrp	8	978060180
+png_get_palette_max	8	2333278519	png_ptr	png_const_structp	8	2979788187
+png_get_palette_max	16	1521354617	info_ptr	png_const_infop	8	2979788187
+png_destroy_png_struct	1264	2169380113	dummy_struct	png_struct	1	2126126296
+png_destroy_png_struct	1272	1408616760	png_ptr	png_structrp	8	2126126296
+png_calloc	8	3031459053	ret	png_voidp	8	2245532018
+png_calloc	24	761207021	png_ptr	png_const_structrp	8	2245532018
+png_calloc	32	1609268136	size	png_alloc_size_t	4	2245532018
+png_malloc_base	8	22232050	png_ptr	png_const_structrp	8	2282099727
+png_malloc_base	16	1607165560	size	png_alloc_size_t	4	2282099727
+png_malloc_array_checked	8	2549953139	req	png_alloc_size_t	4	3895026335
+png_malloc_array_checked	24	4274625652	png_ptr	png_const_structrp	8	3895026335
+png_malloc_array_checked	28	3046915267	nelements	int	4	3895026335
+png_malloc_array_checked	40	247212826	element_size	int	4	3895026335
+png_malloc_array	8	1687041297	png_ptr	png_const_structrp	8	2623315449
+png_malloc_array	12	2198464132	nelements	int	4	2623315449
+png_malloc_array	24	1352918796	element_size	int	4	2623315449
+png_realloc_array	8	1353036973	new_array	png_voidp	8	686740655
+png_realloc_array	24	2277639559	png_ptr	png_const_structrp	8	686740655
+png_realloc_array	32	2802265710	old_array	png_const_voidp	8	686740655
+png_realloc_array	36	3875645021	old_elements	int	4	686740655
+png_realloc_array	40	1920519499	add_elements	int	4	686740655
+png_realloc_array	48	606583310	element_size	int	4	686740655
+png_malloc	8	41332887	ret	png_voidp	8	1658394855
+png_malloc	24	2827684108	png_ptr	png_const_structrp	8	1658394855
+png_malloc	32	1276465202	size	png_alloc_size_t	4	1658394855
+png_malloc_default	8	3761478304	ret	png_voidp	8	1811348561
+png_malloc_default	24	492511280	png_ptr	png_const_structrp	8	1811348561
+png_malloc_default	32	1748306623	size	png_alloc_size_t	4	1811348561
+png_malloc_warn	8	3404340005	ret	png_voidp	8	4283063590
+png_malloc_warn	24	3421351098	png_ptr	png_const_structrp	8	4283063590
+png_malloc_warn	32	3750464691	size	png_alloc_size_t	4	4283063590
+png_free	8	3677273824	png_ptr	png_const_structrp	8	1422769783
+png_free	16	539881671	ptr	png_voidp	8	1422769783
+png_free_default	8	2387939008	png_ptr	png_const_structrp	8	1978527739
+png_free_default	16	1807493353	ptr	png_voidp	8	1978527739
+png_set_mem_fn	8	3710101795	png_ptr	png_structrp	8	592536477
+png_set_mem_fn	16	1167549484	mem_ptr	png_voidp	8	592536477
+png_set_mem_fn	24	4023934699	malloc_fn	png_malloc_ptr	8	592536477
+png_set_mem_fn	32	580869661	free_fn	png_free_ptr	8	592536477
+png_get_mem_ptr	8	742421112	png_ptr	png_const_structrp	8	809495066
+png_process_data	8	1047638533	png_ptr	png_structrp	8	4259371925
+png_process_data	16	2281775946	info_ptr	png_inforp	8	4259371925
+png_process_data	24	956620717	buffer	png_bytep	8	4259371925
+png_process_data	32	828704763	buffer_size	int	4	4259371925
+png_process_some_data	8	2570299033	png_ptr	png_structrp	8	711021265
+png_process_some_data	16	6846937	info_ptr	png_inforp	8	711021265
+png_push_read_sig	24	3509025520	png_ptr	png_structrp	8	1577775652
+png_push_read_sig	32	2364974373	info_ptr	png_inforp	8	1577775652
+png_push_read_chunk	36	943723892	keep	int	4	1421271170
+png_push_read_chunk	56	19893716	png_ptr	png_structrp	8	1421271170
+png_push_read_chunk	64	3315944877	info_ptr	png_inforp	8	1421271170
+png_push_fill_buffer	24	24024952	ptr	png_bytep	8	3039217134
+png_push_fill_buffer	40	551618239	png_ptr	png_structp	8	3039217134
+png_push_fill_buffer	48	4033557142	buffer	png_bytep	8	3039217134
+png_push_fill_buffer	56	3575918257	length	int	4	3039217134
+png_push_save_buffer	40	841831185	sp	png_bytep	8	3546979577
+png_push_save_buffer	32	3039717812	dp	png_bytep	8	3546979577
+png_push_save_buffer	8	1251116192	old_buffer	png_bytep	8	3546979577
+png_push_save_buffer	56	2090343123	png_ptr	png_structrp	8	3546979577
+png_push_restore_buffer	8	2997751667	png_ptr	png_structrp	8	3443528625
+png_push_restore_buffer	16	3280667388	buffer	png_bytep	8	3443528625
+png_push_restore_buffer	24	3663150653	buffer_length	int	4	3443528625
+png_push_read_IDAT	72	2177879948	png_ptr	png_structrp	8	2055052129
+png_process_IDAT_data	24	1613814929	png_ptr	png_structrp	8	3907725389
+png_process_IDAT_data	32	3079722830	buffer	png_bytep	8	3907725389
+png_process_IDAT_data	40	2774594699	buffer_length	int	4	3907725389
+png_push_process_row	32	3871034348	row_info	png_row_info	1	2478652047
+png_push_process_row	72	1196836033	png_ptr	png_structrp	8	2478652047
+png_read_push_finish_row	727	4250220322	png_pass_start	const int []	-2	1246578160
+png_read_push_finish_row	720	3660183547	png_pass_inc	const int []	-2	1246578160
+png_read_push_finish_row	741	581171315	png_pass_ystart	const int []	-2	1246578160
+png_read_push_finish_row	734	3996453072	png_pass_yinc	const int []	-2	1246578160
+png_read_push_finish_row	8	645414082	png_ptr	png_structrp	8	1246578160
+png_push_have_info	8	4144592457	png_ptr	png_structrp	8	4292205911
+png_push_have_info	16	3062039937	info_ptr	png_inforp	8	4292205911
+png_push_have_end	8	3564508479	png_ptr	png_structrp	8	3038430058
+png_push_have_end	16	3004963589	info_ptr	png_inforp	8	3038430058
+png_push_have_row	8	3497595379	png_ptr	png_structrp	8	587886264
+png_push_have_row	16	4159187855	row	png_bytep	8	587886264
+png_progressive_combine_row	8	486342824	png_ptr	png_const_structrp	8	3488171018
+png_progressive_combine_row	16	3600674046	old_row	png_bytep	8	3488171018
+png_progressive_combine_row	24	2337132556	new_row	png_const_bytep	8	3488171018
+png_set_progressive_read_fn	8	1161948457	png_ptr	png_structrp	8	1426982537
+png_set_progressive_read_fn	16	2468099483	progressive_ptr	png_voidp	8	1426982537
+png_set_progressive_read_fn	24	3870209006	info_fn	png_progressive_info_ptr	8	1426982537
+png_set_progressive_read_fn	32	480614448	row_fn	png_progressive_row_ptr	8	1426982537
+png_set_progressive_read_fn	40	3493059769	end_fn	png_progressive_end_ptr	8	1426982537
+png_get_progressive_ptr	8	986016318	png_ptr	png_const_structrp	8	2161432333
+png_set_text_compression_window_bits	40	1654826083	png_ptr	png_structrp	8	614490740
+png_push_read_tEXt	8	909239255	png_ptr	png_structrp	8	3856244209
+png_create_read_struct	8	3177616645	user_png_ver	png_const_charp	8	1647494986
+png_create_read_struct	16	3374428879	error_ptr	png_voidp	8	1647494986
+png_create_read_struct	24	3458337391	error_fn	png_error_ptr	8	1647494986
+png_create_read_struct	32	3169777051	warn_fn	png_error_ptr	8	1647494986
+png_create_read_struct_2	8	3752608336	png_ptr	png_structp	8	3289740871
+png_create_read_struct_2	24	124801564	user_png_ver	png_const_charp	8	3289740871
+png_create_read_struct_2	32	3569614782	error_ptr	png_voidp	8	3289740871
+png_create_read_struct_2	40	171600317	error_fn	png_error_ptr	8	3289740871
+png_create_read_struct_2	48	1438660776	warn_fn	png_error_ptr	8	3289740871
+png_create_read_struct_2	56	971205966	mem_ptr	png_voidp	8	3289740871
+png_create_read_struct_2	64	1410952295	malloc_fn	png_malloc_ptr	8	3289740871
+png_create_read_struct_2	16	1570362793	free_fn	png_free_ptr	8	3289740871
+png_read_info	4	466380127	keep	int	4	614104956
+png_read_info	24	3732454576	png_ptr	png_structrp	8	614104956
+png_read_info	32	773159090	info_ptr	png_inforp	8	614104956
+png_read_update_info	8	49405226	png_ptr	png_structrp	8	276651129
+png_read_update_info	16	4216456736	info_ptr	png_inforp	8	276651129
+png_start_read_image	8	2856993132	png_ptr	png_structrp	8	642408823
+png_do_read_intrapixel	52	3597558165	bytes_per_pixel	int	4	2530612398
+png_do_read_intrapixel	16	2429965177	rp	png_bytep	8	2530612398
+png_do_read_intrapixel	8	3146538232	rp	png_bytep	8	2530612398
+png_do_read_intrapixel	72	1291475544	row_info	png_row_infop	8	2530612398
+png_do_read_intrapixel	80	775361486	row	png_bytep	8	2530612398
+png_read_row	32	522385857	row_info	png_row_info	1	1511018770
+png_read_row	40	233165336	png_ptr	png_structrp	8	1511018770
+png_read_row	48	4260490240	row	png_bytep	8	1511018770
+png_read_row	56	121773126	dsp_row	png_bytep	8	1511018770
+png_read_rows	48	2130596004	rp	png_bytepp	8	3748503242
+png_read_rows	40	4059383242	dp	png_bytepp	8	3748503242
+png_read_rows	72	2800305848	png_ptr	png_structrp	8	3748503242
+png_read_rows	80	2578802561	row	png_bytepp	8	3748503242
+png_read_rows	88	1492568024	display_row	png_bytepp	8	3748503242
+png_read_rows	92	2761778100	num_rows	int	4	3748503242
+png_read_image	20	3310016284	pass	int	4	496789892
+png_read_image	16	196054031	j	int	4	496789892
+png_read_image	8	2443384296	rp	png_bytepp	8	496789892
+png_read_image	40	460092440	png_ptr	png_structrp	8	496789892
+png_read_image	48	2738569113	image	png_bytepp	8	496789892
+png_read_end	4	672265688	keep	int	4	2780021574
+png_read_end	24	2936366762	png_ptr	png_structrp	8	2780021574
+png_read_end	32	1212794840	info_ptr	png_inforp	8	2780021574
+png_read_destroy	8	3602686880	png_ptr	png_structrp	8	407996457
+png_destroy_read_struct	8	909504941	png_ptr	png_structrp	8	3649645340
+png_destroy_read_struct	24	206393146	png_ptr_ptr	png_structpp	8	3649645340
+png_destroy_read_struct	32	3950940282	info_ptr_ptr	png_infopp	8	3649645340
+png_destroy_read_struct	40	2812823876	end_info_ptr_ptr	png_infopp	8	3649645340
+png_set_read_status_fn	8	1396478032	png_ptr	png_structrp	8	3130433103
+png_set_read_status_fn	16	3443801496	read_row_fn	png_read_status_ptr	8	3130433103
+png_read_png	40	4104497035	png_ptr	png_structrp	8	1023566890
+png_read_png	48	616340309	info_ptr	png_inforp	8	1023566890
+png_read_png	52	1259297179	transforms	int	4	1023566890
+png_read_png	64	4268027289	params	voidp	8	1023566890
+png_image_read_init	32	3202899253	png_ptr	png_structp	8	1475647428
+png_image_read_init	24	1821168752	info_ptr	png_infop	8	1475647428
+png_image_read_init	16	2781513750	control	png_controlp	8	1475647428
+png_image_read_init	40	3355915047	image	png_imagep	8	1475647428
+png_gamma_not_sRGB	4	3550841497	g	png_fixed_point	4	1867848191
+png_image_read_header	24	2119012228	image	png_imagep	8	3297672008
+png_image_read_header	16	3143221879	png_ptr	png_structrp	8	3297672008
+png_image_read_header	8	938039058	info_ptr	png_inforp	8	3297672008
+png_image_read_header	40	778191616	argument	png_voidp	8	3297672008
+png_image_begin_read_from_stdio	8	250392661	image	png_imagep	8	1922226585
+png_image_begin_read_from_stdio	16	2853027606	file	FILE *	8	1922226585
+png_image_begin_read_from_file	8	2416253091	fp	FILE *	8	532980009
+png_image_begin_read_from_file	24	2021007258	image	png_imagep	8	532980009
+png_image_begin_read_from_file	32	1746040047	file_name	const char *	8	532980009
+png_image_memory_read	32	3710689885	image	png_imagep	8	490828678
+png_image_memory_read	24	190142127	cp	png_controlp	8	490828678
+png_image_memory_read	16	901132791	memory	png_const_bytep	8	490828678
+png_image_memory_read	40	3321468483	png_ptr	png_structp	8	490828678
+png_image_memory_read	48	861049503	out	png_bytep	8	490828678
+png_image_memory_read	56	2867495960	need	int	4	490828678
+png_image_begin_read_from_memory	8	1344013179	image	png_imagep	8	1810352294
+png_image_begin_read_from_memory	16	833746759	memory	png_const_voidp	8	1810352294
+png_image_begin_read_from_memory	24	2437003829	size	int	4	1810352294
+png_image_skip_unused_chunks	2608	2543142033	chunks_to_process	const int []	-2	1905702737
+png_image_skip_unused_chunks	8	161074247	png_ptr	png_structrp	8	1905702737
+set_file_encoding	4	4076099277	g	png_fixed_point	4	1789853434
+set_file_encoding	24	2663789320	display	png_image_read_control *	8	1789853434
+decode_gamma	8	3657910996	display	png_image_read_control *	8	16028227
+decode_gamma	12	1568845000	value	int	4	16028227
+decode_gamma	16	821667223	encoding	int	4	16028227
+png_create_colormap_entry	24	1982920532	image	png_imagep	8	1382058382
+png_create_colormap_entry	44	3447077238	output_encoding	int	4	1382058382
+png_create_colormap_entry	40	1769557845	convert_to_Y	int	4	1382058382
+png_create_colormap_entry	36	3677413665	g	png_fixed_point	4	1382058382
+png_create_colormap_entry	32	4162562688	afirst	int	4	1382058382
+png_create_colormap_entry	28	1077399602	bgr	int	4	1382058382
+png_create_colormap_entry	16	3754728364	entry	png_uint_16p	8	1382058382
+png_create_colormap_entry	8	3758685705	entry	png_bytep	8	1382058382
+png_create_colormap_entry	56	3502211379	display	png_image_read_control *	8	1382058382
+png_create_colormap_entry	60	1010670675	ip	int	4	1382058382
+png_create_colormap_entry	64	3421794171	red	int	4	1382058382
+png_create_colormap_entry	68	1823047357	green	int	4	1382058382
+png_create_colormap_entry	72	240141012	blue	int	4	1382058382
+png_create_colormap_entry	76	1924963160	alpha	int	4	1382058382
+png_create_colormap_entry	16	3744984761	encoding	int	4	1382058382
+make_gray_file_colormap	4	3958845161	i	unsigned int	4	3455458122
+make_gray_file_colormap	24	501458447	display	png_image_read_control *	8	3455458122
+make_gray_colormap	4	3666272009	i	unsigned int	4	2981742777
+make_gray_colormap	24	2210533420	display	png_image_read_control *	8	2981742777
+make_ga_colormap	16	3397734575	i	unsigned int	4	150718134
+make_ga_colormap	12	1136299142	a	unsigned int	4	150718134
+make_ga_colormap	4	4113084731	gray	unsigned int	4	150718134
+make_ga_colormap	8	152496376	g	unsigned int	4	150718134
+make_ga_colormap	24	2815470494	display	png_image_read_control *	8	150718134
+make_rgb_colormap	16	1042668590	i	unsigned int	4	3807350856
+make_rgb_colormap	12	1437166375	r	unsigned int	4	3807350856
+make_rgb_colormap	8	2345972400	g	unsigned int	4	3807350856
+make_rgb_colormap	4	2542817411	b	unsigned int	4	3807350856
+make_rgb_colormap	24	3007248409	display	png_image_read_control *	8	3807350856
+png_image_read_colormap	104	382484402	display	png_image_read_control *	8	4209774565
+png_image_read_colormap	96	2179088616	image	png_imagep	8	4209774565
+png_image_read_colormap	88	2553247770	png_ptr	png_structrp	8	4209774565
+png_image_read_colormap	144	2253675623	output_encoding	int	4	4209774565
+png_image_read_colormap	256	1882719461	cmap_entries	unsigned int	4	4209774565
+png_image_read_colormap	252	3877336884	output_processing	unsigned int	4	4209774565
+png_image_read_colormap	248	4201965857	data_encoding	unsigned int	4	4209774565
+png_image_read_colormap	244	3197416969	background_index	unsigned int	4	4209774565
+png_image_read_colormap	228	2015984726	expand_tRNS	int	4	4209774565
+png_image_read_colormap	264	4249276770	argument	png_voidp	8	4209774565
+png_image_read_and_map	48	2100950353	display	png_image_read_control *	8	1040752501
+png_image_read_and_map	40	2594654852	image	png_imagep	8	1040752501
+png_image_read_and_map	32	4029806122	png_ptr	png_structrp	8	1040752501
+png_image_read_and_map	120	51235747	passes	int	4	1040752501
+png_image_read_and_map	80	1531228665	proc	int	4	1040752501
+png_image_read_and_map	24	1106363732	first_row	png_bytep	8	1040752501
+png_image_read_and_map	116	1967118123	pass	int	4	1040752501
+png_image_read_and_map	112	536406849	startx	unsigned int	4	1040752501
+png_image_read_and_map	108	2408447565	stepx	unsigned int	4	1040752501
+png_image_read_and_map	104	514558654	stepy	unsigned int	4	1040752501
+png_image_read_and_map	136	4091512228	argument	png_voidp	8	1040752501
+png_image_read_colormapped	72	1867129900	display	png_image_read_control *	8	2254637583
+png_image_read_colormapped	64	3005305460	image	png_imagep	8	2254637583
+png_image_read_colormapped	56	3397383709	control	png_controlp	8	2254637583
+png_image_read_colormapped	48	2330044013	png_ptr	png_structrp	8	2254637583
+png_image_read_colormapped	40	3297910330	info_ptr	png_inforp	8	2254637583
+png_image_read_colormapped	100	2421477006	passes	int	4	2254637583
+png_image_read_colormapped	88	2653690033	first_row	png_voidp	8	2254637583
+png_image_read_colormapped	24	720953006	ptr	char *	8	2254637583
+png_image_read_colormapped	92	1207657974	result	int	4	2254637583
+png_image_read_colormapped	16	1929035349	row	png_voidp	8	2254637583
+png_image_read_colormapped	8	2656262407	row_bytes	png_alloc_size_t	4	2254637583
+png_image_read_colormapped	80	3143623313	row	png_bytep	8	2254637583
+png_image_read_colormapped	120	1754048894	argument	png_voidp	8	2254637583
+png_image_read_composite	40	2380659911	display	png_image_read_control *	8	808847473
+png_image_read_composite	32	1165680450	image	png_imagep	8	808847473
+png_image_read_composite	24	2540048227	png_ptr	png_structrp	8	808847473
+png_image_read_composite	100	218099609	passes	int	4	808847473
+png_image_read_composite	60	1111247132	channels	unsigned int	4	808847473
+png_image_read_composite	96	1635103433	pass	int	4	808847473
+png_image_read_composite	92	3452503449	startx	unsigned int	4	808847473
+png_image_read_composite	88	2971339805	stepx	unsigned int	4	808847473
+png_image_read_composite	84	2660131167	stepy	unsigned int	4	808847473
+png_image_read_composite	120	3022273126	argument	png_voidp	8	808847473
+png_image_read_background	88	1321282995	display	png_image_read_control *	8	4008086700
+png_image_read_background	80	2370601851	image	png_imagep	8	4008086700
+png_image_read_background	72	3285254741	png_ptr	png_structrp	8	4008086700
+png_image_read_background	64	1544007108	info_ptr	png_inforp	8	4008086700
+png_image_read_background	216	2708199107	pass	int	4	4008086700
+png_image_read_background	212	1579738585	passes	int	4	4008086700
+png_image_read_background	232	3194153444	argument	png_voidp	8	4008086700
+png_image_read_direct	96	2500569696	display	png_image_read_control *	8	4005085928
+png_image_read_direct	88	3404542680	image	png_imagep	8	4005085928
+png_image_read_direct	80	2596251756	png_ptr	png_structrp	8	4005085928
+png_image_read_direct	72	2283127201	info_ptr	png_inforp	8	4005085928
+png_image_read_direct	136	2897621529	linear	int	4	4005085928
+png_image_read_direct	180	3515969803	do_local_compose	int	4	4005085928
+png_image_read_direct	176	2316888618	do_local_background	int	4	4005085928
+png_image_read_direct	172	1783018491	passes	int	4	4005085928
+png_image_read_direct	164	1371897017	output_gamma	png_fixed_point	4	4005085928
+png_image_read_direct	160	3224787548	mode	int	4	4005085928
+png_image_read_direct	156	3829959801	input_gamma_default	png_fixed_point	4	4005085928
+png_image_read_direct	32	4011857394	gtest	png_fixed_point	4	4005085928
+png_image_read_direct	32	1844607694	c	png_color_16	1	4005085928
+png_image_read_direct	148	2711659275	where	int	4	4005085928
+png_image_read_direct	120	3907929454	first_row	png_voidp	8	4005085928
+png_image_read_direct	64	2052467139	ptr	char *	8	4005085928
+png_image_read_direct	128	2295365339	result	int	4	4005085928
+png_image_read_direct	56	3486334275	row	png_voidp	8	4005085928
+png_image_read_direct	124	3092040343	result	int	4	4005085928
+png_image_read_direct	48	2842905670	row	png_voidp	8	4005085928
+png_image_read_direct	40	3132979550	row_bytes	png_alloc_size_t	4	4005085928
+png_image_read_direct	104	3737633695	row	png_bytep	8	4005085928
+png_image_read_direct	200	3273366871	argument	png_voidp	8	4005085928
+png_image_finish_read	104	33736865	channels	unsigned int	4	3898188408
+png_image_finish_read	108	2210969483	result	int	4	3898188408
+png_image_finish_read	96	3596129876	display	png_image_read_control	1	3898188408
+png_image_finish_read	120	2827279205	image	png_imagep	8	3898188408
+png_image_finish_read	128	3554382287	background	png_const_colorp	8	3898188408
+png_image_finish_read	136	253691812	buffer	void *	8	3898188408
+png_image_finish_read	140	900016949	row_stride	int	4	3898188408
+png_image_finish_read	152	1296620086	colormap	void *	8	3898188408
+png_read_data	8	2151172375	png_ptr	png_structrp	8	3699648714
+png_read_data	16	2612358896	data	png_bytep	8	3699648714
+png_read_data	24	3916512780	length	int	4	3699648714
+png_default_read_data	24	3091838722	png_ptr	png_structp	8	490060597
+png_default_read_data	32	2949638659	data	png_bytep	8	490060597
+png_default_read_data	40	155899996	length	int	4	490060597
+png_set_read_fn	8	4171922951	png_ptr	png_structrp	8	988058476
+png_set_read_fn	16	4283791334	io_ptr	png_voidp	8	988058476
+png_set_read_fn	24	557497040	read_data_fn	png_rw_ptr	8	988058476
+png_set_crc_action	8	88424016	png_ptr	png_structrp	8	784248567
+png_set_crc_action	12	2072324733	crit_action	int	4	784248567
+png_set_crc_action	16	1907026107	ancil_action	int	4	784248567
+png_rtran_ok	8	3826617284	png_ptr	png_structrp	8	963019108
+png_rtran_ok	12	1023786366	need_IHDR	int	4	963019108
+png_set_background_fixed	8	1232940309	png_ptr	png_structrp	8	342026902
+png_set_background_fixed	16	2500494792	background_color	png_const_color_16p	8	342026902
+png_set_background_fixed	20	4076130503	background_gamma_code	int	4	342026902
+png_set_background_fixed	24	2572961649	need_expand	int	4	342026902
+png_set_background_fixed	28	2550448881	background_gamma	png_fixed_point	4	342026902
+png_set_background	8	4114008073	png_ptr	png_structrp	8	469923306
+png_set_background	16	804474201	background_color	png_const_color_16p	8	469923306
+png_set_background	20	1904477147	background_gamma_code	int	4	469923306
+png_set_background	24	1216209038	need_expand	int	4	469923306
+png_set_background	32	3407008127	background_gamma	double	8	469923306
+png_set_scale_16	8	1886267305	png_ptr	png_structrp	8	802315538
+png_set_strip_16	8	1473301598	png_ptr	png_structrp	8	2586242756
+png_set_strip_alpha	8	3596626102	png_ptr	png_structrp	8	797238850
+translate_gamma_flags	8	4278343651	png_ptr	png_structrp	8	2320165696
+translate_gamma_flags	12	3981921300	output_gamma	png_fixed_point	4	2320165696
+translate_gamma_flags	16	1659342868	is_screen	int	4	2320165696
+convert_gamma_value	8	2249248792	png_ptr	png_structrp	8	2311987116
+convert_gamma_value	16	3762438723	output_gamma	double	8	2311987116
+png_set_alpha_mode_fixed	8	724623697	compose	int	4	2346425437
+png_set_alpha_mode_fixed	4	3872212677	file_gamma	png_fixed_point	4	2346425437
+png_set_alpha_mode_fixed	24	1273294202	png_ptr	png_structrp	8	2346425437
+png_set_alpha_mode_fixed	28	4214164739	mode	int	4	2346425437
+png_set_alpha_mode_fixed	32	2577699276	output_gamma	png_fixed_point	4	2346425437
+png_set_alpha_mode	8	681280736	png_ptr	png_structrp	8	3753715993
+png_set_alpha_mode	12	1452535681	mode	int	4	3753715993
+png_set_alpha_mode	24	3804593865	output_gamma	double	8	3753715993
+png_set_quantize	208	1449184891	i	int	4	4051207992
+png_set_quantize	204	2397920100	i	int	4	4051207992
+png_set_quantize	200	4242122689	done	int	4	4051207992
+png_set_quantize	196	133721669	j	int	4	4051207992
+png_set_quantize	192	392602977	j	int	4	4051207992
+png_set_quantize	188	4088266419	j	int	4	4051207992
+png_set_quantize	224	2087923564	tmp_color	png_color	1	4051207992
+png_set_quantize	184	3452213374	min_d	int	4	4051207992
+png_set_quantize	180	3194553427	k	int	4	4051207992
+png_set_quantize	176	584099135	min_k	int	4	4051207992
+png_set_quantize	128	2514007558	d_index	int	4	4051207992
+png_set_quantize	124	3402578283	d	int	4	4051207992
+png_set_quantize	172	2418608319	i	int	4	4051207992
+png_set_quantize	168	3878711291	max_d	int	4	4051207992
+png_set_quantize	164	285311577	num_new_palette	int	4	4051207992
+png_set_quantize	48	54025289	t	png_dsortp	8	4051207992
+png_set_quantize	24	2404231771	hash	png_dsortpp	8	4051207992
+png_set_quantize	160	1024343774	j	int	4	4051207992
+png_set_quantize	120	389410689	d	int	4	4051207992
+png_set_quantize	40	145831181	p	png_dsortp	8	4051207992
+png_set_quantize	156	4264222055	j	int	4	4051207992
+png_set_quantize	152	610406497	next_j	int	4	4051207992
+png_set_quantize	148	3393847059	k	int	4	4051207992
+png_set_quantize	32	375696375	p	png_dsortp	8	4051207992
+png_set_quantize	144	1158709193	i	int	4	4051207992
+png_set_quantize	8	270258118	distance	png_bytep	8	4051207992
+png_set_quantize	116	2885815676	total_bits	int	4	4051207992
+png_set_quantize	112	1175470668	num_red	int	4	4051207992
+png_set_quantize	108	2918791467	num_green	int	4	4051207992
+png_set_quantize	104	1571810367	num_blue	int	4	4051207992
+png_set_quantize	140	1557584470	ir	int	4	4051207992
+png_set_quantize	136	1107134323	ig	int	4	4051207992
+png_set_quantize	132	530492107	ib	int	4	4051207992
+png_set_quantize	100	2171272263	r	int	4	4051207992
+png_set_quantize	96	4073536095	g	int	4	4051207992
+png_set_quantize	92	2807839828	b	int	4	4051207992
+png_set_quantize	88	141832150	dr	int	4	4051207992
+png_set_quantize	84	1563229930	index_r	int	4	4051207992
+png_set_quantize	80	2452995016	dg	int	4	4051207992
+png_set_quantize	76	1818954526	dt	int	4	4051207992
+png_set_quantize	72	3570887370	dm	int	4	4051207992
+png_set_quantize	68	1048497867	index_g	int	4	4051207992
+png_set_quantize	64	1478295817	d_index	int	4	4051207992
+png_set_quantize	60	3317333447	db	int	4	4051207992
+png_set_quantize	56	3730997287	dmax	int	4	4051207992
+png_set_quantize	52	3926583289	d	int	4	4051207992
+png_set_quantize	248	2771963675	png_ptr	png_structrp	8	4051207992
+png_set_quantize	256	894587678	palette	png_colorp	8	4051207992
+png_set_quantize	260	4008456710	num_palette	int	4	4051207992
+png_set_quantize	264	786569836	maximum_colors	int	4	4051207992
+png_set_quantize	272	162423415	histogram	png_const_uint_16p	8	4051207992
+png_set_quantize	276	1625454246	full_quantize	int	4	4051207992
+png_set_gamma_fixed	8	149847639	png_ptr	png_structrp	8	932406000
+png_set_gamma_fixed	12	2973768117	scrn_gamma	png_fixed_point	4	932406000
+png_set_gamma_fixed	16	2731034420	file_gamma	png_fixed_point	4	932406000
+png_set_gamma	24	3926668248	png_ptr	png_structrp	8	1245658795
+png_set_gamma	32	443131702	scrn_gamma	double	8	1245658795
+png_set_gamma	40	1678182001	file_gamma	double	8	1245658795
+png_set_expand	8	4185424632	png_ptr	png_structrp	8	2424655958
+png_set_palette_to_rgb	8	204686231	png_ptr	png_structrp	8	2578817520
+png_set_expand_gray_1_2_4_to_8	8	3561192819	png_ptr	png_structrp	8	3361151243
+png_set_tRNS_to_alpha	8	465743466	png_ptr	png_structrp	8	2257023808
+png_set_expand_16	8	1074698999	png_ptr	png_structrp	8	1212829595
+png_set_gray_to_rgb	8	2680041505	png_ptr	png_structrp	8	3697733037
+png_set_rgb_to_gray_fixed	24	1471543106	png_ptr	png_structrp	8	1941714048
+png_set_rgb_to_gray_fixed	28	2720828314	error_action	int	4	1941714048
+png_set_rgb_to_gray_fixed	32	364252647	red	png_fixed_point	4	1941714048
+png_set_rgb_to_gray_fixed	36	1534728184	green	png_fixed_point	4	1941714048
+png_set_rgb_to_gray	24	3649672084	png_ptr	png_structrp	8	49948270
+png_set_rgb_to_gray	28	476244651	error_action	int	4	49948270
+png_set_rgb_to_gray	40	3119835499	red	double	8	49948270
+png_set_rgb_to_gray	48	4132286921	green	double	8	49948270
+png_set_read_user_transform_fn	8	1548576295	png_ptr	png_structrp	8	440769743
+png_set_read_user_transform_fn	16	2066769499	read_user_transform_fn	png_user_transform_ptr	8	440769743
+png_gamma_threshold	12	1649769918	gtest	png_fixed_point	4	4067522866
+png_gamma_threshold	20	280729800	screen_gamma	png_fixed_point	4	4067522866
+png_gamma_threshold	24	1782502315	file_gamma	png_fixed_point	4	4067522866
+png_init_palette_transformations	20	2690378931	input_has_alpha	int	4	3941026263
+png_init_palette_transformations	16	3951114488	input_has_transparency	int	4	3941026263
+png_init_palette_transformations	12	1837797665	i	int	4	3941026263
+png_init_palette_transformations	8	2657745518	i	int	4	3941026263
+png_init_palette_transformations	4	1480077393	istop	int	4	3941026263
+png_init_palette_transformations	40	2378916366	png_ptr	png_structrp	8	3941026263
+png_init_rgb_transformations	8	3151039011	input_has_alpha	int	4	1761467803
+png_init_rgb_transformations	4	3574765180	input_has_transparency	int	4	1761467803
+png_init_rgb_transformations	16	2573136513	gray	int	4	1761467803
+png_init_rgb_transformations	12	1707654918	trans_gray	int	4	1761467803
+png_init_rgb_transformations	24	1348508351	png_ptr	png_structrp	8	1761467803
+png_init_read_transformations	100	3911915893	gamma_correction	int	4	1635192531
+png_init_read_transformations	128	1500843673	back	png_color	1	1635192531
+png_init_read_transformations	112	3640275971	back_1	png_color	1	1635192531
+png_init_read_transformations	16	3293101809	palette	png_colorp	8	1635192531
+png_init_read_transformations	60	430753587	num_palette	int	4	1635192531
+png_init_read_transformations	96	1997257611	i	int	4	1635192531
+png_init_read_transformations	92	2304863676	g	png_fixed_point	4	1635192531
+png_init_read_transformations	88	1187838714	gs	png_fixed_point	4	1635192531
+png_init_read_transformations	52	2867010095	gs_sig	int	4	1635192531
+png_init_read_transformations	56	3186645154	g_sig	int	4	1635192531
+png_init_read_transformations	84	2857527541	g	png_fixed_point	4	1635192531
+png_init_read_transformations	80	3706610395	gs	png_fixed_point	4	1635192531
+png_init_read_transformations	8	540623281	palette	png_colorp	8	1635192531
+png_init_read_transformations	48	1827311439	num_palette	int	4	1635192531
+png_init_read_transformations	76	1577652828	i	int	4	1635192531
+png_init_read_transformations	72	307353093	i	int	4	1635192531
+png_init_read_transformations	64	2913431341	istop	int	4	1635192531
+png_init_read_transformations	112	2707061871	back	png_color	1	1635192531
+png_init_read_transformations	24	923297633	palette	png_colorp	8	1635192531
+png_init_read_transformations	68	357063258	i	int	4	1635192531
+png_init_read_transformations	44	3315356412	istop	int	4	1635192531
+png_init_read_transformations	40	370012107	shift	int	4	1635192531
+png_init_read_transformations	36	4290019624	component	int	4	1635192531
+png_init_read_transformations	32	2291488011	component	int	4	1635192531
+png_init_read_transformations	28	3701188144	component	int	4	1635192531
+png_init_read_transformations	152	2139397765	png_ptr	png_structrp	8	1635192531
+png_read_transform_info	8	3978303568	png_ptr	png_structrp	8	1638898407
+png_read_transform_info	16	3286887156	info_ptr	png_inforp	8	1638898407
+png_do_unpack	88	4214552909	row_info	png_row_infop	8	2637715337
+png_do_unpack	96	350935071	row	png_bytep	8	2637715337
+png_do_unshift	128	1034723118	color_type	int	4	3334528838
+png_do_unshift	32	4176207287	shift	int [4]	16	3334528838
+png_do_unshift	148	927983432	channels	int	4	3334528838
+png_do_unshift	124	4002980751	bit_depth	int	4	3334528838
+png_do_unshift	144	2447005655	c	int	4	3334528838
+png_do_unshift	140	285085146	have_shift	int	4	3334528838
+png_do_unshift	96	2018007468	bp	png_bytep	8	3334528838
+png_do_unshift	64	2266162598	bp_end	png_bytep	8	3334528838
+png_do_unshift	120	3841199155	b	int	4	3334528838
+png_do_unshift	88	3855745712	bp	png_bytep	8	3334528838
+png_do_unshift	56	182425015	bp_end	png_bytep	8	3334528838
+png_do_unshift	116	2684914323	gray_shift	int	4	3334528838
+png_do_unshift	112	649230167	mask	int	4	3334528838
+png_do_unshift	108	3360543133	b	int	4	3334528838
+png_do_unshift	80	3626412735	bp	png_bytep	8	3334528838
+png_do_unshift	48	646958864	bp_end	png_bytep	8	3334528838
+png_do_unshift	136	1959027275	channel	int	4	3334528838
+png_do_unshift	104	1280165519	b	int	4	3334528838
+png_do_unshift	72	2599158129	bp	png_bytep	8	3334528838
+png_do_unshift	40	566770133	bp_end	png_bytep	8	3334528838
+png_do_unshift	132	4198144778	channel	int	4	3334528838
+png_do_unshift	100	3068614906	value	int	4	3334528838
+png_do_unshift	168	3829439109	row_info	png_row_infop	8	3334528838
+png_do_unshift	176	1087636082	row	png_bytep	8	3334528838
+png_do_unshift	184	3352844066	sig_bits	png_const_color_8p	8	3334528838
+png_do_scale_16_to_8	24	3557627725	sp	png_bytep	8	510045327
+png_do_scale_16_to_8	16	1924944900	dp	png_bytep	8	510045327
+png_do_scale_16_to_8	8	2754315427	ep	png_bytep	8	510045327
+png_do_scale_16_to_8	40	485027756	row_info	png_row_infop	8	510045327
+png_do_scale_16_to_8	48	18588782	row	png_bytep	8	510045327
+png_do_chop	24	334980474	sp	png_bytep	8	3707112415
+png_do_chop	16	3336714317	dp	png_bytep	8	3707112415
+png_do_chop	8	1024672485	ep	png_bytep	8	3707112415
+png_do_chop	40	479742379	row_info	png_row_infop	8	3707112415
+png_do_chop	48	1551869859	row	png_bytep	8	3707112415
+png_do_read_swap_alpha	80	2172761669	sp	png_bytep	8	1609708027
+png_do_read_swap_alpha	72	4106517343	dp	png_bytep	8	1609708027
+png_do_read_swap_alpha	64	739964363	sp	png_bytep	8	1609708027
+png_do_read_swap_alpha	56	867577033	dp	png_bytep	8	1609708027
+png_do_read_swap_alpha	48	3276706417	sp	png_bytep	8	1609708027
+png_do_read_swap_alpha	40	817090211	dp	png_bytep	8	1609708027
+png_do_read_swap_alpha	32	3137496131	sp	png_bytep	8	1609708027
+png_do_read_swap_alpha	24	3664600273	dp	png_bytep	8	1609708027
+png_do_read_swap_alpha	120	3828518426	row_info	png_row_infop	8	1609708027
+png_do_read_swap_alpha	128	3146113520	row	png_bytep	8	1609708027
+png_do_read_invert_alpha	64	279840657	sp	png_bytep	8	96727729
+png_do_read_invert_alpha	56	4236182167	dp	png_bytep	8	96727729
+png_do_read_invert_alpha	48	1542122743	sp	png_bytep	8	96727729
+png_do_read_invert_alpha	40	2626210188	dp	png_bytep	8	96727729
+png_do_read_invert_alpha	32	305879319	sp	png_bytep	8	96727729
+png_do_read_invert_alpha	24	3029302468	dp	png_bytep	8	96727729
+png_do_read_invert_alpha	16	1624444832	sp	png_bytep	8	96727729
+png_do_read_invert_alpha	8	2515918987	dp	png_bytep	8	96727729
+png_do_read_invert_alpha	104	1541118278	row_info	png_row_infop	8	96727729
+png_do_read_invert_alpha	112	1497497051	row	png_bytep	8	96727729
+png_do_read_filler	128	3449951396	sp	png_bytep	8	2144422917
+png_do_read_filler	120	501854544	dp	png_bytep	8	2144422917
+png_do_read_filler	112	1475978539	sp	png_bytep	8	2144422917
+png_do_read_filler	104	2025032618	dp	png_bytep	8	2144422917
+png_do_read_filler	96	3845582502	sp	png_bytep	8	2144422917
+png_do_read_filler	88	3683530136	dp	png_bytep	8	2144422917
+png_do_read_filler	80	2253412098	sp	png_bytep	8	2144422917
+png_do_read_filler	72	3448848403	dp	png_bytep	8	2144422917
+png_do_read_filler	64	1567573907	sp	png_bytep	8	2144422917
+png_do_read_filler	56	3639557121	dp	png_bytep	8	2144422917
+png_do_read_filler	48	2954251278	sp	png_bytep	8	2144422917
+png_do_read_filler	40	477768461	dp	png_bytep	8	2144422917
+png_do_read_filler	32	1112549100	sp	png_bytep	8	2144422917
+png_do_read_filler	24	1554107651	dp	png_bytep	8	2144422917
+png_do_read_filler	16	3718736698	sp	png_bytep	8	2144422917
+png_do_read_filler	8	3071500641	dp	png_bytep	8	2144422917
+png_do_read_filler	152	3636724392	row_info	png_row_infop	8	2144422917
+png_do_read_filler	160	3371081542	row	png_bytep	8	2144422917
+png_do_read_filler	164	561543216	filler	int	4	2144422917
+png_do_read_filler	168	2647899098	flags	int	4	2144422917
+png_do_gray_to_rgb	64	4270566391	sp	png_bytep	8	2600523557
+png_do_gray_to_rgb	56	2689907583	dp	png_bytep	8	2600523557
+png_do_gray_to_rgb	48	1609884631	sp	png_bytep	8	2600523557
+png_do_gray_to_rgb	40	1835946216	dp	png_bytep	8	2600523557
+png_do_gray_to_rgb	32	1348978083	sp	png_bytep	8	2600523557
+png_do_gray_to_rgb	24	2072246253	dp	png_bytep	8	2600523557
+png_do_gray_to_rgb	16	3232911966	sp	png_bytep	8	2600523557
+png_do_gray_to_rgb	8	1463513289	dp	png_bytep	8	2600523557
+png_do_gray_to_rgb	88	1570748607	row_info	png_row_infop	8	2600523557
+png_do_gray_to_rgb	96	2383434710	row	png_bytep	8	2600523557
+png_do_rgb_to_gray	104	99441497	rgb_error	int	4	2887759751
+png_do_rgb_to_gray	68	861487508	have_alpha	int	4	2887759751
+png_do_rgb_to_gray	64	58736668	sp	png_bytep	8	2887759751
+png_do_rgb_to_gray	56	334286394	dp	png_bytep	8	2887759751
+png_do_rgb_to_gray	48	316732066	sp	png_bytep	8	2887759751
+png_do_rgb_to_gray	40	2156708188	dp	png_bytep	8	2887759751
+png_do_rgb_to_gray	32	558882763	sp	png_bytep	8	2887759751
+png_do_rgb_to_gray	24	4133528972	dp	png_bytep	8	2887759751
+png_do_rgb_to_gray	16	717181292	sp	png_bytep	8	2887759751
+png_do_rgb_to_gray	8	3246043317	dp	png_bytep	8	2887759751
+png_do_rgb_to_gray	152	1162397150	png_ptr	png_structrp	8	2887759751
+png_do_rgb_to_gray	160	1581672461	row_info	png_row_infop	8	2887759751
+png_do_rgb_to_gray	168	1194024371	row	png_bytep	8	2887759751
+png_do_compose	48	1879428043	gamma_table	png_const_bytep	8	2782805776
+png_do_compose	40	381428407	gamma_from_1	png_const_bytep	8	2782805776
+png_do_compose	32	585977582	gamma_to_1	png_const_bytep	8	2782805776
+png_do_compose	24	4031866053	gamma_16	png_const_uint_16pp	8	2782805776
+png_do_compose	16	3731602708	gamma_16_from_1	png_const_uint_16pp	8	2782805776
+png_do_compose	8	4196981214	gamma_16_to_1	png_const_uint_16pp	8	2782805776
+png_do_compose	144	3516359124	gamma_shift	int	4	2782805776
+png_do_compose	140	1987639369	optimize	int	4	2782805776
+png_do_compose	56	2347531675	sp	png_bytep	8	2782805776
+png_do_compose	148	3138454296	shift	int	4	2782805776
+png_do_compose	248	3529911679	row_info	png_row_infop	8	2782805776
+png_do_compose	256	2954476268	row	png_bytep	8	2782805776
+png_do_compose	264	2623716698	png_ptr	png_structrp	8	2782805776
+png_do_gamma	16	442239413	gamma_table	png_const_bytep	8	2146044140
+png_do_gamma	8	4267785969	gamma_16_table	png_const_uint_16pp	8	2146044140
+png_do_gamma	56	3377591046	gamma_shift	int	4	2146044140
+png_do_gamma	24	292020774	sp	png_bytep	8	2146044140
+png_do_gamma	88	292154053	row_info	png_row_infop	8	2146044140
+png_do_gamma	96	3472700737	row	png_bytep	8	2146044140
+png_do_gamma	104	1053279058	png_ptr	png_structrp	8	2146044140
+png_do_encode_alpha	16	733214579	table	png_bytep	8	242384424
+png_do_encode_alpha	28	2207737286	step	int	4	242384424
+png_do_encode_alpha	8	773525776	table	png_uint_16pp	8	242384424
+png_do_encode_alpha	24	1756693448	gamma_shift	int	4	242384424
+png_do_encode_alpha	20	3359745112	step	int	4	242384424
+png_do_encode_alpha	56	1910527876	row_info	png_row_infop	8	242384424
+png_do_encode_alpha	64	3732381407	row	png_bytep	8	242384424
+png_do_encode_alpha	72	1199881416	png_ptr	png_structrp	8	242384424
+png_do_expand_palette	32	3111539646	shift	int	4	3379319990
+png_do_expand_palette	20	1803316126	value	int	4	3379319990
+png_do_expand_palette	16	772284899	sp	png_bytep	8	3379319990
+png_do_expand_palette	8	1045925417	dp	png_bytep	8	3379319990
+png_do_expand_palette	40	3559674656	png_ptr	png_structrp	8	3379319990
+png_do_expand_palette	48	2676634083	row_info	png_row_infop	8	3379319990
+png_do_expand_palette	56	3615225732	row	png_bytep	8	3379319990
+png_do_expand_palette	64	350493694	palette	png_const_colorp	8	3379319990
+png_do_expand_palette	72	2914107224	trans_alpha	png_const_bytep	8	3379319990
+png_do_expand_palette	76	2126687979	num_trans	int	4	3379319990
+png_do_expand	44	1062919879	shift	int	4	359695051
+png_do_expand	28	567742074	value	int	4	359695051
+png_do_expand	16	2119916705	sp	png_bytep	8	359695051
+png_do_expand	8	2141320125	dp	png_bytep	8	359695051
+png_do_expand	36	2879720480	gray	unsigned int	4	359695051
+png_do_expand	24	1609283344	gray_high	unsigned int	4	359695051
+png_do_expand	20	1557533317	gray_low	unsigned int	4	359695051
+png_do_expand	72	4002661395	row_info	png_row_infop	8	359695051
+png_do_expand	80	1502911189	row	png_bytep	8	359695051
+png_do_expand	88	3433319910	trans_color	png_const_color_16p	8	359695051
+png_do_expand_16	24	204248937	row_info	png_row_infop	8	1211613025
+png_do_expand_16	32	155288974	row	png_bytep	8	1211613025
+png_do_quantize	16	2831300912	sp	png_bytep	8	306353698
+png_do_quantize	8	261055315	dp	png_bytep	8	306353698
+png_do_quantize	48	2215575146	r	int	4	306353698
+png_do_quantize	44	3047875042	g	int	4	306353698
+png_do_quantize	40	595358488	b	int	4	306353698
+png_do_quantize	36	2639736802	p	int	4	306353698
+png_do_quantize	32	2504748903	r	int	4	306353698
+png_do_quantize	28	2583203650	g	int	4	306353698
+png_do_quantize	24	2421609795	b	int	4	306353698
+png_do_quantize	20	403707287	p	int	4	306353698
+png_do_quantize	72	2208622480	row_info	png_row_infop	8	306353698
+png_do_quantize	80	2994157939	row	png_bytep	8	306353698
+png_do_quantize	88	859483424	palette_lookup	png_const_bytep	8	306353698
+png_do_quantize	96	2172377937	quantize_lookup	png_const_bytep	8	306353698
+png_do_read_transformations	4	730552762	rgb_error	int	4	3687853474
+png_do_read_transformations	24	434964577	png_ptr	png_structrp	8	3687853474
+png_do_read_transformations	32	1908255060	row_info	png_row_infop	8	3687853474
+png_set_invert_alpha	88	142205238	png_ptr	png_structrp	8	2141529438
+png_get_sPLT	552	3548033590	png_ptr	png_const_structrp	8	1853990477
+png_get_sPLT	560	1095477363	info_ptr	png_inforp	8	1853990477
+png_write_finish_row	88	2070012589	png_ptr	png_structrp	8	1089940504
+png_colorspace_sync	120	2377900369	png_ptr	png_const_structrp	8	2713807403
+png_colorspace_sync	128	2842606237	info_ptr	png_inforp	8	2713807403
+png_get_fixed_point	24	3320180031	png_ptr	png_structrp	8	3464854926
+png_get_fixed_point	32	1685625169	buf	png_const_bytep	8	3464854926
+png_read_sig	24	2632127682	png_ptr	png_structrp	8	1308374157
+png_read_sig	32	3893090855	info_ptr	png_inforp	8	1308374157
+png_crc_read	8	4254063184	png_ptr	png_structrp	8	4214333966
+png_crc_read	16	2402266906	buf	png_bytep	8	4214333966
+png_crc_read	20	82926509	length	int	4	4214333966
+png_crc_finish	1064	970490753	png_ptr	png_structrp	8	2472526770
+png_crc_finish	1068	1263182555	skip	int	4	2472526770
+png_crc_error	24	914917788	need_crc	int	4	1756427506
+png_crc_error	40	2256830385	png_ptr	png_structrp	8	1756427506
+png_read_buffer	8	3669522713	buffer	png_bytep	8	4024627342
+png_read_buffer	24	2986454367	png_ptr	png_structrp	8	4024627342
+png_read_buffer	32	3246339909	new_size	png_alloc_size_t	4	4024627342
+png_read_buffer	36	987293785	warn	int	4	4024627342
+png_inflate_claim	80	4045250236	msg	char [64]	64	2639023951
+png_inflate_claim	88	2895227984	ret	int	4	2639023951
+png_inflate_claim	84	3780396422	window_bits	int	4	2639023951
+png_inflate_claim	104	3497077436	png_ptr	png_structrp	8	2639023951
+png_inflate_claim	108	1568046860	owner	int	4	2639023951
+png_zlib_inflate	8	1912825056	png_ptr	png_structrp	8	2088298243
+png_zlib_inflate	12	2403055363	flush	int	4	2088298243
+png_inflate	1052	3607502666	ret	int	4	1927094000
+png_inflate	1048	2505620290	avail_out	png_alloc_size_t	4	1927094000
+png_inflate	1056	3819770446	avail	uInt	4	1927094000
+png_inflate	1040	3345775101	local_buffer	Byte [1024]	1024	1927094000
+png_inflate	1080	524556258	png_ptr	png_structrp	8	1927094000
+png_inflate	1084	4258742142	owner	int	4	1927094000
+png_inflate	1088	1625452118	finish	int	4	1927094000
+png_inflate	1096	3788178846	input	png_const_bytep	8	1927094000
+png_inflate	1104	744321553	input_size_ptr	png_uint_32p	8	1927094000
+png_inflate	1112	3813501622	output	png_bytep	8	1927094000
+png_inflate	1120	875781821	output_size_ptr	png_alloc_size_t *	8	1927094000
+png_decompress_chunk	48	2399152444	limit	png_alloc_size_t	4	1278485487
+png_decompress_chunk	52	3628242851	ret	int	4	1278485487
+png_decompress_chunk	32	1472129518	new_size	png_alloc_size_t	4	1278485487
+png_decompress_chunk	24	919394793	buffer_size	png_alloc_size_t	4	1278485487
+png_decompress_chunk	40	2511288467	text	png_bytep	8	1278485487
+png_decompress_chunk	16	3660350333	old_ptr	png_bytep	8	1278485487
+png_decompress_chunk	72	3546929774	png_ptr	png_structrp	8	1278485487
+png_decompress_chunk	76	2087870351	chunklength	int	4	1278485487
+png_decompress_chunk	80	261570635	prefix_size	int	4	1278485487
+png_decompress_chunk	88	3498624240	newlength	png_alloc_size_t *	8	1278485487
+png_decompress_chunk	92	3913940185	terminate	int	4	1278485487
+png_inflate_read	4	1029094960	ret	int	4	703744352
+png_inflate_read	8	4025844927	avail	uInt	4	703744352
+png_inflate_read	24	1115208575	png_ptr	png_structrp	8	703744352
+png_inflate_read	32	1508314205	read_buffer	png_bytep	8	703744352
+png_inflate_read	36	597168347	read_size	uInt	4	703744352
+png_inflate_read	48	4273746089	chunk_bytes	png_uint_32p	8	703744352
+png_inflate_read	56	1433151461	next_out	png_bytep	8	703744352
+png_inflate_read	64	2003911990	out_size	png_alloc_size_t *	8	703744352
+png_inflate_read	16	3355678752	finish	int	4	703744352
+png_handle_IHDR	52	2333873928	bit_depth	int	4	1615017682
+png_handle_IHDR	48	2443608141	color_type	int	4	1615017682
+png_handle_IHDR	44	1665243802	compression_type	int	4	1615017682
+png_handle_IHDR	40	2390733017	filter_type	int	4	1615017682
+png_handle_IHDR	36	1017884383	interlace_type	int	4	1615017682
+png_handle_IHDR	72	2643303553	png_ptr	png_structrp	8	1615017682
+png_handle_IHDR	80	3420325252	info_ptr	png_inforp	8	1615017682
+png_handle_IHDR	84	2978644266	length	int	4	1615017682
+png_handle_PLTE	784	1900909446	palette	png_color [256]	256	758874950
+png_handle_PLTE	804	871525185	max_palette_length	int	4	758874950
+png_handle_PLTE	800	3099020425	num	int	4	758874950
+png_handle_PLTE	796	2551913300	i	int	4	758874950
+png_handle_PLTE	792	1813819648	pal_ptr	png_colorp	8	758874950
+png_handle_PLTE	824	1499591379	png_ptr	png_structrp	8	758874950
+png_handle_PLTE	832	2175805871	info_ptr	png_inforp	8	758874950
+png_handle_PLTE	836	1109990079	length	int	4	758874950
+png_handle_IEND	8	1148824244	png_ptr	png_structrp	8	744339558
+png_handle_IEND	16	3580417945	info_ptr	png_inforp	8	744339558
+png_handle_IEND	20	776077513	length	int	4	744339558
+png_handle_gAMA	20	1785763766	igamma	png_fixed_point	4	2982106817
+png_handle_gAMA	40	2666256374	png_ptr	png_structrp	8	2982106817
+png_handle_gAMA	48	686647103	info_ptr	png_inforp	8	2982106817
+png_handle_gAMA	52	3090326377	length	int	4	2982106817
+png_handle_sBIT	24	1259802496	truelen	unsigned int	4	2399535347
+png_handle_sBIT	20	1885071705	i	unsigned int	4	2399535347
+png_handle_sBIT	40	3862476957	png_ptr	png_structrp	8	2399535347
+png_handle_sBIT	48	1251520833	info_ptr	png_inforp	8	2399535347
+png_handle_sBIT	52	2195141741	length	int	4	2399535347
+png_handle_cHRM	80	983057248	xy	png_xy	32	4100843263
+png_handle_cHRM	88	3889728194	png_ptr	png_structrp	8	4100843263
+png_handle_cHRM	96	1760224086	info_ptr	png_inforp	8	4100843263
+png_handle_cHRM	100	2356747938	length	int	4	4100843263
+png_handle_sRGB	24	661187676	png_ptr	png_structrp	8	664740760
+png_handle_sRGB	32	424992317	info_ptr	png_inforp	8	664740760
+png_handle_sRGB	36	3182348833	length	int	4	664740760
+png_handle_iCCP	1296	3677773624	errmsg	png_const_charp	8	977283662
+png_handle_iCCP	1324	10812654	finished	int	4	977283662
+png_handle_iCCP	1320	2632609199	read_length	uInt	4	977283662
+png_handle_iCCP	1316	3165267322	keyword_length	uInt	4	977283662
+png_handle_iCCP	1280	4081500726	keyword	char [81]	81	977283662
+png_handle_iCCP	1184	634151513	profile_header	Byte [132]	132	977283662
+png_handle_iCCP	1040	437717072	local_buffer	Byte [1024]	1024	977283662
+png_handle_iCCP	1304	3717982697	size	png_alloc_size_t	4	977283662
+png_handle_iCCP	1288	3008655795	profile	png_bytep	8	977283662
+png_handle_iCCP	1336	2815828964	png_ptr	png_structrp	8	977283662
+png_handle_iCCP	1344	579506075	info_ptr	png_inforp	8	977283662
+png_handle_iCCP	1348	1569944827	length	int	4	977283662
+png_handle_sPLT	80	2050423434	entry_start	png_bytep	8	3624425270
+png_handle_sPLT	72	3158648870	buffer	png_bytep	8	3624425270
+png_handle_sPLT	48	2278877304	new_palette	png_sPLT_t	1	3624425270
+png_handle_sPLT	56	3362851669	pp	png_sPLT_entryp	8	3624425270
+png_handle_sPLT	92	469441020	entry_size	int	4	3624425270
+png_handle_sPLT	100	2847944040	i	int	4	3624425270
+png_handle_sPLT	120	3834423677	png_ptr	png_structrp	8	3624425270
+png_handle_sPLT	128	3743837715	info_ptr	png_inforp	8	3624425270
+png_handle_sPLT	132	18044670	length	int	4	3624425270
+png_handle_tRNS	280	547269574	png_ptr	png_structrp	8	3942691646
+png_handle_tRNS	288	3268684117	info_ptr	png_inforp	8	3942691646
+png_handle_tRNS	292	1290460729	length	int	4	3942691646
+png_handle_bKGD	36	3687264135	truelen	unsigned int	4	3952742602
+png_handle_bKGD	32	1554070494	background	png_color_16	1	3952742602
+png_handle_bKGD	56	2801817355	png_ptr	png_structrp	8	3952742602
+png_handle_bKGD	64	1238015141	info_ptr	png_inforp	8	3952742602
+png_handle_bKGD	68	585592129	length	int	4	3952742602
+png_handle_eXIf	16	348150184	i	unsigned int	4	1335603706
+png_handle_eXIf	24	2806067734	png_ptr	png_structrp	8	1335603706
+png_handle_eXIf	32	3301214645	info_ptr	png_inforp	8	1335603706
+png_handle_eXIf	36	3864121056	length	int	4	1335603706
+png_handle_hIST	532	4058269582	num	unsigned int	4	4068385399
+png_handle_hIST	536	2955489602	i	unsigned int	4	4068385399
+png_handle_hIST	552	2785680667	png_ptr	png_structrp	8	4068385399
+png_handle_hIST	560	1640049284	info_ptr	png_inforp	8	4068385399
+png_handle_hIST	564	2561292541	length	int	4	4068385399
+png_handle_pHYs	36	942284855	unit_type	int	4	1624535416
+png_handle_pHYs	56	970002476	png_ptr	png_structrp	8	1624535416
+png_handle_pHYs	64	118972661	info_ptr	png_inforp	8	1624535416
+png_handle_pHYs	68	2970738378	length	int	4	1624535416
+png_handle_oFFs	36	1078162060	unit_type	int	4	1058054187
+png_handle_oFFs	56	4108364979	png_ptr	png_structrp	8	1058054187
+png_handle_oFFs	64	1398251697	info_ptr	png_inforp	8	1058054187
+png_handle_oFFs	68	3920069885	length	int	4	1058054187
+png_handle_pCAL	32	3872618383	buffer	png_bytep	8	3161700114
+png_handle_pCAL	40	2186723555	buf	png_bytep	8	3161700114
+png_handle_pCAL	16	3892894459	units	png_bytep	8	3161700114
+png_handle_pCAL	24	1129445254	endptr	png_bytep	8	3161700114
+png_handle_pCAL	8	1606946731	params	png_charpp	8	3161700114
+png_handle_pCAL	52	2091030097	i	int	4	3161700114
+png_handle_pCAL	72	1715776324	png_ptr	png_structrp	8	3161700114
+png_handle_pCAL	80	3366920338	info_ptr	png_inforp	8	3161700114
+png_handle_pCAL	84	2158601115	length	int	4	3161700114
+png_handle_sCAL	24	3598598485	buffer	png_bytep	8	1132104629
+png_handle_sCAL	36	310195065	state	int	4	1132104629
+png_handle_sCAL	56	1686243039	png_ptr	png_structrp	8	1132104629
+png_handle_sCAL	64	704691824	info_ptr	png_inforp	8	1132104629
+png_handle_sCAL	68	1544051755	length	int	4	1132104629
+png_handle_tIME	32	3270851761	mod_time	png_time	1	1415971525
+png_handle_tIME	40	3351424613	png_ptr	png_structrp	8	1415971525
+png_handle_tIME	48	3146591855	info_ptr	png_inforp	8	1415971525
+png_handle_tIME	52	1617920892	length	int	4	1415971525
+png_handle_tEXt	64	2507668022	text_info	png_text	1	826692619
+png_handle_tEXt	80	156538165	buffer	png_bytep	8	826692619
+png_handle_tEXt	72	1242031944	key	png_charp	8	826692619
+png_handle_tEXt	88	2687923901	text	png_charp	8	826692619
+png_handle_tEXt	104	1687197321	png_ptr	png_structrp	8	826692619
+png_handle_tEXt	112	981392502	info_ptr	png_inforp	8	826692619
+png_handle_tEXt	116	97393269	length	int	4	826692619
+png_handle_zTXt	80	2841889084	errmsg	png_const_charp	8	1166654680
+png_handle_zTXt	72	2730303086	buffer	png_bytep	8	1166654680
+png_handle_zTXt	88	3048226421	uncompressed_length	png_alloc_size_t	4	1166654680
+png_handle_zTXt	64	2377570655	text	png_text	1	1166654680
+png_handle_zTXt	104	2886331822	png_ptr	png_structrp	8	1166654680
+png_handle_zTXt	112	4206626203	info_ptr	png_inforp	8	1166654680
+png_handle_zTXt	116	3443907412	length	int	4	1166654680
+png_handle_iTXt	80	64912772	errmsg	png_const_charp	8	4063420678
+png_handle_iTXt	72	2825229267	buffer	png_bytep	8	4063420678
+png_handle_iTXt	100	2485154928	compressed	int	4	4063420678
+png_handle_iTXt	88	317977558	uncompressed_length	png_alloc_size_t	4	4063420678
+png_handle_iTXt	64	350365241	text	png_text	1	4063420678
+png_handle_iTXt	120	3116200772	png_ptr	png_structrp	8	4063420678
+png_handle_iTXt	128	1177956981	info_ptr	png_inforp	8	4063420678
+png_handle_iTXt	132	3317414541	length	int	4	4063420678
+png_cache_unknown_chunk	8	1026069960	limit	png_alloc_size_t	4	2589858123
+png_cache_unknown_chunk	24	1320668510	png_ptr	png_structrp	8	2589858123
+png_cache_unknown_chunk	28	441370568	length	int	4	2589858123
+png_handle_unknown	8	3378818187	handled	int	4	3577484531
+png_handle_unknown	4	1250715245	ret	int	4	3577484531
+png_handle_unknown	24	2807438417	png_ptr	png_structrp	8	3577484531
+png_handle_unknown	32	497306067	info_ptr	png_inforp	8	3577484531
+png_handle_unknown	36	196755389	length	int	4	3577484531
+png_handle_unknown	40	2579619780	keep	int	4	3577484531
+png_check_chunk_name	12	345912105	i	int	4	4045118172
+png_check_chunk_name	4	405335698	c	int	4	4045118172
+png_check_chunk_name	24	4002661395	png_ptr	png_const_structrp	8	4045118172
+png_check_chunk_name	28	1502911189	chunk_name	int	4	4045118172
+png_check_chunk_length	24	2414793116	limit	png_alloc_size_t	4	175756759
+png_check_chunk_length	16	2615002523	idat_limit	png_alloc_size_t	4	175756759
+png_check_chunk_length	40	859703509	png_ptr	png_const_structrp	8	175756759
+png_check_chunk_length	44	1241290303	length	int	4	175756759
+png_combine_row	112	2302541615	pixel_depth	unsigned int	4	2469117746
+png_combine_row	88	4245477282	sp	png_const_bytep	8	2469117746
+png_combine_row	80	602406942	row_width	png_alloc_size_t	4	2469117746
+png_combine_row	108	1548408229	pass	unsigned int	4	2469117746
+png_combine_row	72	4064375081	end_ptr	png_bytep	8	2469117746
+png_combine_row	124	3771290855	end_mask	unsigned int	4	2469117746
+png_combine_row	1680	2450279423	row_mask	const int [2][3][6]	144	2469117746
+png_combine_row	1584	603158979	display_mask	const int [2][3][3]	72	2469117746
+png_combine_row	116	4265497153	bytes_to_copy	unsigned int	4	2469117746
+png_combine_row	100	3874907896	bytes_to_jump	unsigned int	4	2469117746
+png_combine_row	104	1920528067	offset	unsigned int	4	2469117746
+png_combine_row	64	1194585731	dp32	png_uint_32p	8	2469117746
+png_combine_row	56	703751331	sp32	png_const_uint_32p	8	2469117746
+png_combine_row	40	1244655447	dp16	png_uint_16p	8	2469117746
+png_combine_row	32	2614011191	sp16	png_const_uint_16p	8	2469117746
+png_combine_row	136	1979329127	png_ptr	png_const_structrp	8	2469117746
+png_combine_row	144	713134872	dp	png_bytep	8	2469117746
+png_combine_row	148	1942135253	display	int	4	2469117746
+png_do_read_interlace	1824	926664858	png_pass_inc	const unsigned int [7]	28	3022009155
+png_do_read_interlace	232	3521361111	row_info	png_row_infop	8	3022009155
+png_do_read_interlace	240	3108911532	row	png_bytep	8	3022009155
+png_do_read_interlace	244	3708580291	pass	int	4	3022009155
+png_do_read_interlace	248	2451836398	transformations	int	4	3022009155
+png_read_filter_row_sub	28	3748817462	bpp	unsigned int	4	3954280845
+png_read_filter_row_sub	16	3418986533	rp	png_bytep	8	3954280845
+png_read_filter_row_sub	40	1399613339	row_info	png_row_infop	8	3954280845
+png_read_filter_row_sub	48	6154459	row	png_bytep	8	3954280845
+png_read_filter_row_sub	56	1067000429	prev_row	png_const_bytep	8	3954280845
+png_read_filter_row_up	24	1434790294	rp	png_bytep	8	2400029661
+png_read_filter_row_up	16	3879638794	pp	png_const_bytep	8	2400029661
+png_read_filter_row_up	40	249869468	row_info	png_row_infop	8	2400029661
+png_read_filter_row_up	48	1622995784	row	png_bytep	8	2400029661
+png_read_filter_row_up	56	713477258	prev_row	png_const_bytep	8	2400029661
+png_read_filter_row_avg	24	303236991	rp	png_bytep	8	666100392
+png_read_filter_row_avg	16	3147628972	pp	png_const_bytep	8	666100392
+png_read_filter_row_avg	36	1461803589	bpp	unsigned int	4	666100392
+png_read_filter_row_avg	56	1374995584	row_info	png_row_infop	8	666100392
+png_read_filter_row_avg	64	345055237	row	png_bytep	8	666100392
+png_read_filter_row_avg	72	339364999	prev_row	png_const_bytep	8	666100392
+png_read_filter_row_paeth_1byte_pixel	8	101180982	rp_end	png_bytep	8	1177634878
+png_read_filter_row_paeth_1byte_pixel	36	1029547574	a	int	4	1177634878
+png_read_filter_row_paeth_1byte_pixel	32	3587294383	c	int	4	1177634878
+png_read_filter_row_paeth_1byte_pixel	24	822098523	b	int	4	1177634878
+png_read_filter_row_paeth_1byte_pixel	28	2391510253	pa	int	4	1177634878
+png_read_filter_row_paeth_1byte_pixel	12	4289246395	pb	int	4	1177634878
+png_read_filter_row_paeth_1byte_pixel	16	3408477810	pc	int	4	1177634878
+png_read_filter_row_paeth_1byte_pixel	20	4182135910	p	int	4	1177634878
+png_read_filter_row_paeth_1byte_pixel	56	162133536	row_info	png_row_infop	8	1177634878
+png_read_filter_row_paeth_1byte_pixel	64	1760572044	row	png_bytep	8	1177634878
+png_read_filter_row_paeth_1byte_pixel	72	1211955920	prev_row	png_const_bytep	8	1177634878
+png_read_filter_row_paeth_multibyte_pixel	36	1475281992	bpp	unsigned int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	8	3921250172	rp_end	png_bytep	8	131232501
+png_read_filter_row_paeth_multibyte_pixel	32	24813622	a	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	44	2336862990	a	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	24	3034816899	b	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	28	1793266557	c	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	40	4125709293	pa	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	12	317894557	pb	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	16	2644878949	pc	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	20	1889672116	p	int	4	131232501
+png_read_filter_row_paeth_multibyte_pixel	56	3299192317	row_info	png_row_infop	8	131232501
+png_read_filter_row_paeth_multibyte_pixel	64	551402346	row	png_bytep	8	131232501
+png_read_filter_row_paeth_multibyte_pixel	72	2031108269	prev_row	png_const_bytep	8	131232501
+png_init_filter_functions	4	372425466	bpp	unsigned int	4	2987049678
+png_init_filter_functions	24	2116525079	pp	png_structrp	8	2987049678
+png_read_filter_row	8	2510463248	pp	png_structrp	8	1507397607
+png_read_filter_row	16	2404574105	row_info	png_row_infop	8	1507397607
+png_read_filter_row	24	729856124	row	png_bytep	8	1507397607
+png_read_filter_row	32	194714844	prev_row	png_const_bytep	8	1507397607
+png_read_filter_row	36	250406129	filter	int	4	1507397607
+png_read_IDAT_data	1052	3798735957	ret	int	4	1210933605
+png_read_IDAT_data	1060	1560321188	avail_in	uInt	4	1210933605
+png_read_IDAT_data	1048	2815496456	buffer	png_bytep	8	1210933605
+png_read_IDAT_data	1056	534004956	out	uInt	4	1210933605
+png_read_IDAT_data	1080	2228057172	png_ptr	png_structrp	8	1210933605
+png_read_IDAT_data	1088	4272465602	output	png_bytep	8	1210933605
+png_read_IDAT_data	1096	1955528355	avail_out	png_alloc_size_t	4	1210933605
+png_read_finish_IDAT	8	760907543	png_ptr	png_structrp	8	1389962562
+png_read_finish_row	1859	2871919786	png_pass_start	const int [7]	28	1898711757
+png_read_finish_row	1852	3109456578	png_pass_inc	const int [7]	28	1898711757
+png_read_finish_row	1873	4062193683	png_pass_ystart	const int [7]	28	1898711757
+png_read_finish_row	1866	220377090	png_pass_yinc	const int [7]	28	1898711757
+png_read_finish_row	8	4273097202	png_ptr	png_structrp	8	1898711757
+png_read_start_row	1901	2706415510	png_pass_start	const int [7]	28	834451316
+png_read_start_row	1894	1822454133	png_pass_inc	const int [7]	28	834451316
+png_read_start_row	1887	1528104369	png_pass_ystart	const int [7]	28	834451316
+png_read_start_row	1880	2442542493	png_pass_yinc	const int [7]	28	834451316
+png_read_start_row	36	3551534476	max_pixel_depth	unsigned int	4	834451316
+png_read_start_row	32	152610774	user_pixel_depth	unsigned int	4	834451316
+png_read_start_row	16	95083050	temp	png_bytep	8	834451316
+png_read_start_row	28	2957639702	extra	int	4	834451316
+png_read_start_row	8	1106375129	buffer	png_bytep	8	834451316
+png_read_start_row	56	2015831350	png_ptr	png_structrp	8	834451316
+png_reset_zstream	8	313577282	png_ptr	png_structrp	8	2901629993
+png_set_background	24	1841709746	png_ptr	png_structrp	8	721897844
+png_read_rows	56	1737503280	png_ptr	png_structrp	8	1152722092
+png_get_user_transform_ptr	8	942646064	png_ptr	png_const_structrp	8	4085555497
+png_get_user_chunk_ptr	8	2258300113	png_ptr	png_const_structrp	8	1948579940
+png_read_IDAT_data	56	1838077785	png_ptr	png_structrp	8	3864350234
+png_colorspace_sync_info	8	1867021480	png_ptr	png_const_structrp	8	708023632
+png_colorspace_set_chromaticities	8	2821614146	png_ptr	png_const_structrp	8	4004288550
+png_colorspace_set_ICC	8	3937654950	png_ptr	png_const_structrp	8	3928823516
+png_set_bKGD	8	1567997261	png_ptr	png_const_structrp	8	1159370915
+png_set_bKGD	16	988732848	info_ptr	png_inforp	8	1159370915
+png_set_bKGD	24	2852086879	background	png_const_color_16p	8	1159370915
+png_set_cHRM_fixed	48	2173043912	xy	png_xy	32	4206273497
+png_set_cHRM_fixed	56	278683337	png_ptr	png_const_structrp	8	4206273497
+png_set_cHRM_fixed	64	254076466	info_ptr	png_inforp	8	4206273497
+png_set_cHRM_fixed	68	619703195	white_x	png_fixed_point	4	4206273497
+png_set_cHRM_fixed	72	2263710145	white_y	png_fixed_point	4	4206273497
+png_set_cHRM_fixed	76	1095496629	red_x	png_fixed_point	4	4206273497
+png_set_cHRM_fixed	80	3798492871	red_y	png_fixed_point	4	4206273497
+png_set_cHRM_fixed	16	3820668698	green_x	png_fixed_point	4	4206273497
+png_set_cHRM_fixed	24	2098727418	green_y	png_fixed_point	4	4206273497
+png_set_cHRM_fixed	32	2260646932	blue_x	png_fixed_point	4	4206273497
+png_set_cHRM_fixed	40	2567748848	blue_y	png_fixed_point	4	4206273497
+png_set_cHRM_XYZ_fixed	48	193681098	XYZ	png_XYZ	36	2937219955
+png_set_cHRM_XYZ_fixed	56	1127618183	png_ptr	png_const_structrp	8	2937219955
+png_set_cHRM_XYZ_fixed	64	2556147212	info_ptr	png_inforp	8	2937219955
+png_set_cHRM_XYZ_fixed	68	952355843	int_red_X	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	72	1757734248	int_red_Y	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	76	1046571236	int_red_Z	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	80	2831702482	int_green_X	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	16	3400207335	int_green_Y	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	24	1033295327	int_green_Z	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	32	1490340910	int_blue_X	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	40	105130146	int_blue_Y	png_fixed_point	4	2937219955
+png_set_cHRM_XYZ_fixed	48	1787511185	int_blue_Z	png_fixed_point	4	2937219955
+png_set_cHRM	56	585323133	png_ptr	png_const_structrp	8	1913635071
+png_set_cHRM	64	3257675766	info_ptr	png_inforp	8	1913635071
+png_set_cHRM	72	4235817809	white_x	double	8	1913635071
+png_set_cHRM	80	3179432601	white_y	double	8	1913635071
+png_set_cHRM	88	2355532355	red_x	double	8	1913635071
+png_set_cHRM	96	2944162744	red_y	double	8	1913635071
+png_set_cHRM	104	2531440971	green_x	double	8	1913635071
+png_set_cHRM	112	3741268612	green_y	double	8	1913635071
+png_set_cHRM	120	225695862	blue_x	double	8	1913635071
+png_set_cHRM	128	3633376768	blue_y	double	8	1913635071
+png_set_cHRM_XYZ	56	1632912395	png_ptr	png_const_structrp	8	3014603688
+png_set_cHRM_XYZ	64	1784040412	info_ptr	png_inforp	8	3014603688
+png_set_cHRM_XYZ	72	626195806	red_X	double	8	3014603688
+png_set_cHRM_XYZ	80	1681392567	red_Y	double	8	3014603688
+png_set_cHRM_XYZ	88	1454122457	red_Z	double	8	3014603688
+png_set_cHRM_XYZ	96	2947157513	green_X	double	8	3014603688
+png_set_cHRM_XYZ	104	2748147131	green_Y	double	8	3014603688
+png_set_cHRM_XYZ	112	802570038	green_Z	double	8	3014603688
+png_set_cHRM_XYZ	120	1763666780	blue_X	double	8	3014603688
+png_set_cHRM_XYZ	128	403404327	blue_Y	double	8	3014603688
+png_set_cHRM_XYZ	16	424562961	blue_Z	double	8	3014603688
+png_set_eXIf	8	2898751620	png_ptr	png_const_structrp	8	2666100895
+png_set_eXIf	16	1989107018	info_ptr	png_inforp	8	2666100895
+png_set_eXIf	24	3111194217	eXIf_buf	png_bytep	8	2666100895
+png_set_eXIf_1	4	2051980761	i	int	4	2576750303
+png_set_eXIf_1	24	290488078	png_ptr	png_const_structrp	8	2576750303
+png_set_eXIf_1	32	3346064511	info_ptr	png_inforp	8	2576750303
+png_set_eXIf_1	36	659572698	num_exif	int	4	2576750303
+png_set_eXIf_1	48	1451521308	eXIf_buf	png_bytep	8	2576750303
+png_set_gAMA_fixed	8	436377776	png_ptr	png_const_structrp	8	2536562030
+png_set_gAMA_fixed	16	3075505722	info_ptr	png_inforp	8	2536562030
+png_set_gAMA_fixed	20	4122357839	file_gamma	png_fixed_point	4	2536562030
+png_set_gAMA	8	388885059	png_ptr	png_const_structrp	8	1004755471
+png_set_gAMA	16	1862184843	info_ptr	png_inforp	8	1004755471
+png_set_gAMA	24	797751787	file_gamma	double	8	1004755471
+png_set_hIST	4	926230368	i	int	4	3286053736
+png_set_hIST	24	655653382	png_ptr	png_const_structrp	8	3286053736
+png_set_hIST	32	242278438	info_ptr	png_inforp	8	3286053736
+png_set_hIST	40	1204894241	hist	png_const_uint_16p	8	3286053736
+png_set_IHDR	8	3630100876	png_ptr	png_const_structrp	8	1682243704
+png_set_IHDR	16	1883696394	info_ptr	png_inforp	8	1682243704
+png_set_IHDR	20	4177319955	width	int	4	1682243704
+png_set_IHDR	24	3861793691	height	int	4	1682243704
+png_set_IHDR	28	2168366983	bit_depth	int	4	1682243704
+png_set_IHDR	32	1250679437	color_type	int	4	1682243704
+png_set_IHDR	16	243449353	interlace_type	int	4	1682243704
+png_set_IHDR	24	2239003948	compression_type	int	4	1682243704
+png_set_IHDR	32	1735635689	filter_type	int	4	1682243704
+png_set_oFFs	8	1832609642	png_ptr	png_const_structrp	8	751957743
+png_set_oFFs	16	2970168776	info_ptr	png_inforp	8	751957743
+png_set_oFFs	20	1502140494	offset_x	int	4	751957743
+png_set_oFFs	24	278608404	offset_y	int	4	751957743
+png_set_oFFs	28	744730050	unit_type	int	4	751957743
+png_set_pCAL	28	2917973191	i	int	4	3788204796
+png_set_pCAL	40	798949243	png_ptr	png_const_structrp	8	3788204796
+png_set_pCAL	48	1644826469	info_ptr	png_inforp	8	3788204796
+png_set_pCAL	56	3213890199	purpose	png_const_charp	8	3788204796
+png_set_pCAL	60	4011605508	X0	int	4	3788204796
+png_set_pCAL	64	3729875336	X1	int	4	3788204796
+png_set_pCAL	68	3593048220	type	int	4	3788204796
+png_set_pCAL	16	3649567252	nparams	int	4	3788204796
+png_set_pCAL	24	141827456	units	png_const_charp	8	3788204796
+png_set_pCAL	32	2206421276	params	png_charpp	8	3788204796
+png_set_sCAL_s	24	1495267714	png_ptr	png_const_structrp	8	2986319309
+png_set_sCAL_s	32	1218870851	info_ptr	png_inforp	8	2986319309
+png_set_sCAL_s	36	3555590487	unit	int	4	2986319309
+png_set_sCAL_s	48	46605270	swidth	png_const_charp	8	2986319309
+png_set_sCAL_s	56	3143472842	sheight	png_const_charp	8	2986319309
+png_set_sCAL	64	212223972	swidth	char [18]	18	2567796819
+png_set_sCAL	32	2120629538	sheight	char [18]	18	2567796819
+png_set_sCAL	72	1104844238	png_ptr	png_const_structrp	8	2567796819
+png_set_sCAL	80	2699674823	info_ptr	png_inforp	8	2567796819
+png_set_sCAL	84	3089179563	unit	int	4	2567796819
+png_set_sCAL	96	2080586186	width	double	8	2567796819
+png_set_sCAL	104	1516798490	height	double	8	2567796819
+png_set_sCAL_fixed	64	3241614157	swidth	char [18]	18	2868267172
+png_set_sCAL_fixed	32	1828385466	sheight	char [18]	18	2868267172
+png_set_sCAL_fixed	72	2302540560	png_ptr	png_const_structrp	8	2868267172
+png_set_sCAL_fixed	80	488107619	info_ptr	png_inforp	8	2868267172
+png_set_sCAL_fixed	84	4166976753	unit	int	4	2868267172
+png_set_sCAL_fixed	88	4220654733	width	png_fixed_point	4	2868267172
+png_set_sCAL_fixed	92	3012044919	height	png_fixed_point	4	2868267172
+png_set_pHYs	8	1089268885	png_ptr	png_const_structrp	8	4033897936
+png_set_pHYs	16	679265899	info_ptr	png_inforp	8	4033897936
+png_set_pHYs	20	4294511609	res_x	int	4	4033897936
+png_set_pHYs	24	2594374731	res_y	int	4	4033897936
+png_set_pHYs	28	3121306559	unit_type	int	4	4033897936
+png_set_PLTE	24	3715594030	png_ptr	png_structrp	8	3012544042
+png_set_PLTE	32	1578024012	info_ptr	png_inforp	8	3012544042
+png_set_PLTE	40	470901169	palette	png_const_colorp	8	3012544042
+png_set_PLTE	44	3840408857	num_palette	int	4	3012544042
+png_set_sBIT	8	982253380	png_ptr	png_const_structrp	8	2095493900
+png_set_sBIT	16	4286879378	info_ptr	png_inforp	8	2095493900
+png_set_sBIT	24	2486190586	sig_bit	png_const_color_8p	8	2095493900
+png_set_sRGB	8	2312785622	png_ptr	png_const_structrp	8	2099696430
+png_set_sRGB	16	2865516244	info_ptr	png_inforp	8	2099696430
+png_set_sRGB	20	834086024	srgb_intent	int	4	2099696430
+png_set_sRGB_gAMA_and_cHRM	8	3482655278	png_ptr	png_const_structrp	8	3831097430
+png_set_sRGB_gAMA_and_cHRM	16	1012114492	info_ptr	png_inforp	8	3831097430
+png_set_sRGB_gAMA_and_cHRM	20	1733625819	srgb_intent	int	4	3831097430
+png_set_iCCP	16	1955244013	new_iccp_name	png_charp	8	2407763586
+png_set_iCCP	8	369645172	new_iccp_profile	png_bytep	8	2407763586
+png_set_iCCP	28	851524681	result	int	4	2407763586
+png_set_iCCP	40	2770388471	png_ptr	png_const_structrp	8	2407763586
+png_set_iCCP	48	2302405325	info_ptr	png_inforp	8	2407763586
+png_set_iCCP	56	2289528108	name	png_const_charp	8	2407763586
+png_set_iCCP	60	3562366998	compression_type	int	4	2407763586
+png_set_iCCP	72	2877425278	profile	png_const_bytep	8	2407763586
+png_set_iCCP	64	2746161573	proflen	int	4	2407763586
+png_set_text	4	3618849440	ret	int	4	804316344
+png_set_text	24	3635174460	png_ptr	png_const_structrp	8	804316344
+png_set_text	32	80826524	info_ptr	png_inforp	8	804316344
+png_set_text	40	3680803391	text_ptr	png_const_textp	8	804316344
+png_set_text	44	1428176229	num_text	int	4	804316344
+png_set_text_2	60	2691967076	i	int	4	3980561029
+png_set_text_2	52	2880167004	old_num_text	int	4	3980561029
+png_set_text_2	56	3815913356	max_text	int	4	3980561029
+png_set_text_2	48	2940652699	new_text	png_textp	8	3980561029
+png_set_text_2	16	1051935639	textp	png_textp	8	3980561029
+png_set_text_2	72	1768246219	png_ptr	png_const_structrp	8	3980561029
+png_set_text_2	80	1515070374	info_ptr	png_inforp	8	3980561029
+png_set_text_2	88	2230939120	text_ptr	png_const_textp	8	3980561029
+png_set_text_2	92	4205883742	num_text	int	4	3980561029
+png_set_tIME	8	1199252839	png_ptr	png_const_structrp	8	2378016744
+png_set_tIME	16	2645355642	info_ptr	png_inforp	8	2378016744
+png_set_tIME	24	1210965085	mod_time	png_const_timep	8	2378016744
+png_set_tRNS	4	1827886537	sample_max	int	4	4107694652
+png_set_tRNS	24	631795891	png_ptr	png_structrp	8	4107694652
+png_set_tRNS	32	1106395345	info_ptr	png_inforp	8	4107694652
+png_set_tRNS	40	3109649340	trans_alpha	png_const_bytep	8	4107694652
+png_set_tRNS	44	772343654	num_trans	int	4	4107694652
+png_set_tRNS	56	1755576390	trans_color	png_const_color_16p	8	4107694652
+png_set_sPLT	16	1312627576	np	png_sPLT_tp	8	3652764743
+png_set_sPLT	24	1087398293	png_ptr	png_const_structrp	8	3652764743
+png_set_sPLT	32	2323444192	info_ptr	png_inforp	8	3652764743
+png_set_sPLT	40	114586721	entries	png_const_sPLT_tp	8	3652764743
+png_set_sPLT	44	3839069185	nentries	int	4	3652764743
+png_set_unknown_chunks	8	330374832	np	png_unknown_chunkp	8	3481859350
+png_set_unknown_chunks	24	43354221	png_ptr	png_const_structrp	8	3481859350
+png_set_unknown_chunks	32	3739083418	info_ptr	png_inforp	8	3481859350
+png_set_unknown_chunks	40	4080804339	unknowns	png_const_unknown_chunkp	8	3481859350
+png_set_unknown_chunks	44	966422723	num_unknowns	int	4	3481859350
+png_set_unknown_chunk_location	24	488212807	png_ptr	png_const_structrp	8	560478539
+png_set_unknown_chunk_location	32	1730980693	info_ptr	png_inforp	8	560478539
+png_set_unknown_chunk_location	36	3809754139	chunk	int	4	560478539
+png_set_unknown_chunk_location	40	2310442776	location	int	4	560478539
+add_one_chunk	4	1571124411	i	unsigned int	4	2325227366
+add_one_chunk	24	674333847	list	png_bytep	8	2325227366
+add_one_chunk	28	3141946614	count	unsigned int	4	2325227366
+add_one_chunk	40	3547493639	add	png_const_bytep	8	2325227366
+add_one_chunk	32	3867550037	keep	int	4	2325227366
+png_set_keep_unknown_chunks	24	799759514	new_list	png_bytep	8	4105055513
+png_set_keep_unknown_chunks	36	1013718805	num_chunks	unsigned int	4	4105055513
+png_set_keep_unknown_chunks	32	826224836	old_num_chunks	unsigned int	4	4105055513
+png_set_keep_unknown_chunks	1808	1927059688	chunks_to_ignore	const int []	-2	4105055513
+png_set_keep_unknown_chunks	16	594875240	inlist	png_const_bytep	8	4105055513
+png_set_keep_unknown_chunks	8	2498316097	outlist	png_bytep	8	4105055513
+png_set_keep_unknown_chunks	28	238689570	i	unsigned int	4	4105055513
+png_set_keep_unknown_chunks	56	3298536286	png_ptr	png_structrp	8	4105055513
+png_set_keep_unknown_chunks	60	1754707139	keep	int	4	4105055513
+png_set_keep_unknown_chunks	72	1750222999	chunk_list	png_const_bytep	8	4105055513
+png_set_keep_unknown_chunks	64	1249001047	num_chunks_in	int	4	4105055513
+png_set_read_user_chunk_fn	8	1040761900	png_ptr	png_structrp	8	1826674504
+png_set_read_user_chunk_fn	16	1211161326	user_chunk_ptr	png_voidp	8	1826674504
+png_set_read_user_chunk_fn	24	4122361192	read_user_chunk_fn	png_user_chunk_ptr	8	1826674504
+png_set_rows	8	3066314094	png_ptr	png_const_structrp	8	3632843370
+png_set_rows	16	2278524859	info_ptr	png_inforp	8	3632843370
+png_set_rows	24	779517489	row_pointers	png_bytepp	8	3632843370
+png_set_compression_buffer_size	8	2642718979	png_ptr	png_structrp	8	3107676974
+png_set_compression_buffer_size	16	341941153	size	int	4	3107676974
+png_set_invalid	8	2068987468	png_ptr	png_const_structrp	8	2552272369
+png_set_invalid	16	423253938	info_ptr	png_inforp	8	2552272369
+png_set_invalid	20	1547736212	mask	int	4	2552272369
+png_set_user_limits	8	2267079283	png_ptr	png_structrp	8	1608941787
+png_set_user_limits	12	2956561936	user_width_max	int	4	1608941787
+png_set_user_limits	16	358017636	user_height_max	int	4	1608941787
+png_set_chunk_cache_max	8	1236864302	png_ptr	png_structrp	8	1896556590
+png_set_chunk_cache_max	12	263411971	user_chunk_cache_max	int	4	1896556590
+png_set_chunk_malloc_max	8	3584398210	png_ptr	png_structrp	8	3999358851
+png_set_chunk_malloc_max	16	3695632072	user_chunk_malloc_max	png_alloc_size_t	4	3999358851
+png_set_benign_errors	8	1581664220	png_ptr	png_structrp	8	3248971187
+png_set_benign_errors	12	1033780065	allowed	int	4	3248971187
+png_set_check_for_invalid_index	8	2802254666	png_ptr	png_structrp	8	865176278
+png_set_check_for_invalid_index	12	740463874	allowed	int	4	865176278
+png_check_keyword	280	933790367	orig_key	png_const_charp	8	1928926201
+png_check_keyword	288	2309205797	bad_character	int	4	1928926201
+png_check_keyword	284	1783489768	space	int	4	1928926201
+png_check_keyword	272	3782154063	p	png_warning_parameters	256	1928926201
+png_set_bgr	8	2537662726	png_ptr	png_structrp	8	1118496843
+png_set_swap	8	2393982057	png_ptr	png_structrp	8	2079727223
+png_set_packing	8	1887756142	png_ptr	png_structrp	8	937586974
+png_set_packswap	8	3891374471	png_ptr	png_structrp	8	1069256360
+png_set_shift	8	556291817	png_ptr	png_structrp	8	2295496754
+png_set_shift	16	2992899563	true_bits	png_const_color_8p	8	2295496754
+png_set_interlace_handling	8	2624205766	png_ptr	png_structrp	8	3620993654
+png_set_filler	8	3389112314	png_ptr	png_structrp	8	308109269
+png_set_filler	12	1627179576	filler	int	4	308109269
+png_set_filler	16	485946110	filler_loc	int	4	308109269
+png_set_add_alpha	8	2413957196	png_ptr	png_structrp	8	4074560951
+png_set_add_alpha	12	1668264656	filler	int	4	4074560951
+png_set_add_alpha	16	1848724679	filler_loc	int	4	4074560951
+png_set_swap_alpha	8	1139665449	png_ptr	png_structrp	8	1174122660
+png_set_invert_alpha	8	2810581874	png_ptr	png_structrp	8	958368090
+png_set_invert_mono	8	200795164	png_ptr	png_structrp	8	1016167197
+png_do_invert	72	3900763544	rp	png_bytep	8	2000216371
+png_do_invert	56	3572821082	rp	png_bytep	8	2000216371
+png_do_invert	40	3665335322	rp	png_bytep	8	2000216371
+png_do_invert	88	532028148	row_info	png_row_infop	8	2000216371
+png_do_invert	96	3892330239	row	png_bytep	8	2000216371
+png_do_swap	8	3531223772	rp	png_bytep	8	1669043509
+png_do_swap	40	1059901396	row_info	png_row_infop	8	1669043509
+png_do_swap	48	3393772881	row	png_bytep	8	1669043509
+png_do_packswap	24	2280690382	rp	png_bytep	8	1187442059
+png_do_packswap	8	3707238478	end	png_const_bytep	8	1187442059
+png_do_packswap	16	200918474	table	png_const_bytep	8	1187442059
+png_do_packswap	40	1137992711	row_info	png_row_infop	8	1187442059
+png_do_packswap	48	2148812119	row	png_bytep	8	1187442059
+png_do_strip_channel	24	3977642515	sp	png_bytep	8	815853454
+png_do_strip_channel	16	458342821	dp	png_bytep	8	815853454
+png_do_strip_channel	8	933265271	ep	png_bytep	8	815853454
+png_do_strip_channel	40	637291106	row_info	png_row_infop	8	815853454
+png_do_strip_channel	48	188684331	row	png_bytep	8	815853454
+png_do_strip_channel	52	1255180201	at_start	int	4	815853454
+png_do_bgr	32	2253415373	rp	png_bytep	8	1175518387
+png_do_bgr	24	3234927212	rp	png_bytep	8	1175518387
+png_do_bgr	16	1676579476	rp	png_bytep	8	1175518387
+png_do_bgr	8	1487021650	rp	png_bytep	8	1175518387
+png_do_bgr	72	887901434	row_info	png_row_infop	8	1175518387
+png_do_bgr	80	1721081750	row	png_bytep	8	1175518387
+png_do_check_palette_indexes	20	3632712705	padding	int	4	3346949206
+png_do_check_palette_indexes	8	3657558267	rp	png_bytep	8	3346949206
+png_do_check_palette_indexes	40	2970231285	png_ptr	png_structrp	8	3346949206
+png_do_check_palette_indexes	48	1424666084	row_info	png_row_infop	8	3346949206
+png_set_user_transform_info	8	2542230360	png_ptr	png_structrp	8	3024078154
+png_set_user_transform_info	16	913724406	user_transform_ptr	png_voidp	8	3024078154
+png_set_user_transform_info	20	1117356290	user_transform_depth	int	4	3024078154
+png_set_user_transform_info	24	607014094	user_transform_channels	int	4	3024078154
+png_get_user_transform_ptr	8	2442335740	png_ptr	png_const_structrp	8	710579386
+png_write_data	8	2040125890	png_ptr	png_structrp	8	640397625
+png_write_data	16	4003925990	data	png_const_bytep	8	640397625
+png_write_data	24	313955038	length	int	4	640397625
+png_default_write_data	24	911493720	png_ptr	png_structp	8	1485404879
+png_default_write_data	32	2639396285	data	png_bytep	8	1485404879
+png_default_write_data	40	2698058560	length	int	4	1485404879
+png_flush	8	1037105578	png_ptr	png_structrp	8	1745157689
+png_default_flush	8	3786020428	io_ptr	png_FILE_p	8	526286965
+png_default_flush	24	1499290200	png_ptr	png_structp	8	526286965
+png_set_write_fn	8	2765372007	png_ptr	png_structrp	8	2743644516
+png_set_write_fn	16	3559380743	io_ptr	png_voidp	8	2743644516
+png_set_write_fn	24	402979148	write_data_fn	png_rw_ptr	8	2743644516
+png_set_write_fn	32	1190397808	output_flush_fn	png_flush_ptr	8	2743644516
+png_user_version_check	24	1958765927	png_ptr	png_structrp	8	2014490848
+png_write_zTXt	8	1069656071	png_ptr	png_structrp	8	3442382523
+png_write_pHYs	8	922770538	png_ptr	png_structrp	8	4183065387
+png_write_start_row	8	770460033	png_ptr	png_structrp	8	1285290622
+write_unknown_chunks	8	2245145205	up	png_const_unknown_chunkp	8	2043191351
+write_unknown_chunks	12	1800712817	keep	int	4	2043191351
+write_unknown_chunks	24	3172077678	png_ptr	png_structrp	8	2043191351
+write_unknown_chunks	32	599036824	info_ptr	png_const_inforp	8	2043191351
+write_unknown_chunks	36	4244939836	where	unsigned int	4	2043191351
+png_write_info_before_PLTE	8	188457689	png_ptr	png_structrp	8	872107141
+png_write_info_before_PLTE	16	3940595569	info_ptr	png_const_inforp	8	872107141
+png_write_info	12	3868344792	i	int	4	2096910094
+png_write_info	8	2196555865	j	int	4	2096910094
+png_write_info	4	323766220	jend	int	4	2096910094
+png_write_info	24	3218863280	png_ptr	png_structrp	8	2096910094
+png_write_info	32	3486706631	info_ptr	png_const_inforp	8	2096910094
+png_write_end	4	2007775455	i	int	4	4138019809
+png_write_end	24	3899744940	png_ptr	png_structrp	8	4138019809
+png_write_end	32	112646089	info_ptr	png_inforp	8	4138019809
+png_convert_from_struct_tm	8	2397147959	ptime	png_timep	8	4184871902
+png_convert_from_struct_tm	16	979876100	ttime	const struct tm *	8	4184871902
+png_convert_from_time_t	8	341936578	tbuf	struct tm *	8	1625930348
+png_convert_from_time_t	24	2733439237	ptime	png_timep	8	1625930348
+png_convert_from_time_t	32	3654833240	ttime	time_t	8	1625930348
+png_create_write_struct	8	4144448802	user_png_ver	png_const_charp	8	3690387085
+png_create_write_struct	16	627611820	error_ptr	png_voidp	8	3690387085
+png_create_write_struct	24	2923206113	error_fn	png_error_ptr	8	3690387085
+png_create_write_struct	32	658871824	warn_fn	png_error_ptr	8	3690387085
+png_create_write_struct_2	8	557842431	png_ptr	png_structrp	8	2786779123
+png_create_write_struct_2	24	1578611235	user_png_ver	png_const_charp	8	2786779123
+png_create_write_struct_2	32	4045891936	error_ptr	png_voidp	8	2786779123
+png_create_write_struct_2	40	564925967	error_fn	png_error_ptr	8	2786779123
+png_create_write_struct_2	48	1420834347	warn_fn	png_error_ptr	8	2786779123
+png_create_write_struct_2	56	3870214626	mem_ptr	png_voidp	8	2786779123
+png_create_write_struct_2	64	2500505433	malloc_fn	png_malloc_ptr	8	2786779123
+png_create_write_struct_2	16	1501656504	free_fn	png_free_ptr	8	2786779123
+png_write_rows	8	769151105	rp	png_bytepp	8	2706163630
+png_write_rows	24	1723851857	png_ptr	png_structrp	8	2706163630
+png_write_rows	32	3248632709	row	png_bytepp	8	2706163630
+png_write_rows	36	3036413986	num_rows	int	4	2706163630
+png_write_image	16	2171280979	pass	int	4	114047856
+png_write_image	12	3832257068	num_pass	int	4	114047856
+png_write_image	8	4220432640	rp	png_bytepp	8	114047856
+png_write_image	40	424363351	png_ptr	png_structrp	8	114047856
+png_write_image	48	59033722	image	png_bytepp	8	114047856
+png_do_write_intrapixel	52	1397346920	bytes_per_pixel	int	4	2400862188
+png_do_write_intrapixel	16	2205352102	rp	png_bytep	8	2400862188
+png_do_write_intrapixel	8	1915320746	rp	png_bytep	8	2400862188
+png_do_write_intrapixel	72	861369198	row_info	png_row_infop	8	2400862188
+png_do_write_intrapixel	80	2785365095	row	png_bytep	8	2400862188
+png_write_row	32	3219346203	row_info	png_row_info	1	3887948165
+png_write_row	40	708586884	png_ptr	png_structrp	8	3887948165
+png_write_row	48	2205389621	row	png_const_bytep	8	3887948165
+png_set_flush	8	1353683605	png_ptr	png_structrp	8	2104715097
+png_set_flush	12	3300925994	nrows	int	4	2104715097
+png_write_flush	8	2748832824	png_ptr	png_structrp	8	1534449494
+png_write_destroy	8	731003039	png_ptr	png_structrp	8	480862533
+png_destroy_write_struct	8	2963226670	png_ptr	png_structrp	8	394846544
+png_destroy_write_struct	24	926414536	png_ptr_ptr	png_structpp	8	394846544
+png_destroy_write_struct	32	4180834231	info_ptr_ptr	png_infopp	8	394846544
+png_set_filter	12	3915144497	num_filters	int	4	1028110083
+png_set_filter	8	4063241184	buf_size	png_alloc_size_t	4	1028110083
+png_set_filter	24	4073868563	png_ptr	png_structrp	8	1028110083
+png_set_filter	28	3626352773	method	int	4	1028110083
+png_set_filter	32	3073089663	filters	int	4	1028110083
+png_set_filter_heuristics	8	682351983	png_ptr	png_structrp	8	1236634137
+png_set_filter_heuristics	12	4114949859	heuristic_method	int	4	1236634137
+png_set_filter_heuristics	16	4006108331	num_weights	int	4	1236634137
+png_set_filter_heuristics	24	3905844315	filter_weights	png_const_doublep	8	1236634137
+png_set_filter_heuristics	32	3181985640	filter_costs	png_const_doublep	8	1236634137
+png_set_filter_heuristics_fixed	8	3148952520	png_ptr	png_structrp	8	3161385713
+png_set_filter_heuristics_fixed	12	827623380	heuristic_method	int	4	3161385713
+png_set_filter_heuristics_fixed	16	719746300	num_weights	int	4	3161385713
+png_set_filter_heuristics_fixed	24	3241377866	filter_weights	png_const_fixed_point_p	8	3161385713
+png_set_filter_heuristics_fixed	32	2419907140	filter_costs	png_const_fixed_point_p	8	3161385713
+png_set_compression_level	8	546745104	png_ptr	png_structrp	8	24955633
+png_set_compression_level	12	1030633465	level	int	4	24955633
+png_set_compression_mem_level	8	3363525330	png_ptr	png_structrp	8	3926329673
+png_set_compression_mem_level	12	2269285513	mem_level	int	4	3926329673
+png_set_compression_strategy	8	7042353	png_ptr	png_structrp	8	2809770017
+png_set_compression_strategy	12	864749623	strategy	int	4	2809770017
+png_set_compression_window_bits	8	737590687	png_ptr	png_structrp	8	402723608
+png_set_compression_window_bits	12	750756873	window_bits	int	4	402723608
+png_set_compression_method	8	1731081158	png_ptr	png_structrp	8	1863645933
+png_set_compression_method	12	2873505787	method	int	4	1863645933
+png_set_text_compression_level	8	471389569	png_ptr	png_structrp	8	1831101072
+png_set_text_compression_level	12	3009140409	level	int	4	1831101072
+png_set_text_compression_mem_level	8	3151142107	png_ptr	png_structrp	8	490630067
+png_set_text_compression_mem_level	12	1443763418	mem_level	int	4	490630067
+png_set_text_compression_strategy	8	2760185737	png_ptr	png_structrp	8	2482479399
+png_set_text_compression_strategy	12	3210837968	strategy	int	4	2482479399
+png_set_text_compression_window_bits	8	3145172875	png_ptr	png_structrp	8	3267146303
+png_set_text_compression_window_bits	12	424283624	window_bits	int	4	3267146303
+png_set_text_compression_method	8	3030656269	png_ptr	png_structrp	8	1057389056
+png_set_text_compression_method	12	2417033798	method	int	4	1057389056
+png_set_write_status_fn	8	435451162	png_ptr	png_structrp	8	3261668977
+png_set_write_status_fn	16	2830805064	write_row_fn	png_write_status_ptr	8	3261668977
+png_set_write_user_transform_fn	8	344944574	png_ptr	png_structrp	8	3201484189
+png_set_write_user_transform_fn	16	743443691	write_user_transform_fn	png_user_transform_ptr	8	3201484189
+png_write_png	8	3119330090	png_ptr	png_structrp	8	1818547519
+png_write_png	16	4038706501	info_ptr	png_inforp	8	1818547519
+png_write_png	20	3179768155	transforms	int	4	1818547519
+png_write_png	32	659438770	params	voidp	8	1818547519
+png_image_write_init	32	1190341831	png_ptr	png_structp	8	2659313207
+png_image_write_init	24	1290021988	info_ptr	png_infop	8	2659313207
+png_image_write_init	16	393010745	control	png_controlp	8	2659313207
+png_image_write_init	40	3026620841	image	png_imagep	8	2659313207
+png_write_image_16bit	32	1124899594	display	png_image_write_control *	8	1682330618
+png_write_image_16bit	24	347214700	image	png_imagep	8	1682330618
+png_write_image_16bit	16	972860582	png_ptr	png_structrp	8	1682330618
+png_write_image_16bit	64	2786928895	input_row	png_const_uint_16p	8	1682330618
+png_write_image_16bit	56	1752342085	output_row	png_uint_16p	8	1682330618
+png_write_image_16bit	8	2879145660	row_end	png_uint_16p	8	1682330618
+png_write_image_16bit	72	93304051	channels	unsigned int	4	1682330618
+png_write_image_16bit	88	3116653877	aindex	int	4	1682330618
+png_write_image_16bit	104	3800267588	argument	png_voidp	8	1682330618
+png_write_image_8bit	56	1814988258	display	png_image_write_control *	8	2824231296
+png_write_image_8bit	48	3118286746	image	png_imagep	8	2824231296
+png_write_image_8bit	40	3929274899	png_ptr	png_structrp	8	2824231296
+png_write_image_8bit	104	4043809685	input_row	png_const_uint_16p	8	2824231296
+png_write_image_8bit	96	2387616819	output_row	png_bytep	8	2824231296
+png_write_image_8bit	112	660041888	channels	unsigned int	4	2824231296
+png_write_image_8bit	32	2027064691	row_end	png_bytep	8	2824231296
+png_write_image_8bit	124	4057854534	aindex	int	4	2824231296
+png_write_image_8bit	24	1899328054	row_end	png_bytep	8	2824231296
+png_write_image_8bit	152	298662304	argument	png_voidp	8	2824231296
+png_image_set_PLTE	1072	3161884155	image	png_imagep	8	3045413535
+png_image_set_PLTE	1064	2638990106	cmap	const void *	8	3045413535
+png_image_set_PLTE	1092	3947878935	entries	int	4	3045413535
+png_image_set_PLTE	1084	2690272685	channels	unsigned int	4	3045413535
+png_image_set_PLTE	1080	3388582776	afirst	int	4	3045413535
+png_image_set_PLTE	1076	1502149819	bgr	int	4	3045413535
+png_image_set_PLTE	1104	2233999531	i	int	4	3045413535
+png_image_set_PLTE	1100	4089808089	num_trans	int	4	3045413535
+png_image_set_PLTE	1040	1030823563	palette	png_color [256]	256	3045413535
+png_image_set_PLTE	1056	920487820	entry	png_const_uint_16p	8	3045413535
+png_image_set_PLTE	1048	729136247	entry	png_const_bytep	8	3045413535
+png_image_set_PLTE	1128	2360299868	display	png_image_write_control *	8	3045413535
+png_image_write_main	56	2650276507	display	png_image_write_control *	8	1719119612
+png_image_write_main	48	554739470	image	png_imagep	8	1719119612
+png_image_write_main	40	3425600025	png_ptr	png_structrp	8	1719119612
+png_image_write_main	32	3232781953	info_ptr	png_inforp	8	1719119612
+png_image_write_main	108	2255630142	colormap	int	4	1719119612
+png_image_write_main	104	2979045051	linear	int	4	1719119612
+png_image_write_main	100	3952338037	alpha	int	4	1719119612
+png_image_write_main	96	1559254852	write_16bit	int	4	1719119612
+png_image_write_main	92	4050098964	channels	unsigned int	4	1719119612
+png_image_write_main	80	4032623692	row	png_const_bytep	8	1719119612
+png_image_write_main	16	906109423	row	png_bytep	8	1719119612
+png_image_write_main	116	3596135195	result	int	4	1719119612
+png_image_write_main	64	113987936	row	png_const_bytep	8	1719119612
+png_image_write_main	136	4168026231	argument	png_voidp	8	1719119612
+image_memory_write	16	1998845777	display	png_image_write_control *	8	2171359743
+image_memory_write	8	3921124030	ob	png_alloc_size_t	4	2171359743
+image_memory_write	24	2461064781	png_ptr	png_structp	8	2171359743
+image_memory_write	32	2134653396	data	png_bytep	8	2171359743
+image_memory_write	40	4079140936	size	int	4	2171359743
+image_memory_flush	8	2106240707	png_ptr	png_structp	8	4199649011
+png_image_write_memory	8	1294851609	display	png_image_write_control *	8	3746647620
+png_image_write_memory	24	188381572	argument	png_voidp	8	3746647620
+png_image_write_to_memory	96	3143510057	display	png_image_write_control	1	3274207713
+png_image_write_to_memory	100	3479755352	result	int	4	3274207713
+png_image_write_to_memory	120	2472402241	image	png_imagep	8	3274207713
+png_image_write_to_memory	128	1402989856	memory	void *	8	3274207713
+png_image_write_to_memory	136	702467331	memory_bytes	png_alloc_size_t *restrict	8	3274207713
+png_image_write_to_memory	140	2109834075	convert_to_8bit	int	4	3274207713
+png_image_write_to_memory	152	2010286715	buffer	const void *	8	3274207713
+png_image_write_to_memory	144	2919655181	row_stride	int	4	3274207713
+png_image_write_to_memory	160	3551878437	colormap	const void *	8	3274207713
+png_image_write_to_stdio	96	1049148215	display	png_image_write_control	1	1659114558
+png_image_write_to_stdio	100	2195460656	result	int	4	1659114558
+png_image_write_to_stdio	120	4252715275	image	png_imagep	8	1659114558
+png_image_write_to_stdio	128	2040840223	file	FILE *	8	1659114558
+png_image_write_to_stdio	132	33098627	convert_to_8bit	int	4	1659114558
+png_image_write_to_stdio	144	2093359662	buffer	const void *	8	1659114558
+png_image_write_to_stdio	136	2479893657	row_stride	int	4	1659114558
+png_image_write_to_stdio	152	3490626009	colormap	const void *	8	1659114558
+png_image_write_to_file	8	3248422494	fp	FILE *	8	3356920064
+png_image_write_to_file	12	1739745986	error	int	4	3356920064
+png_image_write_to_file	24	4139689813	image	png_imagep	8	3356920064
+png_image_write_to_file	32	2827917586	file_name	const char *	8	3356920064
+png_image_write_to_file	36	4223456583	convert_to_8bit	int	4	3356920064
+png_image_write_to_file	48	2278440320	buffer	const void *	8	3356920064
+png_image_write_to_file	40	2124382980	row_stride	int	4	3356920064
+png_image_write_to_file	56	1126454756	colormap	const void *	8	3356920064
+png_do_pack	120	3574303654	row_info	png_row_infop	8	1534847676
+png_do_pack	128	4207767128	row	png_bytep	8	1534847676
+png_do_pack	132	3937725318	bit_depth	int	4	1534847676
+png_do_shift	48	3620874138	shift_start	int [4]	16	3065447833
+png_do_shift	32	4187594413	shift_dec	int [4]	16	3065447833
+png_do_shift	156	570416859	channels	unsigned int	4	3065447833
+png_do_shift	88	3820324715	bp	png_bytep	8	3065447833
+png_do_shift	152	4199744630	mask	unsigned int	4	3065447833
+png_do_shift	72	1469945045	bp	png_bytep	8	3065447833
+png_do_shift	64	420656480	bp	png_bytep	8	3065447833
+png_do_shift	168	2443441060	row_info	png_row_infop	8	3065447833
+png_do_shift	176	1043626374	row	png_bytep	8	3065447833
+png_do_shift	184	3115670503	bit_depth	png_const_color_8p	8	3065447833
+png_do_write_swap_alpha	80	1586197048	sp	png_bytep	8	3483209986
+png_do_write_swap_alpha	72	524293279	dp	png_bytep	8	3483209986
+png_do_write_swap_alpha	64	1273260260	sp	png_bytep	8	3483209986
+png_do_write_swap_alpha	56	595928673	dp	png_bytep	8	3483209986
+png_do_write_swap_alpha	48	2154305084	sp	png_bytep	8	3483209986
+png_do_write_swap_alpha	40	1704752672	dp	png_bytep	8	3483209986
+png_do_write_swap_alpha	32	860515721	sp	png_bytep	8	3483209986
+png_do_write_swap_alpha	24	1839396142	dp	png_bytep	8	3483209986
+png_do_write_swap_alpha	136	3748795902	row_info	png_row_infop	8	3483209986
+png_do_write_swap_alpha	144	3053921248	row	png_bytep	8	3483209986
+png_do_write_invert_alpha	64	3654740752	sp	png_bytep	8	1125357372
+png_do_write_invert_alpha	24	2568900213	dp	png_bytep	8	1125357372
+png_do_write_invert_alpha	56	3951715667	sp	png_bytep	8	1125357372
+png_do_write_invert_alpha	16	402958748	dp	png_bytep	8	1125357372
+png_do_write_invert_alpha	48	3555864057	sp	png_bytep	8	1125357372
+png_do_write_invert_alpha	40	30932092	dp	png_bytep	8	1125357372
+png_do_write_invert_alpha	32	48369660	sp	png_bytep	8	1125357372
+png_do_write_invert_alpha	8	3049777382	dp	png_bytep	8	1125357372
+png_do_write_invert_alpha	104	1812922164	row_info	png_row_infop	8	1125357372
+png_do_write_invert_alpha	112	1061046762	row	png_bytep	8	1125357372
+png_do_write_transformations	8	776603841	png_ptr	png_structrp	8	1260549456
+png_do_write_transformations	16	3727841421	row_info	png_row_infop	8	1260549456
+png_chunk_benign_error	120	1293041007	png_ptr	png_const_structrp	8	2135925401
+png_set_keep_unknown_chunks	56	837006051	png_ptr	png_structrp	8	3351632990
+png_crc_finish	24	114131375	png_ptr	png_structrp	8	146115711
+png_handle_tRNS	120	3196208445	png_ptr	png_structrp	8	3170783567
+png_init_read_transformations	1176	4157816680	png_ptr	png_structrp	8	3010556747
+png_fixed_error	40	1121953418	png_ptr	png_const_structrp	8	4235803062
+png_save_uint_32	8	3018103712	buf	png_bytep	8	391996285
+png_save_uint_32	12	2638331957	i	int	4	391996285
+png_save_uint_16	8	901195669	buf	png_bytep	8	2421419637
+png_save_uint_16	12	1743929304	i	unsigned int	4	2421419637
+png_write_sig	24	910796	png_ptr	png_structrp	8	1410006577
+png_write_chunk_header	24	4080461033	png_ptr	png_structrp	8	2914091612
+png_write_chunk_header	28	1045244015	chunk_name	int	4	2914091612
+png_write_chunk_header	32	17201200	length	int	4	2914091612
+png_write_chunk_start	8	3215378610	png_ptr	png_structrp	8	1844469568
+png_write_chunk_start	16	1661154737	chunk_string	png_const_bytep	8	1844469568
+png_write_chunk_start	20	2191850521	length	int	4	1844469568
+png_write_chunk_data	8	1838774436	png_ptr	png_structrp	8	2466050764
+png_write_chunk_data	16	3721027804	data	png_const_bytep	8	2466050764
+png_write_chunk_data	24	2977041686	length	int	4	2466050764
+png_write_chunk_end	24	2248412842	png_ptr	png_structrp	8	1567234497
+png_write_complete_chunk	8	639718495	png_ptr	png_structrp	8	2315682805
+png_write_complete_chunk	12	2307468924	chunk_name	int	4	2315682805
+png_write_complete_chunk	24	3312562231	data	png_const_bytep	8	2315682805
+png_write_complete_chunk	32	1490101853	length	int	4	2315682805
+png_write_chunk	8	2886392759	png_ptr	png_structrp	8	103731802
+png_write_chunk	16	1335607519	chunk_string	png_const_bytep	8	103731802
+png_write_chunk	24	3847301034	data	png_const_bytep	8	103731802
+png_write_chunk	32	2314628798	length	int	4	103731802
+png_image_size	16	1436869416	pd	unsigned int	4	2110258829
+png_image_size	8	3919175959	cb_base	png_alloc_size_t	4	2110258829
+png_image_size	28	3605943089	pass	int	4	2110258829
+png_image_size	40	2500972364	png_ptr	png_structrp	8	2110258829
+optimize_cmf	8	4150304706	z_cmf	unsigned int	4	3402401690
+optimize_cmf	16	423373349	z_cinfo	unsigned int	4	3402401690
+optimize_cmf	12	1842881768	half_z_window_size	unsigned int	4	3402401690
+optimize_cmf	4	3642661121	tmp	unsigned int	4	3402401690
+optimize_cmf	24	1402206236	data	png_bytep	8	3402401690
+optimize_cmf	32	1237657933	data_size	png_alloc_size_t	4	3402401690
+png_deflate_claim	80	3211813998	msg	char [64]	64	2750088285
+png_deflate_claim	108	501051529	level	int	4	2750088285
+png_deflate_claim	104	1595184608	method	int	4	2750088285
+png_deflate_claim	100	3625466617	windowBits	int	4	2750088285
+png_deflate_claim	96	1868903247	memLevel	int	4	2750088285
+png_deflate_claim	92	1612700643	strategy	int	4	2750088285
+png_deflate_claim	88	4171023754	ret	int	4	2750088285
+png_deflate_claim	84	1259920157	half_window_size	unsigned int	4	2750088285
+png_deflate_claim	120	2465358417	png_ptr	png_structrp	8	2750088285
+png_deflate_claim	124	624299240	owner	int	4	2750088285
+png_deflate_claim	136	2574902309	data_size	png_alloc_size_t	4	2750088285
+png_free_buffer_list	16	3922656684	list	png_compression_bufferp	8	3311426471
+png_free_buffer_list	8	3477166211	next	png_compression_bufferp	8	3311426471
+png_free_buffer_list	24	3625412965	png_ptr	png_structrp	8	3311426471
+png_free_buffer_list	32	2131314487	listp	png_compression_bufferp *	8	3311426471
+png_text_compress_init	8	1504602188	comp	compression_state *	8	3516320578
+png_text_compress_init	16	3867959765	input	png_const_bytep	8	3516320578
+png_text_compress_init	24	867335436	input_len	png_alloc_size_t	4	3516320578
+png_text_compress	36	177489207	ret	int	4	525968969
+png_text_compress	24	3938461311	end	png_compression_bufferp *	8	525968969
+png_text_compress	16	2935786959	input_len	png_alloc_size_t	4	525968969
+png_text_compress	28	150957007	avail_in	uInt	4	525968969
+png_text_compress	8	3799072832	next	png_compression_buffer *	8	525968969
+png_text_compress	56	1281475468	png_ptr	png_structrp	8	525968969
+png_text_compress	60	3784643761	chunk_name	int	4	525968969
+png_text_compress	72	2152271068	comp	compression_state *	8	525968969
+png_text_compress	64	659849506	prefix_len	int	4	525968969
+png_write_compressed_data_out	16	2887146518	output	png_const_bytep	8	55801239
+png_write_compressed_data_out	8	3801887801	next	png_compression_buffer *	8	55801239
+png_write_compressed_data_out	40	3588780924	png_ptr	png_structrp	8	55801239
+png_write_compressed_data_out	48	2541425864	comp	compression_state *	8	55801239
+png_write_IHDR	36	114305090	is_invalid_depth	int	4	1522197198
+png_write_IHDR	56	180445102	png_ptr	png_structrp	8	1522197198
+png_write_IHDR	60	1242583576	width	int	4	1522197198
+png_write_IHDR	64	1373886566	height	int	4	1522197198
+png_write_IHDR	68	1109679919	bit_depth	int	4	1522197198
+png_write_IHDR	72	1058842660	color_type	int	4	1522197198
+png_write_IHDR	76	1067877933	compression_type	int	4	1522197198
+png_write_IHDR	16	114991450	filter_type	int	4	1522197198
+png_write_IHDR	24	1013195661	interlace_type	int	4	1522197198
+png_write_PLTE	24	2025141883	pal_ptr	png_const_colorp	8	1461650066
+png_write_PLTE	40	2704862883	png_ptr	png_structrp	8	1461650066
+png_write_PLTE	48	4209927327	palette	png_const_colorp	8	1461650066
+png_write_PLTE	52	2961712584	num_pal	int	4	1461650066
+png_compress_IDAT	28	3242957075	ret	int	4	1450508958
+png_compress_IDAT	32	3821537402	avail	uInt	4	1450508958
+png_compress_IDAT	16	518147576	data	png_bytep	8	1450508958
+png_compress_IDAT	24	4133510280	size	uInt	4	1450508958
+png_compress_IDAT	8	1840784016	data	png_bytep	8	1450508958
+png_compress_IDAT	20	2158288230	size	uInt	4	1450508958
+png_compress_IDAT	40	3760600305	png_ptr	png_structrp	8	1450508958
+png_compress_IDAT	48	1965147163	input	png_const_bytep	8	1450508958
+png_compress_IDAT	56	2565535720	input_len	png_alloc_size_t	4	1450508958
+png_compress_IDAT	60	2859017958	flush	int	4	1450508958
+png_write_IEND	8	2285636923	png_ptr	png_structrp	8	3634774261
+png_write_gAMA_fixed	24	90735951	png_ptr	png_structrp	8	4112617832
+png_write_gAMA_fixed	28	102958749	file_gamma	png_fixed_point	4	4112617832
+png_write_sRGB	24	2493498070	png_ptr	png_structrp	8	1655712969
+png_write_sRGB	28	1912653829	srgb_intent	int	4	1655712969
+png_write_iCCP	1152	584210085	comp	compression_state	1	3924809128
+png_write_iCCP	1176	291080420	png_ptr	png_structrp	8	3924809128
+png_write_iCCP	1184	201428784	name	png_const_charp	8	3924809128
+png_write_iCCP	1192	2367423126	profile	png_const_bytep	8	3924809128
+png_write_sPLT	136	3500218033	ep	png_sPLT_entryp	8	2185509981
+png_write_sPLT	152	3049509508	png_ptr	png_structrp	8	2185509981
+png_write_sPLT	160	3047513975	spalette	png_const_sPLT_tp	8	2185509981
+png_write_sBIT	40	2451070610	png_ptr	png_structrp	8	3804517066
+png_write_sBIT	48	4090731186	sbit	png_const_color_8p	8	3804517066
+png_write_sBIT	52	3236709796	color_type	int	4	3804517066
+png_write_cHRM_fixed	56	1950932217	png_ptr	png_structrp	8	552247511
+png_write_cHRM_fixed	64	2986868511	xy	const png_xy *	8	552247511
+png_write_tRNS	24	2172321791	png_ptr	png_structrp	8	1067535912
+png_write_tRNS	32	3961993833	trans_alpha	png_const_bytep	8	1067535912
+png_write_tRNS	40	1622381330	tran	png_const_color_16p	8	1067535912
+png_write_tRNS	44	62374844	num_trans	int	4	1067535912
+png_write_tRNS	48	1137886132	color_type	int	4	1067535912
+png_write_bKGD	24	532449400	png_ptr	png_structrp	8	774447312
+png_write_bKGD	32	226773075	back	png_const_color_16p	8	774447312
+png_write_bKGD	36	1711908484	color_type	int	4	774447312
+png_write_eXIf	16	447106979	i	int	4	547754279
+png_write_eXIf	24	248225161	png_ptr	png_structrp	8	547754279
+png_write_eXIf	32	3051173976	exif	png_bytep	8	547754279
+png_write_eXIf	36	2443242772	num_exif	int	4	547754279
+png_write_hIST	20	1996784900	i	int	4	823833244
+png_write_hIST	40	2644995289	png_ptr	png_structrp	8	823833244
+png_write_hIST	48	2542669055	hist	png_const_uint_16p	8	823833244
+png_write_hIST	52	1733976762	num_hist	int	4	823833244
+png_write_tEXt	120	3037886722	png_ptr	png_structrp	8	863201112
+png_write_tEXt	128	3353855162	key	png_const_charp	8	863201112
+png_write_tEXt	136	4173562874	text	png_const_charp	8	863201112
+png_write_tEXt	144	2559082201	text_len	int	4	863201112
+png_write_zTXt	1152	1168314062	comp	compression_state	1	3678791981
+png_write_zTXt	1176	1461158085	png_ptr	png_structrp	8	3678791981
+png_write_zTXt	1184	2273096503	key	png_const_charp	8	3678791981
+png_write_zTXt	1192	978968831	text	png_const_charp	8	3678791981
+png_write_zTXt	1196	2768344808	compression	int	4	3678791981
+png_write_iTXt	1152	2377595941	comp	compression_state	1	1113206062
+png_write_iTXt	1192	522819050	png_ptr	png_structrp	8	1113206062
+png_write_iTXt	1196	3643889100	compression	int	4	1113206062
+png_write_iTXt	1208	3268067450	key	png_const_charp	8	1113206062
+png_write_iTXt	1216	467028520	lang	png_const_charp	8	1113206062
+png_write_iTXt	1224	1944905248	lang_key	png_const_charp	8	1113206062
+png_write_iTXt	1232	2477370073	text	png_const_charp	8	1113206062
+png_write_oFFs	40	483697713	png_ptr	png_structrp	8	2382625399
+png_write_oFFs	44	2495280168	x_offset	int	4	2382625399
+png_write_oFFs	48	1109819737	y_offset	int	4	2382625399
+png_write_oFFs	52	1542288355	unit_type	int	4	2382625399
+png_write_pCAL	136	177363598	params_len	png_size_tp	8	3961903129
+png_write_pCAL	160	3385512526	i	int	4	3961903129
+png_write_pCAL	168	3230607272	png_ptr	png_structrp	8	3961903129
+png_write_pCAL	176	2272225851	purpose	png_charp	8	3961903129
+png_write_pCAL	180	945524459	X0	int	4	3961903129
+png_write_pCAL	184	1364832598	X1	int	4	3961903129
+png_write_pCAL	188	1749637345	type	int	4	3961903129
+png_write_pCAL	192	1061299871	nparams	int	4	3961903129
+png_write_pCAL	200	944184136	units	png_const_charp	8	3961903129
+png_write_pCAL	208	4292886947	params	png_charpp	8	3961903129
+png_write_sCAL_s	120	2367736440	png_ptr	png_structrp	8	200382980
+png_write_sCAL_s	124	3749694533	unit	int	4	200382980
+png_write_sCAL_s	136	3780482403	width	png_const_charp	8	200382980
+png_write_sCAL_s	144	2796070333	height	png_const_charp	8	200382980
+png_write_pHYs	40	53644631	png_ptr	png_structrp	8	2438042860
+png_write_pHYs	44	728976788	x_pixels_per_unit	int	4	2438042860
+png_write_pHYs	48	845187561	y_pixels_per_unit	int	4	2438042860
+png_write_pHYs	52	1565412416	unit_type	int	4	2438042860
+png_write_tIME	24	1305419269	png_ptr	png_structrp	8	1358331112
+png_write_tIME	32	2016318623	mod_time	png_const_timep	8	1358331112
+png_write_start_row	1963	2365710335	png_pass_start	const int [7]	28	3437606922
+png_write_start_row	1956	1775185247	png_pass_inc	const int [7]	28	3437606922
+png_write_start_row	1949	2850903991	png_pass_ystart	const int [7]	28	3437606922
+png_write_start_row	1942	3243195260	png_pass_yinc	const int [7]	28	3437606922
+png_write_start_row	8	3074471040	buf_size	png_alloc_size_t	4	3437606922
+png_write_start_row	12	1366259775	usr_pixel_depth	int	4	3437606922
+png_write_start_row	16	1754068637	num_filters	int	4	3437606922
+png_write_start_row	40	1795037342	png_ptr	png_structrp	8	3437606922
+png_write_finish_row	1977	983825542	png_pass_start	const int [7]	28	4283387849
+png_write_finish_row	1970	1733074882	png_pass_inc	const int [7]	28	4283387849
+png_write_finish_row	1991	1068689064	png_pass_ystart	const int [7]	28	4283387849
+png_write_finish_row	1984	4068350476	png_pass_yinc	const int [7]	28	4283387849
+png_write_finish_row	8	971731339	png_ptr	png_structrp	8	4283387849
+png_do_write_interlace	1998	4082961704	png_pass_start	const int [7]	28	1673800266
+png_do_write_interlace	2005	3805097658	png_pass_inc	const int [7]	28	1673800266
+png_do_write_interlace	152	2263626727	row_info	png_row_infop	8	1673800266
+png_do_write_interlace	160	1855759103	row	png_bytep	8	1673800266
+png_do_write_interlace	164	2040166527	pass	int	4	1673800266
+png_setup_sub_row	40	1068881685	rp	png_bytep	8	1220350334
+png_setup_sub_row	32	1756406568	dp	png_bytep	8	1220350334
+png_setup_sub_row	24	3012376822	lp	png_bytep	8	1220350334
+png_setup_sub_row	44	994532682	v	unsigned int	4	1220350334
+png_setup_sub_row_only	32	902847625	rp	png_bytep	8	968874781
+png_setup_sub_row_only	24	2400655165	dp	png_bytep	8	968874781
+png_setup_sub_row_only	16	779330852	lp	png_bytep	8	968874781
+png_setup_sub_row_only	40	3628428519	png_ptr	png_structrp	8	968874781
+png_setup_sub_row_only	44	2421025451	bpp	int	4	968874781
+png_setup_sub_row_only	56	1807704846	row_bytes	int	4	968874781
+png_setup_up_row	40	1738474750	rp	png_bytep	8	2998632827
+png_setup_up_row	32	4038105751	dp	png_bytep	8	2998632827
+png_setup_up_row	24	1669740532	pp	png_bytep	8	2998632827
+png_setup_up_row	44	695160112	v	unsigned int	4	2998632827
+png_setup_up_row_only	32	3307347202	rp	png_bytep	8	3408693640
+png_setup_up_row_only	24	3392157886	dp	png_bytep	8	3408693640
+png_setup_up_row_only	16	4118526661	pp	png_bytep	8	3408693640
+png_setup_up_row_only	40	3040941442	png_ptr	png_structrp	8	3408693640
+png_setup_up_row_only	48	2073202610	row_bytes	int	4	3408693640
+png_setup_avg_row	40	3744520125	rp	png_bytep	8	557467094
+png_setup_avg_row	32	345330931	dp	png_bytep	8	557467094
+png_setup_avg_row	24	1692718429	pp	png_bytep	8	557467094
+png_setup_avg_row	16	3538733232	lp	png_bytep	8	557467094
+png_setup_avg_row	44	4189940355	v	unsigned int	4	557467094
+png_setup_avg_row_only	32	1417733	rp	png_bytep	8	2922751193
+png_setup_avg_row_only	24	2254022737	dp	png_bytep	8	2922751193
+png_setup_avg_row_only	16	2894948353	pp	png_bytep	8	2922751193
+png_setup_avg_row_only	8	768431766	lp	png_bytep	8	2922751193
+png_setup_avg_row_only	56	1961933578	png_ptr	png_structrp	8	2922751193
+png_setup_avg_row_only	60	4113566422	bpp	int	4	2922751193
+png_setup_avg_row_only	72	2004308660	row_bytes	int	4	2922751193
+png_setup_paeth_row	56	1477146097	rp	png_bytep	8	1010560328
+png_setup_paeth_row	48	2960549930	dp	png_bytep	8	1010560328
+png_setup_paeth_row	40	1830700145	pp	png_bytep	8	1010560328
+png_setup_paeth_row	32	4078934817	cp	png_bytep	8	1010560328
+png_setup_paeth_row	24	484998082	lp	png_bytep	8	1010560328
+png_setup_paeth_row	88	23236424	v	unsigned int	4	1010560328
+png_setup_paeth_row_only	48	4109412850	rp	png_bytep	8	721399315
+png_setup_paeth_row_only	40	489463685	dp	png_bytep	8	721399315
+png_setup_paeth_row_only	32	1710756603	pp	png_bytep	8	721399315
+png_setup_paeth_row_only	24	3575983197	cp	png_bytep	8	721399315
+png_setup_paeth_row_only	16	2067578976	lp	png_bytep	8	721399315
+png_setup_paeth_row_only	88	2789540595	png_ptr	png_structrp	8	721399315
+png_setup_paeth_row_only	92	2252882866	bpp	int	4	721399315
+png_setup_paeth_row_only	104	2777790993	row_bytes	int	4	721399315
+png_write_find_filter	132	3208081072	filter_to_do	unsigned int	4	597874634
+png_write_find_filter	72	1867498425	row_buf	png_bytep	8	597874634
+png_write_find_filter	120	677323948	best_row	png_bytep	8	597874634
+png_write_find_filter	104	3510682654	rp	png_bytep	8	597874634
+png_write_find_filter	124	2773803273	v	unsigned int	4	597874634
+png_write_find_filter	152	635106511	png_ptr	png_structrp	8	597874634
+png_write_find_filter	160	3065057817	row_info	png_row_infop	8	597874634
+png_write_filtered_row	8	1686030687	tptr	png_bytep	8	1391947164
+png_write_filtered_row	24	2924390344	png_ptr	png_structrp	8	1391947164
+png_write_filtered_row	32	3504584888	filtered_row	png_bytep	8	1391947164
+png_write_filtered_row	40	2655127660	full_row_length	int	4	1391947164

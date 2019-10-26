@@ -19,7 +19,7 @@ CXXFLAGS := -g -pthread
 
 .SECONDARY: 
 
-.PRECIOUS: %.dump %.symtab %_global.offset
+.PRECIOUS: %.dump %.symtab %_static.offset
 
 # tartest:
 # 	echo $(ARGS)
@@ -32,14 +32,14 @@ memtracker.cpp: memtracker.h
 # 	dwarfdump $< > $@
 # %.dump: %.out %.dd ./obj-intel64/memtracker.so
 # 	../PIN/pin -t obj-intel64/memtracker.so -- ./$< > op.txt
-%.symtab: %.out
-	readelf -sW $< | grep "OBJECT" > $@
-%_static.offset: %.symtab final_global.offset merge
-	awk -f merge $< FS="\t" final_global.offset > $@
-%.dump: %.out ./obj-intel64/memtracker.so final.offset %_static.offset
+# %.symtab: %.out
+# 	readelf -sW $< | grep "OBJECT" > $@
+# %_static.offset: %.symtab final_global.offset merge
+# 	awk -f merge $< FS="\t" final_global.offset > $@
+%.dump: %.out ./obj-intel64/memtracker.so final.offset final_static.offset final.funcargs
 	../PIN/pin -t obj-intel64/memtracker.so -- ./$< $(inp) > op.txt
 cleaner:
-	-rm *.dump *.dd
+	-rm *.dump
 	make clean
 
 ##############################################################

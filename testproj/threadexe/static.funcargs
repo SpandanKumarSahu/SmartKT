@@ -1,0 +1,616 @@
+__underflow	1	_IO_FILE *	int
+__uflow	1	_IO_FILE *	int
+__overflow	2	_IO_FILE *	int	int
+_IO_getc	1	_IO_FILE *	int
+_IO_putc	2	int	_IO_FILE *	int
+_IO_feof	1	_IO_FILE *	int
+_IO_ferror	1	_IO_FILE *	int
+_IO_peekc_locked	1	_IO_FILE *	int
+_IO_flockfile	1	_IO_FILE *	void
+_IO_funlockfile	1	_IO_FILE *	void
+_IO_ftrylockfile	1	_IO_FILE *	int
+_IO_vfscanf	4	_IO_FILE *restrict	const char *restrict	int	int *restrict	int
+_IO_vfprintf	3	_IO_FILE *restrict	const char *restrict	int	int
+_IO_padn	3	_IO_FILE *	int	__ssize_t	__ssize_t
+_IO_sgetn	0	int
+_IO_seekoff	4	_IO_FILE *	__off64_t	int	int	__off64_t
+_IO_seekpos	3	_IO_FILE *	__off64_t	int	__off64_t
+_IO_free_backup_area	1	_IO_FILE *	void
+remove	1	const char *	int
+rename	2	const char *	const char *	int
+renameat	4	int	const char *	int	const char *	int
+tmpfile	0	FILE *
+tmpnam	1	char *	char *
+tmpnam_r	1	char *	char *
+tempnam	2	const char *	const char *	char *
+fclose	1	FILE *	int
+fflush	1	FILE *	int
+fflush_unlocked	1	FILE *	int
+fopen	2	const char *restrict	const char *restrict	FILE *
+freopen	3	const char *restrict	const char *restrict	FILE *restrict	FILE *
+fdopen	2	int	const char *	FILE *
+fmemopen	3	void *	int	const char *	FILE *
+open_memstream	2	char **	int *	FILE *
+setbuf	2	FILE *restrict	char *restrict	void
+setvbuf	4	FILE *restrict	char *restrict	int	int	int
+setbuffer	3	FILE *restrict	char *restrict	int	void
+setlinebuf	1	FILE *	void
+fprintf	2	FILE *restrict	const char *restrict	int
+printf	1	const char *restrict	int
+sprintf	2	char *restrict	const char *restrict	int
+vfprintf	3	FILE *restrict	const char *restrict	int	int
+vprintf	2	const char *restrict	int	int
+vsprintf	3	char *restrict	const char *restrict	int	int
+snprintf	3	char *restrict	int	const char *restrict	int
+vsnprintf	4	char *restrict	int	const char *restrict	int	int
+vdprintf	3	int	const char *restrict	int	int
+dprintf	2	int	const char *restrict	int
+fscanf	2	FILE *restrict	const char *restrict	int
+scanf	1	const char *restrict	int
+sscanf	2	const char *restrict	const char *restrict	int
+__isoc99_fscanf	2	FILE *restrict	const char *restrict	int
+__isoc99_scanf	1	const char *restrict	int
+__isoc99_sscanf	2	const char *restrict	const char *restrict	int
+vfscanf	3	FILE *restrict	const char *restrict	int	int
+vscanf	2	const char *restrict	int	int
+vsscanf	3	const char *restrict	const char *restrict	int	int
+__isoc99_vfscanf	3	FILE *restrict	const char *restrict	int	int
+__isoc99_vscanf	2	const char *restrict	int	int
+__isoc99_vsscanf	3	const char *restrict	const char *restrict	int	int
+fgetc	1	FILE *	int
+getc	1	FILE *	int
+getchar	0	int
+getc_unlocked	1	FILE *	int
+getchar_unlocked	0	int
+fgetc_unlocked	1	FILE *	int
+fputc	2	int	FILE *	int
+putc	2	int	FILE *	int
+putchar	1	int	int
+fputc_unlocked	2	int	FILE *	int
+putc_unlocked	2	int	FILE *	int
+putchar_unlocked	1	int	int
+getw	1	FILE *	int
+putw	2	int	FILE *	int
+fgets	3	char *restrict	int	FILE *restrict	char *
+__getdelim	4	char **restrict	int *restrict	int	FILE *restrict	__ssize_t
+getdelim	4	char **restrict	int *restrict	int	FILE *restrict	__ssize_t
+getline	3	char **restrict	int *restrict	FILE *restrict	__ssize_t
+fputs	2	const char *restrict	FILE *restrict	int
+puts	1	const char *	int
+ungetc	2	int	FILE *	int
+fread	0	int
+fwrite	0	int
+fread_unlocked	0	int
+fwrite_unlocked	0	int
+fseek	3	FILE *	long	int	int
+ftell	1	FILE *	long
+rewind	1	FILE *	void
+fseeko	3	FILE *	__off_t	int	int
+ftello	1	FILE *	__off_t
+fgetpos	2	FILE *restrict	fpos_t *restrict	int
+fsetpos	2	FILE *	const fpos_t *	int
+clearerr	1	FILE *	void
+feof	1	FILE *	int
+ferror	1	FILE *	int
+clearerr_unlocked	1	FILE *	void
+feof_unlocked	1	FILE *	int
+ferror_unlocked	1	FILE *	int
+perror	1	const char *	void
+fileno	1	FILE *	int
+fileno_unlocked	1	FILE *	int
+popen	2	const char *	const char *	FILE *
+pclose	1	FILE *	int
+ctermid	1	char *	char *
+flockfile	1	FILE *	void
+ftrylockfile	1	FILE *	int
+funlockfile	1	FILE *	void
+memcpy	3	void *restrict	const void *restrict	int	void *
+memmove	3	void *	const void *	int	void *
+memccpy	4	void *restrict	const void *restrict	int	int	void *
+memset	3	void *	int	int	void *
+memcmp	3	const void *	const void *	int	int
+memchr	3	const void *	int	int	void *
+strcpy	2	char *restrict	const char *restrict	char *
+strncpy	3	char *restrict	const char *restrict	int	char *
+strcat	2	char *restrict	const char *restrict	char *
+strncat	3	char *restrict	const char *restrict	int	char *
+strcmp	2	const char *	const char *	int
+strncmp	3	const char *	const char *	int	int
+strcoll	2	const char *	const char *	int
+strxfrm	0	int
+strcoll_l	3	const char *	const char *	__locale_t	int
+strxfrm_l	0	int
+strdup	1	const char *	char *
+strndup	2	const char *	int	char *
+strchr	2	const char *	int	char *
+strrchr	2	const char *	int	char *
+strcspn	0	int
+strspn	0	int
+strpbrk	2	const char *	const char *	char *
+strstr	2	const char *	const char *	char *
+strtok	2	char *restrict	const char *restrict	char *
+__strtok_r	3	char *restrict	const char *restrict	char **restrict	char *
+strtok_r	3	char *restrict	const char *restrict	char **restrict	char *
+strlen	0	int
+strnlen	0	int
+strerror	1	int	char *
+__xpg_strerror_r	3	int	char *	int	int
+strerror_l	2	int	__locale_t	char *
+__bzero	2	void *	int	void
+bcopy	3	const void *	void *	int	void
+bzero	2	void *	int	void
+bcmp	3	const void *	const void *	int	int
+index	2	const char *	int	char *
+rindex	2	const char *	int	char *
+ffs	1	int	int
+strcasecmp	2	const char *	const char *	int
+strncasecmp	3	const char *	const char *	int	int
+strsep	2	char **restrict	const char *restrict	char *
+strsignal	1	int	char *
+__stpcpy	2	char *restrict	const char *restrict	char *
+stpcpy	2	char *restrict	const char *restrict	char *
+__stpncpy	3	char *restrict	const char *restrict	int	char *
+stpncpy	3	char *restrict	const char *restrict	int	char *
+__sched_cpucount	2	int	const cpu_set_t *	int
+__sched_cpualloc	1	int	cpu_set_t *
+__sched_cpufree	1	cpu_set_t *	void
+sched_setparam	2	__pid_t	const struct sched_param *	int
+sched_getparam	2	__pid_t	struct sched_param *	int
+sched_setscheduler	3	__pid_t	int	const struct sched_param *	int
+sched_getscheduler	1	__pid_t	int
+sched_yield	0	int
+sched_get_priority_max	1	int	int
+sched_get_priority_min	1	int	int
+sched_rr_get_interval	2	__pid_t	struct timespec *	int
+clock	0	clock_t
+time	1	time_t *	time_t
+difftime	2	time_t	time_t	double
+mktime	1	struct tm *	time_t
+strftime	0	int
+strftime_l	0	int
+gmtime	1	const time_t *	struct tm *
+localtime	1	const time_t *	struct tm *
+gmtime_r	2	const time_t *restrict	struct tm *restrict	struct tm *
+localtime_r	2	const time_t *restrict	struct tm *restrict	struct tm *
+asctime	1	const struct tm *	char *
+ctime	1	const time_t *	char *
+asctime_r	2	const struct tm *restrict	char *restrict	char *
+ctime_r	2	const time_t *restrict	char *restrict	char *
+tzset	0	void
+stime	1	const time_t *	int
+timegm	1	struct tm *	time_t
+timelocal	1	struct tm *	time_t
+dysize	1	int	int
+nanosleep	2	const struct timespec *	struct timespec *	int
+clock_getres	2	clockid_t	struct timespec *	int
+clock_gettime	2	clockid_t	struct timespec *	int
+clock_settime	2	clockid_t	const struct timespec *	int
+clock_nanosleep	4	clockid_t	int	const struct timespec *	struct timespec *	int
+clock_getcpuclockid	2	pid_t	clockid_t *	int
+timer_create	3	clockid_t	struct sigevent *restrict	timer_t *restrict	int
+timer_delete	1	timer_t	int
+timer_settime	4	timer_t	int	const struct itimerspec *restrict	struct itimerspec *restrict	int
+timer_gettime	2	timer_t	struct itimerspec *	int
+timer_getoverrun	1	timer_t	int
+timespec_get	2	struct timespec *	int	int
+pthread_create	4	pthread_t *restrict	const pthread_attr_t *restrict	void *(*)(void *)	void *restrict	int
+pthread_exit	1	void *	void
+pthread_join	2	pthread_t	void **	int
+pthread_detach	1	pthread_t	int
+pthread_self	0	pthread_t
+pthread_equal	2	pthread_t	pthread_t	int
+pthread_attr_init	1	pthread_attr_t *	int
+pthread_attr_destroy	1	pthread_attr_t *	int
+pthread_attr_getdetachstate	2	const pthread_attr_t *	int *	int
+pthread_attr_setdetachstate	2	pthread_attr_t *	int	int
+pthread_attr_getguardsize	2	const pthread_attr_t *	int *	int
+pthread_attr_setguardsize	2	pthread_attr_t *	int	int
+pthread_attr_getschedparam	2	const pthread_attr_t *restrict	struct sched_param *restrict	int
+pthread_attr_setschedparam	2	pthread_attr_t *restrict	const struct sched_param *restrict	int
+pthread_attr_getschedpolicy	2	const pthread_attr_t *restrict	int *restrict	int
+pthread_attr_setschedpolicy	2	pthread_attr_t *	int	int
+pthread_attr_getinheritsched	2	const pthread_attr_t *restrict	int *restrict	int
+pthread_attr_setinheritsched	2	pthread_attr_t *	int	int
+pthread_attr_getscope	2	const pthread_attr_t *restrict	int *restrict	int
+pthread_attr_setscope	2	pthread_attr_t *	int	int
+pthread_attr_getstackaddr	2	const pthread_attr_t *restrict	void **restrict	int
+pthread_attr_setstackaddr	2	pthread_attr_t *	void *	int
+pthread_attr_getstacksize	2	const pthread_attr_t *restrict	int *restrict	int
+pthread_attr_setstacksize	2	pthread_attr_t *	int	int
+pthread_attr_getstack	3	const pthread_attr_t *restrict	void **restrict	int *restrict	int
+pthread_attr_setstack	3	pthread_attr_t *	void *	int	int
+pthread_setschedparam	3	pthread_t	int	const struct sched_param *	int
+pthread_getschedparam	3	pthread_t	int *restrict	struct sched_param *restrict	int
+pthread_setschedprio	2	pthread_t	int	int
+pthread_once	2	pthread_once_t *	void (*)(void)	int
+pthread_setcancelstate	2	int	int *	int
+pthread_setcanceltype	2	int	int *	int
+pthread_cancel	1	pthread_t	int
+pthread_testcancel	0	void
+__pthread_register_cancel	1	__pthread_unwind_buf_t *	void
+__pthread_unregister_cancel	1	__pthread_unwind_buf_t *	void
+__pthread_unwind_next	1	__pthread_unwind_buf_t *	void
+__sigsetjmp	2	struct __jmp_buf_tag *	int	int
+pthread_mutex_init	2	pthread_mutex_t *	const pthread_mutexattr_t *	int
+pthread_mutex_destroy	1	pthread_mutex_t *	int
+pthread_mutex_trylock	1	pthread_mutex_t *	int
+pthread_mutex_lock	1	pthread_mutex_t *	int
+pthread_mutex_timedlock	2	pthread_mutex_t *restrict	const struct timespec *restrict	int
+pthread_mutex_unlock	1	pthread_mutex_t *	int
+pthread_mutex_getprioceiling	2	const pthread_mutex_t *restrict	int *restrict	int
+pthread_mutex_setprioceiling	3	pthread_mutex_t *restrict	int	int *restrict	int
+pthread_mutex_consistent	1	pthread_mutex_t *	int
+pthread_mutexattr_init	1	pthread_mutexattr_t *	int
+pthread_mutexattr_destroy	1	pthread_mutexattr_t *	int
+pthread_mutexattr_getpshared	2	const pthread_mutexattr_t *restrict	int *restrict	int
+pthread_mutexattr_setpshared	2	pthread_mutexattr_t *	int	int
+pthread_mutexattr_gettype	2	const pthread_mutexattr_t *restrict	int *restrict	int
+pthread_mutexattr_settype	2	pthread_mutexattr_t *	int	int
+pthread_mutexattr_getprotocol	2	const pthread_mutexattr_t *restrict	int *restrict	int
+pthread_mutexattr_setprotocol	2	pthread_mutexattr_t *	int	int
+pthread_mutexattr_getprioceiling	2	const pthread_mutexattr_t *restrict	int *restrict	int
+pthread_mutexattr_setprioceiling	2	pthread_mutexattr_t *	int	int
+pthread_mutexattr_getrobust	2	const pthread_mutexattr_t *	int *	int
+pthread_mutexattr_setrobust	2	pthread_mutexattr_t *	int	int
+pthread_rwlock_init	2	pthread_rwlock_t *restrict	const pthread_rwlockattr_t *restrict	int
+pthread_rwlock_destroy	1	pthread_rwlock_t *	int
+pthread_rwlock_rdlock	1	pthread_rwlock_t *	int
+pthread_rwlock_tryrdlock	1	pthread_rwlock_t *	int
+pthread_rwlock_timedrdlock	2	pthread_rwlock_t *restrict	const struct timespec *restrict	int
+pthread_rwlock_wrlock	1	pthread_rwlock_t *	int
+pthread_rwlock_trywrlock	1	pthread_rwlock_t *	int
+pthread_rwlock_timedwrlock	2	pthread_rwlock_t *restrict	const struct timespec *restrict	int
+pthread_rwlock_unlock	1	pthread_rwlock_t *	int
+pthread_rwlockattr_init	1	pthread_rwlockattr_t *	int
+pthread_rwlockattr_destroy	1	pthread_rwlockattr_t *	int
+pthread_rwlockattr_getpshared	2	const pthread_rwlockattr_t *restrict	int *restrict	int
+pthread_rwlockattr_setpshared	2	pthread_rwlockattr_t *	int	int
+pthread_rwlockattr_getkind_np	2	const pthread_rwlockattr_t *restrict	int *restrict	int
+pthread_rwlockattr_setkind_np	2	pthread_rwlockattr_t *	int	int
+pthread_cond_init	2	pthread_cond_t *restrict	const pthread_condattr_t *restrict	int
+pthread_cond_destroy	1	pthread_cond_t *	int
+pthread_cond_signal	1	pthread_cond_t *	int
+pthread_cond_broadcast	1	pthread_cond_t *	int
+pthread_cond_wait	2	pthread_cond_t *restrict	pthread_mutex_t *restrict	int
+pthread_cond_timedwait	3	pthread_cond_t *restrict	pthread_mutex_t *restrict	const struct timespec *restrict	int
+pthread_condattr_init	1	pthread_condattr_t *	int
+pthread_condattr_destroy	1	pthread_condattr_t *	int
+pthread_condattr_getpshared	2	const pthread_condattr_t *restrict	int *restrict	int
+pthread_condattr_setpshared	2	pthread_condattr_t *	int	int
+pthread_condattr_getclock	2	const pthread_condattr_t *restrict	__clockid_t *restrict	int
+pthread_condattr_setclock	2	pthread_condattr_t *	__clockid_t	int
+pthread_spin_init	2	pthread_spinlock_t *	int	int
+pthread_spin_destroy	1	pthread_spinlock_t *	int
+pthread_spin_lock	1	pthread_spinlock_t *	int
+pthread_spin_trylock	1	pthread_spinlock_t *	int
+pthread_spin_unlock	1	pthread_spinlock_t *	int
+pthread_barrier_init	3	pthread_barrier_t *restrict	const pthread_barrierattr_t *restrict	unsigned int	int
+pthread_barrier_destroy	1	pthread_barrier_t *	int
+pthread_barrier_wait	1	pthread_barrier_t *	int
+pthread_barrierattr_init	1	pthread_barrierattr_t *	int
+pthread_barrierattr_destroy	1	pthread_barrierattr_t *	int
+pthread_barrierattr_getpshared	2	const pthread_barrierattr_t *restrict	int *restrict	int
+pthread_barrierattr_setpshared	2	pthread_barrierattr_t *	int	int
+pthread_key_create	2	pthread_key_t *	void (*)(void *)	int
+pthread_key_delete	1	pthread_key_t	int
+pthread_getspecific	1	pthread_key_t	void *
+pthread_setspecific	2	pthread_key_t	const void *	int
+pthread_getcpuclockid	2	pthread_t	__clockid_t *	int
+pthread_atfork	3	void (*)(void)	void (*)(void)	void (*)(void)	int
+access	2	const char *	int	int
+faccessat	4	int	const char *	int	int	int
+lseek	3	int	__off_t	int	__off_t
+close	1	int	int
+read	3	int	void *	int	ssize_t
+write	3	int	const void *	int	ssize_t
+pread	4	int	void *	int	__off_t	ssize_t
+pwrite	4	int	const void *	int	__off_t	ssize_t
+pipe	1	int [2]	int
+alarm	1	unsigned int	unsigned int
+sleep	1	unsigned int	unsigned int
+ualarm	2	__useconds_t	__useconds_t	__useconds_t
+usleep	1	__useconds_t	int
+pause	0	int
+chown	3	const char *	__uid_t	__gid_t	int
+fchown	3	int	__uid_t	__gid_t	int
+lchown	3	const char *	__uid_t	__gid_t	int
+fchownat	5	int	const char *	__uid_t	__gid_t	int	int
+chdir	1	const char *	int
+fchdir	1	int	int
+getcwd	2	char *	int	char *
+getwd	1	char *	char *
+dup	1	int	int
+dup2	2	int	int	int
+execve	3	const char *	char *const []	char *const []	int
+fexecve	3	int	char *const []	char *const []	int
+execv	2	const char *	char *const []	int
+execle	2	const char *	const char *	int
+execl	2	const char *	const char *	int
+execvp	2	const char *	char *const []	int
+execlp	2	const char *	const char *	int
+nice	1	int	int
+_exit	1	int	void
+pathconf	2	const char *	int	long
+fpathconf	2	int	int	long
+sysconf	1	int	long
+confstr	0	int
+getpid	0	__pid_t
+getppid	0	__pid_t
+getpgrp	0	__pid_t
+__getpgid	1	__pid_t	__pid_t
+getpgid	1	__pid_t	__pid_t
+setpgid	2	__pid_t	__pid_t	int
+setpgrp	0	int
+setsid	0	__pid_t
+getsid	1	__pid_t	__pid_t
+getuid	0	__uid_t
+geteuid	0	__uid_t
+getgid	0	__gid_t
+getegid	0	__gid_t
+getgroups	2	int	__gid_t []	int
+setuid	1	__uid_t	int
+setreuid	2	__uid_t	__uid_t	int
+seteuid	1	__uid_t	int
+setgid	1	__gid_t	int
+setregid	2	__gid_t	__gid_t	int
+setegid	1	__gid_t	int
+fork	0	__pid_t
+vfork	0	int
+ttyname	1	int	char *
+ttyname_r	3	int	char *	int	int
+isatty	1	int	int
+ttyslot	0	int
+link	2	const char *	const char *	int
+linkat	5	int	const char *	int	const char *	int	int
+symlink	2	const char *	const char *	int
+readlink	3	const char *restrict	char *restrict	int	ssize_t
+symlinkat	3	const char *	int	const char *	int
+readlinkat	4	int	const char *restrict	char *restrict	int	ssize_t
+unlink	1	const char *	int
+unlinkat	3	int	const char *	int	int
+rmdir	1	const char *	int
+tcgetpgrp	1	int	__pid_t
+tcsetpgrp	2	int	__pid_t	int
+getlogin	0	char *
+getlogin_r	2	char *	int	int
+setlogin	1	const char *	int
+getopt	3	int	char *const *	const char *	int
+gethostname	2	char *	int	int
+sethostname	2	const char *	int	int
+sethostid	1	long	int
+getdomainname	2	char *	int	int
+setdomainname	2	const char *	int	int
+vhangup	0	int
+revoke	1	const char *	int
+profil	4	unsigned short *	int	int	unsigned int	int
+acct	1	const char *	int
+getusershell	0	char *
+endusershell	0	void
+setusershell	0	void
+daemon	2	int	int	int
+chroot	1	const char *	int
+getpass	1	const char *	char *
+fsync	1	int	int
+gethostid	0	long
+sync	0	void
+getpagesize	0	int
+getdtablesize	0	int
+truncate	2	const char *	__off_t	int
+ftruncate	2	int	__off_t	int
+brk	1	void *	int
+sbrk	1	intptr_t	void *
+syscall	1	long	long
+lockf	3	int	int	__off_t	int
+fdatasync	1	int	int
+BootPOS	1	void *	void *
+main	0	int
+__underflow	1	_IO_FILE *	int
+__uflow	1	_IO_FILE *	int
+__overflow	2	_IO_FILE *	int	int
+_IO_getc	1	_IO_FILE *	int
+_IO_putc	2	int	_IO_FILE *	int
+_IO_feof	1	_IO_FILE *	int
+_IO_ferror	1	_IO_FILE *	int
+_IO_peekc_locked	1	_IO_FILE *	int
+_IO_flockfile	1	_IO_FILE *	void
+_IO_funlockfile	1	_IO_FILE *	void
+_IO_ftrylockfile	1	_IO_FILE *	int
+_IO_vfscanf	4	_IO_FILE *restrict	const char *restrict	int	int *restrict	int
+_IO_vfprintf	3	_IO_FILE *restrict	const char *restrict	int	int
+_IO_padn	3	_IO_FILE *	int	__ssize_t	__ssize_t
+_IO_sgetn	0	int
+_IO_seekoff	4	_IO_FILE *	__off64_t	int	int	__off64_t
+_IO_seekpos	3	_IO_FILE *	__off64_t	int	__off64_t
+_IO_free_backup_area	1	_IO_FILE *	void
+remove	1	const char *	int
+rename	2	const char *	const char *	int
+renameat	4	int	const char *	int	const char *	int
+tmpfile	0	FILE *
+tmpnam	1	char *	char *
+tmpnam_r	1	char *	char *
+tempnam	2	const char *	const char *	char *
+fclose	1	FILE *	int
+fflush	1	FILE *	int
+fflush_unlocked	1	FILE *	int
+fopen	2	const char *restrict	const char *restrict	FILE *
+freopen	3	const char *restrict	const char *restrict	FILE *restrict	FILE *
+fdopen	2	int	const char *	FILE *
+fmemopen	3	void *	int	const char *	FILE *
+open_memstream	2	char **	int *	FILE *
+setbuf	2	FILE *restrict	char *restrict	void
+setvbuf	4	FILE *restrict	char *restrict	int	int	int
+setbuffer	3	FILE *restrict	char *restrict	int	void
+setlinebuf	1	FILE *	void
+fprintf	2	FILE *restrict	const char *restrict	int
+printf	1	const char *restrict	int
+sprintf	2	char *restrict	const char *restrict	int
+vfprintf	3	FILE *restrict	const char *restrict	int	int
+vprintf	2	const char *restrict	int	int
+vsprintf	3	char *restrict	const char *restrict	int	int
+snprintf	3	char *restrict	int	const char *restrict	int
+vsnprintf	4	char *restrict	int	const char *restrict	int	int
+vdprintf	3	int	const char *restrict	int	int
+dprintf	2	int	const char *restrict	int
+fscanf	2	FILE *restrict	const char *restrict	int
+scanf	1	const char *restrict	int
+sscanf	2	const char *restrict	const char *restrict	int
+__isoc99_fscanf	2	FILE *restrict	const char *restrict	int
+__isoc99_scanf	1	const char *restrict	int
+__isoc99_sscanf	2	const char *restrict	const char *restrict	int
+vfscanf	3	FILE *restrict	const char *restrict	int	int
+vscanf	2	const char *restrict	int	int
+vsscanf	3	const char *restrict	const char *restrict	int	int
+__isoc99_vfscanf	3	FILE *restrict	const char *restrict	int	int
+__isoc99_vscanf	2	const char *restrict	int	int
+__isoc99_vsscanf	3	const char *restrict	const char *restrict	int	int
+fgetc	1	FILE *	int
+getc	1	FILE *	int
+getchar	0	int
+getc_unlocked	1	FILE *	int
+getchar_unlocked	0	int
+fgetc_unlocked	1	FILE *	int
+fputc	2	int	FILE *	int
+putc	2	int	FILE *	int
+putchar	1	int	int
+fputc_unlocked	2	int	FILE *	int
+putc_unlocked	2	int	FILE *	int
+putchar_unlocked	1	int	int
+getw	1	FILE *	int
+putw	2	int	FILE *	int
+fgets	3	char *restrict	int	FILE *restrict	char *
+__getdelim	4	char **restrict	int *restrict	int	FILE *restrict	__ssize_t
+getdelim	4	char **restrict	int *restrict	int	FILE *restrict	__ssize_t
+getline	3	char **restrict	int *restrict	FILE *restrict	__ssize_t
+fputs	2	const char *restrict	FILE *restrict	int
+puts	1	const char *	int
+ungetc	2	int	FILE *	int
+fread	0	int
+fwrite	0	int
+fread_unlocked	0	int
+fwrite_unlocked	0	int
+fseek	3	FILE *	long	int	int
+ftell	1	FILE *	long
+rewind	1	FILE *	void
+fseeko	3	FILE *	__off_t	int	int
+ftello	1	FILE *	__off_t
+fgetpos	2	FILE *restrict	fpos_t *restrict	int
+fsetpos	2	FILE *	const fpos_t *	int
+clearerr	1	FILE *	void
+feof	1	FILE *	int
+ferror	1	FILE *	int
+clearerr_unlocked	1	FILE *	void
+feof_unlocked	1	FILE *	int
+ferror_unlocked	1	FILE *	int
+perror	1	const char *	void
+fileno	1	FILE *	int
+fileno_unlocked	1	FILE *	int
+popen	2	const char *	const char *	FILE *
+pclose	1	FILE *	int
+ctermid	1	char *	char *
+flockfile	1	FILE *	void
+ftrylockfile	1	FILE *	int
+funlockfile	1	FILE *	void
+__ctype_get_mb_cur_max	0	int
+atof	1	const char *	double
+atoi	1	const char *	int
+atol	1	const char *	long
+atoll	1	const char *	long long
+strtod	2	const char *restrict	char **restrict	double
+strtof	2	const char *restrict	char **restrict	float
+strtold	2	const char *restrict	char **restrict	long double
+strtol	3	const char *restrict	char **restrict	int	long
+strtoul	3	const char *restrict	char **restrict	int	unsigned long
+strtoq	3	const char *restrict	char **restrict	int	long long
+strtouq	3	const char *restrict	char **restrict	int	unsigned long long
+strtoll	3	const char *restrict	char **restrict	int	long long
+strtoull	3	const char *restrict	char **restrict	int	unsigned long long
+l64a	1	long	char *
+a64l	1	const char *	long
+select	5	int	fd_set *restrict	fd_set *restrict	fd_set *restrict	struct timeval *restrict	int
+pselect	6	int	fd_set *restrict	fd_set *restrict	fd_set *restrict	const struct timespec *restrict	const __sigset_t *restrict	int
+gnu_dev_major	1	unsigned long long	unsigned int
+gnu_dev_minor	1	unsigned long long	unsigned int
+gnu_dev_makedev	2	unsigned int	unsigned int	unsigned long long
+random	0	long
+srandom	1	unsigned int	void
+initstate	3	unsigned int	char *	int	char *
+setstate	1	char *	char *
+random_r	2	struct random_data *restrict	int32_t *restrict	int
+srandom_r	2	unsigned int	struct random_data *	int
+initstate_r	4	unsigned int	char *restrict	int	struct random_data *restrict	int
+setstate_r	2	char *restrict	struct random_data *restrict	int
+rand	0	int
+srand	1	unsigned int	void
+rand_r	1	unsigned int *	int
+drand48	0	double
+erand48	1	unsigned short [3]	double
+lrand48	0	long
+nrand48	1	unsigned short [3]	long
+mrand48	0	long
+jrand48	1	unsigned short [3]	long
+srand48	1	long	void
+seed48	1	unsigned short [3]	unsigned short *
+lcong48	1	unsigned short [7]	void
+drand48_r	2	struct drand48_data *restrict	double *restrict	int
+erand48_r	3	unsigned short [3]	struct drand48_data *restrict	double *restrict	int
+lrand48_r	2	struct drand48_data *restrict	long *restrict	int
+nrand48_r	3	unsigned short [3]	struct drand48_data *restrict	long *restrict	int
+mrand48_r	2	struct drand48_data *restrict	long *restrict	int
+jrand48_r	3	unsigned short [3]	struct drand48_data *restrict	long *restrict	int
+srand48_r	2	long	struct drand48_data *	int
+seed48_r	2	unsigned short [3]	struct drand48_data *	int
+lcong48_r	2	unsigned short [7]	struct drand48_data *	int
+malloc	1	int	void *
+calloc	2	int	int	void *
+realloc	2	void *	int	void *
+free	1	void *	void
+cfree	1	void *	void
+alloca	1	int	void *
+valloc	1	int	void *
+posix_memalign	3	void **	int	int	int
+aligned_alloc	2	int	int	void *
+abort	0	void
+atexit	1	void (*)(void)	int
+at_quick_exit	1	void (*)(void)	int
+on_exit	2	void (*)(int, void *)	void *	int
+exit	1	int	void
+quick_exit	1	int	void
+_Exit	1	int	void
+getenv	1	const char *	char *
+putenv	1	char *	int
+setenv	3	const char *	const char *	int	int
+unsetenv	1	const char *	int
+clearenv	0	int
+mktemp	1	char *	char *
+mkstemp	1	char *	int
+mkstemps	2	char *	int	int
+mkdtemp	1	char *	char *
+system	1	const char *	int
+realpath	2	const char *restrict	char *restrict	char *
+bsearch	5	const void *	const void *	int	int	__compar_fn_t	void *
+qsort	4	void *	int	int	__compar_fn_t	void
+abs	1	int	int
+labs	1	long	long
+llabs	1	long long	long long
+div	2	int	int	div_t
+ldiv	2	long	long	ldiv_t
+lldiv	2	long long	long long	lldiv_t
+ecvt	4	double	int	int *restrict	int *restrict	char *
+fcvt	4	double	int	int *restrict	int *restrict	char *
+gcvt	3	double	int	char *	char *
+qecvt	4	long double	int	int *restrict	int *restrict	char *
+qfcvt	4	long double	int	int *restrict	int *restrict	char *
+qgcvt	3	long double	int	char *	char *
+ecvt_r	6	double	int	int *restrict	int *restrict	char *restrict	int	int
+fcvt_r	6	double	int	int *restrict	int *restrict	char *restrict	int	int
+qecvt_r	6	long double	int	int *restrict	int *restrict	char *restrict	int	int
+qfcvt_r	6	long double	int	int *restrict	int *restrict	char *restrict	int	int
+mblen	2	const char *	int	int
+mbtowc	3	int *restrict	const char *restrict	int	int
+wctomb	2	char *	int	int
+mbstowcs	0	int
+wcstombs	0	int
+rpmatch	1	const char *	int
+getsubopt	3	char **restrict	char *const *restrict	char **restrict	int
+getloadavg	2	double []	int	int
+BootPOS	1	void *	void *

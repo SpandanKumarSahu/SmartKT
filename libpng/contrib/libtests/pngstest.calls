@@ -1,0 +1,1 @@
+/workspace/projects/libpng/contrib/libtests/pngstest.c	3824	fprintf	fprintf(stderr,"pngstest: no read support in libpng, test skipped\n")

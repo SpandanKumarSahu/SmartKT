@@ -1,0 +1,18 @@
+testproj/src/DriverPOS.calls
+testproj/src/StartPOS.calls
+testproj/src/DriverPOS.calls
+testproj/src/StartPOS.calls
+/workspace/projects/testproj/src/DriverPOS.c	16	pthread_create	pthread_create ( & ( tid [ i ] ) , NULL , & BootPOS , NULL )
+/workspace/projects/testproj/src/DriverPOS.c	17	printf	printf ( "\nThread can't be created : [%s]" , strerror ( error ) )
+/workspace/projects/testproj/src/DriverPOS.c	17	strerror	strerror ( error )
+/workspace/projects/testproj/src/DriverPOS.c	21	pthread_join	pthread_join ( tid [ 0 ] , NULL )
+/workspace/projects/testproj/src/DriverPOS.c	22	pthread_join	pthread_join ( tid [ 1 ] , NULL )
+/workspace/projects/testproj/src/StartPOS.c	8	printf	printf ( "\n Job %d has started\n" , job_activate )
+/workspace/projects/testproj/src/StartPOS.c	10	printf	printf ( "\n Job %d has finished\n" , job_activate )
+/workspace/projects/testproj/src/DriverPOS.c	16	pthread_create	pthread_create ( & ( tid [ i ] ) , NULL , & BootPOS , NULL )
+/workspace/projects/testproj/src/DriverPOS.c	17	printf	printf ( "\nThread can't be created : [%s]" , strerror ( error ) )
+/workspace/projects/testproj/src/DriverPOS.c	17	strerror	strerror ( error )
+/workspace/projects/testproj/src/DriverPOS.c	21	pthread_join	pthread_join ( tid [ 0 ] , NULL )
+/workspace/projects/testproj/src/DriverPOS.c	22	pthread_join	pthread_join ( tid [ 1 ] , NULL )
+/workspace/projects/testproj/src/StartPOS.c	8	printf	printf ( "\n Job %d has started\n" , job_activate )
+/workspace/projects/testproj/src/StartPOS.c	10	printf	printf ( "\n Job %d has finished\n" , job_activate )

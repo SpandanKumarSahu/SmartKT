@@ -1,0 +1,5 @@
+14,include,"""../pngpriv.h""",
+16,ifdef,PNG_READ_SUPPORTED,
+17,if,PNG_INTEL_SSE_IMPLEMENTATION > 0,
+51,endif,,/* PNG_INTEL_SSE_IMPLEMENTATION > 0 */
+52,endif,,/* PNG_READ_SUPPORTED */

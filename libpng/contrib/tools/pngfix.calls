@@ -1,0 +1,1 @@
+/workspace/projects/libpng/contrib/tools/pngfix.c	4045	fprintf	fprintf(stderr,"pngfix does not work without setjmp support\n")

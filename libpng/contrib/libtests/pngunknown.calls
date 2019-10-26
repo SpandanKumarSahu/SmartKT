@@ -1,0 +1,1 @@
+/workspace/projects/libpng/contrib/libtests/pngunknown.c	1289	fprintf	fprintf(stderr," test ignored: no support to modify unknown chunk handling\n")

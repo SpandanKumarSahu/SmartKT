@@ -1,0 +1,4 @@
+"File name","Comment Id","Comment Text","Comment Tokens","Comment scope","Prog.dom matches (comm.)","Prob.dom matches (comm.)","Identifier symbol","Identifier type","Identifier tokens","Identifier scopes","prog.dom matches (id)","prob. dom matches (id)","prog.dom matches (comm+id)","prob. dom matches (comm+id)","Symbol ids"
+"/workspace/projects/testproj/src/main.cpp",1,"main.c","main ||| c ||| ","1: 28","","","","","","","","","","",""
+"/workspace/projects/testproj/src/main.cpp",2,"Found in this executable file itself.","found ||| executable ||| file ||| ","4: 12","","","","","","","","","","",""
+"/workspace/projects/testproj/src/main.cpp",3,"Found in Shared Library.","found ||| shared ||| library ||| ","13: 29","","","","","","","","","","",""

@@ -1,0 +1,89 @@
+
+.debug_info
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C++ 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong"
+                    DW_AT_language              DW_LANG_C_plus_plus
+                    DW_AT_name                  "/workspace/projects/testproj/src/dep.cpp"
+                    DW_AT_low_pc                0x00000000
+                    DW_AT_high_pc               <offset-from-lowpc>32
+                    DW_AT_stmt_list             0x00000000
+
+LOCAL_SYMBOLS:
+< 1><0x00000029>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  "selfincvar"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/testproj/src/dep.cpp
+                      DW_AT_decl_line             0x00000004
+                      DW_AT_linkage_name          "_Z10selfincvarv"
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_low_pc                0x00000000
+                      DW_AT_high_pc               <offset-from-lowpc>32
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_call_sites    yes(1)
+                      DW_AT_sibling               <0x00000062>
+< 2><0x0000004e>      DW_TAG_variable
+                        DW_AT_name                  "p"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/testproj/src/dep.cpp
+                        DW_AT_decl_line             0x00000005
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0009: 030400000000000000: DW_OP_addr 0x00000004
+< 1><0x00000062>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "int"
+< 1><0x00000069>    DW_TAG_variable
+                      DW_AT_name                  "unshared"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/testproj/src/dep.cpp
+                      DW_AT_decl_line             0x00000002
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_external              yes(1)
+                      DW_AT_location              len 0x0009: 030000000000000000: DW_OP_addr 0x00000000
+
+.debug_line: line number info for a single cu
+Source lines (from CU-DIE at .debug_info offset 0x0000000b):
+
+<pc>        [row,col] NS BB ET PE EB IS= DI= uri: "filepath"
+NS new statement, BB new basic block, ET end of text sequence
+PE prologue end, EB epilogue begin
+IA=val ISA number, DI=val discriminator value
+0x00000000  [   4, 0] NS uri: "/workspace/projects/testproj/src/dep.cpp"
+0x00000004  [   6, 0] NS
+0x00000018  [   7, 0] NS
+0x0000001e  [   8, 0] NS
+0x00000020  [   8, 0] NS ET
+
+.debug_pubnames
+
+.debug_macinfo
+
+.debug_string
+name at offset 0x00000000, length   10 is 'selfincvar'
+name at offset 0x0000000b, length   15 is '_Z10selfincvarv'
+name at offset 0x0000001b, length    8 is 'unshared'
+name at offset 0x00000024, length   40 is '/workspace/projects/testproj/src/dep.cpp'
+name at offset 0x0000004d, length   79 is 'GNU C++ 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong'
+
+.debug_aranges
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C++ 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong"
+                    DW_AT_language              DW_LANG_C_plus_plus
+                    DW_AT_name                  "/workspace/projects/testproj/src/dep.cpp"
+                    DW_AT_low_pc                0x00000000
+                    DW_AT_high_pc               <offset-from-lowpc>32
+                    DW_AT_stmt_list             0x00000000
+
+
+arange starts at 0x00000000, length of 0x00000020, cu_die_offset = 0x0000000b
+arange end
+.debug_frame
+
+.debug_static_func
+
+.debug_static_vars
+
+.debug_weaknames
+

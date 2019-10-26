@@ -1,0 +1,4 @@
+32,include,<stdio.h>,
+33,include,<zlib.h>,
+35,define,MAX_LENGTH 500000,
+38,define,GETBREAK inchar=getchar(); c=(inchar & 0xffU); if (inchar != c) break,

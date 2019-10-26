@@ -4,8 +4,10 @@ set -x # echo on
 P=$(pwd)								# save current location
 exe=${1##*/}							# extract executable and input filename
 cp $1 PIN/Work/$exe.out					# copy executable to pin folder
-cp final.offset PIN/Work/final.offset
-cp final_global.offset PIN/Work/final_global.offset
+cp static.funcargs PIN/Work/final.funcargs
+cp static.offset PIN/Work/final.offset
+cp static_global.offset PIN/Work/final_static.offset
+cp static.calls PIN/Work/final.calls
 cp dependencies.p PIN/Work/
 if [ $# -eq 2 ]
 then
@@ -16,7 +18,7 @@ else
 fi
 
 cd PIN/Work								# move to pin folder
-make ./obj-intel64/memtracker.so		# build the pin so
+# make ./obj-intel64/memtracker.so		# build the pin so
 chmod +x $exe.out						# make .out runnable
 make inp=$inp $exe.dump					# create the dump
 # readelf -sW $exe.out | grep "OBJECT" > $exe.symtab	# collect its symtab

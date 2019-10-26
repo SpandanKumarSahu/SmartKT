@@ -1,0 +1,12 @@
+21,include,"""pngpriv.h""",
+23,ifdef,PNG_READ_SUPPORTED,
+43,ifdef,PNG_STDIO_SUPPORTED,
+65,endif,,
+95,ifdef,PNG_STDIO_SUPPORTED,
+101,else,,
+103,endif,,
+105,ifdef,PNG_WRITE_SUPPORTED,
+114,endif,,
+116,ifdef,PNG_WRITE_FLUSH_SUPPORTED,
+118,endif,,
+120,endif,,/* READ */

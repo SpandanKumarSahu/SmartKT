@@ -1,0 +1,1125 @@
+
+.debug_info
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C++ 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong"
+                    DW_AT_language              DW_LANG_C_plus_plus
+                    DW_AT_name                  "/workspace/projects/testproj/src/run.cpp"
+                    DW_AT_comp_dir              "/workspace/projects/testproj/build"
+                    DW_AT_low_pc                0x00000000
+                    DW_AT_high_pc               <offset-from-lowpc>149
+                    DW_AT_stmt_list             0x00000000
+
+LOCAL_SYMBOLS:
+< 1><0x0000002d>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "long unsigned int"
+< 1><0x00000034>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_unsigned_char
+                      DW_AT_name                  "unsigned char"
+< 1><0x0000003b>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "short unsigned int"
+< 1><0x00000042>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "unsigned int"
+< 1><0x00000049>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  "signed char"
+< 1><0x00000050>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "short int"
+< 1><0x00000057>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "int"
+< 1><0x0000005e>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "long int"
+< 1><0x00000065>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "sizetype"
+< 1><0x0000006c>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  "char"
+< 1><0x00000073>    DW_TAG_typedef
+                      DW_AT_name                  "pthread_t"
+                      DW_AT_decl_file             0x00000004 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+                      DW_AT_decl_line             0x0000003c
+                      DW_AT_type                  <0x0000002d>
+< 1><0x0000007e>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "long long unsigned int"
+< 1><0x00000085>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "long long int"
+< 1><0x0000008c>    DW_TAG_enumeration_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_type                  <0x00000042>
+                      DW_AT_decl_file             0x00000002 /usr/include/pthread.h
+                      DW_AT_decl_line             0x0000002b
+                      DW_AT_sibling               <0x000000cf>
+< 2><0x00000098>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_TIMED_NP"
+                        DW_AT_const_value           0
+< 2><0x0000009e>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_RECURSIVE_NP"
+                        DW_AT_const_value           1
+< 2><0x000000a4>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_ERRORCHECK_NP"
+                        DW_AT_const_value           2
+< 2><0x000000aa>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_ADAPTIVE_NP"
+                        DW_AT_const_value           3
+< 2><0x000000b0>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_NORMAL"
+                        DW_AT_const_value           0
+< 2><0x000000b6>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_RECURSIVE"
+                        DW_AT_const_value           1
+< 2><0x000000bc>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_ERRORCHECK"
+                        DW_AT_const_value           2
+< 2><0x000000c2>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_DEFAULT"
+                        DW_AT_const_value           0
+< 2><0x000000c8>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_FAST_NP"
+                        DW_AT_const_value           0
+< 1><0x000000cf>    DW_TAG_enumeration_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_type                  <0x00000042>
+                      DW_AT_decl_file             0x00000002 /usr/include/pthread.h
+                      DW_AT_decl_line             0x00000041
+                      DW_AT_sibling               <0x000000f4>
+< 2><0x000000db>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_STALLED"
+                        DW_AT_const_value           0
+< 2><0x000000e1>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_STALLED_NP"
+                        DW_AT_const_value           0
+< 2><0x000000e7>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_ROBUST"
+                        DW_AT_const_value           1
+< 2><0x000000ed>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_MUTEX_ROBUST_NP"
+                        DW_AT_const_value           1
+< 1><0x000000f4>    DW_TAG_enumeration_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_type                  <0x00000042>
+                      DW_AT_decl_file             0x00000002 /usr/include/pthread.h
+                      DW_AT_decl_line             0x00000073
+                      DW_AT_sibling               <0x00000119>
+< 2><0x00000100>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_RWLOCK_PREFER_READER_NP"
+                        DW_AT_const_value           0
+< 2><0x00000106>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_RWLOCK_PREFER_WRITER_NP"
+                        DW_AT_const_value           1
+< 2><0x0000010c>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP"
+                        DW_AT_const_value           2
+< 2><0x00000112>      DW_TAG_enumerator
+                        DW_AT_name                  "PTHREAD_RWLOCK_DEFAULT_NP"
+                        DW_AT_const_value           0
+< 1><0x00000119>    DW_TAG_enumeration_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_type                  <0x00000042>
+                      DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/bits/confname.h
+                      DW_AT_decl_line             0x00000048
+                      DW_AT_sibling               <0x00000630>
+< 2><0x00000125>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_ARG_MAX"
+                        DW_AT_const_value           0
+< 2><0x0000012b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CHILD_MAX"
+                        DW_AT_const_value           1
+< 2><0x00000131>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CLK_TCK"
+                        DW_AT_const_value           2
+< 2><0x00000137>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NGROUPS_MAX"
+                        DW_AT_const_value           3
+< 2><0x0000013d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_OPEN_MAX"
+                        DW_AT_const_value           4
+< 2><0x00000143>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_STREAM_MAX"
+                        DW_AT_const_value           5
+< 2><0x00000149>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TZNAME_MAX"
+                        DW_AT_const_value           6
+< 2><0x0000014f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_JOB_CONTROL"
+                        DW_AT_const_value           7
+< 2><0x00000155>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SAVED_IDS"
+                        DW_AT_const_value           8
+< 2><0x0000015b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_REALTIME_SIGNALS"
+                        DW_AT_const_value           9
+< 2><0x00000161>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PRIORITY_SCHEDULING"
+                        DW_AT_const_value           10
+< 2><0x00000167>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TIMERS"
+                        DW_AT_const_value           11
+< 2><0x0000016d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_ASYNCHRONOUS_IO"
+                        DW_AT_const_value           12
+< 2><0x00000173>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PRIORITIZED_IO"
+                        DW_AT_const_value           13
+< 2><0x00000179>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SYNCHRONIZED_IO"
+                        DW_AT_const_value           14
+< 2><0x0000017f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_FSYNC"
+                        DW_AT_const_value           15
+< 2><0x00000185>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MAPPED_FILES"
+                        DW_AT_const_value           16
+< 2><0x0000018b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MEMLOCK"
+                        DW_AT_const_value           17
+< 2><0x00000191>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MEMLOCK_RANGE"
+                        DW_AT_const_value           18
+< 2><0x00000197>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MEMORY_PROTECTION"
+                        DW_AT_const_value           19
+< 2><0x0000019d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MESSAGE_PASSING"
+                        DW_AT_const_value           20
+< 2><0x000001a3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SEMAPHORES"
+                        DW_AT_const_value           21
+< 2><0x000001a9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SHARED_MEMORY_OBJECTS"
+                        DW_AT_const_value           22
+< 2><0x000001af>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_AIO_LISTIO_MAX"
+                        DW_AT_const_value           23
+< 2><0x000001b5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_AIO_MAX"
+                        DW_AT_const_value           24
+< 2><0x000001bb>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_AIO_PRIO_DELTA_MAX"
+                        DW_AT_const_value           25
+< 2><0x000001c1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_DELAYTIMER_MAX"
+                        DW_AT_const_value           26
+< 2><0x000001c7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MQ_OPEN_MAX"
+                        DW_AT_const_value           27
+< 2><0x000001cd>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MQ_PRIO_MAX"
+                        DW_AT_const_value           28
+< 2><0x000001d3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_VERSION"
+                        DW_AT_const_value           29
+< 2><0x000001d9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PAGESIZE"
+                        DW_AT_const_value           30
+< 2><0x000001df>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_RTSIG_MAX"
+                        DW_AT_const_value           31
+< 2><0x000001e5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SEM_NSEMS_MAX"
+                        DW_AT_const_value           32
+< 2><0x000001eb>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SEM_VALUE_MAX"
+                        DW_AT_const_value           33
+< 2><0x000001f1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SIGQUEUE_MAX"
+                        DW_AT_const_value           34
+< 2><0x000001f7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TIMER_MAX"
+                        DW_AT_const_value           35
+< 2><0x000001fd>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_BC_BASE_MAX"
+                        DW_AT_const_value           36
+< 2><0x00000203>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_BC_DIM_MAX"
+                        DW_AT_const_value           37
+< 2><0x00000209>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_BC_SCALE_MAX"
+                        DW_AT_const_value           38
+< 2><0x0000020f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_BC_STRING_MAX"
+                        DW_AT_const_value           39
+< 2><0x00000215>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_COLL_WEIGHTS_MAX"
+                        DW_AT_const_value           40
+< 2><0x0000021b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_EQUIV_CLASS_MAX"
+                        DW_AT_const_value           41
+< 2><0x00000221>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_EXPR_NEST_MAX"
+                        DW_AT_const_value           42
+< 2><0x00000227>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LINE_MAX"
+                        DW_AT_const_value           43
+< 2><0x0000022d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_RE_DUP_MAX"
+                        DW_AT_const_value           44
+< 2><0x00000233>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CHARCLASS_NAME_MAX"
+                        DW_AT_const_value           45
+< 2><0x00000239>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_VERSION"
+                        DW_AT_const_value           46
+< 2><0x0000023f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_C_BIND"
+                        DW_AT_const_value           47
+< 2><0x00000245>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_C_DEV"
+                        DW_AT_const_value           48
+< 2><0x0000024b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_FORT_DEV"
+                        DW_AT_const_value           49
+< 2><0x00000251>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_FORT_RUN"
+                        DW_AT_const_value           50
+< 2><0x00000257>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_SW_DEV"
+                        DW_AT_const_value           51
+< 2><0x0000025d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_LOCALEDEF"
+                        DW_AT_const_value           52
+< 2><0x00000263>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII"
+                        DW_AT_const_value           53
+< 2><0x00000269>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_XTI"
+                        DW_AT_const_value           54
+< 2><0x0000026f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_SOCKET"
+                        DW_AT_const_value           55
+< 2><0x00000275>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_INTERNET"
+                        DW_AT_const_value           56
+< 2><0x0000027b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_OSI"
+                        DW_AT_const_value           57
+< 2><0x00000281>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_POLL"
+                        DW_AT_const_value           58
+< 2><0x00000287>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SELECT"
+                        DW_AT_const_value           59
+< 2><0x0000028d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_UIO_MAXIOV"
+                        DW_AT_const_value           60
+< 2><0x00000293>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_IOV_MAX"
+                        DW_AT_const_value           60
+< 2><0x00000299>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_INTERNET_STREAM"
+                        DW_AT_const_value           61
+< 2><0x0000029f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_INTERNET_DGRAM"
+                        DW_AT_const_value           62
+< 2><0x000002a5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_OSI_COTS"
+                        DW_AT_const_value           63
+< 2><0x000002ab>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_OSI_CLTS"
+                        DW_AT_const_value           64
+< 2><0x000002b1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PII_OSI_M"
+                        DW_AT_const_value           65
+< 2><0x000002b7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_T_IOV_MAX"
+                        DW_AT_const_value           66
+< 2><0x000002bd>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREADS"
+                        DW_AT_const_value           67
+< 2><0x000002c3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_SAFE_FUNCTIONS"
+                        DW_AT_const_value           68
+< 2><0x000002c9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_GETGR_R_SIZE_MAX"
+                        DW_AT_const_value           69
+< 2><0x000002cf>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_GETPW_R_SIZE_MAX"
+                        DW_AT_const_value           70
+< 2><0x000002d5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LOGIN_NAME_MAX"
+                        DW_AT_const_value           71
+< 2><0x000002db>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TTY_NAME_MAX"
+                        DW_AT_const_value           72
+< 2><0x000002e1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_DESTRUCTOR_ITERATIONS"
+                        DW_AT_const_value           73
+< 2><0x000002e7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_KEYS_MAX"
+                        DW_AT_const_value           74
+< 2><0x000002ed>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_STACK_MIN"
+                        DW_AT_const_value           75
+< 2><0x000002f3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_THREADS_MAX"
+                        DW_AT_const_value           76
+< 2><0x000002f9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_ATTR_STACKADDR"
+                        DW_AT_const_value           77
+< 2><0x000002ff>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_ATTR_STACKSIZE"
+                        DW_AT_const_value           78
+< 2><0x00000305>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_PRIORITY_SCHEDULING"
+                        DW_AT_const_value           79
+< 2><0x0000030b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_PRIO_INHERIT"
+                        DW_AT_const_value           80
+< 2><0x00000311>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_PRIO_PROTECT"
+                        DW_AT_const_value           81
+< 2><0x00000317>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_PROCESS_SHARED"
+                        DW_AT_const_value           82
+< 2><0x0000031d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NPROCESSORS_CONF"
+                        DW_AT_const_value           83
+< 2><0x00000323>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NPROCESSORS_ONLN"
+                        DW_AT_const_value           84
+< 2><0x00000329>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PHYS_PAGES"
+                        DW_AT_const_value           85
+< 2><0x0000032f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_AVPHYS_PAGES"
+                        DW_AT_const_value           86
+< 2><0x00000335>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_ATEXIT_MAX"
+                        DW_AT_const_value           87
+< 2><0x0000033b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PASS_MAX"
+                        DW_AT_const_value           88
+< 2><0x00000341>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_VERSION"
+                        DW_AT_const_value           89
+< 2><0x00000347>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_XCU_VERSION"
+                        DW_AT_const_value           90
+< 2><0x0000034d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_UNIX"
+                        DW_AT_const_value           91
+< 2><0x00000353>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_CRYPT"
+                        DW_AT_const_value           92
+< 2><0x00000359>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_ENH_I18N"
+                        DW_AT_const_value           93
+< 2><0x0000035f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_SHM"
+                        DW_AT_const_value           94
+< 2><0x00000365>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_CHAR_TERM"
+                        DW_AT_const_value           95
+< 2><0x0000036b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_C_VERSION"
+                        DW_AT_const_value           96
+< 2><0x00000371>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_UPE"
+                        DW_AT_const_value           97
+< 2><0x00000377>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_XPG2"
+                        DW_AT_const_value           98
+< 2><0x0000037d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_XPG3"
+                        DW_AT_const_value           99
+< 2><0x00000383>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_XPG4"
+                        DW_AT_const_value           100
+< 2><0x00000389>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CHAR_BIT"
+                        DW_AT_const_value           101
+< 2><0x0000038f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CHAR_MAX"
+                        DW_AT_const_value           102
+< 2><0x00000395>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CHAR_MIN"
+                        DW_AT_const_value           103
+< 2><0x0000039b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_INT_MAX"
+                        DW_AT_const_value           104
+< 2><0x000003a1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_INT_MIN"
+                        DW_AT_const_value           105
+< 2><0x000003a7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LONG_BIT"
+                        DW_AT_const_value           106
+< 2><0x000003ad>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_WORD_BIT"
+                        DW_AT_const_value           107
+< 2><0x000003b3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MB_LEN_MAX"
+                        DW_AT_const_value           108
+< 2><0x000003b9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NZERO"
+                        DW_AT_const_value           109
+< 2><0x000003bf>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SSIZE_MAX"
+                        DW_AT_const_value           110
+< 2><0x000003c5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SCHAR_MAX"
+                        DW_AT_const_value           111
+< 2><0x000003cb>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SCHAR_MIN"
+                        DW_AT_const_value           112
+< 2><0x000003d1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SHRT_MAX"
+                        DW_AT_const_value           113
+< 2><0x000003d7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SHRT_MIN"
+                        DW_AT_const_value           114
+< 2><0x000003dd>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_UCHAR_MAX"
+                        DW_AT_const_value           115
+< 2><0x000003e3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_UINT_MAX"
+                        DW_AT_const_value           116
+< 2><0x000003e9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_ULONG_MAX"
+                        DW_AT_const_value           117
+< 2><0x000003ef>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_USHRT_MAX"
+                        DW_AT_const_value           118
+< 2><0x000003f5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NL_ARGMAX"
+                        DW_AT_const_value           119
+< 2><0x000003fb>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NL_LANGMAX"
+                        DW_AT_const_value           120
+< 2><0x00000401>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NL_MSGMAX"
+                        DW_AT_const_value           121
+< 2><0x00000407>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NL_NMAX"
+                        DW_AT_const_value           122
+< 2><0x0000040d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NL_SETMAX"
+                        DW_AT_const_value           123
+< 2><0x00000413>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NL_TEXTMAX"
+                        DW_AT_const_value           124
+< 2><0x00000419>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XBS5_ILP32_OFF32"
+                        DW_AT_const_value           125
+< 2><0x0000041f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XBS5_ILP32_OFFBIG"
+                        DW_AT_const_value           126
+< 2><0x00000425>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XBS5_LP64_OFF64"
+                        DW_AT_const_value           127
+< 2><0x0000042b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XBS5_LPBIG_OFFBIG"
+                        DW_AT_const_value           128(as signed = -128)
+< 2><0x00000431>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_LEGACY"
+                        DW_AT_const_value           129(as signed = -127)
+< 2><0x00000437>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_REALTIME"
+                        DW_AT_const_value           130(as signed = -126)
+< 2><0x0000043d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_REALTIME_THREADS"
+                        DW_AT_const_value           131(as signed = -125)
+< 2><0x00000443>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_ADVISORY_INFO"
+                        DW_AT_const_value           132(as signed = -124)
+< 2><0x00000449>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_BARRIERS"
+                        DW_AT_const_value           133(as signed = -123)
+< 2><0x0000044f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_BASE"
+                        DW_AT_const_value           134(as signed = -122)
+< 2><0x00000455>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_C_LANG_SUPPORT"
+                        DW_AT_const_value           135(as signed = -121)
+< 2><0x0000045b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_C_LANG_SUPPORT_R"
+                        DW_AT_const_value           136(as signed = -120)
+< 2><0x00000461>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CLOCK_SELECTION"
+                        DW_AT_const_value           137(as signed = -119)
+< 2><0x00000467>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_CPUTIME"
+                        DW_AT_const_value           138(as signed = -118)
+< 2><0x0000046d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_CPUTIME"
+                        DW_AT_const_value           139(as signed = -117)
+< 2><0x00000473>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_DEVICE_IO"
+                        DW_AT_const_value           140(as signed = -116)
+< 2><0x00000479>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_DEVICE_SPECIFIC"
+                        DW_AT_const_value           141(as signed = -115)
+< 2><0x0000047f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_DEVICE_SPECIFIC_R"
+                        DW_AT_const_value           142(as signed = -114)
+< 2><0x00000485>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_FD_MGMT"
+                        DW_AT_const_value           143(as signed = -113)
+< 2><0x0000048b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_FIFO"
+                        DW_AT_const_value           144(as signed = -112)
+< 2><0x00000491>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_PIPE"
+                        DW_AT_const_value           145(as signed = -111)
+< 2><0x00000497>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_FILE_ATTRIBUTES"
+                        DW_AT_const_value           146(as signed = -110)
+< 2><0x0000049d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_FILE_LOCKING"
+                        DW_AT_const_value           147(as signed = -109)
+< 2><0x000004a3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_FILE_SYSTEM"
+                        DW_AT_const_value           148(as signed = -108)
+< 2><0x000004a9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MONOTONIC_CLOCK"
+                        DW_AT_const_value           149(as signed = -107)
+< 2><0x000004af>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_MULTI_PROCESS"
+                        DW_AT_const_value           150(as signed = -106)
+< 2><0x000004b5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SINGLE_PROCESS"
+                        DW_AT_const_value           151(as signed = -105)
+< 2><0x000004bb>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_NETWORKING"
+                        DW_AT_const_value           152(as signed = -104)
+< 2><0x000004c1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_READER_WRITER_LOCKS"
+                        DW_AT_const_value           153(as signed = -103)
+< 2><0x000004c7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SPIN_LOCKS"
+                        DW_AT_const_value           154(as signed = -102)
+< 2><0x000004cd>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_REGEXP"
+                        DW_AT_const_value           155(as signed = -101)
+< 2><0x000004d3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_REGEX_VERSION"
+                        DW_AT_const_value           156(as signed = -100)
+< 2><0x000004d9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SHELL"
+                        DW_AT_const_value           157(as signed = -99)
+< 2><0x000004df>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SIGNALS"
+                        DW_AT_const_value           158(as signed = -98)
+< 2><0x000004e5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SPAWN"
+                        DW_AT_const_value           159(as signed = -97)
+< 2><0x000004eb>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SPORADIC_SERVER"
+                        DW_AT_const_value           160(as signed = -96)
+< 2><0x000004f1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_SPORADIC_SERVER"
+                        DW_AT_const_value           161(as signed = -95)
+< 2><0x000004f7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SYSTEM_DATABASE"
+                        DW_AT_const_value           162(as signed = -94)
+< 2><0x000004fd>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SYSTEM_DATABASE_R"
+                        DW_AT_const_value           163(as signed = -93)
+< 2><0x00000503>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TIMEOUTS"
+                        DW_AT_const_value           164(as signed = -92)
+< 2><0x00000509>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TYPED_MEMORY_OBJECTS"
+                        DW_AT_const_value           165(as signed = -91)
+< 2><0x0000050f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_USER_GROUPS"
+                        DW_AT_const_value           166(as signed = -90)
+< 2><0x00000515>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_USER_GROUPS_R"
+                        DW_AT_const_value           167(as signed = -89)
+< 2><0x0000051b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_PBS"
+                        DW_AT_const_value           168(as signed = -88)
+< 2><0x00000521>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_PBS_ACCOUNTING"
+                        DW_AT_const_value           169(as signed = -87)
+< 2><0x00000527>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_PBS_LOCATE"
+                        DW_AT_const_value           170(as signed = -86)
+< 2><0x0000052d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_PBS_MESSAGE"
+                        DW_AT_const_value           171(as signed = -85)
+< 2><0x00000533>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_PBS_TRACK"
+                        DW_AT_const_value           172(as signed = -84)
+< 2><0x00000539>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SYMLOOP_MAX"
+                        DW_AT_const_value           173(as signed = -83)
+< 2><0x0000053f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_STREAMS"
+                        DW_AT_const_value           174(as signed = -82)
+< 2><0x00000545>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_2_PBS_CHECKPOINT"
+                        DW_AT_const_value           175(as signed = -81)
+< 2><0x0000054b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V6_ILP32_OFF32"
+                        DW_AT_const_value           176(as signed = -80)
+< 2><0x00000551>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V6_ILP32_OFFBIG"
+                        DW_AT_const_value           177(as signed = -79)
+< 2><0x00000557>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V6_LP64_OFF64"
+                        DW_AT_const_value           178(as signed = -78)
+< 2><0x0000055d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V6_LPBIG_OFFBIG"
+                        DW_AT_const_value           179(as signed = -77)
+< 2><0x00000563>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_HOST_NAME_MAX"
+                        DW_AT_const_value           180(as signed = -76)
+< 2><0x00000569>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE"
+                        DW_AT_const_value           181(as signed = -75)
+< 2><0x0000056f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE_EVENT_FILTER"
+                        DW_AT_const_value           182(as signed = -74)
+< 2><0x00000575>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE_INHERIT"
+                        DW_AT_const_value           183(as signed = -73)
+< 2><0x0000057b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE_LOG"
+                        DW_AT_const_value           184(as signed = -72)
+< 2><0x00000581>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL1_ICACHE_SIZE"
+                        DW_AT_const_value           185(as signed = -71)
+< 2><0x00000587>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL1_ICACHE_ASSOC"
+                        DW_AT_const_value           186(as signed = -70)
+< 2><0x0000058d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL1_ICACHE_LINESIZE"
+                        DW_AT_const_value           187(as signed = -69)
+< 2><0x00000593>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL1_DCACHE_SIZE"
+                        DW_AT_const_value           188(as signed = -68)
+< 2><0x00000599>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL1_DCACHE_ASSOC"
+                        DW_AT_const_value           189(as signed = -67)
+< 2><0x0000059f>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL1_DCACHE_LINESIZE"
+                        DW_AT_const_value           190(as signed = -66)
+< 2><0x000005a5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL2_CACHE_SIZE"
+                        DW_AT_const_value           191(as signed = -65)
+< 2><0x000005ab>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL2_CACHE_ASSOC"
+                        DW_AT_const_value           192(as signed = -64)
+< 2><0x000005b1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL2_CACHE_LINESIZE"
+                        DW_AT_const_value           193(as signed = -63)
+< 2><0x000005b7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL3_CACHE_SIZE"
+                        DW_AT_const_value           194(as signed = -62)
+< 2><0x000005bd>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL3_CACHE_ASSOC"
+                        DW_AT_const_value           195(as signed = -61)
+< 2><0x000005c3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL3_CACHE_LINESIZE"
+                        DW_AT_const_value           196(as signed = -60)
+< 2><0x000005c9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL4_CACHE_SIZE"
+                        DW_AT_const_value           197(as signed = -59)
+< 2><0x000005cf>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL4_CACHE_ASSOC"
+                        DW_AT_const_value           198(as signed = -58)
+< 2><0x000005d5>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_LEVEL4_CACHE_LINESIZE"
+                        DW_AT_const_value           199(as signed = -57)
+< 2><0x000005db>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_IPV6"
+                        DW_AT_const_value           235(as signed = -21)
+< 2><0x000005e1>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_RAW_SOCKETS"
+                        DW_AT_const_value           236(as signed = -20)
+< 2><0x000005e7>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V7_ILP32_OFF32"
+                        DW_AT_const_value           237(as signed = -19)
+< 2><0x000005ed>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V7_ILP32_OFFBIG"
+                        DW_AT_const_value           238(as signed = -18)
+< 2><0x000005f3>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V7_LP64_OFF64"
+                        DW_AT_const_value           239(as signed = -17)
+< 2><0x000005f9>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_V7_LPBIG_OFFBIG"
+                        DW_AT_const_value           240(as signed = -16)
+< 2><0x000005ff>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_SS_REPL_MAX"
+                        DW_AT_const_value           241(as signed = -15)
+< 2><0x00000605>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE_EVENT_NAME_MAX"
+                        DW_AT_const_value           242(as signed = -14)
+< 2><0x0000060b>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE_NAME_MAX"
+                        DW_AT_const_value           243(as signed = -13)
+< 2><0x00000611>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE_SYS_MAX"
+                        DW_AT_const_value           244(as signed = -12)
+< 2><0x00000617>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_TRACE_USER_EVENT_MAX"
+                        DW_AT_const_value           245(as signed = -11)
+< 2><0x0000061d>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_XOPEN_STREAMS"
+                        DW_AT_const_value           246(as signed = -10)
+< 2><0x00000623>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_ROBUST_PRIO_INHERIT"
+                        DW_AT_const_value           247(as signed = -9)
+< 2><0x00000629>      DW_TAG_enumerator
+                        DW_AT_name                  "_SC_THREAD_ROBUST_PRIO_PROTECT"
+                        DW_AT_const_value           248(as signed = -8)
+< 1><0x00000630>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  "main"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/testproj/src/run.cpp
+                      DW_AT_decl_line             0x0000000c
+                      DW_AT_type                  <0x00000057>
+                      DW_AT_low_pc                0x00000000
+                      DW_AT_high_pc               <offset-from-lowpc>149
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x0000067e>
+< 2><0x00000651>      DW_TAG_variable
+                        DW_AT_name                  "error"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/testproj/src/run.cpp
+                        DW_AT_decl_line             0x0000000e
+                        DW_AT_type                  <0x00000057>
+                        DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
+< 2><0x0000065f>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00000008
+                        DW_AT_high_pc               <offset-from-lowpc>94
+< 3><0x00000670>        DW_TAG_variable
+                          DW_AT_name                  "i"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/testproj/src/run.cpp
+                          DW_AT_decl_line             0x00000010
+                          DW_AT_type                  <0x00000057>
+                          DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 1><0x0000067e>    DW_TAG_array_type
+                      DW_AT_type                  <0x00000073>
+                      DW_AT_sibling               <0x0000068e>
+< 2><0x00000687>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000065>
+                        DW_AT_upper_bound           1
+< 1><0x0000068e>    DW_TAG_variable
+                      DW_AT_name                  "tid"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/testproj/src/run.cpp
+                      DW_AT_decl_line             0x00000006
+                      DW_AT_type                  <0x0000067e>
+                      DW_AT_external              yes(1)
+                      DW_AT_location              len 0x0009: 030000000000000000: DW_OP_addr 0x00000000
+
+.debug_line: line number info for a single cu
+Source lines (from CU-DIE at .debug_info offset 0x0000000b):
+
+<pc>        [row,col] NS BB ET PE EB IS= DI= uri: "filepath"
+NS new statement, BB new basic block, ET end of text sequence
+PE prologue end, EB epilogue begin
+IA=val ISA number, DI=val discriminator value
+0x00000000  [  13, 0] NS uri: "/workspace/projects/testproj/src/run.cpp"
+0x00000008  [  16, 0] NS
+0x0000000f  [  16, 0] DI=0x1
+0x00000015  [  18, 0] NS
+0x0000003e  [  19, 0] NS
+0x00000044  [  20, 0] NS
+0x00000060  [  16, 0] NS DI=0x2
+0x00000066  [  23, 0] NS
+0x0000007a  [  24, 0] NS
+0x0000008e  [  26, 0] NS
+0x00000093  [  27, 0] NS
+0x00000095  [  27, 0] NS ET
+
+.debug_pubnames
+
+.debug_macinfo
+
+.debug_string
+name at offset 0x00000000, length   23 is '_SC_THREAD_PRIO_PROTECT'
+name at offset 0x00000018, length    9 is 'pthread_t'
+name at offset 0x00000022, length   11 is '_SC_VERSION'
+name at offset 0x0000002e, length   11 is '_SC_NL_NMAX'
+name at offset 0x0000003a, length   19 is '_SC_SYNCHRONIZED_IO'
+name at offset 0x0000004e, length   30 is '_SC_THREAD_PRIORITY_SCHEDULING'
+name at offset 0x0000006d, length   20 is '_SC_NPROCESSORS_ONLN'
+name at offset 0x00000082, length   27 is 'PTHREAD_MUTEX_ERRORCHECK_NP'
+name at offset 0x0000009e, length   12 is '_SC_TIMEOUTS'
+name at offset 0x000000ab, length    8 is '_SC_BASE'
+name at offset 0x000000b4, length   16 is '_SC_PII_OSI_COTS'
+name at offset 0x000000c5, length   19 is '_SC_MONOTONIC_CLOCK'
+name at offset 0x000000d9, length   25 is '_SC_THREAD_SAFE_FUNCTIONS'
+name at offset 0x000000f3, length   12 is 'unsigned int'
+name at offset 0x00000100, length   11 is '_SC_IOV_MAX'
+name at offset 0x0000010c, length   14 is '_SC_STREAM_MAX'
+name at offset 0x0000011b, length   18 is '_SC_PRIORITIZED_IO'
+name at offset 0x0000012e, length   18 is '_SC_V6_ILP32_OFF32'
+name at offset 0x00000141, length   26 is '_SC_THREAD_SPORADIC_SERVER'
+name at offset 0x0000015c, length   12 is '_SC_SHRT_MIN'
+name at offset 0x00000169, length   13 is '_SC_USHRT_MAX'
+name at offset 0x00000177, length   31 is 'PTHREAD_RWLOCK_PREFER_WRITER_NP'
+name at offset 0x00000197, length   14 is '_SC_NL_TEXTMAX'
+name at offset 0x000001a6, length   11 is '_SC_STREAMS'
+name at offset 0x000001b2, length   32 is '_SC_THREAD_DESTRUCTOR_ITERATIONS'
+name at offset 0x000001d3, length    8 is '_SC_PIPE'
+name at offset 0x000001dc, length   14 is '_SC_BC_DIM_MAX'
+name at offset 0x000001eb, length   16 is '_SC_MAPPED_FILES'
+name at offset 0x000001fc, length   12 is '_SC_2_C_BIND'
+name at offset 0x00000209, length   15 is '_SC_MQ_OPEN_MAX'
+name at offset 0x00000219, length   13 is '_SC_XOPEN_SHM'
+name at offset 0x00000227, length   11 is '_SC_INT_MAX'
+name at offset 0x00000233, length   14 is '_SC_2_FORT_DEV'
+name at offset 0x00000242, length   14 is '_SC_XOPEN_XPG2'
+name at offset 0x00000251, length   14 is '_SC_XOPEN_XPG3'
+name at offset 0x00000260, length   14 is '_SC_XOPEN_XPG4'
+name at offset 0x0000026f, length   16 is '_SC_PII_INTERNET'
+name at offset 0x00000280, length   17 is '_SC_V7_LP64_OFF64'
+name at offset 0x00000292, length   18 is '_SC_DELAYTIMER_MAX'
+name at offset 0x000002a5, length   14 is '_SC_MB_LEN_MAX'
+name at offset 0x000002b4, length   14 is '_SC_ATEXIT_MAX'
+name at offset 0x000002c3, length   20 is '_SC_REALTIME_SIGNALS'
+name at offset 0x000002d8, length   22 is 'PTHREAD_MUTEX_TIMED_NP'
+name at offset 0x000002ef, length   21 is 'PTHREAD_MUTEX_FAST_NP'
+name at offset 0x00000305, length   21 is '_SC_DEVICE_SPECIFIC_R'
+name at offset 0x0000031b, length   25 is '_SC_THREAD_PROCESS_SHARED'
+name at offset 0x00000335, length   13 is '_SC_SAVED_IDS'
+name at offset 0x00000343, length   20 is '_SC_C_LANG_SUPPORT_R'
+name at offset 0x00000358, length   11 is '_SC_2_C_DEV'
+name at offset 0x00000364, length   21 is '_SC_XBS5_LPBIG_OFFBIG'
+name at offset 0x0000037a, length   15 is '_SC_2_C_VERSION'
+name at offset 0x0000038a, length   13 is '_SC_SCHAR_MAX'
+name at offset 0x00000398, length   13 is '_SC_SSIZE_MAX'
+name at offset 0x000003a6, length    9 is '_SC_2_UPE'
+name at offset 0x000003b0, length    8 is '_SC_IPV6'
+name at offset 0x000003b9, length   15 is '_SC_BC_BASE_MAX'
+name at offset 0x000003c9, length   22 is 'long long unsigned int'
+name at offset 0x000003e0, length    8 is '_SC_POLL'
+name at offset 0x000003e9, length   18 is '_SC_XOPEN_REALTIME'
+name at offset 0x000003fc, length   34 is '/workspace/projects/testproj/build'
+name at offset 0x0000041f, length   21 is '_SC_SYSTEM_DATABASE_R'
+name at offset 0x00000435, length   23 is 'PTHREAD_MUTEX_RECURSIVE'
+name at offset 0x0000044d, length   12 is '_SC_CHAR_MAX'
+name at offset 0x0000045a, length   13 is '_SC_T_IOV_MAX'
+name at offset 0x00000468, length   23 is '_SC_LEVEL1_ICACHE_ASSOC'
+name at offset 0x00000480, length   23 is '_SC_READER_WRITER_LOCKS'
+name at offset 0x00000498, length   15 is '_SC_SYMLOOP_MAX'
+name at offset 0x000004a8, length   13 is '_SC_TRACE_LOG'
+name at offset 0x000004b6, length   18 is '_SC_THREAD_CPUTIME'
+name at offset 0x000004c9, length   17 is '_SC_TRACE_SYS_MAX'
+name at offset 0x000004db, length   21 is '_SC_XBS5_ILP32_OFFBIG'
+name at offset 0x000004f1, length   22 is '_SC_PII_INTERNET_DGRAM'
+name at offset 0x00000508, length   15 is '_SC_2_PBS_TRACK'
+name at offset 0x00000518, length   19 is '_SC_FILE_ATTRIBUTES'
+name at offset 0x0000052c, length   19 is '_SC_ASYNCHRONOUS_IO'
+name at offset 0x00000540, length    9 is '_SC_FSYNC'
+name at offset 0x0000054a, length   23 is '_SC_LEVEL1_DCACHE_ASSOC'
+name at offset 0x00000562, length   19 is '_SC_DEVICE_SPECIFIC'
+name at offset 0x00000576, length   11 is '_SC_SIGNALS'
+name at offset 0x00000582, length   11 is '_SC_MEMLOCK'
+name at offset 0x0000058e, length   12 is '_SC_LONG_BIT'
+name at offset 0x0000059b, length   17 is '_SC_SEM_NSEMS_MAX'
+name at offset 0x000005ad, length   19 is '_SC_EQUIV_CLASS_MAX'
+name at offset 0x000005c1, length   17 is '_SC_XOPEN_STREAMS'
+name at offset 0x000005d3, length   26 is '_SC_LEVEL1_ICACHE_LINESIZE'
+name at offset 0x000005ee, length   17 is '_SC_REGEX_VERSION'
+name at offset 0x00000600, length   20 is '_SC_2_PBS_ACCOUNTING'
+name at offset 0x00000615, length   11 is '_SC_AIO_MAX'
+name at offset 0x00000621, length   40 is '/workspace/projects/testproj/src/run.cpp'
+name at offset 0x0000064a, length   17 is '_SC_XOPEN_VERSION'
+name at offset 0x0000065c, length    5 is 'error'
+name at offset 0x00000662, length    9 is '_SC_SHELL'
+name at offset 0x0000066c, length   14 is '_SC_TZNAME_MAX'
+name at offset 0x0000067b, length    4 is 'char'
+name at offset 0x00000680, length   19 is '_SC_SPORADIC_SERVER'
+name at offset 0x00000694, length   17 is '_SC_MEMLOCK_RANGE'
+name at offset 0x000006a6, length   16 is '_SC_AVPHYS_PAGES'
+name at offset 0x000006b7, length   15 is '_SC_2_LOCALEDEF'
+name at offset 0x000006c7, length   25 is '_SC_LEVEL2_CACHE_LINESIZE'
+name at offset 0x000006e1, length   44 is 'PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP'
+name at offset 0x0000070e, length   25 is 'PTHREAD_RWLOCK_DEFAULT_NP'
+name at offset 0x00000728, length   19 is '_SC_V7_LPBIG_OFFBIG'
+name at offset 0x0000073c, length   21 is 'PTHREAD_MUTEX_STALLED'
+name at offset 0x00000752, length   24 is 'PTHREAD_MUTEX_ERRORCHECK'
+name at offset 0x0000076b, length   22 is '_SC_LEVEL3_CACHE_ASSOC'
+name at offset 0x00000782, length   15 is '_SC_FILE_SYSTEM'
+name at offset 0x00000792, length   12 is '_SC_PAGESIZE'
+name at offset 0x0000079f, length   22 is '_SC_LEVEL4_CACHE_ASSOC'
+name at offset 0x000007b6, length   19 is '_SC_V6_ILP32_OFFBIG'
+name at offset 0x000007ca, length   16 is '_SC_SIGQUEUE_MAX'
+name at offset 0x000007db, length    9 is '_SC_SPAWN'
+name at offset 0x000007e5, length   13 is '_SC_DEVICE_IO'
+name at offset 0x000007f3, length   19 is '_SC_V6_LPBIG_OFFBIG'
+name at offset 0x00000807, length   13 is '_SC_2_VERSION'
+name at offset 0x00000815, length   21 is '_SC_LEVEL4_CACHE_SIZE'
+name at offset 0x0000082b, length   13 is 'long long int'
+name at offset 0x00000839, length   17 is '_SC_USER_GROUPS_R'
+name at offset 0x0000084b, length   12 is '_SC_LINE_MAX'
+name at offset 0x00000858, length   11 is '_SC_CPUTIME'
+name at offset 0x00000864, length   14 is '_SC_UIO_MAXIOV'
+name at offset 0x00000873, length   17 is '_SC_HOST_NAME_MAX'
+name at offset 0x00000885, length   18 is '_SC_C_LANG_SUPPORT'
+name at offset 0x00000898, length   19 is '_SC_THREAD_KEYS_MAX'
+name at offset 0x000008ac, length   20 is '_SC_THREAD_STACK_MIN'
+name at offset 0x000008c1, length   79 is 'GNU C++ 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong'
+name at offset 0x00000911, length   14 is '_SC_SEMAPHORES'
+name at offset 0x00000920, length   12 is '_SC_UINT_MAX'
+name at offset 0x0000092d, length   13 is '_SC_CHILD_MAX'
+name at offset 0x0000093b, length   15 is '_SC_NGROUPS_MAX'
+name at offset 0x0000094b, length   18 is '_SC_SINGLE_PROCESS'
+name at offset 0x0000095e, length   15 is '_SC_XOPEN_CRYPT'
+name at offset 0x0000096e, length   25 is '_SC_LEVEL3_CACHE_LINESIZE'
+name at offset 0x00000988, length   16 is '_SC_TTY_NAME_MAX'
+name at offset 0x00000999, length   21 is '_SC_MEMORY_PROTECTION'
+name at offset 0x000009af, length   11 is '_SC_PII_XTI'
+name at offset 0x000009bb, length   12 is '_SC_CHAR_BIT'
+name at offset 0x000009c8, length   22 is '_SC_LEVEL1_DCACHE_SIZE'
+name at offset 0x000009df, length   19 is '_SC_V7_ILP32_OFFBIG'
+name at offset 0x000009f3, length   19 is '_SC_CLOCK_SELECTION'
+name at offset 0x00000a07, length   11 is '_SC_CLK_TCK'
+name at offset 0x00000a13, length   10 is '_SC_TIMERS'
+name at offset 0x00000a1e, length   12 is '_SC_BARRIERS'
+name at offset 0x00000a2b, length   16 is '_SC_BC_SCALE_MAX'
+name at offset 0x00000a3c, length   13 is '_SC_ULONG_MAX'
+name at offset 0x00000a4a, length   25 is 'PTHREAD_MUTEX_ADAPTIVE_NP'
+name at offset 0x00000a64, length   15 is '_SC_MQ_PRIO_MAX'
+name at offset 0x00000a74, length    9 is '_SC_TRACE'
+name at offset 0x00000a7e, length   21 is '_SC_LEVEL3_CACHE_SIZE'
+name at offset 0x00000a94, length   14 is '_SC_SPIN_LOCKS'
+name at offset 0x00000aa3, length   26 is '_SC_LEVEL1_DCACHE_LINESIZE'
+name at offset 0x00000abe, length   17 is '_SC_BC_STRING_MAX'
+name at offset 0x00000ad0, length   20 is '_SC_NPROCESSORS_CONF'
+name at offset 0x00000ae5, length   11 is '_SC_INT_MIN'
+name at offset 0x00000af1, length   18 is '_SC_V7_ILP32_OFF32'
+name at offset 0x00000b04, length   20 is 'PTHREAD_MUTEX_NORMAL'
+name at offset 0x00000b19, length   11 is '_SC_FD_MGMT'
+name at offset 0x00000b25, length   10 is '_SC_REGEXP'
+name at offset 0x00000b30, length    9 is 'short int'
+name at offset 0x00000b3a, length   22 is '_SC_LEVEL1_ICACHE_SIZE'
+name at offset 0x00000b51, length   14 is '_SC_RE_DUP_MAX'
+name at offset 0x00000b60, length   17 is '_SC_ADVISORY_INFO'
+name at offset 0x00000b72, length    8 is 'long int'
+name at offset 0x00000b7b, length   12 is '_SC_SHRT_MAX'
+name at offset 0x00000b88, length   19 is '_SC_XBS5_LP64_OFF64'
+name at offset 0x00000b9c, length   19 is '_SC_SYSTEM_DATABASE'
+name at offset 0x00000bb0, length   26 is '_SC_XOPEN_REALTIME_THREADS'
+name at offset 0x00000bcb, length   30 is '_SC_THREAD_ROBUST_PRIO_PROTECT'
+name at offset 0x00000bea, length   15 is '_SC_2_CHAR_TERM'
+name at offset 0x00000bfa, length   12 is '_SC_PASS_MAX'
+name at offset 0x00000c07, length    8 is '_SC_FIFO'
+name at offset 0x00000c10, length   11 is '_SC_ARG_MAX'
+name at offset 0x00000c1c, length   21 is '_SC_LEVEL2_CACHE_SIZE'
+name at offset 0x00000c32, length   20 is '_SC_2_PBS_CHECKPOINT'
+name at offset 0x00000c47, length   14 is '_SC_2_FORT_RUN'
+name at offset 0x00000c56, length   22 is '_SC_TRACE_EVENT_FILTER'
+name at offset 0x00000c6d, length   17 is '_SC_SEM_VALUE_MAX'
+name at offset 0x00000c7f, length   25 is '_SC_THREAD_ATTR_STACKSIZE'
+name at offset 0x00000c99, length   18 is '_SC_AIO_LISTIO_MAX'
+name at offset 0x00000cac, length   30 is '_SC_THREAD_ROBUST_PRIO_INHERIT'
+name at offset 0x00000ccb, length   11 is '_SC_THREADS'
+name at offset 0x00000cd7, length    7 is '_SC_PII'
+name at offset 0x00000cdf, length   17 is '_SC_TRACE_INHERIT'
+name at offset 0x00000cf1, length   12 is '_SC_WORD_BIT'
+name at offset 0x00000cfe, length   20 is '_SC_XBS5_ILP32_OFF32'
+name at offset 0x00000d13, length   13 is '_SC_PII_OSI_M'
+name at offset 0x00000d21, length   12 is '_SC_2_SW_DEV'
+name at offset 0x00000d2e, length   12 is '_SC_CHAR_MIN'
+name at offset 0x00000d3b, length    8 is 'sizetype'
+name at offset 0x00000d44, length   14 is '_SC_XOPEN_UNIX'
+name at offset 0x00000d53, length   23 is 'PTHREAD_MUTEX_ROBUST_NP'
+name at offset 0x00000d6b, length   17 is 'long unsigned int'
+name at offset 0x00000d7d, length   11 is '_SC_PII_OSI'
+name at offset 0x00000d89, length   13 is '_SC_UCHAR_MAX'
+name at offset 0x00000d97, length   13 is '_SC_SCHAR_MIN'
+name at offset 0x00000da5, length   23 is '_SC_PRIORITY_SCHEDULING'
+name at offset 0x00000dbd, length   31 is 'PTHREAD_RWLOCK_PREFER_READER_NP'
+name at offset 0x00000ddd, length   10 is '_SC_SELECT'
+name at offset 0x00000de8, length   14 is '_SC_NETWORKING'
+name at offset 0x00000df7, length   13 is '_SC_TIMER_MAX'
+name at offset 0x00000e05, length   24 is '_SC_TRACE_EVENT_NAME_MAX'
+name at offset 0x00000e1e, length   17 is '_SC_V6_LP64_OFF64'
+name at offset 0x00000e30, length   20 is 'PTHREAD_MUTEX_ROBUST'
+name at offset 0x00000e45, length   20 is '_SC_GETGR_R_SIZE_MAX'
+name at offset 0x00000e5a, length   13 is 'unsigned char'
+name at offset 0x00000e68, length   18 is '_SC_LOGIN_NAME_MAX'
+name at offset 0x00000e7b, length   17 is '_SC_EXPR_NEST_MAX'
+name at offset 0x00000e8d, length   23 is '_SC_PII_INTERNET_STREAM'
+name at offset 0x00000ea5, length   26 is 'PTHREAD_MUTEX_RECURSIVE_NP'
+name at offset 0x00000ec0, length   15 is '_SC_SS_REPL_MAX'
+name at offset 0x00000ed0, length   15 is '_SC_RAW_SOCKETS'
+name at offset 0x00000ee0, length   25 is '_SC_LEVEL4_CACHE_LINESIZE'
+name at offset 0x00000efa, length   24 is 'PTHREAD_MUTEX_STALLED_NP'
+name at offset 0x00000f13, length   19 is '_SC_MESSAGE_PASSING'
+name at offset 0x00000f27, length   13 is '_SC_NL_MSGMAX'
+name at offset 0x00000f35, length   25 is '_SC_SHARED_MEMORY_OBJECTS'
+name at offset 0x00000f4f, length   22 is '_SC_CHARCLASS_NAME_MAX'
+name at offset 0x00000f66, length   16 is '_SC_PII_OSI_CLTS'
+name at offset 0x00000f77, length   24 is '_SC_TYPED_MEMORY_OBJECTS'
+name at offset 0x00000f90, length    9 is '_SC_2_PBS'
+name at offset 0x00000f9a, length   14 is '_SC_PHYS_PAGES'
+name at offset 0x00000fa9, length   14 is '_SC_PII_SOCKET'
+name at offset 0x00000fb8, length   17 is '_SC_MULTI_PROCESS'
+name at offset 0x00000fca, length   22 is '_SC_LEVEL2_CACHE_ASSOC'
+name at offset 0x00000fe1, length   11 is 'signed char'
+name at offset 0x00000fed, length   12 is '_SC_OPEN_MAX'
+name at offset 0x00000ffa, length   18 is 'short unsigned int'
+name at offset 0x0000100d, length   22 is '_SC_THREAD_THREADS_MAX'
+name at offset 0x00001024, length    4 is 'main'
+name at offset 0x00001029, length    9 is '_SC_NZERO'
+name at offset 0x00001033, length   20 is '_SC_GETPW_R_SIZE_MAX'
+name at offset 0x00001048, length   17 is '_SC_2_PBS_MESSAGE'
+name at offset 0x0000105a, length   13 is '_SC_RTSIG_MAX'
+name at offset 0x00001068, length   25 is '_SC_THREAD_ATTR_STACKADDR'
+name at offset 0x00001082, length   16 is '_SC_FILE_LOCKING'
+name at offset 0x00001093, length   18 is '_SC_TRACE_NAME_MAX'
+name at offset 0x000010a6, length   20 is '_SC_COLL_WEIGHTS_MAX'
+name at offset 0x000010bb, length   18 is '_SC_XOPEN_ENH_I18N'
+name at offset 0x000010ce, length   16 is '_SC_XOPEN_LEGACY'
+name at offset 0x000010df, length   15 is '_SC_JOB_CONTROL'
+name at offset 0x000010ef, length   14 is '_SC_NL_LANGMAX'
+name at offset 0x000010fe, length   15 is '_SC_USER_GROUPS'
+name at offset 0x0000110e, length   16 is '_SC_2_PBS_LOCATE'
+name at offset 0x0000111f, length   13 is '_SC_NL_SETMAX'
+name at offset 0x0000112d, length   13 is '_SC_NL_ARGMAX'
+name at offset 0x0000113b, length   23 is '_SC_THREAD_PRIO_INHERIT'
+name at offset 0x00001153, length   24 is '_SC_TRACE_USER_EVENT_MAX'
+name at offset 0x0000116c, length   21 is 'PTHREAD_MUTEX_DEFAULT'
+name at offset 0x00001182, length   22 is '_SC_AIO_PRIO_DELTA_MAX'
+name at offset 0x00001199, length   21 is '_SC_XOPEN_XCU_VERSION'
+
+.debug_aranges
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C++ 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong"
+                    DW_AT_language              DW_LANG_C_plus_plus
+                    DW_AT_name                  "/workspace/projects/testproj/src/run.cpp"
+                    DW_AT_comp_dir              "/workspace/projects/testproj/build"
+                    DW_AT_low_pc                0x00000000
+                    DW_AT_high_pc               <offset-from-lowpc>149
+                    DW_AT_stmt_list             0x00000000
+
+
+arange starts at 0x00000000, length of 0x00000095, cu_die_offset = 0x0000000b
+arange end
+.debug_frame
+
+.debug_static_func
+
+.debug_static_vars
+
+.debug_weaknames
+

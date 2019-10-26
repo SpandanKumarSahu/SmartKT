@@ -1,0 +1,112 @@
+__underflow	1	_IO_FILE *	int
+__uflow	1	_IO_FILE *	int
+__overflow	2	_IO_FILE *	int	int
+_IO_getc	1	_IO_FILE *	int
+_IO_putc	2	int	_IO_FILE *	int
+_IO_feof	1	_IO_FILE *	int
+_IO_ferror	1	_IO_FILE *	int
+_IO_peekc_locked	1	_IO_FILE *	int
+_IO_flockfile	1	_IO_FILE *	void
+_IO_funlockfile	1	_IO_FILE *	void
+_IO_ftrylockfile	1	_IO_FILE *	int
+_IO_vfscanf	4	_IO_FILE *restrict	const char *restrict	int	int *restrict	int
+_IO_vfprintf	3	_IO_FILE *restrict	const char *restrict	int	int
+_IO_padn	3	_IO_FILE *	int	__ssize_t	__ssize_t
+_IO_sgetn	0	int
+_IO_seekoff	4	_IO_FILE *	__off64_t	int	int	__off64_t
+_IO_seekpos	3	_IO_FILE *	__off64_t	int	__off64_t
+_IO_free_backup_area	1	_IO_FILE *	void
+remove	1	const char *	int
+rename	2	const char *	const char *	int
+renameat	4	int	const char *	int	const char *	int
+tmpfile	0	FILE *
+tmpnam	1	char *	char *
+tmpnam_r	1	char *	char *
+tempnam	2	const char *	const char *	char *
+fclose	1	FILE *	int
+fflush	1	FILE *	int
+fflush_unlocked	1	FILE *	int
+fopen	2	const char *restrict	const char *restrict	FILE *
+freopen	3	const char *restrict	const char *restrict	FILE *restrict	FILE *
+fdopen	2	int	const char *	FILE *
+fmemopen	3	void *	int	const char *	FILE *
+open_memstream	2	char **	int *	FILE *
+setbuf	2	FILE *restrict	char *restrict	void
+setvbuf	4	FILE *restrict	char *restrict	int	int	int
+setbuffer	3	FILE *restrict	char *restrict	int	void
+setlinebuf	1	FILE *	void
+fprintf	2	FILE *restrict	const char *restrict	int
+printf	1	const char *restrict	int
+sprintf	2	char *restrict	const char *restrict	int
+vfprintf	3	FILE *restrict	const char *restrict	int	int
+vprintf	2	const char *restrict	int	int
+vsprintf	3	char *restrict	const char *restrict	int	int
+snprintf	3	char *restrict	int	const char *restrict	int
+vsnprintf	4	char *restrict	int	const char *restrict	int	int
+vdprintf	3	int	const char *restrict	int	int
+dprintf	2	int	const char *restrict	int
+fscanf	2	FILE *restrict	const char *restrict	int
+scanf	1	const char *restrict	int
+sscanf	2	const char *restrict	const char *restrict	int
+__isoc99_fscanf	2	FILE *restrict	const char *restrict	int
+__isoc99_scanf	1	const char *restrict	int
+__isoc99_sscanf	2	const char *restrict	const char *restrict	int
+vfscanf	3	FILE *restrict	const char *restrict	int	int
+vscanf	2	const char *restrict	int	int
+vsscanf	3	const char *restrict	const char *restrict	int	int
+__isoc99_vfscanf	3	FILE *restrict	const char *restrict	int	int
+__isoc99_vscanf	2	const char *restrict	int	int
+__isoc99_vsscanf	3	const char *restrict	const char *restrict	int	int
+fgetc	1	FILE *	int
+getc	1	FILE *	int
+getchar	0	int
+getc_unlocked	1	FILE *	int
+getchar_unlocked	0	int
+fgetc_unlocked	1	FILE *	int
+fputc	2	int	FILE *	int
+putc	2	int	FILE *	int
+putchar	1	int	int
+fputc_unlocked	2	int	FILE *	int
+putc_unlocked	2	int	FILE *	int
+putchar_unlocked	1	int	int
+getw	1	FILE *	int
+putw	2	int	FILE *	int
+fgets	3	char *restrict	int	FILE *restrict	char *
+__getdelim	4	char **restrict	int *restrict	int	FILE *restrict	__ssize_t
+getdelim	4	char **restrict	int *restrict	int	FILE *restrict	__ssize_t
+getline	3	char **restrict	int *restrict	FILE *restrict	__ssize_t
+fputs	2	const char *restrict	FILE *restrict	int
+puts	1	const char *	int
+ungetc	2	int	FILE *	int
+fread	0	int
+fwrite	0	int
+fread_unlocked	0	int
+fwrite_unlocked	0	int
+fseek	3	FILE *	long	int	int
+ftell	1	FILE *	long
+rewind	1	FILE *	void
+fseeko	3	FILE *	__off_t	int	int
+ftello	1	FILE *	__off_t
+fgetpos	2	FILE *restrict	fpos_t *restrict	int
+fsetpos	2	FILE *	const fpos_t *	int
+clearerr	1	FILE *	void
+feof	1	FILE *	int
+ferror	1	FILE *	int
+clearerr_unlocked	1	FILE *	void
+feof_unlocked	1	FILE *	int
+ferror_unlocked	1	FILE *	int
+perror	1	const char *	void
+fileno	1	FILE *	int
+fileno_unlocked	1	FILE *	int
+popen	2	const char *	const char *	FILE *
+pclose	1	FILE *	int
+ctermid	1	char *	char *
+flockfile	1	FILE *	void
+ftrylockfile	1	FILE *	int
+funlockfile	1	FILE *	void
+selfincvar	0	int
+add_p	0	int
+selfcall	0	void
+main	0	int
+add_p	0	int
+selfincvar	0	int

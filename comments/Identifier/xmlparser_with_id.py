@@ -140,8 +140,8 @@ def main():
 		data = parseXML(xmlfname, cfname, tag)
 		output.extend(data)
 
-	print "Identifier info:"
-	print output
+	#print "Identifier info:"
+	#print output
 	f = open("identifiers_commentsXML.csv", 'w')
 	writer = csv.writer(f, delimiter=',', quoting=csv.QUOTE_NONNUMERIC)
 	writer.writerow(["Symbol", "Type", "Start line", "End line", "Data type", "Identifier tokens", "Program Domain matches", "Problem Domain matches", "Symbol id"])

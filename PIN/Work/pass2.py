@@ -9,6 +9,15 @@ def to_xml(line):
 	t = line.split()
 	i = 0
 	entry = Element(t[i])	# first word is event type
+	if t[0] == 'CALL':
+		statbeg = t.index('[')
+		statend = t.index(']')
+		if statbeg != -1:
+			stat = ' '.join(t[statbeg:statend+1])
+		for inloop in range(statbeg,statend+1):
+			t.pop(statbeg)
+		t.insert(statbeg, stat)
+		print (t)
 	i += 1
 	while i < len(t):
 		entry.attrib[t[i]] = t[i+1]	 # all other events come in key:value pairs

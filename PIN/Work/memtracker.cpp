@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <fstream>
 #include <iterator>
+#include <set>
 
 // major things left to do:
 // 1. handling globals
@@ -106,10 +107,14 @@ struct variable
 	std::string spattr;
 
 	void print(std::ostream& outf = std::cout) 
-	{outf << fname << ": " << type << " - " << name << ": " << id << " " << pid << "\n";};
+	{outf << fname << ": " << type << " - " << name << ": " << id << " " << spattr << " " << (((signed)(spattr.find("STATIC")) > 0)?fname:"") << "\n";};
 };
-std::map <std::string, std::map <ADDRINT, variable>> funcLocalMap;
-std::map <ADDRINT, variable> globalMap;
+
+std::map <std::string, std::map <ADDRINT, variable>> funcLocalMap; // funcname -> offset x varid
+std::map <ADDRINT, variable> globalMap;								// global address -> var id
+std::map <std::string, std::vector<std::string>> funcinfoMap;		// funcname -> vector<argtypes>
+std::map <std::string, std::map<int, std::map<std::string, std::set<std::string>>>> funccallMap;		
+														// fname x lineno x funcname -> vector<calls>
 
 std::map <ADDRINT, variable>::iterator lookup (std::map <ADDRINT, variable>& mymap, ADDRINT addr)
 {
@@ -132,8 +137,10 @@ std::map <ADDRINT, variable>::iterator lookup (std::map <ADDRINT, variable>& mym
 }
 
 
-std::string goff = "_static.offset";
+std::string goff = "final_static.offset";
 std::string off = "final.offset";
+std::string fargs = "final.funcargs";
+std::string fcalls = "final.calls";
 
 /*			variables in stack - need to do later to handle references
 std::map <ADDRINT, std::string> stackMap; // address -> variable node id
@@ -175,7 +182,7 @@ VOID init(std::string locf)
 	ADDRINT offset;
 	variable var;
 
-	while (!offFile.eof())
+	while (offFile.good())
 	{
 		offFile >> fn >> offset >> var.id >> var.name;
 		var.fname = fn;
@@ -184,6 +191,7 @@ VOID init(std::string locf)
 		offFile >> var.size >> var.pid;
 		funcLocalMap[fn][offset] = var;
 	}
+
 	// for (auto i: funcLocalMap)
 	// {
 	// 	outp << i.first << "\n";
@@ -197,26 +205,70 @@ VOID init(std::string locf)
 
 	offFile.close();
 
-	offFile.open((locf+goff).c_str());
+	offFile.open(goff.c_str());
 	while (offFile.good())
 	{
-		offFile >> hex >> offset >> dec >> var.name >> var.id;
+		offFile >> offset >> var.name >> var.id;
 		offFile.get();
 		std::getline (offFile, var.type, '\t');
 		offFile >> var.size >> var.pid >> var.spattr;
-		if (var.spattr.find("STATIC") > 0)
+		if ((signed)(var.spattr.find("STATIC")) > 0)
 			offFile >> var.fname;
 		else
 			var.fname = "";
 		globalMap[offset] = var;
 	}
+	
 	// for (auto j: globalMap)
 	// {
-	// 	outp << j.first << " ";
+	// 	outp << hex << j.first << dec << ": ";
 	// 	j.second.print(outp);
 	// }
 	// outp << "\n";
 	
+	offFile.close();
+
+	offFile.open(fargs.c_str());
+	int nargs;
+	std::string vartype;
+	while (offFile.good())
+	{
+		offFile >> fn >> nargs;
+		offFile.get();
+		for (int i = 0; i < nargs; ++i)
+		{
+			std::getline (offFile, vartype, '\t');
+			funcinfoMap[fn].push_back(vartype);
+		}
+		std::getline (offFile, vartype, '\n');
+		funcinfoMap[fn].push_back(vartype);
+	}
+
+	// for (auto j: funcinfoMap)
+	// {
+	// 	outp << j.first << " Args: ";
+	// 	auto& arglist = j.second;
+	// 	int na = arglist.size();
+	// 	outp << na << " -> ";
+	// 	for (int i = 0; i < na; ++i)
+	// 		outp << arglist[i] << "... ";
+	// 	outp << "Returns: " << arglist.back() << "\n";
+	// }
+	// outp << "\n";
+
+	offFile.close();
+
+	offFile.open(fcalls.c_str());
+	int lno;
+	std::string func, callsig;
+	while (offFile.good())
+	{
+		offFile >> fn >> lno >> func;
+		offFile.get();
+		std::getline (offFile, callsig, '\n');
+		funccallMap[fn][lno][func].insert(callsig);
+	}
+
 	offFile.close();
 }
 
@@ -266,7 +318,7 @@ VOID dataman (THREADID tid, ADDRINT ina, ADDRINT memOp)
 	}
 	else
 	{
-		// look in cuurent stack
+		// look in current stack
 		f = invstack[tid].back();
 		offset = f.rbp - memOp;
 		auto& curmap = funcLocalMap[f.fname];
@@ -292,20 +344,20 @@ VOID dataman (THREADID tid, ADDRINT ina, ADDRINT memOp)
 				it = lookup(offMap, offset);
 				if (it != offMap.end())
 				{
-					accessType = "NONLOCAL";	// nonlocal access
+					accessType = "NONLOCALSTACK";	// nonlocal access
 					var = it->second;
 					found = true;
 				}
-				// else
-				// 	outp << "VARSEARCH FAILED IN " << f.fname << "\n";
+				else
+					outp << "VARSEARCH FAILED IN " << f.fname << "\n";
 			}
 		}
 	}
 
 	if (not found)
 	{
-		// outp << "VARIABLE NOT FOUND.... REAL ADDRESS: 0x" << hex << memOp << dec << ".\n";
-		// inslist[ina].shortPrint(outp);
+		outp << "VARIABLE NOT FOUND.... REAL ADDRESS: 0x" << hex << memOp << dec << ".\n";
+		inslist[ina].shortPrint(outp);
 		return;
 	}
 	else
@@ -320,7 +372,7 @@ VOID dataman (THREADID tid, ADDRINT ina, ADDRINT memOp)
 		outp << " THREADID " << tid << " VARCLASS " << accessType;		// print thread id and access type
 		if (stat)
 		{
-			if (accessType.find("STATIC") > 0)
+			if ((signed)(accessType.find("STATIC")) > 0)
 				outp << " VARCONTAINER " << var.fname;
 			outp << " ADDRESS 0x" << hex << memOp << dec;
 		}
@@ -349,14 +401,55 @@ VOID dataman (THREADID tid, ADDRINT ina, ADDRINT memOp)
 	}
 }
 
-// funcation call event handler
-VOID callP (THREADID tid, ADDRINT ina)
+// prints value of an arg, typecasting it to the given type
+VOID printval (ADDRINT * arg, std::string type)
 {
+	if (type == "int")
+		outp << *((int *)(arg));
+	else if (type == "char")
+		outp << *((char *)(arg));
+	else if (type == "float")
+		outp << *((int *)(arg));
+	else if (type == "double")
+		outp << *((char *)(arg));
+	else if (type == "char *")
+		outp << *((char **)(arg));
+	else if (type == "void")
+		outp << "void";
+	else 
+		outp << "UNKNOWN";
+}
+
+// funcation call event handler
+VOID callP (THREADID tid, ADDRINT ina, int count, ...)
+{
+	// THREADID tid = va_arg(ap, THREADID);
+	// ADDRINT ina = va_arg(ap, ADDRINT);
+
 	// invMap[inslist[ina].target][tid]++;							// one more invocation of target
 	outp << "CALL THREADID " << tid << " ";							// event type and thread id
 	outp << "CALLERNAME " << inslist[ina].rtnName << " ";			// caller linkage name
 	outp << "CALLEENAME " << inslist[ina].target << " ";			// callee linkage name
 	outp << "id " << dec << ++timeStamp << " ";						// event timestamp
+	std::string dyntarget = inslist[ina].target;
+	dyntarget = dyntarget.substr(0, dyntarget.find("@plt"));		// removing @PLT's
+	auto& argvec = funcinfoMap[dyntarget];							// argument types
+	va_list ap;
+	va_start (ap, count);
+	for (int i = 0; i < count; ++i)									// printing arguments
+	{
+		ADDRINT * val = va_arg(ap, ADDRINT *);
+		outp << "ARG" << i << " ";
+		printval (val, argvec[i]);
+		outp << " ";
+	}
+	va_end(ap);
+	if (count == 0)
+		outp << "ARGS NONE ";
+	outp << "STATICCALL [\t";
+	for (auto q: funccallMap[inslist[ina].fname][inslist[ina].line][dyntarget])
+		outp << q << "\t";
+	outp << "] ";
 	outp << "INVNO " << invMap[inslist[ina].rtnName][tid] << "\n";	// function invocation count
 }
 
@@ -376,20 +469,32 @@ VOID invP (THREADID tid, ADDRINT ina)
 }
 
 
-VOID retP (THREADID tid, ADDRINT ina)
+VOID retP (THREADID tid, ADDRINT ina, ADDRINT * retval)
 {
 	// outp << "INVOKED RETP\n\n";
 	// outp << "PREREMOVAL\n\n";
 	// printall();
+	
+	fnlog f = invstack[tid].back();
+	outp << "RETURN THREADID " << f.tid << " ";							// event type and thread id
+	outp << "FUNCNAME " << f.fname << " ";							// returning function
+	outp << "id " << dec << ++timeStamp << " ";						// event timestamp
+	if (funcinfoMap.find(f.fname) != funcinfoMap.end())
+	{
+		std::string rettype = funcinfoMap[f.fname].back();
+		outp << "RETVAL ";
+		printval(retval, rettype);
+		outp << " ";
+	}
+	outp << "INVNO " << f.invNo << "\n";	// function invocation count
 
-	ADDRINT bp = invstack[tid].back().rbp;
-	invstack[tid].pop_back();
-	if (invstack[tid].empty())
-		invstack.erase(tid);
 	// fnlog f(RTN_FindNameByAddress(ina), tid, ino);
 	// ADDRINT rbpval = fnstack[f];
 	// fnstack.erase(f);
-	RBPstack.erase(bp);
+	invstack[tid].pop_back();
+	if (invstack[tid].empty())
+		invstack.erase(tid);
+	RBPstack.erase(f.rbp);
 
 	// outp << "POSTREMOVAL\n\n";
 	// printall();
@@ -420,11 +525,31 @@ VOID Instruction(INS ins, VOID * v)
 		//inslist[ina].shortPrint(outp);
 
 		// if it is a call event
-		if (inslist[ina].target != "")
-			INS_InsertCall(
-			ins, IPOINT_BEFORE, (AFUNPTR)callP,
-			IARG_THREAD_ID, IARG_ADDRINT, ina,
-			IARG_END);
+		std::string target = inslist[ina].target;
+		int nargs = 0;
+		if (target != "")
+		{
+			if (funcinfoMap.find(target) != funcinfoMap.end())
+				nargs = funcinfoMap[target].size() - 1;
+
+			if (nargs == 0)
+				INS_InsertCall(
+				ins, IPOINT_BEFORE, (AFUNPTR)callP,
+				IARG_THREAD_ID, IARG_ADDRINT, ina,
+				IARG_UINT32, 0, IARG_END);
+			else
+			{
+				IARGLIST mylist = IARGLIST_Alloc();
+				for (int i = 0; i < nargs; ++i)
+					IARGLIST_AddArguments(mylist, IARG_FUNCARG_CALLSITE_REFERENCE, i, IARG_END);
+				INS_InsertCall(
+				ins, IPOINT_BEFORE, (AFUNPTR)callP,
+				IARG_THREAD_ID, IARG_ADDRINT, ina,
+				IARG_UINT32, nargs, IARG_IARGLIST, mylist,
+				IARG_END);
+				IARGLIST_Free(mylist);
+			}
+		}
 
 		// if it updates rbp
 		int t = inslist[ina].rbploc;
@@ -452,6 +577,7 @@ VOID Instruction(INS ins, VOID * v)
 			INS_InsertCall(
 			ins, IPOINT_BEFORE, (AFUNPTR)retP, 
 			IARG_THREAD_ID, IARG_INST_PTR, 
+			IARG_FUNCRET_EXITPOINT_REFERENCE,
 			IARG_END);
 		
 		// else

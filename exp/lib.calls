@@ -1,0 +1,2 @@
+/workspace/projects/exp/lib.c	7	printf	printf("Global p inc to: %d\n",p)
+/workspace/projects/exp/lib.c	13	addonemore	addonemore()

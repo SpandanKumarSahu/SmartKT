@@ -1,0 +1,1 @@
+/workspace/projects/libpng/pngtest.c	2150	fprintf	fprintf(STDERR," test ignored because libpng was not built with read support\n")

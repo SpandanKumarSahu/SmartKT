@@ -1,0 +1,1 @@
+/workspace/projects/libpng/contrib/libtests/pngimage.c	1709	fprintf	fprintf(stderr,"pngimage: no support for png_read/write_image\n")

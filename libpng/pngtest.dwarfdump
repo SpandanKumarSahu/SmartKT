@@ -1,0 +1,3100 @@
+
+.debug_info
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C11 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong"
+                    DW_AT_language              DW_LANG_C99
+                    DW_AT_name                  "/workspace/projects/libpng/pngtest.c"
+                    DW_AT_comp_dir              "/workspace/projects/libpng/build"
+                    DW_AT_low_pc                0x00000000
+                    DW_AT_high_pc               <offset-from-lowpc>11111
+                    DW_AT_stmt_list             0x00000000
+
+LOCAL_SYMBOLS:
+< 1><0x0000002d>    DW_TAG_typedef
+                      DW_AT_name                  "size_t"
+                      DW_AT_decl_file             0x00000002 /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h
+                      DW_AT_decl_line             0x000000d8
+                      DW_AT_type                  <0x00000038>
+< 1><0x00000038>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "long unsigned int"
+< 1><0x0000003f>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_unsigned_char
+                      DW_AT_name                  "unsigned char"
+< 1><0x00000046>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "short unsigned int"
+< 1><0x0000004d>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "unsigned int"
+< 1><0x00000054>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  "signed char"
+< 1><0x0000005b>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "short int"
+< 1><0x00000062>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "int"
+< 1><0x00000069>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "long int"
+< 1><0x00000070>    DW_TAG_typedef
+                      DW_AT_name                  "__off_t"
+                      DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/bits/types.h
+                      DW_AT_decl_line             0x00000083
+                      DW_AT_type                  <0x00000069>
+< 1><0x0000007b>    DW_TAG_typedef
+                      DW_AT_name                  "__off64_t"
+                      DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/bits/types.h
+                      DW_AT_decl_line             0x00000084
+                      DW_AT_type                  <0x00000069>
+< 1><0x00000086>    DW_TAG_array_type
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_sibling               <0x00000096>
+< 2><0x0000008f>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000096>
+                        DW_AT_upper_bound           1
+< 1><0x00000096>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  "sizetype"
+< 1><0x0000009d>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+< 1><0x0000009f>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000000a5>
+< 1><0x000000a5>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  "char"
+< 1><0x000000ac>    DW_TAG_typedef
+                      DW_AT_name                  "FILE"
+                      DW_AT_decl_file             0x00000004 /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000030
+                      DW_AT_type                  <0x000000b7>
+< 1><0x000000b7>    DW_TAG_structure_type
+                      DW_AT_name                  "_IO_FILE"
+                      DW_AT_byte_size             0x000000d8
+                      DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                      DW_AT_decl_line             0x000000f1
+                      DW_AT_sibling               <0x00000234>
+< 2><0x000000c3>      DW_TAG_member
+                        DW_AT_name                  "_flags"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000f2
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_data_member_location  0
+< 2><0x000000cf>      DW_TAG_member
+                        DW_AT_name                  "_IO_read_ptr"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000f7
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  8
+< 2><0x000000db>      DW_TAG_member
+                        DW_AT_name                  "_IO_read_end"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000f8
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  16
+< 2><0x000000e7>      DW_TAG_member
+                        DW_AT_name                  "_IO_read_base"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000f9
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  24
+< 2><0x000000f3>      DW_TAG_member
+                        DW_AT_name                  "_IO_write_base"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000fa
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  32
+< 2><0x000000ff>      DW_TAG_member
+                        DW_AT_name                  "_IO_write_ptr"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000fb
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  40
+< 2><0x0000010b>      DW_TAG_member
+                        DW_AT_name                  "_IO_write_end"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000fc
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  48
+< 2><0x00000117>      DW_TAG_member
+                        DW_AT_name                  "_IO_buf_base"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000fd
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  56
+< 2><0x00000123>      DW_TAG_member
+                        DW_AT_name                  "_IO_buf_end"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000fe
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  64
+< 2><0x0000012f>      DW_TAG_member
+                        DW_AT_name                  "_IO_save_base"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000100
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  72
+< 2><0x0000013c>      DW_TAG_member
+                        DW_AT_name                  "_IO_backup_base"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000101
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  80
+< 2><0x00000149>      DW_TAG_member
+                        DW_AT_name                  "_IO_save_end"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000102
+                        DW_AT_type                  <0x0000009f>
+                        DW_AT_data_member_location  88
+< 2><0x00000156>      DW_TAG_member
+                        DW_AT_name                  "_markers"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000104
+                        DW_AT_type                  <0x0000026c>
+                        DW_AT_data_member_location  96
+< 2><0x00000163>      DW_TAG_member
+                        DW_AT_name                  "_chain"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000106
+                        DW_AT_type                  <0x00000272>
+                        DW_AT_data_member_location  104
+< 2><0x00000170>      DW_TAG_member
+                        DW_AT_name                  "_fileno"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000108
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_data_member_location  112
+< 2><0x0000017d>      DW_TAG_member
+                        DW_AT_name                  "_flags2"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000010c
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_data_member_location  116
+< 2><0x0000018a>      DW_TAG_member
+                        DW_AT_name                  "_old_offset"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000010e
+                        DW_AT_type                  <0x00000070>
+                        DW_AT_data_member_location  120
+< 2><0x00000197>      DW_TAG_member
+                        DW_AT_name                  "_cur_column"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000112
+                        DW_AT_type                  <0x00000046>
+                        DW_AT_data_member_location  128(as signed = -128)
+< 2><0x000001a4>      DW_TAG_member
+                        DW_AT_name                  "_vtable_offset"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000113
+                        DW_AT_type                  <0x00000054>
+                        DW_AT_data_member_location  130(as signed = -126)
+< 2><0x000001b1>      DW_TAG_member
+                        DW_AT_name                  "_shortbuf"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000114
+                        DW_AT_type                  <0x00000278>
+                        DW_AT_data_member_location  131(as signed = -125)
+< 2><0x000001be>      DW_TAG_member
+                        DW_AT_name                  "_lock"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000118
+                        DW_AT_type                  <0x00000288>
+                        DW_AT_data_member_location  136(as signed = -120)
+< 2><0x000001cb>      DW_TAG_member
+                        DW_AT_name                  "_offset"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000121
+                        DW_AT_type                  <0x0000007b>
+                        DW_AT_data_member_location  144(as signed = -112)
+< 2><0x000001d8>      DW_TAG_member
+                        DW_AT_name                  "__pad1"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000129
+                        DW_AT_type                  <0x0000009d>
+                        DW_AT_data_member_location  152(as signed = -104)
+< 2><0x000001e5>      DW_TAG_member
+                        DW_AT_name                  "__pad2"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000012a
+                        DW_AT_type                  <0x0000009d>
+                        DW_AT_data_member_location  160(as signed = -96)
+< 2><0x000001f2>      DW_TAG_member
+                        DW_AT_name                  "__pad3"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000012b
+                        DW_AT_type                  <0x0000009d>
+                        DW_AT_data_member_location  168(as signed = -88)
+< 2><0x000001ff>      DW_TAG_member
+                        DW_AT_name                  "__pad4"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000012c
+                        DW_AT_type                  <0x0000009d>
+                        DW_AT_data_member_location  176(as signed = -80)
+< 2><0x0000020c>      DW_TAG_member
+                        DW_AT_name                  "__pad5"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000012e
+                        DW_AT_type                  <0x0000002d>
+                        DW_AT_data_member_location  184(as signed = -72)
+< 2><0x00000219>      DW_TAG_member
+                        DW_AT_name                  "_mode"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000012f
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_data_member_location  192(as signed = -64)
+< 2><0x00000226>      DW_TAG_member
+                        DW_AT_name                  "_unused2"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x00000131
+                        DW_AT_type                  <0x0000028e>
+                        DW_AT_data_member_location  196(as signed = -60)
+< 1><0x00000234>    DW_TAG_typedef
+                      DW_AT_name                  "_IO_lock_t"
+                      DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                      DW_AT_decl_line             0x00000096
+< 1><0x0000023b>    DW_TAG_structure_type
+                      DW_AT_name                  "_IO_marker"
+                      DW_AT_byte_size             0x00000018
+                      DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                      DW_AT_decl_line             0x0000009c
+                      DW_AT_sibling               <0x0000026c>
+< 2><0x00000247>      DW_TAG_member
+                        DW_AT_name                  "_next"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000009d
+                        DW_AT_type                  <0x0000026c>
+                        DW_AT_data_member_location  0
+< 2><0x00000253>      DW_TAG_member
+                        DW_AT_name                  "_sbuf"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x0000009e
+                        DW_AT_type                  <0x00000272>
+                        DW_AT_data_member_location  8
+< 2><0x0000025f>      DW_TAG_member
+                        DW_AT_name                  "_pos"
+                        DW_AT_decl_file             0x00000005 /usr/include/libio.h
+                        DW_AT_decl_line             0x000000a2
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_data_member_location  16
+< 1><0x0000026c>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000023b>
+< 1><0x00000272>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000000b7>
+< 1><0x00000278>    DW_TAG_array_type
+                      DW_AT_type                  <0x000000a5>
+                      DW_AT_sibling               <0x00000288>
+< 2><0x00000281>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000096>
+                        DW_AT_upper_bound           0
+< 1><0x00000288>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000234>
+< 1><0x0000028e>    DW_TAG_array_type
+                      DW_AT_type                  <0x000000a5>
+                      DW_AT_sibling               <0x0000029e>
+< 2><0x00000297>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000096>
+                        DW_AT_upper_bound           19
+< 1><0x0000029e>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000002a4>
+< 1><0x000002a4>    DW_TAG_const_type
+                      DW_AT_type                  <0x000000a5>
+< 1><0x000002a9>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  "long long int"
+< 1><0x000002b0>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000010
+                      DW_AT_encoding              DW_ATE_float
+                      DW_AT_name                  "long double"
+< 1><0x000002b7>    DW_TAG_typedef
+                      DW_AT_name                  "png_byte"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x000001e1
+                      DW_AT_type                  <0x0000003f>
+< 1><0x000002c3>    DW_TAG_typedef
+                      DW_AT_name                  "png_uint_16"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x000001f1
+                      DW_AT_type                  <0x00000046>
+< 1><0x000002cf>    DW_TAG_typedef
+                      DW_AT_name                  "png_int_32"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x000001f7
+                      DW_AT_type                  <0x00000062>
+< 1><0x000002db>    DW_TAG_typedef
+                      DW_AT_name                  "png_uint_32"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x000001ff
+                      DW_AT_type                  <0x0000004d>
+< 1><0x000002e7>    DW_TAG_typedef
+                      DW_AT_name                  "png_fixed_point"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x0000023e
+                      DW_AT_type                  <0x000002cf>
+< 1><0x000002f3>    DW_TAG_typedef
+                      DW_AT_name                  "png_bytep"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x00000243
+                      DW_AT_type                  <0x000002ff>
+< 1><0x000002ff>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000002b7>
+< 1><0x00000305>    DW_TAG_typedef
+                      DW_AT_name                  "png_uint_16p"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x00000249
+                      DW_AT_type                  <0x00000311>
+< 1><0x00000311>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000002c3>
+< 1><0x00000317>    DW_TAG_typedef
+                      DW_AT_name                  "png_charp"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x0000024d
+                      DW_AT_type                  <0x0000009f>
+< 1><0x00000323>    DW_TAG_typedef
+                      DW_AT_name                  "png_const_charp"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x0000024e
+                      DW_AT_type                  <0x0000029e>
+< 1><0x0000032f>    DW_TAG_typedef
+                      DW_AT_name                  "png_FILE_p"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x00000255
+                      DW_AT_type                  <0x0000033b>
+< 1><0x0000033b>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000000ac>
+< 1><0x00000341>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_float
+                      DW_AT_name                  "double"
+< 1><0x00000348>    DW_TAG_typedef
+                      DW_AT_name                  "png_bytepp"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x0000025e
+                      DW_AT_type                  <0x00000354>
+< 1><0x00000354>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000002ff>
+< 1><0x0000035a>    DW_TAG_typedef
+                      DW_AT_name                  "png_charpp"
+                      DW_AT_decl_file             0x00000006 /workspace/projects/libpng/pngconf.h
+                      DW_AT_decl_line             0x00000264
+                      DW_AT_type                  <0x00000366>
+< 1><0x00000366>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000009f>
+< 1><0x0000036c>    DW_TAG_typedef
+                      DW_AT_name                  "png_struct"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001b7
+                      DW_AT_type                  <0x00000378>
+< 1><0x00000378>    DW_TAG_structure_type
+                      DW_AT_name                  "png_struct_def"
+                      DW_AT_declaration           yes(1)
+< 1><0x0000037d>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000383>
+< 1><0x00000383>    DW_TAG_const_type
+                      DW_AT_type                  <0x0000036c>
+< 1><0x00000388>    DW_TAG_typedef
+                      DW_AT_name                  "png_structp"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001b9
+                      DW_AT_type                  <0x00000394>
+< 1><0x00000394>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000036c>
+< 1><0x0000039a>    DW_TAG_typedef
+                      DW_AT_name                  "png_info"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001c5
+                      DW_AT_type                  <0x000003a6>
+< 1><0x000003a6>    DW_TAG_structure_type
+                      DW_AT_name                  "png_info_def"
+                      DW_AT_declaration           yes(1)
+< 1><0x000003ab>    DW_TAG_typedef
+                      DW_AT_name                  "png_infop"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001c6
+                      DW_AT_type                  <0x000003b7>
+< 1><0x000003b7>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000039a>
+< 1><0x000003bd>    DW_TAG_typedef
+                      DW_AT_name                  "png_const_infop"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001c7
+                      DW_AT_type                  <0x000003c9>
+< 1><0x000003c9>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000003cf>
+< 1><0x000003cf>    DW_TAG_const_type
+                      DW_AT_type                  <0x0000039a>
+< 1><0x000003d4>    DW_TAG_restrict_type
+                      DW_AT_type                  <0x00000394>
+< 1><0x000003d9>    DW_TAG_restrict_type
+                      DW_AT_type                  <0x0000037d>
+< 1><0x000003de>    DW_TAG_restrict_type
+                      DW_AT_type                  <0x000003b7>
+< 1><0x000003e3>    DW_TAG_restrict_type
+                      DW_AT_type                  <0x000003c9>
+< 1><0x000003e8>    DW_TAG_structure_type
+                      DW_AT_name                  "png_color_struct"
+                      DW_AT_byte_size             0x00000003
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001de
+                      DW_AT_sibling               <0x0000041d>
+< 2><0x000003f5>      DW_TAG_member
+                        DW_AT_name                  "red"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001e0
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  0
+< 2><0x00000402>      DW_TAG_member
+                        DW_AT_name                  "green"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001e1
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  1
+< 2><0x0000040f>      DW_TAG_member
+                        DW_AT_name                  "blue"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001e2
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  2
+< 1><0x0000041d>    DW_TAG_typedef
+                      DW_AT_name                  "png_color"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001e3
+                      DW_AT_type                  <0x000003e8>
+< 1><0x00000429>    DW_TAG_typedef
+                      DW_AT_name                  "png_colorp"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001e4
+                      DW_AT_type                  <0x00000435>
+< 1><0x00000435>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000041d>
+< 1><0x0000043b>    DW_TAG_structure_type
+                      DW_AT_name                  "png_color_16_struct"
+                      DW_AT_byte_size             0x0000000a
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001e8
+                      DW_AT_sibling               <0x0000048a>
+< 2><0x00000448>      DW_TAG_member
+                        DW_AT_name                  "index"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001ea
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  0
+< 2><0x00000455>      DW_TAG_member
+                        DW_AT_name                  "red"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001eb
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  2
+< 2><0x00000462>      DW_TAG_member
+                        DW_AT_name                  "green"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001ec
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  4
+< 2><0x0000046f>      DW_TAG_member
+                        DW_AT_name                  "blue"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001ed
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  6
+< 2><0x0000047c>      DW_TAG_member
+                        DW_AT_name                  "gray"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001ee
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  8
+< 1><0x0000048a>    DW_TAG_typedef
+                      DW_AT_name                  "png_color_16"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001ef
+                      DW_AT_type                  <0x0000043b>
+< 1><0x00000496>    DW_TAG_typedef
+                      DW_AT_name                  "png_color_16p"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001f0
+                      DW_AT_type                  <0x000004a2>
+< 1><0x000004a2>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000048a>
+< 1><0x000004a8>    DW_TAG_structure_type
+                      DW_AT_name                  "png_color_8_struct"
+                      DW_AT_byte_size             0x00000005
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001f4
+                      DW_AT_sibling               <0x000004f7>
+< 2><0x000004b5>      DW_TAG_member
+                        DW_AT_name                  "red"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001f6
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  0
+< 2><0x000004c2>      DW_TAG_member
+                        DW_AT_name                  "green"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001f7
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  1
+< 2><0x000004cf>      DW_TAG_member
+                        DW_AT_name                  "blue"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001f8
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  2
+< 2><0x000004dc>      DW_TAG_member
+                        DW_AT_name                  "gray"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001f9
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  3
+< 2><0x000004e9>      DW_TAG_member
+                        DW_AT_name                  "alpha"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000001fa
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  4
+< 1><0x000004f7>    DW_TAG_typedef
+                      DW_AT_name                  "png_color_8"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001fb
+                      DW_AT_type                  <0x000004a8>
+< 1><0x00000503>    DW_TAG_typedef
+                      DW_AT_name                  "png_color_8p"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000001fc
+                      DW_AT_type                  <0x0000050f>
+< 1><0x0000050f>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000004f7>
+< 1><0x00000515>    DW_TAG_structure_type
+                      DW_AT_name                  "png_sPLT_entry_struct"
+                      DW_AT_byte_size             0x0000000a
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000204
+                      DW_AT_sibling               <0x00000564>
+< 2><0x00000522>      DW_TAG_member
+                        DW_AT_name                  "red"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000206
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  0
+< 2><0x0000052f>      DW_TAG_member
+                        DW_AT_name                  "green"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000207
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  2
+< 2><0x0000053c>      DW_TAG_member
+                        DW_AT_name                  "blue"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000208
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  4
+< 2><0x00000549>      DW_TAG_member
+                        DW_AT_name                  "alpha"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000209
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  6
+< 2><0x00000556>      DW_TAG_member
+                        DW_AT_name                  "frequency"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000020a
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  8
+< 1><0x00000564>    DW_TAG_typedef
+                      DW_AT_name                  "png_sPLT_entry"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x0000020b
+                      DW_AT_type                  <0x00000515>
+< 1><0x00000570>    DW_TAG_typedef
+                      DW_AT_name                  "png_sPLT_entryp"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x0000020c
+                      DW_AT_type                  <0x0000057c>
+< 1><0x0000057c>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000564>
+< 1><0x00000582>    DW_TAG_structure_type
+                      DW_AT_name                  "png_sPLT_struct"
+                      DW_AT_byte_size             0x00000020
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000215
+                      DW_AT_sibling               <0x000005c4>
+< 2><0x0000058f>      DW_TAG_member
+                        DW_AT_name                  "name"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000217
+                        DW_AT_type                  <0x00000317>
+                        DW_AT_data_member_location  0
+< 2><0x0000059c>      DW_TAG_member
+                        DW_AT_name                  "depth"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000218
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  8
+< 2><0x000005a9>      DW_TAG_member
+                        DW_AT_name                  "entries"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000219
+                        DW_AT_type                  <0x00000570>
+                        DW_AT_data_member_location  16
+< 2><0x000005b6>      DW_TAG_member
+                        DW_AT_name                  "nentries"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000021a
+                        DW_AT_type                  <0x000002cf>
+                        DW_AT_data_member_location  24
+< 1><0x000005c4>    DW_TAG_typedef
+                      DW_AT_name                  "png_sPLT_t"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x0000021b
+                      DW_AT_type                  <0x00000582>
+< 1><0x000005d0>    DW_TAG_typedef
+                      DW_AT_name                  "png_sPLT_tp"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x0000021c
+                      DW_AT_type                  <0x000005dc>
+< 1><0x000005dc>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000005c4>
+< 1><0x000005e2>    DW_TAG_structure_type
+                      DW_AT_name                  "png_text_struct"
+                      DW_AT_byte_size             0x00000038
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000232
+                      DW_AT_sibling               <0x0000064b>
+< 2><0x000005ef>      DW_TAG_member
+                        DW_AT_name                  "compression"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000234
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_data_member_location  0
+< 2><0x000005fc>      DW_TAG_member
+                        DW_AT_name                  "key"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000239
+                        DW_AT_type                  <0x00000317>
+                        DW_AT_data_member_location  8
+< 2><0x00000609>      DW_TAG_member
+                        DW_AT_name                  "text"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000023a
+                        DW_AT_type                  <0x00000317>
+                        DW_AT_data_member_location  16
+< 2><0x00000616>      DW_TAG_member
+                        DW_AT_name                  "text_length"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000023c
+                        DW_AT_type                  <0x0000002d>
+                        DW_AT_data_member_location  24
+< 2><0x00000623>      DW_TAG_member
+                        DW_AT_name                  "itxt_length"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000023d
+                        DW_AT_type                  <0x0000002d>
+                        DW_AT_data_member_location  32
+< 2><0x00000630>      DW_TAG_member
+                        DW_AT_name                  "lang"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000023e
+                        DW_AT_type                  <0x00000317>
+                        DW_AT_data_member_location  40
+< 2><0x0000063d>      DW_TAG_member
+                        DW_AT_name                  "lang_key"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000240
+                        DW_AT_type                  <0x00000317>
+                        DW_AT_data_member_location  48
+< 1><0x0000064b>    DW_TAG_typedef
+                      DW_AT_name                  "png_text"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000242
+                      DW_AT_type                  <0x000005e2>
+< 1><0x00000657>    DW_TAG_typedef
+                      DW_AT_name                  "png_textp"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000243
+                      DW_AT_type                  <0x00000663>
+< 1><0x00000663>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000064b>
+< 1><0x00000669>    DW_TAG_structure_type
+                      DW_AT_name                  "png_time_struct"
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000258
+                      DW_AT_sibling               <0x000006c5>
+< 2><0x00000676>      DW_TAG_member
+                        DW_AT_name                  "year"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000025a
+                        DW_AT_type                  <0x000002c3>
+                        DW_AT_data_member_location  0
+< 2><0x00000683>      DW_TAG_member
+                        DW_AT_name                  "month"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000025b
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  2
+< 2><0x00000690>      DW_TAG_member
+                        DW_AT_name                  "day"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000025c
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  3
+< 2><0x0000069d>      DW_TAG_member
+                        DW_AT_name                  "hour"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000025d
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  4
+< 2><0x000006aa>      DW_TAG_member
+                        DW_AT_name                  "minute"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000025e
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  5
+< 2><0x000006b7>      DW_TAG_member
+                        DW_AT_name                  "second"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000025f
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  6
+< 1><0x000006c5>    DW_TAG_typedef
+                      DW_AT_name                  "png_time"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000260
+                      DW_AT_type                  <0x00000669>
+< 1><0x000006d1>    DW_TAG_typedef
+                      DW_AT_name                  "png_timep"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x00000261
+                      DW_AT_type                  <0x000006dd>
+< 1><0x000006dd>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000006c5>
+< 1><0x000006e3>    DW_TAG_structure_type
+                      DW_AT_name                  "png_unknown_chunk_t"
+                      DW_AT_byte_size             0x00000020
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x0000026e
+                      DW_AT_sibling               <0x00000725>
+< 2><0x000006f0>      DW_TAG_member
+                        DW_AT_name                  "name"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000270
+                        DW_AT_type                  <0x00000725>
+                        DW_AT_data_member_location  0
+< 2><0x000006fd>      DW_TAG_member
+                        DW_AT_name                  "data"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000271
+                        DW_AT_type                  <0x000002ff>
+                        DW_AT_data_member_location  8
+< 2><0x0000070a>      DW_TAG_member
+                        DW_AT_name                  "size"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x00000272
+                        DW_AT_type                  <0x0000002d>
+                        DW_AT_data_member_location  16
+< 2><0x00000717>      DW_TAG_member
+                        DW_AT_name                  "location"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x0000027a
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  24
+< 1><0x00000725>    DW_TAG_array_type
+                      DW_AT_type                  <0x000002b7>
+                      DW_AT_sibling               <0x00000735>
+< 2><0x0000072e>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000096>
+                        DW_AT_upper_bound           4
+< 1><0x00000735>    DW_TAG_typedef
+                      DW_AT_name                  "png_unknown_chunk"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x0000027c
+                      DW_AT_type                  <0x000006e3>
+< 1><0x00000741>    DW_TAG_typedef
+                      DW_AT_name                  "png_unknown_chunkp"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x0000027e
+                      DW_AT_type                  <0x0000074d>
+< 1><0x0000074d>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000735>
+< 1><0x00000753>    DW_TAG_structure_type
+                      DW_AT_name                  "png_row_info_struct"
+                      DW_AT_byte_size             0x00000018
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000002f2
+                      DW_AT_sibling               <0x000007af>
+< 2><0x00000760>      DW_TAG_member
+                        DW_AT_name                  "width"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000002f4
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_data_member_location  0
+< 2><0x0000076d>      DW_TAG_member
+                        DW_AT_name                  "rowbytes"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000002f5
+                        DW_AT_type                  <0x0000002d>
+                        DW_AT_data_member_location  8
+< 2><0x0000077a>      DW_TAG_member
+                        DW_AT_name                  "color_type"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000002f6
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  16
+< 2><0x00000787>      DW_TAG_member
+                        DW_AT_name                  "bit_depth"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000002f7
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  17
+< 2><0x00000794>      DW_TAG_member
+                        DW_AT_name                  "channels"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000002f8
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  18
+< 2><0x000007a1>      DW_TAG_member
+                        DW_AT_name                  "pixel_depth"
+                        DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                        DW_AT_decl_line             0x000002f9
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  19
+< 1><0x000007af>    DW_TAG_typedef
+                      DW_AT_name                  "png_row_info"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000002fa
+                      DW_AT_type                  <0x00000753>
+< 1><0x000007bb>    DW_TAG_typedef
+                      DW_AT_name                  "png_row_infop"
+                      DW_AT_decl_file             0x00000007 /workspace/projects/libpng/png.h
+                      DW_AT_decl_line             0x000002fc
+                      DW_AT_type                  <0x000007c7>
+< 1><0x000007c7>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000007af>
+< 1><0x000007cd>    DW_TAG_structure_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000001c2
+                      DW_AT_sibling               <0x000007e4>
+< 2><0x000007d6>      DW_TAG_member
+                        DW_AT_name                  "file_name"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000001c4
+                        DW_AT_type                  <0x0000029e>
+                        DW_AT_data_member_location  0
+< 1><0x000007e4>    DW_TAG_typedef
+                      DW_AT_name                  "pngtest_error_parameters"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000001c5
+                      DW_AT_type                  <0x000007cd>
+< 1><0x000007f0>    DW_TAG_structure_type
+                      DW_AT_name                  "user_chunk_data"
+                      DW_AT_byte_size             0x00000020
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x0000027e
+                      DW_AT_sibling               <0x0000084c>
+< 2><0x000007fd>      DW_TAG_member
+                        DW_AT_name                  "info_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000280
+                        DW_AT_type                  <0x000003bd>
+                        DW_AT_data_member_location  0
+< 2><0x0000080a>      DW_TAG_member
+                        DW_AT_name                  "vpAg_width"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000281
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_data_member_location  8
+< 2><0x00000817>      DW_TAG_member
+                        DW_AT_name                  "vpAg_height"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000281
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_data_member_location  12
+< 2><0x00000824>      DW_TAG_member
+                        DW_AT_name                  "vpAg_units"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000282
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  16
+< 2><0x00000831>      DW_TAG_member
+                        DW_AT_name                  "sTER_mode"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000283
+                        DW_AT_type                  <0x000002b7>
+                        DW_AT_data_member_location  17
+< 2><0x0000083e>      DW_TAG_member
+                        DW_AT_name                  "location"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000284
+                        DW_AT_type                  <0x00000086>
+                        DW_AT_data_member_location  20
+< 1><0x0000084c>    DW_TAG_subprogram
+                      DW_AT_name                  "read_row_callback"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000ae
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x00000000
+                      DW_AT_high_pc               <offset-from-lowpc>188
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000894>
+< 2><0x00000869>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000ae
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x00000877>      DW_TAG_formal_parameter
+                        DW_AT_name                  "row_number"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000ae
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_location              len 0x0002: 9164: DW_OP_fbreg -28
+< 2><0x00000885>      DW_TAG_formal_parameter
+                        DW_AT_name                  "pass"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000ae
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 1><0x00000894>    DW_TAG_subprogram
+                      DW_AT_name                  "write_row_callback"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000c7
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x000000bc
+                      DW_AT_high_pc               <offset-from-lowpc>63
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x000008dc>
+< 2><0x000008b1>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000c7
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x000008bf>      DW_TAG_formal_parameter
+                        DW_AT_name                  "row_number"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000c7
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_location              len 0x0002: 9164: DW_OP_fbreg -28
+< 2><0x000008cd>      DW_TAG_formal_parameter
+                        DW_AT_name                  "pass"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000c7
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 1><0x000008dc>    DW_TAG_subprogram
+                      DW_AT_name                  "read_user_callback"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000d5
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x000000fb
+                      DW_AT_high_pc               <offset-from-lowpc>19
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_call_sites    yes(1)
+                      DW_AT_sibling               <0x00000924>
+< 2><0x000008f9>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000d5
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x00000907>      DW_TAG_formal_parameter
+                        DW_AT_name                  "row_info"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000d5
+                        DW_AT_type                  <0x000007bb>
+                        DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 2><0x00000915>      DW_TAG_formal_parameter
+                        DW_AT_name                  "data"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000d5
+                        DW_AT_type                  <0x000002f3>
+                        DW_AT_location              len 0x0002: 9158: DW_OP_fbreg -40
+< 1><0x00000924>    DW_TAG_subprogram
+                      DW_AT_name                  "count_zero_samples"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000e5
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x0000010e
+                      DW_AT_high_pc               <offset-from-lowpc>676
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_call_sites    yes(1)
+                      DW_AT_sibling               <0x00000a06>
+< 2><0x00000941>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000e5
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0003: 91b87f: DW_OP_fbreg -72
+< 2><0x00000950>      DW_TAG_formal_parameter
+                        DW_AT_name                  "row_info"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000e5
+                        DW_AT_type                  <0x000007bb>
+                        DW_AT_location              len 0x0003: 91b07f: DW_OP_fbreg -80
+< 2><0x0000095f>      DW_TAG_formal_parameter
+                        DW_AT_name                  "data"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000e5
+                        DW_AT_type                  <0x000002f3>
+                        DW_AT_location              len 0x0003: 91a87f: DW_OP_fbreg -88
+< 2><0x0000096e>      DW_TAG_variable
+                        DW_AT_name                  "dp"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000000e7
+                        DW_AT_type                  <0x000002f3>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x0000097b>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x0000014d
+                        DW_AT_high_pc               <offset-from-lowpc>379
+                        DW_AT_sibling               <0x000009b9>
+< 3><0x00000990>        DW_TAG_variable
+                          DW_AT_name                  "pos"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000000f8
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0002: 914c: DW_OP_fbreg -52
+< 3><0x0000099e>        DW_TAG_variable
+                          DW_AT_name                  "n"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000000f9
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0002: 9150: DW_OP_fbreg -48
+< 3><0x000009aa>        DW_TAG_variable
+                          DW_AT_name                  "nstop"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000000f9
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0002: 9164: DW_OP_fbreg -28
+< 2><0x000009b9>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000002cd
+                        DW_AT_high_pc               <offset-from-lowpc>226
+< 3><0x000009ca>        DW_TAG_variable
+                          DW_AT_name                  "n"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000012f
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0002: 9154: DW_OP_fbreg -44
+< 3><0x000009d7>        DW_TAG_variable
+                          DW_AT_name                  "nstop"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000012f
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 3><0x000009e6>        DW_TAG_variable
+                          DW_AT_name                  "channel"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000130
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0002: 9158: DW_OP_fbreg -40
+< 3><0x000009f5>        DW_TAG_variable
+                          DW_AT_name                  "color_channels"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000131
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0002: 915c: DW_OP_fbreg -36
+< 1><0x00000a06>    DW_TAG_subprogram
+                      DW_AT_name                  "pngtest_warning"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000001c8
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x000003b2
+                      DW_AT_high_pc               <offset-from-lowpc>121
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000a61>
+< 2><0x00000a24>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000001c8
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9158: DW_OP_fbreg -40
+< 2><0x00000a33>      DW_TAG_formal_parameter
+                        DW_AT_name                  "message"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000001c8
+                        DW_AT_type                  <0x00000323>
+                        DW_AT_location              len 0x0002: 9150: DW_OP_fbreg -48
+< 2><0x00000a42>      DW_TAG_variable
+                        DW_AT_name                  "name"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000001ca
+                        DW_AT_type                  <0x0000029e>
+                        DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 2><0x00000a51>      DW_TAG_variable
+                        DW_AT_name                  "test"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000001cb
+                        DW_AT_type                  <0x00000a61>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 1><0x00000a61>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000007e4>
+< 1><0x00000a67>    DW_TAG_subprogram
+                      DW_AT_name                  "pngtest_error"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000001dc
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x0000042b
+                      DW_AT_high_pc               <offset-from-lowpc>53
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000aa4>
+< 2><0x00000a85>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000001dc
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x00000a94>      DW_TAG_formal_parameter
+                        DW_AT_name                  "message"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000001dc
+                        DW_AT_type                  <0x00000323>
+                        DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 1><0x00000aa4>    DW_TAG_subprogram
+                      DW_AT_name                  "init_callback_info"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000290
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x00000460
+                      DW_AT_high_pc               <offset-from-lowpc>46
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000ad2>
+< 2><0x00000ac2>      DW_TAG_formal_parameter
+                        DW_AT_name                  "info_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000290
+                        DW_AT_type                  <0x000003bd>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 1><0x00000ad2>    DW_TAG_subprogram
+                      DW_AT_name                  "set_location"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000297
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_low_pc                0x0000048e
+                      DW_AT_high_pc               <offset-from-lowpc>168
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000b31>
+< 2><0x00000af4>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000297
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9158: DW_OP_fbreg -40
+< 2><0x00000b03>      DW_TAG_formal_parameter
+                        DW_AT_name                  "data"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000297
+                        DW_AT_type                  <0x00000b31>
+                        DW_AT_location              len 0x0002: 9150: DW_OP_fbreg -48
+< 2><0x00000b12>      DW_TAG_formal_parameter
+                        DW_AT_name                  "what"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000297
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 914c: DW_OP_fbreg -52
+< 2><0x00000b21>      DW_TAG_variable
+                        DW_AT_name                  "location"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000299
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
+< 1><0x00000b31>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000007f0>
+< 1><0x00000b37>    DW_TAG_subprogram
+                      DW_AT_name                  "read_user_chunk_callback"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000002b4
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_low_pc                0x00000536
+                      DW_AT_high_pc               <offset-from-lowpc>456
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000b87>
+< 2><0x00000b59>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000002b4
+                        DW_AT_type                  <0x00000394>
+                        DW_AT_location              len 0x0002: 9158: DW_OP_fbreg -40
+< 2><0x00000b68>      DW_TAG_formal_parameter
+                        DW_AT_name                  "chunk"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000002b4
+                        DW_AT_type                  <0x00000741>
+                        DW_AT_location              len 0x0002: 9150: DW_OP_fbreg -48
+< 2><0x00000b77>      DW_TAG_variable
+                        DW_AT_name                  "my_user_chunk_data"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000002b6
+                        DW_AT_type                  <0x00000b31>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 1><0x00000b87>    DW_TAG_subprogram
+                      DW_AT_name                  "write_sTER_chunk"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000002f2
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x000006fe
+                      DW_AT_high_pc               <offset-from-lowpc>141
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000bc4>
+< 2><0x00000ba5>      DW_TAG_formal_parameter
+                        DW_AT_name                  "write_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000002f2
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9158: DW_OP_fbreg -40
+< 2><0x00000bb4>      DW_TAG_variable
+                        DW_AT_name                  "sTER"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000002f4
+                        DW_AT_type                  <0x00000725>
+                        DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 1><0x00000bc4>    DW_TAG_subprogram
+                      DW_AT_name                  "write_vpAg_chunk"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000002fd
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x0000078b
+                      DW_AT_high_pc               <offset-from-lowpc>216
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000c11>
+< 2><0x00000be2>      DW_TAG_formal_parameter
+                        DW_AT_name                  "write_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000002fd
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0003: 91b87f: DW_OP_fbreg -72
+< 2><0x00000bf2>      DW_TAG_variable
+                        DW_AT_name                  "vpAg"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x000002ff
+                        DW_AT_type                  <0x00000725>
+                        DW_AT_location              len 0x0002: 9140: DW_OP_fbreg -64
+< 2><0x00000c01>      DW_TAG_variable
+                        DW_AT_name                  "vpag_chunk_data"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000301
+                        DW_AT_type                  <0x00000c11>
+                        DW_AT_location              len 0x0002: 9150: DW_OP_fbreg -48
+< 1><0x00000c11>    DW_TAG_array_type
+                      DW_AT_type                  <0x000002b7>
+                      DW_AT_sibling               <0x00000c21>
+< 2><0x00000c1a>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000096>
+                        DW_AT_upper_bound           8
+< 1><0x00000c21>    DW_TAG_subprogram
+                      DW_AT_name                  "write_chunks"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000310
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x00000863
+                      DW_AT_high_pc               <offset-from-lowpc>115
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000c6b>
+< 2><0x00000c3f>      DW_TAG_formal_parameter
+                        DW_AT_name                  "write_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000310
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9158: DW_OP_fbreg -40
+< 2><0x00000c4e>      DW_TAG_formal_parameter
+                        DW_AT_name                  "location"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000310
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 9154: DW_OP_fbreg -44
+< 2><0x00000c5d>      DW_TAG_variable
+                        DW_AT_name                  "i"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000312
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 916c: DW_OP_fbreg -20
+< 1><0x00000c6b>    DW_TAG_subprogram
+                      DW_AT_name                  "pngtest_check_text_support"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x0000032f
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_low_pc                0x000008d6
+                      DW_AT_high_pc               <offset-from-lowpc>102
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00000cb7>
+< 2><0x00000c89>      DW_TAG_formal_parameter
+                        DW_AT_name                  "png_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000032f
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9168: DW_OP_fbreg -24
+< 2><0x00000c98>      DW_TAG_formal_parameter
+                        DW_AT_name                  "text_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000032f
+                        DW_AT_type                  <0x00000657>
+                        DW_AT_location              len 0x0002: 9160: DW_OP_fbreg -32
+< 2><0x00000ca7>      DW_TAG_formal_parameter
+                        DW_AT_name                  "num_text"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000330
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0002: 915c: DW_OP_fbreg -36
+< 1><0x00000cb7>    DW_TAG_subprogram
+                      DW_AT_name                  "test_one_file"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000355
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_low_pc                0x0000093c
+                      DW_AT_high_pc               <offset-from-lowpc>6524
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x00001494>
+< 2><0x00000cd9>      DW_TAG_formal_parameter
+                        DW_AT_name                  "inname"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000355
+                        DW_AT_type                  <0x0000029e>
+                        DW_AT_location              len 0x0003: 918878: DW_OP_fbreg -1016
+< 2><0x00000ce9>      DW_TAG_formal_parameter
+                        DW_AT_name                  "outname"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000355
+                        DW_AT_type                  <0x0000029e>
+                        DW_AT_location              len 0x0003: 918078: DW_OP_fbreg -1024
+< 2><0x00000cf9>      DW_TAG_variable
+                        DW_AT_name                  "fpin"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000357
+                        DW_AT_type                  <0x0000032f>
+                        DW_AT_location              len 0x0009: 036000000000000000: DW_OP_addr 0x00000060
+< 2><0x00000d0f>      DW_TAG_variable
+                        DW_AT_name                  "fpout"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000358
+                        DW_AT_type                  <0x0000032f>
+                        DW_AT_location              len 0x0009: 036800000000000000: DW_OP_addr 0x00000068
+< 2><0x00000d25>      DW_TAG_variable
+                        DW_AT_name                  "error_parameters"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000359
+                        DW_AT_type                  <0x000007e4>
+                        DW_AT_location              len 0x0003: 91d079: DW_OP_fbreg -816
+< 2><0x00000d35>      DW_TAG_variable
+                        DW_AT_name                  "read_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000035a
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0003: 91d879: DW_OP_fbreg -808
+< 2><0x00000d45>      DW_TAG_variable
+                        DW_AT_name                  "read_info_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000035b
+                        DW_AT_type                  <0x000003ab>
+                        DW_AT_location              len 0x0003: 91e079: DW_OP_fbreg -800
+< 2><0x00000d55>      DW_TAG_variable
+                        DW_AT_name                  "end_info_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000035b
+                        DW_AT_type                  <0x000003ab>
+                        DW_AT_location              len 0x0003: 91e879: DW_OP_fbreg -792
+< 2><0x00000d65>      DW_TAG_variable
+                        DW_AT_name                  "write_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000035d
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0003: 91f079: DW_OP_fbreg -784
+< 2><0x00000d75>      DW_TAG_variable
+                        DW_AT_name                  "write_info_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000035e
+                        DW_AT_type                  <0x000003ab>
+                        DW_AT_location              len 0x0003: 91f879: DW_OP_fbreg -776
+< 2><0x00000d85>      DW_TAG_variable
+                        DW_AT_name                  "write_end_info_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000035f
+                        DW_AT_type                  <0x000003ab>
+                        DW_AT_location              len 0x0003: 91807a: DW_OP_fbreg -768
+< 2><0x00000d95>      DW_TAG_variable
+                        DW_AT_name                  "interlace_preserved"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000361
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0003: 91b479: DW_OP_fbreg -844
+< 2><0x00000da5>      DW_TAG_variable
+                        DW_AT_name                  "row_buf"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000368
+                        DW_AT_type                  <0x000002f3>
+                        DW_AT_location              len 0x0003: 91887a: DW_OP_fbreg -760
+< 2><0x00000db5>      DW_TAG_variable
+                        DW_AT_name                  "y"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000369
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_location              len 0x0003: 91a479: DW_OP_fbreg -860
+< 2><0x00000dc3>      DW_TAG_variable
+                        DW_AT_name                  "width"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000036a
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_location              len 0x0003: 919078: DW_OP_fbreg -1008
+< 2><0x00000dd3>      DW_TAG_variable
+                        DW_AT_name                  "height"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000036a
+                        DW_AT_type                  <0x000002db>
+                        DW_AT_location              len 0x0003: 919478: DW_OP_fbreg -1004
+< 2><0x00000de3>      DW_TAG_variable
+                        DW_AT_name                  "num_passes"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000036b
+                        DW_AT_type                  <0x00001494>
+                        DW_AT_location              len 0x0003: 919878: DW_OP_fbreg -1000
+< 2><0x00000df3>      DW_TAG_variable
+                        DW_AT_name                  "pass"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000036c
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0003: 91a879: DW_OP_fbreg -856
+< 2><0x00000e03>      DW_TAG_variable
+                        DW_AT_name                  "bit_depth"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000036d
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0003: 919c78: DW_OP_fbreg -996
+< 2><0x00000e13>      DW_TAG_variable
+                        DW_AT_name                  "color_type"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000036d
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0003: 91a078: DW_OP_fbreg -992
+< 2><0x00000e23>      DW_TAG_lexical_block
+                        DW_AT_ranges                0x00000000
+		ranges: 3 at .debug_ranges offset 0 (0x00000000) (48 bytes)
+			[ 0] range entry    0x00000f6e 0x0000105c
+			[ 1] range entry    0x000010b8 0x000010cc
+			[ 2] range end      0x00000000 0x00000000
+                        DW_AT_sibling               <0x00000e5d>
+< 3><0x00000e2c>        DW_TAG_variable
+                          DW_AT_name                  "interlace_type"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000440
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91a478: DW_OP_fbreg -988
+< 3><0x00000e3c>        DW_TAG_variable
+                          DW_AT_name                  "compression_type"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000440
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91a878: DW_OP_fbreg -984
+< 3><0x00000e4c>        DW_TAG_variable
+                          DW_AT_name                  "filter_type"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000440
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91ac78: DW_OP_fbreg -980
+< 2><0x00000e5d>      DW_TAG_lexical_block
+                        DW_AT_ranges                0x00000030
+		ranges: 3 at .debug_ranges offset 48 (0x00000030) (48 bytes)
+			[ 0] range entry    0x0000105c 0x000010b8
+			[ 1] range entry    0x000010cc 0x00001127
+			[ 2] range end      0x00000000 0x00000000
+                        DW_AT_sibling               <0x00000ee7>
+< 3><0x00000e66>        DW_TAG_variable
+                          DW_AT_name                  "white_x"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000460
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91b078: DW_OP_fbreg -976
+< 3><0x00000e76>        DW_TAG_variable
+                          DW_AT_name                  "white_y"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000460
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91b478: DW_OP_fbreg -972
+< 3><0x00000e86>        DW_TAG_variable
+                          DW_AT_name                  "red_x"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000460
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91b878: DW_OP_fbreg -968
+< 3><0x00000e96>        DW_TAG_variable
+                          DW_AT_name                  "red_y"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000460
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91bc78: DW_OP_fbreg -964
+< 3><0x00000ea6>        DW_TAG_variable
+                          DW_AT_name                  "green_x"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000460
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91c078: DW_OP_fbreg -960
+< 3><0x00000eb6>        DW_TAG_variable
+                          DW_AT_name                  "green_y"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000460
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91c478: DW_OP_fbreg -956
+< 3><0x00000ec6>        DW_TAG_variable
+                          DW_AT_name                  "blue_x"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000460
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91c878: DW_OP_fbreg -952
+< 3><0x00000ed6>        DW_TAG_variable
+                          DW_AT_name                  "blue_y"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000461
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91cc78: DW_OP_fbreg -948
+< 2><0x00000ee7>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001127
+                        DW_AT_high_pc               <offset-from-lowpc>67
+                        DW_AT_sibling               <0x00000f0d>
+< 3><0x00000efc>        DW_TAG_variable
+                          DW_AT_name                  "gamma"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000046d
+                          DW_AT_type                  <0x000002e7>
+                          DW_AT_location              len 0x0003: 91d078: DW_OP_fbreg -944
+< 2><0x00000f0d>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x0000116a
+                        DW_AT_high_pc               <offset-from-lowpc>115
+                        DW_AT_sibling               <0x00000f63>
+< 3><0x00000f22>        DW_TAG_variable
+                          DW_AT_name                  "name"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000048e
+                          DW_AT_type                  <0x00000317>
+                          DW_AT_location              len 0x0003: 91907a: DW_OP_fbreg -752
+< 3><0x00000f32>        DW_TAG_variable
+                          DW_AT_name                  "profile"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000048f
+                          DW_AT_type                  <0x000002f3>
+                          DW_AT_location              len 0x0003: 91987a: DW_OP_fbreg -744
+< 3><0x00000f42>        DW_TAG_variable
+                          DW_AT_name                  "proflen"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000490
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0003: 91d478: DW_OP_fbreg -940
+< 3><0x00000f52>        DW_TAG_variable
+                          DW_AT_name                  "compression_type"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000491
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91d878: DW_OP_fbreg -936
+< 2><0x00000f63>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000011dd
+                        DW_AT_high_pc               <offset-from-lowpc>67
+                        DW_AT_sibling               <0x00000f89>
+< 3><0x00000f78>        DW_TAG_variable
+                          DW_AT_name                  "intent"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000049d
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91dc78: DW_OP_fbreg -932
+< 2><0x00000f89>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001220
+                        DW_AT_high_pc               <offset-from-lowpc>75
+                        DW_AT_sibling               <0x00000fbf>
+< 3><0x00000f9e>        DW_TAG_variable
+                          DW_AT_name                  "palette"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004a4
+                          DW_AT_type                  <0x00000429>
+                          DW_AT_location              len 0x0003: 91a07a: DW_OP_fbreg -736
+< 3><0x00000fae>        DW_TAG_variable
+                          DW_AT_name                  "num_palette"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004a5
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91e078: DW_OP_fbreg -928
+< 2><0x00000fbf>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x0000126b
+                        DW_AT_high_pc               <offset-from-lowpc>68
+                        DW_AT_sibling               <0x00000fe5>
+< 3><0x00000fd4>        DW_TAG_variable
+                          DW_AT_name                  "background"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004ac
+                          DW_AT_type                  <0x00000496>
+                          DW_AT_location              len 0x0003: 91a87a: DW_OP_fbreg -728
+< 2><0x00000fe5>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000012af
+                        DW_AT_high_pc               <offset-from-lowpc>163
+                        DW_AT_sibling               <0x0000101b>
+< 3><0x00000ffa>        DW_TAG_variable
+                          DW_AT_name                  "exif"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004b6
+                          DW_AT_type                  <0x000002f3>
+                          DW_AT_location              len 0x0003: 91b07a: DW_OP_fbreg -720
+< 3><0x0000100a>        DW_TAG_variable
+                          DW_AT_name                  "exif_length"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004b7
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0003: 91e478: DW_OP_fbreg -924
+< 2><0x0000101b>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001352
+                        DW_AT_high_pc               <offset-from-lowpc>68
+                        DW_AT_sibling               <0x00001041>
+< 3><0x00001030>        DW_TAG_variable
+                          DW_AT_name                  "hist"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004c6
+                          DW_AT_type                  <0x00000305>
+                          DW_AT_location              len 0x0003: 91b87a: DW_OP_fbreg -712
+< 2><0x00001041>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001396
+                        DW_AT_high_pc               <offset-from-lowpc>93
+                        DW_AT_sibling               <0x00001087>
+< 3><0x00001056>        DW_TAG_variable
+                          DW_AT_name                  "offset_x"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004ce
+                          DW_AT_type                  <0x000002cf>
+                          DW_AT_location              len 0x0003: 91e878: DW_OP_fbreg -920
+< 3><0x00001066>        DW_TAG_variable
+                          DW_AT_name                  "offset_y"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004ce
+                          DW_AT_type                  <0x000002cf>
+                          DW_AT_location              len 0x0003: 91ec78: DW_OP_fbreg -916
+< 3><0x00001076>        DW_TAG_variable
+                          DW_AT_name                  "unit_type"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004cf
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91f078: DW_OP_fbreg -912
+< 2><0x00001087>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000013f3
+                        DW_AT_high_pc               <offset-from-lowpc>174
+                        DW_AT_sibling               <0x0000110b>
+< 3><0x0000109c>        DW_TAG_variable
+                          DW_AT_name                  "purpose"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004da
+                          DW_AT_type                  <0x00000317>
+                          DW_AT_location              len 0x0003: 91c07a: DW_OP_fbreg -704
+< 3><0x000010ac>        DW_TAG_variable
+                          DW_AT_name                  "units"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004da
+                          DW_AT_type                  <0x00000317>
+                          DW_AT_location              len 0x0003: 91c87a: DW_OP_fbreg -696
+< 3><0x000010bc>        DW_TAG_variable
+                          DW_AT_name                  "params"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004db
+                          DW_AT_type                  <0x0000035a>
+                          DW_AT_location              len 0x0003: 91d07a: DW_OP_fbreg -688
+< 3><0x000010cc>        DW_TAG_variable
+                          DW_AT_name                  "X0"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004dc
+                          DW_AT_type                  <0x000002cf>
+                          DW_AT_location              len 0x0003: 91f478: DW_OP_fbreg -908
+< 3><0x000010db>        DW_TAG_variable
+                          DW_AT_name                  "X1"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004dc
+                          DW_AT_type                  <0x000002cf>
+                          DW_AT_location              len 0x0003: 91f878: DW_OP_fbreg -904
+< 3><0x000010ea>        DW_TAG_variable
+                          DW_AT_name                  "type"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004dd
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91fc78: DW_OP_fbreg -900
+< 3><0x000010fa>        DW_TAG_variable
+                          DW_AT_name                  "nparams"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004dd
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 918079: DW_OP_fbreg -896
+< 2><0x0000110b>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000014a1
+                        DW_AT_high_pc               <offset-from-lowpc>93
+                        DW_AT_sibling               <0x00001151>
+< 3><0x00001120>        DW_TAG_variable
+                          DW_AT_name                  "res_x"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004e9
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0003: 918479: DW_OP_fbreg -892
+< 3><0x00001130>        DW_TAG_variable
+                          DW_AT_name                  "res_y"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004e9
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0003: 918879: DW_OP_fbreg -888
+< 3><0x00001140>        DW_TAG_variable
+                          DW_AT_name                  "unit_type"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004ea
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 918c79: DW_OP_fbreg -884
+< 2><0x00001151>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000014fe
+                        DW_AT_high_pc               <offset-from-lowpc>68
+                        DW_AT_sibling               <0x00001177>
+< 3><0x00001166>        DW_TAG_variable
+                          DW_AT_name                  "sig_bit"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004f3
+                          DW_AT_type                  <0x00000503>
+                          DW_AT_location              len 0x0003: 91d87a: DW_OP_fbreg -680
+< 2><0x00001177>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001542
+                        DW_AT_high_pc               <offset-from-lowpc>115
+                        DW_AT_sibling               <0x000011bd>
+< 3><0x0000118c>        DW_TAG_variable
+                          DW_AT_name                  "unit"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004fd
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 919079: DW_OP_fbreg -880
+< 3><0x0000119c>        DW_TAG_variable
+                          DW_AT_name                  "scal_width"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004fe
+                          DW_AT_type                  <0x00000341>
+                          DW_AT_location              len 0x0003: 91e07a: DW_OP_fbreg -672
+< 3><0x000011ac>        DW_TAG_variable
+                          DW_AT_name                  "scal_height"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000004fe
+                          DW_AT_type                  <0x00000341>
+                          DW_AT_location              len 0x0003: 91e87a: DW_OP_fbreg -664
+< 2><0x000011bd>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000015b5
+                        DW_AT_high_pc               <offset-from-lowpc>82
+                        DW_AT_sibling               <0x000011f3>
+< 3><0x000011d2>        DW_TAG_variable
+                          DW_AT_name                  "entries"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000519
+                          DW_AT_type                  <0x000005d0>
+                          DW_AT_location              len 0x0003: 91f07a: DW_OP_fbreg -656
+< 3><0x000011e2>        DW_TAG_variable
+                          DW_AT_name                  "num_entries"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000051b
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91b879: DW_OP_fbreg -840
+< 2><0x000011f3>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001607
+                        DW_AT_high_pc               <offset-from-lowpc>242
+                        DW_AT_sibling               <0x00001249>
+< 3><0x00001208>        DW_TAG_variable
+                          DW_AT_name                  "text_ptr"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000525
+                          DW_AT_type                  <0x00000657>
+                          DW_AT_location              len 0x0003: 91f87a: DW_OP_fbreg -648
+< 3><0x00001218>        DW_TAG_variable
+                          DW_AT_name                  "num_text"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000526
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 919479: DW_OP_fbreg -876
+< 3><0x00001228>        DW_TAG_lexical_block
+                          DW_AT_low_pc                0x0000165c
+                          DW_AT_high_pc               <offset-from-lowpc>122
+< 4><0x00001239>          DW_TAG_variable
+                            DW_AT_name                  "i"
+                            DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                            DW_AT_decl_line             0x00000530
+                            DW_AT_type                  <0x00000062>
+                            DW_AT_location              len 0x0003: 91ac79: DW_OP_fbreg -852
+< 2><0x00001249>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x000016f9
+                        DW_AT_high_pc               <offset-from-lowpc>143
+                        DW_AT_sibling               <0x0000126f>
+< 3><0x0000125e>        DW_TAG_variable
+                          DW_AT_name                  "mod_time"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000540
+                          DW_AT_type                  <0x000006d1>
+                          DW_AT_location              len 0x0003: 91807b: DW_OP_fbreg -640
+< 2><0x0000126f>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001788
+                        DW_AT_high_pc               <offset-from-lowpc>231
+                        DW_AT_sibling               <0x000012d7>
+< 3><0x00001284>        DW_TAG_variable
+                          DW_AT_name                  "trans_alpha"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000556
+                          DW_AT_type                  <0x000002f3>
+                          DW_AT_location              len 0x0003: 91887b: DW_OP_fbreg -632
+< 3><0x00001294>        DW_TAG_variable
+                          DW_AT_name                  "num_trans"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000557
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 919879: DW_OP_fbreg -872
+< 3><0x000012a4>        DW_TAG_variable
+                          DW_AT_name                  "trans_color"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000558
+                          DW_AT_type                  <0x00000496>
+                          DW_AT_location              len 0x0003: 91907b: DW_OP_fbreg -624
+< 3><0x000012b4>        DW_TAG_lexical_block
+                          DW_AT_low_pc                0x000017be
+                          DW_AT_high_pc               <offset-from-lowpc>177
+< 4><0x000012c5>          DW_TAG_variable
+                            DW_AT_name                  "sample_max"
+                            DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                            DW_AT_decl_line             0x0000055d
+                            DW_AT_type                  <0x00000062>
+                            DW_AT_location              len 0x0003: 91bc79: DW_OP_fbreg -836
+< 2><0x000012d7>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x0000186f
+                        DW_AT_high_pc               <offset-from-lowpc>82
+                        DW_AT_sibling               <0x0000130d>
+< 3><0x000012ec>        DW_TAG_variable
+                          DW_AT_name                  "unknowns"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000056c
+                          DW_AT_type                  <0x00000741>
+                          DW_AT_location              len 0x0003: 91987b: DW_OP_fbreg -616
+< 3><0x000012fc>        DW_TAG_variable
+                          DW_AT_name                  "num_unknowns"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000056d
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91c079: DW_OP_fbreg -832
+< 2><0x0000130d>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001ab4
+                        DW_AT_high_pc               <offset-from-lowpc>242
+                        DW_AT_sibling               <0x00001363>
+< 3><0x00001322>        DW_TAG_variable
+                          DW_AT_name                  "text_ptr"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000601
+                          DW_AT_type                  <0x00000657>
+                          DW_AT_location              len 0x0003: 91a07b: DW_OP_fbreg -608
+< 3><0x00001332>        DW_TAG_variable
+                          DW_AT_name                  "num_text"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000602
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 919c79: DW_OP_fbreg -868
+< 3><0x00001342>        DW_TAG_lexical_block
+                          DW_AT_low_pc                0x00001b09
+                          DW_AT_high_pc               <offset-from-lowpc>122
+< 4><0x00001353>          DW_TAG_variable
+                            DW_AT_name                  "i"
+                            DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                            DW_AT_decl_line             0x0000060c
+                            DW_AT_type                  <0x00000062>
+                            DW_AT_location              len 0x0003: 91b079: DW_OP_fbreg -848
+< 2><0x00001363>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001ba6
+                        DW_AT_high_pc               <offset-from-lowpc>163
+                        DW_AT_sibling               <0x00001399>
+< 3><0x00001378>        DW_TAG_variable
+                          DW_AT_name                  "exif"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000061c
+                          DW_AT_type                  <0x000002f3>
+                          DW_AT_location              len 0x0003: 91a87b: DW_OP_fbreg -600
+< 3><0x00001388>        DW_TAG_variable
+                          DW_AT_name                  "exif_length"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000061d
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0003: 91a079: DW_OP_fbreg -864
+< 2><0x00001399>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001c49
+                        DW_AT_high_pc               <offset-from-lowpc>143
+                        DW_AT_sibling               <0x000013bf>
+< 3><0x000013ae>        DW_TAG_variable
+                          DW_AT_name                  "mod_time"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x0000062c
+                          DW_AT_type                  <0x000006d1>
+                          DW_AT_location              len 0x0003: 91b07b: DW_OP_fbreg -592
+< 2><0x000013bf>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001cd8
+                        DW_AT_high_pc               <offset-from-lowpc>82
+                        DW_AT_sibling               <0x000013f5>
+< 3><0x000013d4>        DW_TAG_variable
+                          DW_AT_name                  "unknowns"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000642
+                          DW_AT_type                  <0x00000741>
+                          DW_AT_location              len 0x0003: 91b87b: DW_OP_fbreg -584
+< 3><0x000013e4>        DW_TAG_variable
+                          DW_AT_name                  "num_unknowns"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000643
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0003: 91c479: DW_OP_fbreg -828
+< 2><0x000013f5>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00001d75
+                        DW_AT_high_pc               <offset-from-lowpc>99
+                        DW_AT_sibling               <0x0000142b>
+< 3><0x0000140a>        DW_TAG_variable
+                          DW_AT_name                  "iwidth"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000671
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0003: 91c879: DW_OP_fbreg -824
+< 3><0x0000141a>        DW_TAG_variable
+                          DW_AT_name                  "iheight"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000671
+                          DW_AT_type                  <0x000002db>
+                          DW_AT_location              len 0x0003: 91cc79: DW_OP_fbreg -820
+< 2><0x0000142b>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x0000200a
+                        DW_AT_high_pc               <offset-from-lowpc>625
+< 3><0x0000143c>        DW_TAG_variable
+                          DW_AT_name                  "wrote_question"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000006c2
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0009: 037000000000000000: DW_OP_addr 0x00000070
+< 3><0x00001452>        DW_TAG_variable
+                          DW_AT_name                  "num_in"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000006c3
+                          DW_AT_type                  <0x0000002d>
+                          DW_AT_location              len 0x0003: 91c07b: DW_OP_fbreg -576
+< 3><0x00001462>        DW_TAG_variable
+                          DW_AT_name                  "num_out"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000006c3
+                          DW_AT_type                  <0x0000002d>
+                          DW_AT_location              len 0x0003: 91c87b: DW_OP_fbreg -568
+< 3><0x00001472>        DW_TAG_variable
+                          DW_AT_name                  "inbuf"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000006c4
+                          DW_AT_type                  <0x00001499>
+                          DW_AT_location              len 0x0003: 91d07b: DW_OP_fbreg -560
+< 3><0x00001482>        DW_TAG_variable
+                          DW_AT_name                  "outbuf"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000006c4
+                          DW_AT_type                  <0x00001499>
+                          DW_AT_location              len 0x0003: 91d07d: DW_OP_fbreg -304
+< 1><0x00001494>    DW_TAG_volatile_type
+                      DW_AT_type                  <0x00000062>
+< 1><0x00001499>    DW_TAG_array_type
+                      DW_AT_type                  <0x000000a5>
+                      DW_AT_sibling               <0x000014a9>
+< 2><0x000014a2>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000096>
+                        DW_AT_upper_bound           255(as signed = -1)
+< 1><0x000014a9>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  "main"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x0000071e
+                      DW_AT_prototyped            yes(1)
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_low_pc                0x000022b8
+                      DW_AT_high_pc               <offset-from-lowpc>2223
+                      DW_AT_frame_base            len 0x0001: 9c: DW_OP_call_frame_cfa
+                      DW_AT_GNU_all_tail_call_sitesyes(1)
+                      DW_AT_sibling               <0x0000159f>
+< 2><0x000014cb>      DW_TAG_formal_parameter
+                        DW_AT_name                  "argc"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000071e
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0003: 91ac7f: DW_OP_fbreg -84
+< 2><0x000014db>      DW_TAG_formal_parameter
+                        DW_AT_name                  "argv"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x0000071e
+                        DW_AT_type                  <0x00000366>
+                        DW_AT_location              len 0x0003: 91a07f: DW_OP_fbreg -96
+< 2><0x000014eb>      DW_TAG_variable
+                        DW_AT_name                  "multiple"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000720
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0003: 91b87f: DW_OP_fbreg -72
+< 2><0x000014fb>      DW_TAG_variable
+                        DW_AT_name                  "ierror"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000721
+                        DW_AT_type                  <0x00000062>
+                        DW_AT_location              len 0x0003: 91bc7f: DW_OP_fbreg -68
+< 2><0x0000150b>      DW_TAG_variable
+                        DW_AT_name                  "dummy_ptr"
+                        DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                        DW_AT_decl_line             0x00000723
+                        DW_AT_type                  <0x00000388>
+                        DW_AT_location              len 0x0002: 9150: DW_OP_fbreg -48
+< 2><0x0000151a>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x0000270e
+                        DW_AT_high_pc               <offset-from-lowpc>294
+                        DW_AT_sibling               <0x0000155e>
+< 3><0x0000152f>        DW_TAG_variable
+                          DW_AT_name                  "i"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x00000795
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0002: 9140: DW_OP_fbreg -64
+< 3><0x0000153c>        DW_TAG_lexical_block
+                          DW_AT_low_pc                0x0000271a
+                          DW_AT_high_pc               <offset-from-lowpc>261
+< 4><0x0000154d>          DW_TAG_variable
+                            DW_AT_name                  "kerror"
+                            DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                            DW_AT_decl_line             0x0000079b
+                            DW_AT_type                  <0x00000062>
+                            DW_AT_location              len 0x0002: 9148: DW_OP_fbreg -56
+< 2><0x0000155e>      DW_TAG_lexical_block
+                        DW_AT_low_pc                0x00002834
+                        DW_AT_high_pc               <offset-from-lowpc>379
+< 3><0x0000156f>        DW_TAG_variable
+                          DW_AT_name                  "i"
+                          DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                          DW_AT_decl_line             0x000007df
+                          DW_AT_type                  <0x00000062>
+                          DW_AT_location              len 0x0002: 9144: DW_OP_fbreg -60
+< 3><0x0000157c>        DW_TAG_lexical_block
+                          DW_AT_low_pc                0x00002840
+                          DW_AT_high_pc               <offset-from-lowpc>353
+< 4><0x0000158d>          DW_TAG_variable
+                            DW_AT_name                  "kerror"
+                            DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                            DW_AT_decl_line             0x000007e2
+                            DW_AT_type                  <0x00000062>
+                            DW_AT_location              len 0x0002: 914c: DW_OP_fbreg -52
+< 1><0x0000159f>    DW_TAG_variable
+                      DW_AT_name                  "tIME_chunk_present"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x0000007c
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 030000000000000000: DW_OP_addr 0x00000000
+< 1><0x000015b4>    DW_TAG_array_type
+                      DW_AT_type                  <0x000000a5>
+                      DW_AT_sibling               <0x000015c4>
+< 2><0x000015bd>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000096>
+                        DW_AT_upper_bound           28
+< 1><0x000015c4>    DW_TAG_variable
+                      DW_AT_name                  "tIME_string"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x0000007d
+                      DW_AT_type                  <0x000015b4>
+                      DW_AT_location              len 0x0009: 030000000000000000: DW_OP_addr 0x00000000
+< 1><0x000015d9>    DW_TAG_variable
+                      DW_AT_name                  "verbose"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000090
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 030400000000000000: DW_OP_addr 0x00000004
+< 1><0x000015ee>    DW_TAG_variable
+                      DW_AT_name                  "strict"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000091
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 030800000000000000: DW_OP_addr 0x00000008
+< 1><0x00001603>    DW_TAG_variable
+                      DW_AT_name                  "relaxed"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000092
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 030c00000000000000: DW_OP_addr 0x0000000c
+< 1><0x00001618>    DW_TAG_variable
+                      DW_AT_name                  "xfail"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000093
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 031000000000000000: DW_OP_addr 0x00000010
+< 1><0x0000162d>    DW_TAG_variable
+                      DW_AT_name                  "unsupported_chunks"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000094
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 031400000000000000: DW_OP_addr 0x00000014
+< 1><0x00001642>    DW_TAG_variable
+                      DW_AT_name                  "error_count"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000095
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 031800000000000000: DW_OP_addr 0x00000018
+< 1><0x00001657>    DW_TAG_variable
+                      DW_AT_name                  "warning_count"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000096
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 031c00000000000000: DW_OP_addr 0x0000001c
+< 1><0x0000166c>    DW_TAG_variable
+                      DW_AT_name                  "status_pass"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000a9
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 032000000000000000: DW_OP_addr 0x00000020
+< 1><0x00001681>    DW_TAG_variable
+                      DW_AT_name                  "status_dots_requested"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000aa
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 032000000000000000: DW_OP_addr 0x00000020
+< 1><0x00001696>    DW_TAG_variable
+                      DW_AT_name                  "status_dots"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000ab
+                      DW_AT_type                  <0x00000062>
+                      DW_AT_location              len 0x0009: 032400000000000000: DW_OP_addr 0x00000024
+< 1><0x000016ab>    DW_TAG_variable
+                      DW_AT_name                  "zero_samples"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x000000e2
+                      DW_AT_type                  <0x000002db>
+                      DW_AT_location              len 0x0009: 032400000000000000: DW_OP_addr 0x00000024
+< 1><0x000016c0>    DW_TAG_variable
+                      DW_AT_name                  "user_chunk_data"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000286
+                      DW_AT_type                  <0x000007f0>
+                      DW_AT_location              len 0x0009: 034000000000000000: DW_OP_addr 0x00000040
+< 1><0x000016d6>    DW_TAG_variable
+                      DW_AT_name                  "inname"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x00000719
+                      DW_AT_type                  <0x0000029e>
+                      DW_AT_location              len 0x0009: 032800000000000000: DW_OP_addr 0x00000028
+< 1><0x000016ec>    DW_TAG_variable
+                      DW_AT_name                  "outname"
+                      DW_AT_decl_file             0x00000001 /workspace/projects/libpng/pngtest.c
+                      DW_AT_decl_line             0x0000071a
+                      DW_AT_type                  <0x0000029e>
+                      DW_AT_location              len 0x0009: 033000000000000000: DW_OP_addr 0x00000030
+< 1><0x00001702>    DW_TAG_variable
+                      DW_AT_name                  "stdout"
+                      DW_AT_decl_file             0x00000004 /usr/include/stdio.h
+                      DW_AT_decl_line             0x000000a9
+                      DW_AT_type                  <0x00000272>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+
+.debug_line: line number info for a single cu
+Source lines (from CU-DIE at .debug_info offset 0x0000000b):
+
+<pc>        [row,col] NS BB ET PE EB IS= DI= uri: "filepath"
+NS new statement, BB new basic block, ET end of text sequence
+PE prologue end, EB epilogue begin
+IA=val ISA number, DI=val discriminator value
+0x00000000  [ 175, 0] NS uri: "/workspace/projects/libpng/pngtest.c"
+0x00000012  [ 176, 0] NS
+0x0000001d  [ 176, 0] DI=0x1
+0x00000028  [ 179, 0] NS
+0x00000033  [ 181, 0] NS
+0x0000004f  [ 182, 0] NS
+0x00000058  [ 183, 0] NS
+0x00000062  [ 186, 0] NS
+0x00000071  [ 188, 0] NS
+0x0000007b  [ 190, 0] NS
+0x00000099  [ 191, 0] NS
+0x000000a3  [ 194, 0] NS
+0x000000b9  [ 177, 0] NS
+0x000000ba  [ 195, 0] NS
+0x000000bc  [ 200, 0] NS
+0x000000ce  [ 201, 0] NS
+0x000000d5  [ 201, 0] DI=0x1
+0x000000dc  [ 201, 0] DI=0x2
+0x000000e2  [ 204, 0] NS
+0x000000f8  [ 202, 0] NS
+0x000000f9  [ 205, 0] NS
+0x000000fb  [ 214, 0] NS
+0x0000010b  [ 218, 0] NS
+0x0000010e  [ 230, 0] NS
+0x0000011e  [ 231, 0] NS
+0x00000126  [ 232, 0] NS
+0x00000131  [ 246, 0] NS
+0x0000013d  [ 246, 0] DI=0x1
+0x0000014d  [ 248, 0] NS
+0x00000154  [ 251, 0] NS
+0x00000169  [ 253, 0] NS
+0x00000175  [ 255, 0] NS
+0x00000197  [ 256, 0] NS
+0x000001a6  [ 258, 0] NS
+0x000001ac  [ 260, 0] NS
+0x000001b3  [ 261, 0] NS
+0x000001b8  [ 265, 0] NS
+0x000001c4  [ 267, 0] NS
+0x000001e4  [ 268, 0] NS
+0x000001f3  [ 270, 0] NS
+0x000001f9  [ 272, 0] NS
+0x00000200  [ 273, 0] NS
+0x00000205  [ 277, 0] NS
+0x00000211  [ 279, 0] NS
+0x00000231  [ 280, 0] NS
+0x00000240  [ 282, 0] NS
+0x00000246  [ 284, 0] NS
+0x0000024d  [ 285, 0] NS
+0x00000252  [ 289, 0] NS
+0x0000025e  [ 290, 0] NS
+0x00000271  [ 291, 0] NS
+0x00000280  [ 293, 0] NS
+0x0000028c  [ 295, 0] NS
+0x000002a4  [ 296, 0] NS
+0x000002b3  [ 297, 0] NS
+0x000002b8  [ 251, 0] NS DI=0x2
+0x000002bc  [ 251, 0] DI=0x1
+0x000002c8  [ 247, 0] NS
+0x000002cd  [ 305, 0] NS
+0x000002db  [ 306, 0] NS
+0x000002e7  [ 307, 0] NS
+0x000002eb  [ 309, 0] NS
+0x00000300  [ 311, 0] NS
+0x00000309  [ 313, 0] NS
+0x00000315  [ 314, 0] NS
+0x00000328  [ 315, 0] NS
+0x00000337  [ 317, 0] NS
+0x00000343  [ 319, 0] NS
+0x0000035b  [ 320, 0] NS
+0x0000036a  [ 322, 0] NS
+0x0000036f  [ 311, 0] NS DI=0x2
+0x00000373  [ 311, 0] DI=0x1
+0x0000037b  [ 325, 0] NS
+0x00000387  [ 327, 0] NS
+0x0000038c  [ 328, 0] NS
+0x00000398  [ 329, 0] NS
+0x0000039d  [ 309, 0] NS DI=0x2
+0x000003a1  [ 309, 0] DI=0x1
+0x000003af  [ 233, 0] NS
+0x000003b0  [ 333, 0] NS
+0x000003b2  [ 457, 0] NS
+0x000003c2  [ 458, 0] NS
+0x000003ca  [ 459, 0] NS
+0x000003da  [ 462, 0] NS
+0x000003e9  [ 464, 0] NS
+0x000003f0  [ 464, 0] DI=0x1
+0x000003fc  [ 465, 0] NS
+0x00000407  [ 467, 0] NS
+0x00000428  [ 468, 0] NS
+0x0000042b  [ 477, 0] NS
+0x0000043b  [ 478, 0] NS
+0x0000044a  [ 480, 0] NS
+0x0000045d  [ 484, 0] NS
+0x00000460  [ 657, 0] NS
+0x0000046c  [ 658, 0] NS
+0x00000480  [ 659, 0] NS
+0x0000048b  [ 660, 0] NS
+0x0000048e  [ 664, 0] NS
+0x000004a1  [ 667, 0] NS
+0x000004af  [ 667, 0] DI=0x1
+0x000004bd  [ 668, 0] NS
+0x000004c4  [ 673, 0] NS
+0x000004d0  [ 674, 0] NS
+0x000004db  [ 676, 0] NS
+0x000004fa  [ 677, 0] NS
+0x00000505  [ 680, 0] NS
+0x0000050e  [ 682, 0] NS
+0x00000519  [ 683, 0] NS
+0x00000525  [ 686, 0] NS
+0x0000052f  [ 688, 0] NS
+0x00000534  [ 689, 0] NS
+0x00000536  [ 693, 0] NS
+0x00000546  [ 694, 0] NS
+0x00000556  [ 697, 0] NS
+0x0000055d  [ 698, 0] NS
+0x0000056e  [ 713, 0] NS
+0x0000057d  [ 713, 0] DI=0x1
+0x0000058d  [ 714, 0] NS DI=0x2
+0x00000595  [ 713, 0] NS DI=0x2
+0x0000059d  [ 714, 0] NS
+0x000005ad  [ 717, 0] NS
+0x000005bb  [ 718, 0] NS
+0x000005c5  [ 720, 0] NS
+0x000005d4  [ 720, 0] DI=0x1
+0x000005e3  [ 721, 0] NS
+0x000005ed  [ 723, 0] NS
+0x00000609  [ 725, 0] NS
+0x0000061b  [ 726, 0] NS
+0x00000625  [ 730, 0] NS
+0x0000062f  [ 733, 0] NS
+0x0000063a  [ 733, 0] DI=0x1
+0x00000646  [ 734, 0] NS DI=0x2
+0x0000064e  [ 733, 0] NS DI=0x2
+0x00000652  [ 734, 0] NS
+0x0000065e  [ 735, 0] NS
+0x00000668  [ 739, 0] NS
+0x00000676  [ 740, 0] NS
+0x0000067d  [ 742, 0] NS
+0x00000699  [ 743, 0] NS
+0x000006a0  [ 745, 0] NS
+0x000006c0  [ 746, 0] NS
+0x000006e4  [ 747, 0] NS
+0x000006f7  [ 749, 0] NS
+0x000006fc  [ 750, 0] NS
+0x000006fe  [ 755, 0] NS
+0x0000070a  [ 755, 0] NS
+0x00000719  [ 756, 0] NS
+0x0000072d  [ 758, 0] NS
+0x00000737  [ 759, 0] NS
+0x0000075a  [ 761, 0] NS
+0x00000774  [ 762, 0] NS
+0x0000078b  [ 766, 0] NS
+0x00000797  [ 766, 0] NS
+0x000007a6  [ 767, 0] NS
+0x000007ba  [ 771, 0] NS
+0x000007c4  [ 775, 0] NS
+0x000007cb  [ 772, 0] NS
+0x000007ce  [ 774, 0] NS
+0x000007d4  [ 772, 0] NS
+0x000007d6  [ 773, 0] NS
+0x000007dc  [ 772, 0] NS
+0x000007fd  [ 777, 0] NS
+0x00000811  [ 778, 0] NS
+0x00000829  [ 779, 0] NS
+0x00000833  [ 780, 0] NS
+0x0000084c  [ 781, 0] NS
+0x00000863  [ 785, 0] NS
+0x00000872  [ 794, 0] NS
+0x0000087b  [ 796, 0] NS
+0x00000895  [ 797, 0] NS
+0x000008a3  [ 799, 0] NS
+0x000008bd  [ 800, 0] NS
+0x000008c9  [ 794, 0] NS DI=0x2
+0x000008cd  [ 794, 0] DI=0x1
+0x000008d3  [ 802, 0] NS
+0x000008d6  [ 817, 0] NS
+0x000008e9  [ 818, 0] NS
+0x000008eb  [ 820, 0] NS
+0x00000920  [ 839, 0] NS
+0x00000922  [ 843, 0] NS
+0x00000933  [ 818, 0] NS
+0x00000939  [ 847, 0] NS
+0x0000093c  [ 854, 0] NS
+0x00000956  [ 854, 0] NS
+0x00000965  [ 865, 0] NS
+0x0000096f  [ 879, 0] NS
+0x0000097a  [ 880, 0] NS
+0x00000988  [ 882, 0] NS
+0x000009af  [ 884, 0] NS
+0x000009cf  [ 885, 0] NS
+0x000009d9  [ 888, 0] NS
+0x00000a00  [ 890, 0] NS
+0x00000a20  [ 891, 0] NS
+0x00000a2f  [ 892, 0] NS
+0x00000a39  [ 902, 0] NS
+0x00000a52  [ 901, 0] NS
+0x00000a59  [ 904, 0] NS
+0x00000a79  [ 914, 0] NS
+0x00000a92  [ 913, 0] NS
+0x00000a99  [ 916, 0] NS
+0x00000ab9  [ 920, 0] NS
+0x00000acf  [ 921, 0] NS
+0x00000ae5  [ 923, 0] NS
+0x00000afb  [ 924, 0] NS
+0x00000b11  [ 928, 0] NS
+0x00000b20  [ 929, 0] NS
+0x00000b39  [ 935, 0] NS
+0x00000b62  [ 937, 0] NS
+0x00000b89  [ 938, 0] NS
+0x00000ba2  [ 939, 0] NS
+0x00000bad  [ 940, 0] NS
+0x00000bb7  [ 941, 0] NS
+0x00000bd5  [ 942, 0] NS
+0x00000bf5  [ 944, 0] NS
+0x00000bff  [ 945, 0] NS
+0x00000c1d  [ 946, 0] NS
+0x00000c36  [ 947, 0] NS
+0x00000c4f  [ 949, 0] NS
+0x00000c5e  [ 950, 0] NS
+0x00000c6d  [ 951, 0] NS
+0x00000c77  [ 957, 0] NS
+0x00000ca0  [ 959, 0] NS
+0x00000cc7  [ 960, 0] NS
+0x00000ce0  [ 961, 0] NS
+0x00000ceb  [ 962, 0] NS
+0x00000cf5  [ 963, 0] NS
+0x00000d13  [ 964, 0] NS
+0x00000d33  [ 965, 0] NS
+0x00000d3d  [ 966, 0] NS
+0x00000d5b  [ 967, 0] NS
+0x00000d74  [ 968, 0] NS
+0x00000d8d  [ 969, 0] NS
+0x00000d9c  [ 970, 0] NS
+0x00000dab  [ 971, 0] NS
+0x00000db5  [ 977, 0] NS
+0x00000dbf  [ 980, 0] NS
+0x00000dd3  [ 984, 0] NS
+0x00000de9  [ 993, 0] NS
+0x00000df3  [ 996, 0] NS
+0x00000e07  [ 999, 0] NS
+0x00000e20  [1003, 0] NS
+0x00000e39  [1007, 0] NS
+0x00000e4d  [1015, 0] NS
+0x00000e66  [1017, 0] NS
+0x00000e7f  [1031, 0] NS
+0x00000e8a  [1034, 0] NS
+0x00000e9e  [1036, 0] NS
+0x00000eb4  [1042, 0] NS
+0x00000ec8  [1044, 0] NS
+0x00000edc  [1048, 0] NS
+0x00000ef0  [1051, 0] NS
+0x00000efa  [1052, 0] NS
+0x00000f0e  [1065, 0] NS
+0x00000f2c  [1069, 0] NS
+0x00000f4a  [1075, 0] NS
+0x00000f63  [1083, 0] NS
+0x00000f6e  [1090, 0] NS
+0x00000fc8  [1093, 0] NS
+0x0000101f  [1098, 0] NS
+0x00001030  [1101, 0] NS
+0x0000103a  [1102, 0] NS
+0x0000103c  [1105, 0] NS
+0x00001046  [1106, 0] NS
+0x00001048  [1109, 0] NS
+0x0000105c  [1123, 0] NS
+0x000010b8  [1115, 0] NS
+0x000010cc  [1126, 0] NS
+0x00001127  [1135, 0] NS
+0x0000114b  [1136, 0] NS
+0x0000116a  [1171, 0] NS
+0x000011a6  [1174, 0] NS
+0x000011dd  [1183, 0] NS
+0x00001201  [1184, 0] NS
+0x00001220  [1191, 0] NS
+0x00001248  [1192, 0] NS
+0x0000126b  [1198, 0] NS
+0x0000128f  [1200, 0] NS
+0x000012af  [1206, 0] NS
+0x000012ba  [1209, 0] NS
+0x000012e2  [1211, 0] NS
+0x000012ed  [1212, 0] NS
+0x0000132f  [1215, 0] NS
+0x00001352  [1224, 0] NS
+0x00001376  [1225, 0] NS
+0x00001396  [1233, 0] NS
+0x000013c8  [1236, 0] NS
+0x000013f3  [1247, 0] NS
+0x00001449  [1250, 0] NS
+0x000014a1  [1260, 0] NS
+0x000014d3  [1262, 0] NS
+0x000014fe  [1269, 0] NS
+0x00001522  [1270, 0] NS
+0x00001542  [1280, 0] NS
+0x00001574  [1283, 0] NS
+0x000015b5  [1307, 0] NS
+0x000015db  [1308, 0] NS
+0x000015e4  [1310, 0] NS
+0x00001607  [1320, 0] NS
+0x00001633  [1324, 0] NS
+0x00001652  [1326, 0] NS
+0x0000165c  [1330, 0] NS
+0x00001670  [1331, 0] NS
+0x0000167c  [1334, 0] NS
+0x000016a0  [1333, 0] NS
+0x000016c1  [1331, 0] NS
+0x000016c8  [1331, 0] DI=0x1
+0x000016d6  [1338, 0] NS
+0x000016f9  [1346, 0] NS
+0x0000171d  [1348, 0] NS
+0x0000173d  [1350, 0] NS
+0x00001755  [1351, 0] NS
+0x0000175e  [1355, 0] NS
+0x00001772  [1356, 0] NS
+0x00001779  [1359, 0] NS
+0x00001788  [1370, 0] NS
+0x000017be  [1373, 0] NS
+0x000017d5  [1375, 0] NS
+0x000017df  [1376, 0] NS DI=0x2
+0x000017ed  [1375, 0] NS DI=0x2
+0x000017f5  [1377, 0] NS DI=0x3
+0x000017fb  [1375, 0] NS DI=0x3
+0x00001800  [1378, 0] NS
+0x0000180e  [1377, 0] NS
+0x00001816  [1379, 0] NS
+0x00001824  [1378, 0] NS
+0x0000182c  [1380, 0] NS
+0x0000183a  [1379, 0] NS
+0x00001842  [1381, 0] NS
+0x0000186f  [1389, 0] NS
+0x00001895  [1392, 0] NS
+0x0000189e  [1394, 0] NS
+0x000018c1  [1418, 0] NS
+0x000018da  [1420, 0] NS
+0x000018ee  [1422, 0] NS
+0x00001907  [1424, 0] NS
+0x0000191b  [1426, 0] NS
+0x00001934  [1428, 0] NS
+0x00001948  [1438, 0] NS
+0x0000197d  [1451, 0] NS
+0x00001998  [1452, 0] NS
+0x000019ac  [1454, 0] NS
+0x000019c7  [1455, 0] NS
+0x000019db  [1466, 0] NS
+0x000019e7  [1487, 0] NS
+0x000019f3  [1499, 0] NS
+0x00001a13  [1507, 0] NS
+0x00001a31  [1487, 0] NS
+0x00001a38  [1487, 0] DI=0x1
+0x00001a46  [1466, 0] NS DI=0x2
+0x00001a4d  [1466, 0] DI=0x1
+0x00001a5b  [1525, 0] NS
+0x00001a7b  [1528, 0] NS
+0x00001a9b  [1534, 0] NS
+0x00001ab4  [1540, 0] NS
+0x00001ae0  [1544, 0] NS
+0x00001aff  [1546, 0] NS
+0x00001b09  [1550, 0] NS
+0x00001b1d  [1551, 0] NS
+0x00001b29  [1554, 0] NS
+0x00001b4d  [1553, 0] NS
+0x00001b6e  [1551, 0] NS
+0x00001b75  [1551, 0] DI=0x1
+0x00001b83  [1558, 0] NS
+0x00001ba6  [1564, 0] NS
+0x00001bb1  [1567, 0] NS
+0x00001bd9  [1569, 0] NS
+0x00001be4  [1570, 0] NS
+0x00001c26  [1573, 0] NS
+0x00001c49  [1582, 0] NS
+0x00001c6d  [1584, 0] NS
+0x00001c8d  [1586, 0] NS
+0x00001ca5  [1587, 0] NS
+0x00001cae  [1591, 0] NS
+0x00001cc2  [1592, 0] NS
+0x00001cc9  [1595, 0] NS
+0x00001cd8  [1603, 0] NS
+0x00001cfe  [1606, 0] NS
+0x00001d07  [1608, 0] NS
+0x00001d2a  [1632, 0] NS
+0x00001d3e  [1641, 0] NS
+0x00001d52  [1643, 0] NS
+0x00001d6b  [1647, 0] NS
+0x00001d75  [1650, 0] NS
+0x00001d94  [1651, 0] NS
+0x00001db3  [1652, 0] NS
+0x00001dd8  [1660, 0] NS
+0x00001df1  [1661, 0] NS
+0x00001dfc  [1664, 0] NS
+0x00001e1c  [1667, 0] NS
+0x00001e35  [1669, 0] NS
+0x00001e4e  [1673, 0] NS
+0x00001e5d  [1674, 0] NS
+0x00001e6c  [1680, 0] NS
+0x00001e76  [1685, 0] NS
+0x00001ea5  [1688, 0] NS
+0x00001eb3  [1689, 0] NS
+0x00001ebd  [1694, 0] NS
+0x00001ec7  [1697, 0] NS
+0x00001ecd  [1696, 0] NS
+0x00001ed1  [1696, 0] DI=0x1
+0x00001ed8  [1696, 0] DI=0x2
+0x00001edd  [1696, 0] DI=0x4
+0x00001f08  [1701, 0] NS
+0x00001f12  [1703, 0] NS
+0x00001f38  [1706, 0] NS
+0x00001f42  [1707, 0] NS
+0x00001f4c  [1711, 0] NS
+0x00001f73  [1713, 0] NS
+0x00001f93  [1714, 0] NS
+0x00001f9d  [1717, 0] NS
+0x00001fc4  [1719, 0] NS
+0x00001fe4  [1720, 0] NS
+0x00001ff3  [1721, 0] NS
+0x00001ffd  [1726, 0] NS
+0x0000200a  [1734, 0] NS
+0x00002034  [1735, 0] NS
+0x0000205e  [1737, 0] NS
+0x00002072  [1739, 0] NS
+0x00002099  [1742, 0] NS
+0x000020a3  [1742, 0] DI=0x1
+0x000020ad  [1744, 0] NS
+0x000020d2  [1748, 0] NS
+0x000020f0  [1750, 0] NS
+0x0000210e  [1753, 0] NS
+0x00002118  [1756, 0] NS
+0x00002127  [1757, 0] NS
+0x00002136  [1759, 0] NS
+0x00002140  [1759, 0] DI=0x1
+0x0000214a  [1760, 0] NS
+0x00002154  [1763, 0] NS
+0x0000215e  [1766, 0] NS
+0x0000216c  [1769, 0] NS
+0x00002194  [1771, 0] NS
+0x000021bb  [1774, 0] NS
+0x000021c5  [1774, 0] DI=0x1
+0x000021cf  [1776, 0] NS
+0x000021f4  [1780, 0] NS
+0x00002212  [1782, 0] NS
+0x00002230  [1785, 0] NS
+0x0000223a  [1788, 0] NS
+0x00002249  [1789, 0] NS
+0x00002258  [1796, 0] NS
+0x00002262  [1796, 0] DI=0x1
+0x0000226c  [1797, 0] NS
+0x00002273  [1800, 0] NS
+0x0000227a  [1767, 0] NS
+0x0000227b  [1806, 0] NS
+0x0000228a  [1807, 0] NS
+0x00002299  [1809, 0] NS
+0x0000229e  [1810, 0] NS DI=0x3
+0x000022ad  [1810, 0]
+0x000022b8  [1823, 0] NS
+0x000022c8  [1823, 0] NS
+0x000022d7  [1824, 0] NS
+0x000022de  [1825, 0] NS
+0x000022e5  [1829, 0] NS
+0x00002303  [1830, 0] NS
+0x00002321  [1831, 0] NS
+0x00002340  [1833, 0] NS
+0x0000234d  [1834, 0] NS
+0x00002352  [1833, 0] NS
+0x00002370  [1838, 0] NS
+0x00002393  [1854, 0] NS
+0x000023ae  [1856, 0] NS
+0x000023cc  [1858, 0] NS
+0x000023ea  [1859, 0] NS
+0x00002410  [1860, 0] NS
+0x00002414  [1863, 0] NS
+0x0000241e  [1865, 0] NS
+0x0000243a  [1867, 0] NS
+0x00002441  [1868, 0] NS
+0x00002450  [1871, 0] NS
+0x0000246c  [1872, 0] NS DI=0x1
+0x00002484  [1871, 0] NS DI=0x1
+0x00002488  [1874, 0] NS
+0x0000248f  [1875, 0] NS
+0x00002499  [1876, 0] NS
+0x000024a8  [1879, 0] NS
+0x000024c4  [1881, 0] NS
+0x000024ce  [1882, 0] NS
+0x000024d8  [1883, 0] NS
+0x000024ec  [1886, 0] NS
+0x00002508  [1888, 0] NS
+0x00002512  [1889, 0] NS
+0x0000251c  [1890, 0] NS
+0x0000252b  [1891, 0] NS
+0x0000253a  [1892, 0] NS
+0x00002544  [1893, 0] NS
+0x00002550  [1896, 0] NS
+0x0000256c  [1898, 0] NS
+0x00002576  [1899, 0] NS
+0x00002580  [1900, 0] NS
+0x0000258f  [1901, 0] NS
+0x00002599  [1902, 0] NS
+0x000025a8  [1903, 0] NS
+0x000025b4  [1905, 0] NS
+0x000025d0  [1907, 0] NS
+0x000025da  [1908, 0] NS
+0x000025e4  [1909, 0] NS
+0x000025f3  [1910, 0] NS
+0x000025fd  [1911, 0] NS
+0x0000260c  [1912, 0] NS
+0x0000261b  [1913, 0] NS
+0x00002624  [1918, 0] NS
+0x00002633  [1919, 0] NS
+0x0000263d  [1923, 0] NS
+0x00002643  [1923, 0] DI=0x1
+0x00002651  [1924, 0] NS
+0x00002675  [1926, 0] NS
+0x0000267b  [1926, 0] DI=0x1
+0x00002689  [1926, 0] DI=0x3
+0x0000268f  [1927, 0] NS
+0x00002695  [1929, 0] NS
+0x000026bc  [1932, 0] NS
+0x000026da  [1934, 0] NS
+0x000026fa  [1936, 0] NS
+0x00002704  [1939, 0] NS
+0x0000270e  [1945, 0] NS
+0x0000271a  [1948, 0] NS
+0x0000274a  [1952, 0] NS
+0x00002776  [1953, 0] NS
+0x0000277c  [1956, 0] NS
+0x0000279d  [1962, 0] NS
+0x000027a7  [1963, 0] NS
+0x000027c5  [1965, 0] NS
+0x000027d1  [1971, 0] NS
+0x000027db  [1972, 0] NS
+0x000027fb  [1975, 0] NS
+0x00002819  [1976, 0] NS
+0x0000281f  [1945, 0] NS DI=0x2
+0x00002823  [1945, 0] DI=0x1
+0x00002834  [2016, 0] NS
+0x00002840  [2022, 0] NS
+0x00002846  [2023, 0] NS
+0x00002852  [2025, 0] NS
+0x0000285c  [2026, 0] NS
+0x00002866  [2028, 0] NS
+0x0000286c  [2028, 0] DI=0x1
+0x00002877  [2028, 0] DI=0x2
+0x0000287d  [2030, 0] NS
+0x0000289d  [2036, 0] NS
+0x000028b9  [2038, 0] NS
+0x000028bf  [2040, 0] NS
+0x000028ca  [2040, 0] DI=0x1
+0x000028d4  [2043, 0] NS
+0x000028f5  [2049, 0] NS
+0x00002903  [2050, 0] NS
+0x00002923  [2057, 0] NS
+0x0000292d  [2057, 0] DI=0x1
+0x00002933  [2059, 0] NS
+0x00002953  [2065, 0] NS
+0x0000295d  [2066, 0] NS
+0x0000297d  [2069, 0] NS
+0x0000299b  [2070, 0] NS
+0x000029a1  [2016, 0] NS DI=0x2
+0x000029a5  [2016, 0] DI=0x1
+0x000029af  [2120, 0] NS
+0x000029b5  [2121, 0] NS
+0x000029d5  [2124, 0] NS
+0x000029f3  [2126, 0] NS
+0x00002a10  [2127, 0] NS
+0x00002a2e  [2129, 0] NS
+0x00002a3a  [2128, 0] NS
+0x00002a55  [2131, 0] NS
+0x00002a61  [2130, 0] NS
+0x00002a7c  [2132, 0] NS
+0x00002a8c  [2133, 0] NS
+0x00002aac  [2136, 0] NS
+0x00002ab8  [2135, 0] NS
+0x00002ad3  [2137, 0] NS
+0x00002ae4  [2138, 0] NS
+0x00002b04  [2141, 0] NS
+0x00002b13  [2140, 0] NS
+0x00002b2c  [2142, 0] NS
+0x00002b42  [2144, 0] NS
+0x00002b4c  [2145, 0] NS
+0x00002b67  [2145, 0] NS ET
+
+.debug_pubnames
+
+.debug_macinfo
+
+.debug_string
+name at offset 0x00000000, length    9 is 'png_textp'
+name at offset 0x0000000a, length    5 is 'chunk'
+name at offset 0x00000010, length   10 is 'png_bytepp'
+name at offset 0x0000001b, length    6 is 'size_t'
+name at offset 0x00000022, length    8 is 'sizetype'
+name at offset 0x0000002b, length    4 is 'pass'
+name at offset 0x00000030, length   12 is 'png_info_def'
+name at offset 0x0000003d, length   11 is 'png_color_8'
+name at offset 0x00000049, length    7 is 'profile'
+name at offset 0x00000051, length   11 is 'png_sPLT_tp'
+name at offset 0x0000005d, length   12 is 'png_uint_16p'
+name at offset 0x0000006a, length   12 is '_IO_save_end'
+name at offset 0x00000077, length   11 is 'num_palette'
+name at offset 0x00000083, length   14 is 'png_struct_def'
+name at offset 0x00000092, length   10 is 'vpAg_width'
+name at offset 0x0000009d, length    8 is 'multiple'
+name at offset 0x000000a6, length   15 is 'png_const_charp'
+name at offset 0x000000b6, length    8 is 'lang_key'
+name at offset 0x000000bf, length    8 is 'read_ptr'
+name at offset 0x000000c8, length   15 is 'png_const_infop'
+name at offset 0x000000d8, length   14 is '_IO_write_base'
+name at offset 0x000000e7, length    7 is 'relaxed'
+name at offset 0x000000ef, length   13 is 'png_row_infop'
+name at offset 0x000000fd, length    5 is '_lock'
+name at offset 0x00000103, length    9 is 'write_ptr'
+name at offset 0x0000010d, length   13 is 'read_info_ptr'
+name at offset 0x0000011b, length    4 is 'type'
+name at offset 0x00000120, length   18 is 'tIME_chunk_present'
+name at offset 0x00000133, length   13 is '_IO_save_base'
+name at offset 0x00000141, length   11 is 'trans_alpha'
+name at offset 0x0000014d, length    4 is 'year'
+name at offset 0x00000152, length    6 is '_chain'
+name at offset 0x00000159, length   11 is '_cur_column'
+name at offset 0x00000165, length   15 is 'png_time_struct'
+name at offset 0x00000175, length   12 is 'png_color_16'
+name at offset 0x00000182, length    5 is 'alpha'
+name at offset 0x00000188, length    7 is 'white_x'
+name at offset 0x00000190, length    8 is 'rowbytes'
+name at offset 0x00000199, length    8 is 'long int'
+name at offset 0x000001a2, length    4 is 'unit'
+name at offset 0x000001a7, length   24 is 'read_user_chunk_callback'
+name at offset 0x000001c0, length    6 is 'kerror'
+name at offset 0x000001c7, length   10 is 'background'
+name at offset 0x000001d2, length   79 is 'GNU C11 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong'
+name at offset 0x00000222, length    4 is 'test'
+name at offset 0x00000227, length   10 is '_IO_marker'
+name at offset 0x00000232, length    7 is 'entries'
+name at offset 0x0000023a, length   14 is 'write_info_ptr'
+name at offset 0x00000249, length   15 is 'user_chunk_data'
+name at offset 0x00000259, length    5 is 'gamma'
+name at offset 0x0000025f, length   11 is 'trans_color'
+name at offset 0x0000026b, length   11 is 'signed char'
+name at offset 0x00000277, length    8 is '_IO_FILE'
+name at offset 0x00000280, length   15 is 'png_sPLT_struct'
+name at offset 0x00000290, length   11 is 'compression'
+name at offset 0x0000029c, length    4 is 'blue'
+name at offset 0x000002a1, length   18 is 'my_user_chunk_data'
+name at offset 0x000002b4, length   10 is 'num_passes'
+name at offset 0x000002bf, length   13 is 'pngtest_error'
+name at offset 0x000002cd, length   13 is 'unsigned char'
+name at offset 0x000002db, length   10 is 'png_struct'
+name at offset 0x000002e6, length   18 is 'write_row_callback'
+name at offset 0x000002f9, length    9 is 'png_color'
+name at offset 0x00000303, length    4 is 'what'
+name at offset 0x00000308, length    9 is 'bit_depth'
+name at offset 0x00000312, length    9 is 'dummy_ptr'
+name at offset 0x0000031c, length   32 is '/workspace/projects/libpng/build'
+name at offset 0x0000033d, length   15 is 'png_fixed_point'
+name at offset 0x0000034d, length    6 is 'params'
+name at offset 0x00000354, length    4 is 'char'
+name at offset 0x00000359, length   15 is 'vpag_chunk_data'
+name at offset 0x00000369, length    7 is 'iheight'
+name at offset 0x00000371, length   12 is 'set_location'
+name at offset 0x0000037e, length    4 is 'name'
+name at offset 0x00000383, length   16 is 'png_color_struct'
+name at offset 0x00000394, length   10 is '_IO_lock_t'
+name at offset 0x0000039f, length    8 is 'text_ptr'
+name at offset 0x000003a8, length    8 is 'mod_time'
+name at offset 0x000003b1, length    6 is 'num_in'
+name at offset 0x000003b8, length   10 is 'color_type'
+name at offset 0x000003c3, length    8 is 'num_text'
+name at offset 0x000003cc, length   11 is 'pixel_depth'
+name at offset 0x000003d8, length    9 is 'unit_type'
+name at offset 0x000003e2, length    4 is 'gray'
+name at offset 0x000003e7, length   12 is '_IO_read_ptr'
+name at offset 0x000003f4, length    9 is 'png_timep'
+name at offset 0x000003fe, length    8 is 'png_time'
+name at offset 0x00000407, length    4 is '_pos'
+name at offset 0x0000040c, length    4 is 'text'
+name at offset 0x00000411, length    8 is '_markers'
+name at offset 0x0000041a, length    8 is 'row_info'
+name at offset 0x00000423, length   11 is 'png_structp'
+name at offset 0x0000042f, length   16 is 'error_parameters'
+name at offset 0x00000440, length    7 is 'outname'
+name at offset 0x00000448, length   16 is 'write_sTER_chunk'
+name at offset 0x00000459, length   15 is 'png_sPLT_entryp'
+name at offset 0x00000469, length    5 is 'units'
+name at offset 0x0000046f, length    9 is 'num_trans'
+name at offset 0x00000479, length    7 is 'sig_bit'
+name at offset 0x00000481, length    7 is '_offset'
+name at offset 0x00000489, length   24 is 'pngtest_error_parameters'
+name at offset 0x000004a2, length   12 is 'png_color_8p'
+name at offset 0x000004af, length    5 is 'index'
+name at offset 0x000004b5, length   11 is 'filter_type'
+name at offset 0x000004c1, length    7 is 'green_x'
+name at offset 0x000004c9, length    7 is 'green_y'
+name at offset 0x000004d1, length   18 is 'unsupported_chunks'
+name at offset 0x000004e4, length   17 is 'long unsigned int'
+name at offset 0x000004f6, length    7 is '_flags2'
+name at offset 0x000004fe, length    7 is 'channel'
+name at offset 0x00000506, length   13 is '_IO_read_base'
+name at offset 0x00000514, length    8 is 'offset_x'
+name at offset 0x0000051d, length    8 is 'offset_y'
+name at offset 0x00000526, length    8 is '_unused2'
+name at offset 0x0000052f, length    6 is 'outbuf'
+name at offset 0x00000536, length    9 is 'png_charp'
+name at offset 0x00000540, length   18 is 'count_zero_samples'
+name at offset 0x00000553, length    9 is 'sTER_mode'
+name at offset 0x0000055d, length   11 is 'status_dots'
+name at offset 0x00000569, length    9 is 'png_infop'
+name at offset 0x00000573, length   11 is '_old_offset'
+name at offset 0x0000057f, length    4 is 'argv'
+name at offset 0x00000584, length    8 is 'location'
+name at offset 0x0000058d, length    8 is 'info_ptr'
+name at offset 0x00000596, length   18 is 'init_callback_info'
+name at offset 0x000005a9, length    7 is 'verbose'
+name at offset 0x000005b1, length   21 is 'png_sPLT_entry_struct'
+name at offset 0x000005c7, length   13 is 'long long int'
+name at offset 0x000005d5, length    5 is 'width'
+name at offset 0x000005db, length   13 is 'warning_count'
+name at offset 0x000005e9, length    5 is 'inbuf'
+name at offset 0x000005ef, length    6 is 'second'
+name at offset 0x000005f6, length   19 is 'interlace_preserved'
+name at offset 0x0000060a, length    6 is 'minute'
+name at offset 0x00000611, length    6 is 'double'
+name at offset 0x00000618, length   13 is '_IO_write_end'
+name at offset 0x00000626, length    5 is 'depth'
+name at offset 0x0000062c, length    7 is 'white_y'
+name at offset 0x00000634, length    9 is 'frequency'
+name at offset 0x0000063e, length    7 is 'nparams'
+name at offset 0x00000646, length    8 is 'png_info'
+name at offset 0x0000064f, length   12 is 'write_chunks'
+name at offset 0x0000065c, length   12 is '_IO_buf_base'
+name at offset 0x00000669, length   12 is 'unsigned int'
+name at offset 0x00000676, length   36 is '/workspace/projects/libpng/pngtest.c'
+name at offset 0x0000069b, length    6 is 'intent'
+name at offset 0x000006a2, length    7 is 'palette'
+name at offset 0x000006aa, length    8 is 'channels'
+name at offset 0x000006b3, length    5 is 'red_x'
+name at offset 0x000006b9, length    5 is 'red_y'
+name at offset 0x000006bf, length    7 is 'row_buf'
+name at offset 0x000006c7, length    6 is '__pad1'
+name at offset 0x000006ce, length    6 is '__pad2'
+name at offset 0x000006d5, length    6 is '__pad3'
+name at offset 0x000006dc, length    6 is '__pad4'
+name at offset 0x000006e3, length    6 is '__pad5'
+name at offset 0x000006ea, length    5 is '_sbuf'
+name at offset 0x000006f0, length   11 is 'itxt_length'
+name at offset 0x000006fc, length    4 is 'hist'
+name at offset 0x00000701, length    5 is 'res_x'
+name at offset 0x00000707, length    5 is 'res_y'
+name at offset 0x0000070d, length    9 is 'png_bytep'
+name at offset 0x00000717, length    6 is '_flags'
+name at offset 0x0000071e, length   21 is 'status_dots_requested'
+name at offset 0x00000734, length   16 is 'compression_type'
+name at offset 0x00000745, length    6 is 'ierror'
+name at offset 0x0000074c, length    6 is 'iwidth'
+name at offset 0x00000753, length    5 is 'fpout'
+name at offset 0x00000759, length    5 is '_mode'
+name at offset 0x0000075f, length   11 is 'error_count'
+name at offset 0x0000076b, length   14 is 'color_channels'
+name at offset 0x0000077a, length    8 is 'unknowns'
+name at offset 0x00000783, length   10 is 'scal_width'
+name at offset 0x0000078e, length   12 is 'num_unknowns'
+name at offset 0x0000079b, length   11 is 'long double'
+name at offset 0x000007a7, length   10 is 'png_FILE_p'
+name at offset 0x000007b2, length   11 is 'num_entries'
+name at offset 0x000007be, length   17 is 'read_row_callback'
+name at offset 0x000007d0, length    4 is 'fpin'
+name at offset 0x000007d5, length    4 is 'FILE'
+name at offset 0x000007da, length   15 is 'png_text_struct'
+name at offset 0x000007ea, length   11 is 'status_pass'
+name at offset 0x000007f6, length    8 is 'png_byte'
+name at offset 0x000007ff, length   11 is 'text_length'
+name at offset 0x0000080b, length    4 is 'size'
+name at offset 0x00000810, length    6 is 'inname'
+name at offset 0x00000817, length    5 is 'nstop'
+name at offset 0x0000081d, length   12 is 'end_info_ptr'
+name at offset 0x0000082a, length    7 is '__off_t'
+name at offset 0x00000832, length    4 is 'sTER'
+name at offset 0x00000837, length    6 is 'height'
+name at offset 0x0000083e, length    8 is 'nentries'
+name at offset 0x00000847, length   18 is 'write_end_info_ptr'
+name at offset 0x0000085a, length    7 is 'purpose'
+name at offset 0x00000862, length    4 is 'vpAg'
+name at offset 0x00000867, length   10 is 'row_number'
+name at offset 0x00000872, length   19 is 'png_color_16_struct'
+name at offset 0x00000886, length   15 is '_IO_backup_base'
+name at offset 0x00000896, length    9 is '_shortbuf'
+name at offset 0x000008a0, length   26 is 'pngtest_check_text_support'
+name at offset 0x000008bb, length    4 is 'argc'
+name at offset 0x000008c0, length    4 is 'exif'
+name at offset 0x000008c5, length   18 is 'png_unknown_chunkp'
+name at offset 0x000008d8, length    5 is '_next'
+name at offset 0x000008de, length    9 is '__off64_t'
+name at offset 0x000008e8, length   11 is 'png_uint_16'
+name at offset 0x000008f4, length    5 is 'month'
+name at offset 0x000008fa, length   10 is 'png_colorp'
+name at offset 0x00000905, length   12 is 'png_row_info'
+name at offset 0x00000912, length   11 is '_IO_buf_end'
+name at offset 0x0000091e, length    9 is 'file_name'
+name at offset 0x00000928, length   12 is 'zero_samples'
+name at offset 0x00000935, length    7 is 'png_ptr'
+name at offset 0x0000093d, length    9 is 'short int'
+name at offset 0x00000947, length   11 is 'tIME_string'
+name at offset 0x00000953, length   13 is 'test_one_file'
+name at offset 0x00000961, length    4 is 'lang'
+name at offset 0x00000966, length   16 is 'write_vpAg_chunk'
+name at offset 0x00000977, length   13 is 'png_color_16p'
+name at offset 0x00000985, length   10 is 'png_sPLT_t'
+name at offset 0x00000990, length   11 is 'png_uint_32'
+name at offset 0x0000099c, length   14 is '_vtable_offset'
+name at offset 0x000009ab, length   10 is 'png_charpp'
+name at offset 0x000009b6, length    4 is 'hour'
+name at offset 0x000009bb, length   11 is 'scal_height'
+name at offset 0x000009c7, length    5 is 'xfail'
+name at offset 0x000009cd, length    4 is 'main'
+name at offset 0x000009d2, length   11 is 'exif_length'
+name at offset 0x000009de, length   11 is 'vpAg_height'
+name at offset 0x000009ea, length   14 is 'interlace_type'
+name at offset 0x000009f9, length   18 is 'read_user_callback'
+name at offset 0x00000a0c, length    8 is 'png_text'
+name at offset 0x00000a15, length   12 is '_IO_read_end'
+name at offset 0x00000a22, length    6 is 'strict'
+name at offset 0x00000a29, length    7 is 'num_out'
+name at offset 0x00000a31, length   19 is 'png_unknown_chunk_t'
+name at offset 0x00000a45, length   10 is 'sample_max'
+name at offset 0x00000a50, length   10 is 'vpAg_units'
+name at offset 0x00000a5b, length    7 is '_fileno'
+name at offset 0x00000a63, length   17 is 'png_unknown_chunk'
+name at offset 0x00000a75, length   15 is 'pngtest_warning'
+name at offset 0x00000a85, length    7 is 'proflen'
+name at offset 0x00000a8d, length    5 is 'green'
+name at offset 0x00000a93, length   19 is 'png_row_info_struct'
+name at offset 0x00000aa7, length   18 is 'short unsigned int'
+name at offset 0x00000aba, length    6 is 'stdout'
+name at offset 0x00000ac1, length    6 is 'blue_x'
+name at offset 0x00000ac8, length    6 is 'blue_y'
+name at offset 0x00000acf, length    7 is 'message'
+name at offset 0x00000ad7, length   13 is '_IO_write_ptr'
+name at offset 0x00000ae5, length   18 is 'png_color_8_struct'
+name at offset 0x00000af8, length    4 is 'data'
+name at offset 0x00000afd, length   14 is 'png_sPLT_entry'
+name at offset 0x00000b0c, length   14 is 'wrote_question'
+name at offset 0x00000b1b, length   10 is 'png_int_32'
+
+.debug_aranges
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              "GNU C11 5.4.0 20160609 -mtune=generic -march=x86-64 -g -fstack-protector-strong"
+                    DW_AT_language              DW_LANG_C99
+                    DW_AT_name                  "/workspace/projects/libpng/pngtest.c"
+                    DW_AT_comp_dir              "/workspace/projects/libpng/build"
+                    DW_AT_low_pc                0x00000000
+                    DW_AT_high_pc               <offset-from-lowpc>11111
+                    DW_AT_stmt_list             0x00000000
+
+
+arange starts at 0x00000000, length of 0x00002b67, cu_die_offset = 0x0000000b
+arange end
+.debug_frame
+
+.debug_static_func
+
+.debug_static_vars
+
+.debug_weaknames
+

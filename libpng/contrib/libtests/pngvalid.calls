@@ -1,0 +1,1 @@
+/workspace/projects/libpng/contrib/libtests/pngvalid.c	12225	fprintf	fprintf(stderr,"pngvalid: no low level write support in libpng, all tests skipped\n")
